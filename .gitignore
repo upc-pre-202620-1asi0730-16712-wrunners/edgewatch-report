@@ -4,6 +4,8 @@
 !**/src/test/**/target/
 .kotlin
 
+edgewatch-report.sln
+
 ### IntelliJ IDEA ###
 .idea/
 *.iws
