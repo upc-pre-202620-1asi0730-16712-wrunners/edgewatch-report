@@ -269,7 +269,11 @@ class EF1,EF2,EF3,EF4 efectoFinal
 ```
 
 ### 1.2.2 Lean UX Process.
+
+El Lean UX Process permite a WebRunners validar de forma temprana las creencias que sustentan EdgeWatch, evitando construir funcionalidad sobre supuestos no verificados. El proceso parte de un enunciado único del problema para todo el proyecto, del cual se derivan los assumptions organizados en cinco categorías, y de estos, específicamente de los feature assumptions, se formulan los hypothesis statements que el equipo someterá a validación durante los sprints. Se aplica la versión del template Brand new initiative, dado que EdgeWatch no constituye la evolución de un producto existente sino una iniciativa nueva.
+
 #### 1.2.2.1. Lean UX Problem Statements.
+
 #### 1.2.2.2. Lean UX Assumptions.
 ### 1.2.2.3. Lean UX Hypothesis Statements.
 ### 1.2.2.4. Lean UX Canvas.
