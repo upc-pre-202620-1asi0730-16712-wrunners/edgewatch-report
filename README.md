@@ -335,6 +335,15 @@ A continuación se enumeran las creencias resultantes de la sesión de discusió
 9. Creemos que reportes de tasa de falla agrupados por cliente y por modelo de componente revelarán patrones que hoy no son visibles para la organización.
 
 ### 1.2.2.3. Lean UX Hypothesis Statements.
+Se formula un hypothesis statement por cada feature assumption enunciado en la sección anterior, siguiendo el template establecido.
+
+**Hypothesis Statement 01 — Ingesta de telemetría de proceso**
+
+**We believe we will achieve** an increase in the number of spray sessions with complete process records stored in the platform
+**If** Quality Engineers at HVOF coating service providers and Maintenance Supervisors at in-house coating plants
+**Attain** a permanent, queryable record of the conditions under which every spray session was executed
+**With** a RESTful telemetry ingestion endpoint that registers process readings throughout the spray session.
+
 ### 1.2.2.4. Lean UX Canvas.
 ## 1.3. Segmentos objetivo.
 
