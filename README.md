@@ -157,6 +157,7 @@ Ser la plataforma de referencia en Latinoamérica para el monitoreo y la trazabi
 |:---|:---|:---|:---|:---|
 | <img src="assets/img/chapter-i/startup-profile/carolina-navarro.jpeg" width="150"> | Carolina Celeste Navarro Aldoradin | u20241b962 | Ingeniería de Software, Universidad Peruana de Ciencias Aplicadas | Cuento con conocimiento del lenguaje Java, C#, C++, Javascript, Python y Ladder. Asimismo, cuento con experiencia en proyectos de integración, monitoreo e IoT en entornos industriales. |
 | <img src="assets/img/chapter-i/startup-profile/Esteban-alvarez.png" width="150"> | Esteban Valentino Alvarez Falen | U202315628 | Ingeniería de Software, Universidad Peruana de Ciencias Aplicadas | Soy un estudiante de la carrera de Ingeniería de Software, estoy en la universidad UPC. No cuento con experiencia laboral en programas, sin embargo a lo largo de mi carrera estoy realizando proyectos para mejorar en código, trabajo en equipo y organización de proyectos. Soy una persona que le gusta pensar en soluciones y encontrar motivaciones para innovar e implementar. |
+| <img src="assets/img/chapter-i/startup-profile/jhon-catacora.jpeg" width="150"> | Jhon Deyner Catacora Tupa | U202425159 | Ingeniería de Software, Universidad Peruana de Ciencias Aplicadas | Estudiante de la carrera de Ingeniería de software, me considero una persona colaborativa, con facilidad para comunicar ideas y trabajar en equipo, además de mantener siempre una actitud abierta al aprendizaje y la mejora continua. Estas cualidades me han permitido aportar soluciones innovadoras y crecer tanto en lo técnico como en lo personal. |
 
 
 ## 1.2. Solution Profile
@@ -584,9 +585,68 @@ Ante la falta de trayectoria de la startup, la táctica consiste en apoyarse en 
 ### 2.2.3. Análisis de entrevistas.
 ## 2.3. Needfinding.
 ### 2.3.1. User Personas.
+
+#### Ficha de User Persona 1 — Segmento 1: Empresas de servicio especializado en recubrimiento HVOF
+
+![Rosa Miranda Alegria](./assets/img/chapter-ii/neefinding/User_Persona-Rosa_Miranda_Alegria.png)
+
+---
+
+#### Ficha de User Persona 2 — Segmento 2: Plantas industriales con línea de recubrimiento in-house
+
+![Jorge Salinas Paredes](./assets/img/chapter-ii/neefinding/User_Persona-Jorge_Salinas_Paredes.png)
+
 ### 2.3.2. User Task Matrix.
+
+| Tarea | Rosa — Frecuencia | Rosa — Importancia | Jorge — Frecuencia | Jorge — Importancia |
+|---|---|---|---|---|
+| Ejecutar y supervisar una sesión de recubrimiento en la cabina | Baja | Media | Baja | Media |
+| Verificar que los parámetros de proceso se mantengan dentro de especificación | Alta | Alta | Media | Alta |
+| Registrar a qué pieza, cliente y orden corresponde cada sesión ejecutada | Alta | Alta | Baja | Media |
+| Sustentar ante el cliente que un lote fue recubierto dentro de tolerancias | Alta | Alta | N/A | N/A |
+| Determinar la causa de una parada o falla del equipo | Baja | Media | Alta | Alta |
+| Decidir qué componente de la máquina requiere mantenimiento o repuesto | Baja | Media | Alta | Alta |
+| Anticipar fallas recurrentes del equipo | Media | Media | Alta | Alta |
+| Verificar el desempeño de una pieza recubierta cuando retorna de campo | Alta | Alta | Media | Media |
+| Reportar métricas de calidad o de disponibilidad a la gerencia | Media | Alta | Media | Alta |
+| Transferir el conocimiento del proceso entre operadores y técnicos | Media | Media | Media | Alta |
+
+**Tareas con mayor frecuencia e importancia.** Para Rosa, las tareas de mayor peso son sustentar ante el cliente que un lote fue recubierto dentro de tolerancias y registrar la correspondencia entre sesión, pieza, cliente y orden: ambas son diarias y determinan directamente la continuidad del contrato con el cliente minero. Para Jorge, las tareas de mayor peso son determinar la causa de una parada y decidir qué componente atender, dado que de ellas depende la disponibilidad del equipo y el cumplimiento de la ventana de mantenimiento.
+
+**Coincidencias.** Ambos roles comparten como tarea de alta importancia verificar que los parámetros de proceso se mantengan dentro de especificación y reportar métricas a la gerencia, lo que confirma que la trazabilidad del proceso es una necesidad transversal a los dos segmentos, aunque motivada por razones distintas (evidencia comercial en un caso, disponibilidad operativa en el otro).
+
+**Diferencias.** Rosa realiza con alta frecuencia tareas orientadas a documentar y sustentar el proceso ante un tercero externo (el cliente minero), mientras que Jorge realiza con alta frecuencia tareas orientadas a diagnosticar y decidir sobre el propio equipo, sin que un cliente externo participe en esa decisión. Esta diferencia es consistente con la distinción establecida en la sección 1.3 entre el recubrimiento como negocio principal (Segmento 1) y como proceso de soporte al mantenimiento (Segmento 2).
+
 ### 2.3.3. User Journey Mapping.
+
+#### Journey Map 1 — Rosa Miranda: sustentar ante el cliente minero que un lote fue recubierto dentro de tolerancias
+
+| Fase | Acciones | Pensamientos | Emociones | Puntos de dolor |
+|---|---|---|---|---|
+| Solicitud del cliente | Recibe el pedido de sustento y ubica la OF/WO | "Espero que esta vez el registro esté completo" | Neutral, con algo de incertidumbre | No sabe de antemano si el dato existe o está completo |
+| Búsqueda de evidencia | Revisa archivos del PLC y bitácoras en papel, consulta al supervisor | "¿Dónde quedó el registro de esa fecha exacta?" | Tensión creciente | Información dispersa entre PLC, papel y memoria del personal |
+| Reconstrucción manual | Arma el reporte cruzando fuentes manualmente | "Esto me toma horas que no tengo" | Frustración | Alto esfuerzo manual y riesgo de error humano al cruzar datos |
+| Entrega | Envía el reporte, a veces fuera de plazo | "Espero que esto no afecte la renovación del contrato" | Ansiedad | Retraso percibido por el cliente como falta de control de proceso |
+
+#### Journey Map 2 — Jorge Salinas: diagnosticar una parada no programada del equipo HVOF 
+
+| Fase | Acciones | Pensamientos | Emociones | Puntos de dolor |
+|---|---|---|---|---|
+| Detección | El operador reporta la parada; Jorge revisa el código de falla | "¿Es la misma falla del mes pasado?" | Alerta, preocupación | El código de falla del PLC no indica el componente responsable |
+| Diagnóstico | Revisa bitácora en papel, llama al técnico senior, escala al fabricante | "Ojalá el técnico que sabe de esto esté disponible" | Impaciencia | El diagnóstico depende del conocimiento tácito de pocas personas |
+| Intervención | Interviene el componente señalado y verifica la operación | "Vamos a ver si esto realmente era el problema" | Incertidumbre | Sin correlación automática, la intervención es prueba y error |
+| Registro y aprendizaje | Documenta la solución de forma informal | "Espero acordarme la próxima vez que pase esto" | Resignación | El aprendizaje no queda registrado ni es consultable por otros |
+
 ### 2.3.4. Empathy Mapping.
+
+#### Empathy Map — Rosa Miranda (Segmento 1)
+
+![Rosa Miranda Alegria](./assets/img/chapter-ii/neefinding/Empathy_Map-Rosa_Miranda_Alegria.png)
+
+#### Empathy Map — Jorge Salinas (Segmento 2)
+
+![Jorge Salinas Paredes](./assets/img/chapter-ii/neefinding/Empathy_Map-Jorge_Salinas_Paredes.png)
+
 ## 2.4. Big Picture Event Storming.
 ## 2.5. Ubiquitous Language.
 
