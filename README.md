@@ -97,8 +97,8 @@ El URL del repositorio para el Project Report en la organización de github es e
 - [4.4. Web Applications UX/UI Design.](#44-web-applications-uxui-design)
 - [4.4.1. Web Applications Wireframes.](#441-web-applications-wireframes)
 - [4.4.2. Web Applications Wireflow Diagrams.](#442-web-applications-wireflow-diagrams)
-- [4.4.2. Web Applications Mock-ups.](#442-web-applications-mock-ups)
-- [4.4.3. Web Applications User Flow Diagrams.](#443-web-applications-user-flow-diagrams)
+- [4.4.3. Web Applications Mock-ups.](#443-web-applications-mock-ups)
+- [4.4.4. Web Applications User Flow Diagrams.](#444-web-applications-user-flow-diagrams)
 - [4.5. Web Applications Prototyping.](#45-web-applications-prototyping)
 - [4.6. Domain-Driven Software Architecture.](#46-domain-driven-software-architecture)
 - [4.6.1. Design-Level Event Storming.](#461-design-level-event-storming)
@@ -656,33 +656,713 @@ Ante la falta de trayectoria de la startup, la táctica consiste en apoyarse en 
 ## 3.3. Product Backlog
 
 # Capítulo IV: Product Design
+
 ## 4.1. Style Guidelines.
+
 ### 4.1.1. General Style Guidelines.
+
+**Identidad de marca**
+
+| Atributo | Definición |
+|---|---|
+| Nombre de producto | EdgeWatch |
+| Nombre de la startup | WebRunners |
+| Tagline | *"El dato de su proceso, convertido en trazabilidad y diagnóstico."* |
+| Personalidad de marca | Confiable · Preciso · Claro · Técnico sin ser frío |
+| Territorio visual | Industrial-tecnológico: se apoya en la estética de sala de control y tablero de proceso, no en la estética "startup SaaS" genérica |
+
+**Logotipo**
+
+El logotipo combina un isotipo (aguja de medición/gauge que traza un arco, en referencia a la lectura continua de parámetros de proceso) con el logotype "EdgeWatch" en tipografía de marca. Reglas de uso:
+
+| Regla | Especificación |
+|---|---|
+| Área de resguardo | Espacio libre mínimo alrededor del isotipo equivalente a la altura de la "E" del logotype |
+| Tamaño mínimo digital | 24 px de alto |
+| Versiones | Positiva (isotipo + texto en Navy `#0B2545` sobre fondo claro), negativa (blanco sobre fondo Navy o fotografía oscura), monocromática (para impresión de certificados en blanco y negro) |
+| Usos no permitidos | No rotar, no aplicar degradados ajenos a la paleta, no distorsionar la proporción, no ubicar sobre fondos con contraste insuficiente (ver tabla de contraste en 4.1.2) |
+
+**Paleta de colores**
+
+La paleta reutiliza deliberadamente los colores ya empleados en el árbol de problemas del Capítulo I (sección 1.2.1) para los estados de causa/efecto, de modo que el mismo código cromático que se usó para diagnosticar el problema se convierte en el sistema de estados del producto que lo resuelve.
+
+| Rol | Color | Hex | Uso |
+|---|---|---|---|
+| Primario — Industrial Navy | 🟦 | `#0B2545` | Header, navegación, fondos de secciones destacadas, texto de marca |
+| Primario oscuro | 🟦 | `#071A33` | Footer, secciones de máximo contraste |
+| Secundario — Thermal Amber | 🟧 | `#FF7A00` | Botón primario / CTA, acentos, hover de enlaces |
+| Acento — Data Teal | 🟦 | `#00B4D8` | Enlaces en cuerpo de texto, series de datos en gráficos de telemetría |
+| Éxito / Nominal | 🟩 | `#2E7D32` (tinte `#C8E6C9`) | Parámetro dentro de rango, sesión sin desviaciones |
+| Advertencia / Alerta | 🟨 | `#FFB300` (tinte `#FFECB3`) | Desviación detectada, estado "En revisión" |
+| Crítico / Falla | 🟥 | `#C62828` (tinte `#EF9A9A`) | Parada de equipo, parámetro fuera de tolerancia, falla prematura en campo |
+| Información / En proceso | 🟦 | `#1565C0` (tinte `#90CAF9`) | Sesión en curso, estado neutro informativo |
+| Neutro 900 (texto) | ⬛ | `#1B1F27` | Texto principal |
+| Neutro 600 (texto secundario) | ⬜ | `#5B6472` | Metadatos, etiquetas, texto de apoyo |
+| Neutro 200 (bordes) | ⬜ | `#E2E6EB` | Bordes de tarjetas, separadores, tablas |
+| Neutro 50 (fondo) | ⬜ | `#F5F7FA` | Fondo de página, fondo de tabla alternado |
+
+**Tipografía**
+
+| Uso | Familia | Justificación |
+|---|---|---|
+| Titulares (H1–H3) | Poppins (SemiBold/Bold) | Geométrica, técnica y confiada; funciona bien en tamaños grandes del Landing Page |
+| Cuerpo e interfaz | Inter (Regular/Medium) | Alta legibilidad en tamaños pequeños, óptima para tablas densas de la Web Application |
+| Valores numéricos y de proceso | JetBrains Mono | Alinea dígitos en columnas de telemetría y códigos (OF, WO, tags de parámetro) |
+
+Escala tipográfica (tamaño/interlineado en px): H1 40/48 · H2 32/40 · H3 24/32 · H4 20/28 · Body Large 18/28 · Body 16/24 · Small 14/20 · Micro 12/16.
+
+**Iconografía**
+
+Set de íconos de línea, grilla de 24×24 px, trazo de 2 px con puntas redondeadas (estilo consistente con librerías como Phosphor Icons, peso *regular*). Variante rellena reservada exclusivamente para indicar estado activo/seleccionado, nunca para decoración.
+
+**Fotografía e imágenes**
+
+Fotografía real de planta, cabina HVOF y componentes recubiertos (no stock genérico de oficinas). Tratamiento dúotono Navy `#0B2545` / Amber `#FF7A00` en imágenes de héroe, y overlay Navy al 60 % sobre fotografía de planta cuando lleva texto superpuesto, para garantizar contraste legible.
+
+**Voz y tono**
+
+Directa, técnica-accesible y basada en evidencia: el copy prioriza métricas concretas (tiempo de diagnóstico, % de OF con certificado emitido) frente a adjetivos vacíos ("innovador", "revolucionario"). Se conserva el ubiquitous language del dominio (OF, WO, PCR, sesión de rociado) en lugar de traducirlo o genericarlo, tanto en el Landing Page como en la Web Application, para que el vocabulario de venta sea el mismo que el vocabulario de uso.
+
 ### 4.1.2. Web Style Guidelines.
+
+**Sistema de grid y espaciado**
+
+| Propiedad | Valor |
+|---|---|
+| Columnas | 12 |
+| Gutter | 24 px |
+| Margen lateral | 24 px (mobile) / 64 px (desktop) |
+| Ancho máximo de contenido | 1280 px |
+| Unidad base de espaciado | 8 px (escala: 4·8·16·24·32·48·64·96) |
+
+**Breakpoints**
+
+| Nombre | Ancho | Uso principal |
+|---|---|---|
+| sm | 375 px | Consulta móvil de alertas (Operador, Jefe de Mantenimiento en planta) |
+| md | 768 px | Tablet en taller |
+| lg | 1024 px | Web Application en escritorio |
+| xl | 1280 px | Landing Page y dashboards |
+| xxl | 1440 px+ | Monitores de sala de control |
+
+**Componentes**
+
+| Componente | Especificación |
+|---|---|
+| Botón primario | Fondo `#FF7A00`, texto blanco, radio 6 px; hover oscurece 10 %; disabled en Neutro 200/600; estado *loading* con spinner y bloqueo de doble envío |
+| Botón secundario | Borde `#0B2545` 1.5 px, fondo transparente, texto `#0B2545` |
+| Badge de estado | Píldora con ícono + etiqueta, nunca solo color: **Nominal** (verde), **Alerta** (ámbar), **Crítico** (rojo), **En sesión** (azul info), **Cerrado** (gris) |
+| Tarjeta (Session Card, Alert Card, KPI Card) | Radio 8 px, borde `#E2E6EB` 1 px, sombra sutil en hover, encabezado con el badge de estado |
+| Formularios | Etiqueta encima del campo, texto de 16 px (evita zoom automático en iOS), validación inline en rojo crítico bajo el campo, asterisco para campos obligatorios |
+| Tablas de datos | Encabezado *sticky*, filas alternadas sobre Neutro 50, columnas numéricas en JetBrains Mono alineadas a la derecha |
+| Navegación | Top nav *sticky* con fondo transparente que pasa a sólido al hacer scroll (Landing Page); sidebar colapsable agrupado por módulo (Web Application) |
+| Gráficos de telemetría | Línea/área con banda sombreada representando el rango nominal configurado; el trazo cambia de color (verde→ámbar→rojo) al cruzar el umbral |
+
+**Accesibilidad**
+
+Cumplimiento WCAG 2.1 nivel AA: contraste mínimo 4.5:1 en texto de cuerpo y 3:1 en texto grande/íconos; área táctil mínima de 44×44 px; foco de teclado visible con contorno ámbar de 2 px; **el estado de un parámetro o alerta nunca se comunica solo por color**, siempre se acompaña de ícono y etiqueta textual, dado que parte de la audiencia opera en condiciones de iluminación de planta industrial y puede incluir usuarios con daltonismo.
+
+**Motion**
+
+Transiciones de 150–200 ms *ease-out* para hover, menús y acordeones. Las alertas críticas se muestran de forma **instantánea, sin animación de entrada**, dado que retrasar la percepción de una desviación de proceso por una transición decorativa contradice el propósito del producto. Se respeta `prefers-reduced-motion`.
+
 ## 4.2. Information Architecture.
+
 ### 4.2.1. Organization Systems.
+
+EdgeWatch adopta un esquema **híbrido**, distinto para cada superficie porque atienden objetivos distintos:
+
+| Superficie | Esquema de organización | Justificación |
+|---|---|---|
+| Landing Page | Por tema (topic-based), estructura tipo hub-and-spoke de una sola página con anclas | El visitante no conoce aún el producto; necesita recorrer Problema → Solución → Cómo funciona → Segmento propio → Contacto en un flujo lineal de persuasión |
+| Web Application | Por tarea (task-based), agrupado por módulo funcional (Sesiones, Alertas, Diagnóstico, Certificados, PCR) | El usuario ya conoce el dominio y llega con una tarea concreta (ver 2.3.2 User Task Matrix); necesita llegar directo al módulo, no explorar |
+| Historial de sesiones y telemetría | Cronológico, con filtro por OF/WO/cliente/equipo | Las lecturas de proceso son intrínsecamente temporales y se auditan por fecha de ejecución |
+| Catálogo de reglas causa-efecto y componentes de máquina | Jerárquico (Equipo → Componente → Regla) | Refleja la estructura física real del equipo HVOF, consistente con el Ubiquitous Language |
+
+**Mapa del sitio**
+
+```mermaid
+graph TD
+LP["Landing Page"] --> LP1["#problema"]
+LP --> LP2["#solucion"]
+LP --> LP3["#como-funciona"]
+LP --> LP4["#segmentos"]
+LP --> LP5["#nosotros"]
+LP --> LP6["Formulario de contacto / Solicitar demo"]
+
+LP6 --> AUTH["Login / Registro"]
+AUTH --> DASH["Dashboard"]
+
+DASH --> SES["Sesiones de Rociado"]
+DASH --> ALE["Alertas"]
+DASH --> DIA["Diagnóstico"]
+DASH --> CERT["Certificados de Calidad"]
+DASH --> PCR["Desempeño en Campo / PCR"]
+DASH --> REP["Reportes de Tasa de Falla"]
+DASH --> ADM["Configuración: Equipos y Rangos Nominales"]
+
+SES --> SESDET["Detalle de Sesión"]
+SESDET --> ALEDET["Alertas de la Sesión"]
+ALEDET --> DIADET["Diagnóstico Asistido"]
+SESDET --> CERTGEN["Emitir Certificado"]
+PCR --> PCRDET["Comparativo Real vs. PCR"]
+```
+
 ### 4.2.2. Labeling Systems.
+
+| Etiqueta en interfaz | Término de dominio | Justificación |
+|---|---|---|
+| Sesiones | Sesión de rociado | Término usado por Rosa y Jorge en las entrevistas; "proceso" o "trabajo" sería ambiguo |
+| OF | Orden de Fabricación | Se mantiene el acrónimo tal como lo usa la organización cliente, no se expande en la interfaz cotidiana |
+| WO | Work Order / Orden de Trabajo | Idem; convive con OF porque ambos códigos son consultados en simultáneo |
+| Alertas | Desviación de parámetro / Falla de equipo | "Notificaciones" se descarta por ser un término genérico de producto SaaS, no del dominio |
+| Diagnóstico | Componente de máquina sospechoso | Se prioriza el resultado ("qué componente mirar") sobre el mecanismo ("regla causa-efecto") en la etiqueta visible al usuario |
+| Certificado de Calidad | Evidencia documentada de proceso dentro de tolerancia | Coincide textualmente con lo que Rosa debe "sustentar ante el cliente" (Journey Map 1) |
+| PCR | Planned Component Replacement | Se mantiene en inglés/acrónimo porque así lo usa la industria minera peruana en los contratos |
+| Rangos Nominales | Umbral por parámetro y equipo | Evita el término genérico "configuración" |
+
 ### 4.2.3. SEO Tags and Meta Tags
+
+```html
+<title>EdgeWatch | Trazabilidad y diagnóstico de procesos HVOF en tiempo real</title>
+<meta name="description" content="Plataforma que convierte la telemetría de su cabina HVOF en trazabilidad OF/WO, alertas en tiempo real, diagnóstico por componente y evidencia de calidad para sus clientes mineros.">
+<meta name="keywords" content="monitoreo HVOF, trazabilidad recubrimiento térmico, software mantenimiento minero, PCR componentes, diagnóstico de fallas industrial, certificado de calidad recubrimiento">
+<link rel="canonical" href="https://edgewatch.pe/">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="EdgeWatch">
+<meta property="og:title" content="EdgeWatch | Trazabilidad y diagnóstico de procesos HVOF en tiempo real">
+<meta property="og:description" content="De la telemetría del PLC a la evidencia de calidad: trazabilidad, alertas y diagnóstico para servicios de recubrimiento HVOF.">
+<meta property="og:image" content="https://edgewatch.pe/assets/og/edgewatch-cover.jpg">
+<meta property="og:locale" content="es_PE">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="EdgeWatch | Trazabilidad y diagnóstico HVOF">
+<meta name="twitter:description" content="Convierta la telemetría de su cabina HVOF en trazabilidad, alertas y diagnóstico accionable.">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "EdgeWatch",
+  "applicationCategory": "BusinessApplication",
+  "operatingSystem": "Web",
+  "offers": {
+    "@type": "Offer",
+    "priceCurrency": "PEN",
+    "price": "Consultar"
+  },
+  "provider": {
+    "@type": "Organization",
+    "name": "WebRunners"
+  }
+}
+</script>
+```
+
+Cada ancla de sección (`#problema`, `#solucion`, `#segmentos`) se refleja como *heading* semántico (`h2`) para reforzar la indexación temática, y las imágenes del héroe y de segmentos incluyen atributo `alt` descriptivo (p. ej. `alt="Cabina de recubrimiento HVOF con sensores conectados a EdgeWatch"`) en lugar de texto vacío.
+
 ### 4.2.4. Searching Systems.
+
+| Superficie | Sistema de búsqueda | Detalle |
+|---|---|---|
+| Landing Page | No aplica | Sitio de una sola página con navegación por anclas; el volumen de contenido no justifica un buscador interno |
+| Web Application — Sesiones/OF/WO | Búsqueda con autocompletado | Campo único que resuelve por código de OF, código de WO, cliente o tag de equipo, con sugerencias mientras se escribe |
+| Web Application — Historial | Filtros facetados combinables | Estado (Nominal / Alerta / Crítico / Cerrado), rango de fechas, cliente, modelo de componente, equipo |
+| Web Application — Catálogo de fallas | Filtro jerárquico | Por equipo → componente de máquina → código de falla |
+| General | Filtros guardados | El usuario recurrente (Rosa, Jorge) puede guardar una combinación de filtros usada con frecuencia (p. ej. "Mis OF abiertas") |
+
 ### 4.2.5. Navigation Systems.
+
+| Tipo | Ubicación | Contenido |
+|---|---|---|
+| Global | Top nav del Landing Page | Producto · Cómo funciona · Segmentos · Nosotros · **Solicitar demo** (CTA destacado) |
+| Global | Sidebar de la Web Application | Dashboard · Sesiones · Alertas · Diagnóstico · Certificados · PCR · Reportes · Configuración, agrupados por frecuencia de uso según la User Task Matrix (2.3.2) |
+| Local / contextual | Breadcrumb dentro de un módulo | `Cliente > OF > WO > Sesión`, permite retroceder sin perder el contexto del caso que se está resolviendo |
+| Contextual | Panel de alerta activa | Enlace directo "Ver diagnóstico sugerido" que salta del módulo de Alertas al de Diagnóstico sin pasar por el dashboard |
+| Suplementaria | Footer del Landing Page | Mapa de enlaces, política de privacidad y confidencialidad de datos de proceso (mitigación de amenaza descrita en 2.1.2), datos de contacto, enlaces a redes |
+| De cortesía | Ambas superficies | Botón "volver arriba" en el Landing Page; acceso a ayuda contextual (?) junto a campos técnicos poco frecuentes en la Web Application |
+
 ## 4.3. Landing Page UI Design.
+
 ### 4.3.1. Landing Page Wireframe.
+
 ### 4.3.2. Landing Page Mock-up.
+
 ## 4.4. Web Applications UX/UI Design.
+
 ### 4.4.1. Web Applications Wireframes.
+
 ### 4.4.2. Web Applications Wireflow Diagrams.
-### 4.4.2. Web Applications Mock-ups.
-### 4.4.3. Web Applications User Flow Diagrams.
+
+### 4.4.3. Web Applications Mock-ups.
+
+### 4.4.4. Web Applications User Flow Diagrams.
+
 ## 4.5. Web Applications Prototyping.
+
 ## 4.6. Domain-Driven Software Architecture.
+
 ### 4.6.1. Design-Level Event Storming.
+
+```mermaid
+flowchart LR
+classDef comando fill:#64B5F6,stroke:#1565C0,color:#000000
+classDef evento fill:#FFB74D,stroke:#E65100,color:#000000
+classDef agregado fill:#FFF59D,stroke:#F9A825,stroke-width:2px,color:#000000
+classDef politica fill:#CE93D8,stroke:#6A1B9A,color:#000000
+classDef externo fill:#F48FB1,stroke:#AD1457,color:#000000
+classDef readmodel fill:#A5D6A7,stroke:#2E7D32,color:#000000
+
+EXT1[["Gateway PLC HVOF"]]:::externo
+EXT2[["Servicio de Notificaciones"]]:::externo
+
+subgraph BC1["Gestión de Sesión y Telemetría"]
+  CMD1(("Iniciar Sesión")):::comando
+  CMD2(("Registrar Lectura de Telemetría")):::comando
+  AGG1["SesiónDeRociado"]:::agregado
+  AGG2["Equipo / Rango Nominal"]:::agregado
+  EV1["SesiónIniciada"]:::evento
+  EV2["LecturaRegistrada"]:::evento
+  CMD4(("Cerrar Sesión")):::comando
+  EV5["SesiónCerrada"]:::evento
+end
+
+subgraph BC2["Alertas y Desviaciones"]
+  EV3["DesviaciónDetectada"]:::evento
+  POL1{{"Si hay desviación,\nemitir alerta"}}:::politica
+  EV4["AlertaEmitida"]:::evento
+end
+
+subgraph BC3["Diagnóstico de Fallas"]
+  CMD5(("Reportar Falla")):::comando
+  EV6["FallaReportada"]:::evento
+  POL3{{"Si se reporta falla,\nejecutar diagnóstico"}}:::politica
+  CMD6(("Ejecutar Diagnóstico")):::comando
+  AGG3["CatálogoDeReglasCausaEfecto"]:::agregado
+  EV7["ComponenteSospechosoIdentificado"]:::evento
+end
+
+subgraph BC4["Certificación de Calidad"]
+  POL2{{"Si sesión cierra sin\ndesviaciones, habilitar certificado"}}:::politica
+  CMD7(("Emitir Certificado")):::comando
+  AGG4["OrdenDeTrabajo (OF/WO)"]:::agregado
+  AGG5["CertificadoDeCalidad"]:::agregado
+  EV8["CertificadoEmitido"]:::evento
+end
+
+subgraph BC5["Desempeño en Campo (PCR)"]
+  CMD8(("Registrar Retorno de Campo")):::comando
+  AGG6["ComponenteDeCampo"]:::agregado
+  EV9["PiezaRetornada"]:::evento
+  EV10["DesempeñoComparadoContraPCR"]:::evento
+end
+
+RM1["Read Model: Panel de Sesión en Curso"]:::readmodel
+RM2["Read Model: Historial OF/WO"]:::readmodel
+RM3["Read Model: Reporte de Tasa de Falla"]:::readmodel
+
+EXT1 --> CMD2
+CMD1 --> AGG1 --> EV1
+CMD2 --> AGG1 --> EV2
+EV2 --> AGG2 --> EV3
+EV3 --> POL1 --> EV4 --> EXT2
+EV1 --> RM1
+EV2 --> RM1
+EV3 --> RM1
+EV4 --> RM1
+
+CMD4 --> AGG1 --> EV5 --> POL2 --> CMD7
+EV5 --> AGG4
+CMD7 --> AGG5 --> EV8
+EV5 --> RM2
+EV8 --> RM2
+
+CMD5 --> AGG1 --> EV6 --> POL3 --> CMD6
+CMD6 --> AGG3 --> EV7
+EV7 --> RM1
+
+CMD8 --> AGG6 --> EV9 --> EV10 --> RM3
+AGG4 --> AGG6
+```
+
 ### 4.6.2. Software Architecture Context Diagram.
+
+```mermaid
+flowchart TB
+classDef person fill:#08427B,stroke:#052E56,color:#FFFFFF
+classDef systemFocus fill:#FF7A00,stroke:#B35400,color:#FFFFFF,stroke-width:3px
+classDef external fill:#999999,stroke:#6B6B6B,color:#FFFFFF
+
+Rosa["Ingeniero de Calidad\n(Segmento 1)"]:::person
+Jorge["Jefe de Mantenimiento\n(Segmento 2)"]:::person
+Operador["Operador de Cabina"]:::person
+
+EdgeWatch["EdgeWatch\nPlataforma de trazabilidad y\ndiagnóstico de procesos HVOF"]:::systemFocus
+
+PLC["Gateway / PLC del equipo HVOF\n(sistema externo)"]:::external
+ERP["ERP / CMMS del cliente\n(sistema externo, integración futura)"]:::external
+Notif["Proveedor de Email / SMS\n(sistema externo)"]:::external
+
+Rosa -->|"consulta trazabilidad,\nemite certificados"| EdgeWatch
+Jorge -->|"consulta alertas,\ndiagnostica fallas"| EdgeWatch
+Operador -->|"inicia/cierra sesión,\natiende alertas"| EdgeWatch
+
+PLC -->|"telemetría de proceso\nvía API REST"| EdgeWatch
+EdgeWatch -->|"notificaciones de alerta"| Notif
+EdgeWatch -.->|"exporta OF/WO\n(integración futura)"| ERP
+```
+
 ### 4.6.3. Software Architecture Container Diagrams.
+
+```mermaid
+flowchart TB
+classDef container fill:#438DD5,stroke:#2E6295,color:#FFFFFF
+classDef external fill:#999999,stroke:#6B6B6B,color:#FFFFFF
+classDef person fill:#08427B,stroke:#052E56,color:#FFFFFF
+
+Usuario["Ingeniero de Calidad /\nJefe de Mantenimiento"]:::person
+
+subgraph EW["EdgeWatch"]
+  LP["Landing Page\n[Angular, estático]"]:::container
+  SPA["Web Application\n[Angular SPA]"]:::container
+  API["REST API\n[Spring Boot]"]:::container
+  ING["Servicio de Ingesta\nde Telemetría [Spring Boot]"]:::container
+  DB[("Base de Datos\n[PostgreSQL]")]:::container
+  FILES[("Almacenamiento de Certificados\n[Object Storage]")]:::container
+  NOTIFSVC["Servicio de Notificaciones\n[Spring Boot]"]:::container
+end
+
+PLC["Gateway PLC HVOF"]:::external
+EMAILSMS["Proveedor Email / SMS"]:::external
+
+Usuario -->|"HTTPS"| LP
+Usuario -->|"HTTPS"| SPA
+SPA -->|"JSON / HTTPS"| API
+LP -->|"envía formulario de demo"| API
+API -->|"SQL"| DB
+API -->|"lee / escribe certificados"| FILES
+PLC -->|"telemetría JSON / HTTPS"| ING
+ING -->|"SQL"| DB
+ING -->|"publica desviación detectada"| API
+API -->|"solicita envío"| NOTIFSVC
+NOTIFSVC -->|"API"| EMAILSMS
+```
+
 ### 4.6.4. Software Architecture Components Diagrams.
+
+Detalle de componentes internos del contenedor **REST API**, responsable de la lógica de negocio central.
+
+```mermaid
+flowchart TB
+classDef component fill:#85BBF0,stroke:#5D82A8,color:#000000
+classDef external fill:#999999,stroke:#6B6B6B,color:#FFFFFF
+
+subgraph API["REST API [Spring Boot]"]
+  SessionCtrl["SessionController"]:::component
+  AlertCtrl["AlertController"]:::component
+  DiagCtrl["DiagnosticController"]:::component
+  CertCtrl["CertificateController"]:::component
+  PCRCtrl["PCRController"]:::component
+
+  SessionApp["SessionApplicationService"]:::component
+  DiagApp["DiagnosticApplicationService"]:::component
+  CertApp["CertificateApplicationService"]:::component
+  PCRApp["PCRApplicationService"]:::component
+
+  RuleEngine["Rule Engine\n(evaluación causa-efecto)"]:::component
+  DeviationDetector["Deviation Detector"]:::component
+
+  SessionRepo["SpraySessionRepository"]:::component
+  AlertRepo["AlertRepository"]:::component
+  CertRepo["CertificateRepository"]:::component
+  PCRRepo["FieldServiceRepository"]:::component
+
+  NotifPublisher["NotificationPublisher"]:::component
+end
+
+DB[("PostgreSQL")]:::external
+NOTIF["Servicio de Notificaciones"]:::external
+
+SessionCtrl --> SessionApp --> SessionRepo --> DB
+SessionApp --> DeviationDetector --> AlertRepo --> DB
+DeviationDetector --> NotifPublisher --> NOTIF
+AlertCtrl --> AlertRepo
+DiagCtrl --> DiagApp --> RuleEngine
+RuleEngine --> SessionRepo
+CertCtrl --> CertApp --> CertRepo --> DB
+PCRCtrl --> PCRApp --> PCRRepo --> DB
+```
+
 ## 4.7. Software Object-Oriented Design.
+
 ### 4.7.1. Class Diagrams.
+
+El diagrama de clases traduce los agregados del Event Storming (4.6.1) al modelo de objetos que sustentará la implementación en el Capítulo V.
+
+```mermaid
+classDiagram
+class Client {
+  +UUID id
+  +String businessName
+  +String ruc
+  +String segment
+}
+class ManufacturingOrder {
+  +UUID id
+  +String ofCode
+  +Date issueDate
+}
+class WorkOrder {
+  +UUID id
+  +String woCode
+  +String status
+  +Date dueDate
+}
+class ComponentModel {
+  +UUID id
+  +String name
+  +String materialSpec
+  +Integer pcrHours
+}
+class Equipment {
+  +UUID id
+  +String tag
+  +String manufacturer
+  +String model
+}
+class NominalRange {
+  +UUID id
+  +String parameterName
+  +Double minValue
+  +Double maxValue
+  +String unit
+}
+class SpraySession {
+  +UUID id
+  +DateTime startedAt
+  +DateTime closedAt
+  +String status
+  +startSession()
+  +closeSession()
+}
+class TelemetryReading {
+  +UUID id
+  +DateTime timestamp
+  +String parameterName
+  +Double value
+}
+class Deviation {
+  +UUID id
+  +DateTime detectedAt
+  +String parameterName
+  +Double observedValue
+}
+class Alert {
+  +UUID id
+  +String severity
+  +DateTime raisedAt
+  +String status
+  +acknowledge()
+}
+class MachineComponent {
+  +UUID id
+  +String name
+  +String category
+}
+class FaultRule {
+  +UUID id
+  +String faultCode
+  +String conditionExpression
+  +suggestComponent()
+}
+class Diagnosis {
+  +UUID id
+  +DateTime createdAt
+  +String probableCause
+}
+class QualityCertificate {
+  +UUID id
+  +String certificateNumber
+  +DateTime issuedAt
+  +String pdfUrl
+  +generatePdf()
+}
+class FieldServiceRecord {
+  +UUID id
+  +DateTime returnedAt
+  +Integer actualServiceHours
+  +String failureOrigin
+  +compareAgainstPCR()
+}
+class UserAccount {
+  +UUID id
+  +String fullName
+  +String email
+  +String role
+}
+
+Client "1" --> "*" WorkOrder
+ManufacturingOrder "1" --> "*" WorkOrder
+ComponentModel "1" --> "*" WorkOrder
+WorkOrder "1" --> "*" SpraySession
+Equipment "1" --> "*" SpraySession
+Equipment "1" --> "*" NominalRange
+SpraySession "1" --> "*" TelemetryReading
+SpraySession "1" --> "*" Deviation
+NominalRange "1" --> "*" Deviation
+Deviation "1" --> "1" Alert
+FaultRule "1" --> "*" Alert
+MachineComponent "1" --> "*" FaultRule
+Alert "1" --> "1" Diagnosis
+MachineComponent "1" --> "*" Diagnosis
+WorkOrder "1" --> "0..1" QualityCertificate
+ComponentModel "1" --> "*" FieldServiceRecord
+SpraySession "1" --> "0..1" FieldServiceRecord
+UserAccount "1" --> "*" SpraySession : registra
+UserAccount "1" --> "*" Alert : atiende
+```
+
 ## 4.8. Database Design.
+
 ### 4.8.1. Database Diagrams.
+
+El modelo relacional se despliega sobre PostgreSQL y refleja de forma directa el diagrama de clases de 4.7.1, con tablas puente derivadas de las relaciones muchos-a-muchos implícitas en el dominio.
+
+```mermaid
+erDiagram
+  CLIENT ||--o{ WORK_ORDER : "solicita"
+  MANUFACTURING_ORDER ||--o{ WORK_ORDER : "respalda"
+  COMPONENT_MODEL ||--o{ WORK_ORDER : "especifica"
+  WORK_ORDER ||--o{ SPRAY_SESSION : "agrupa"
+  EQUIPMENT ||--o{ SPRAY_SESSION : "ejecuta"
+  EQUIPMENT ||--o{ NOMINAL_RANGE : "define"
+  SPRAY_SESSION ||--o{ TELEMETRY_READING : "genera"
+  SPRAY_SESSION ||--o{ DEVIATION : "presenta"
+  NOMINAL_RANGE ||--o{ DEVIATION : "referencia"
+  DEVIATION ||--|| ALERT : "dispara"
+  FAULT_RULE ||--o{ ALERT : "clasifica"
+  MACHINE_COMPONENT ||--o{ FAULT_RULE : "asocia"
+  ALERT ||--|| DIAGNOSIS : "produce"
+  MACHINE_COMPONENT ||--o{ DIAGNOSIS : "referencia"
+  WORK_ORDER ||--o| QUALITY_CERTIFICATE : "emite"
+  COMPONENT_MODEL ||--o{ FIELD_SERVICE_RECORD : "define_pcr_para"
+  SPRAY_SESSION ||--o| FIELD_SERVICE_RECORD : "origina"
+  USER_ACCOUNT ||--o{ SPRAY_SESSION : "registra"
+  USER_ACCOUNT ||--o{ ALERT : "atiende"
+
+  CLIENT {
+    uuid id PK
+    string business_name
+    string ruc
+    string segment
+  }
+  MANUFACTURING_ORDER {
+    uuid id PK
+    string of_code
+    date issue_date
+  }
+  WORK_ORDER {
+    uuid id PK
+    uuid client_id FK
+    uuid manufacturing_order_id FK
+    uuid component_model_id FK
+    string wo_code
+    string status
+    date due_date
+  }
+  COMPONENT_MODEL {
+    uuid id PK
+    string name
+    string material_spec
+    int pcr_hours
+  }
+  EQUIPMENT {
+    uuid id PK
+    string tag
+    string manufacturer
+    string model
+  }
+  NOMINAL_RANGE {
+    uuid id PK
+    uuid equipment_id FK
+    string parameter_name
+    double min_value
+    double max_value
+    string unit
+  }
+  SPRAY_SESSION {
+    uuid id PK
+    uuid work_order_id FK
+    uuid equipment_id FK
+    uuid user_id FK
+    timestamp started_at
+    timestamp closed_at
+    string status
+  }
+  TELEMETRY_READING {
+    uuid id PK
+    uuid spray_session_id FK
+    timestamp reading_at
+    string parameter_name
+    double value
+  }
+  DEVIATION {
+    uuid id PK
+    uuid spray_session_id FK
+    uuid nominal_range_id FK
+    timestamp detected_at
+    double observed_value
+  }
+  ALERT {
+    uuid id PK
+    uuid deviation_id FK
+    uuid fault_rule_id FK
+    uuid acknowledged_by FK
+    string severity
+    string status
+    timestamp raised_at
+  }
+  MACHINE_COMPONENT {
+    uuid id PK
+    string name
+    string category
+  }
+  FAULT_RULE {
+    uuid id PK
+    uuid machine_component_id FK
+    string fault_code
+    string condition_expression
+  }
+  DIAGNOSIS {
+    uuid id PK
+    uuid alert_id FK
+    uuid machine_component_id FK
+    timestamp created_at
+    string probable_cause
+  }
+  QUALITY_CERTIFICATE {
+    uuid id PK
+    uuid work_order_id FK
+    string certificate_number
+    timestamp issued_at
+    string pdf_url
+  }
+  FIELD_SERVICE_RECORD {
+    uuid id PK
+    uuid component_model_id FK
+    uuid spray_session_id FK
+    timestamp returned_at
+    int actual_service_hours
+    string failure_origin
+  }
+  USER_ACCOUNT {
+    uuid id PK
+    string full_name
+    string email
+    string role
+  }
+```
 
 # Capítulo V: Product Implementation, Validation & Deployment
 ## 5.1. Software Configuration Management.
