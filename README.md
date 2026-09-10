@@ -1484,37 +1484,12 @@ Los Business Goals cumplen los criterios SMART: son específicos, medibles, alca
 
 | Actor | Impact | Deliverable | User Stories |
 |---|---|---|---|
-| Carlos Quispe (Ingeniero de Calidad) | Deja de reconstruir la historia de una pieza desde registros dispersos y consulta su trazabilidad completa en un solo lugar | Registro de componentes y órdenes de recuperación vinculadas a OF/WO, cliente y modelo | Como operador HVOF, deseo registrar un componente recibido con su número de serie, part number, tipo, modelo de máquina y cliente, para identificarlo durante todo el proceso (US14). Como supervisor de operación, deseo registrar la orden de recuperación con su OF y WO, horómetro de ingreso, peso y lote de polvo, para trazar el trabajo realizado sobre el componente (US15). Como ingeniero de calidad, deseo consultar el historial completo de un componente por su número de serie, OF o WO, para responder ante un cuestionamiento del cliente (US17). |
-| Carlos Quispe (Ingeniero de Calidad) | Confía en que los parámetros de cada corrida quedan registrados sin intervención humana | Ingesta automática de telemetría desde el gateway del PLC | Como supervisor de operación, deseo que las lecturas del proceso lleguen automáticamente desde el gateway del PLC durante la sesión, para no depender de registros manuales (US20). Como supervisor de operación, deseo que la plataforma reciba la telemetría desde un gateway externo conectado al PLC de la celda, para que el registro del proceso no dependa de intervención humana (US52). |
-| Carlos Quispe (Ingeniero de Calidad) | Detecta desviaciones de proceso que hoy pasan inadvertidas porque el PLC no las alarma | Configuración de rangos nominales y detección automática de desviaciones | Como ingeniero de calidad, deseo configurar los rangos nominales de cada parámetro de proceso por celda, para que el sistema detecte desviaciones automáticamente (US09). Como ingeniero de calidad, deseo que el sistema marque automáticamente cada lectura que salga del rango nominal de la celda, para identificar desviaciones sin supervisión manual (US21). |
-| Visitante del segmento Recuperation Supplier | Reconoce en el Landing Page que la plataforma resuelve su problema de trazabilidad y solicita el registro | Landing Page con sección y call-to-action específicos para el segmento | Como visitante del segmento Recuperation Supplier, deseo acceder a la información específica para empresas que operan procesos HVOF, para identificar si la propuesta responde a mis necesidades (US45). Como visitante, deseo iniciar el registro desde el call-to-action de mi segmento, para llegar directamente a la vista de registro correspondiente en la Web Application (US47). |
+| Jorge Salinas | Deja de reconstruir la historia de una pieza desde registros dispersos y consulta su trazabilidad completa en un solo lugar | Registro de componentes y órdenes de recuperación vinculadas a OF/WO, cliente y modelo | Como operador HVOF, deseo registrar un componente recibido con su número de serie, part number, tipo, modelo de máquina y cliente, para identificarlo durante todo el proceso (US14). Como supervisor de operación, deseo registrar la orden de recuperación con su OF y WO, horómetro de ingreso, peso y lote de polvo, para trazar el trabajo realizado sobre el componente (US15). Como ingeniero de calidad, deseo consultar el historial completo de un componente por su número de serie, OF o WO, para responder ante un cuestionamiento del cliente (US17). |
+| Jorge Salinas | Confía en que los parámetros de cada corrida quedan registrados sin intervención humana | Ingesta automática de telemetría desde el gateway del PLC | Como supervisor de operación, deseo que las lecturas del proceso lleguen automáticamente desde el gateway del PLC durante la sesión, para no depender de registros manuales (US20). Como supervisor de operación, deseo que la plataforma reciba la telemetría desde un gateway externo conectado al PLC de la celda, para que el registro del proceso no dependa de intervención humana (US52). |
+| Jorge Salinas | Detecta desviaciones de proceso que hoy pasan inadvertidas porque el PLC no las alarma | Configuración de rangos nominales y detección automática de desviaciones | Como ingeniero de calidad, deseo configurar los rangos nominales de cada parámetro de proceso por celda, para que el sistema detecte desviaciones automáticamente (US09). Como ingeniero de calidad, deseo que el sistema marque automáticamente cada lectura que salga del rango nominal de la celda, para identificar desviaciones sin supervisión manual (US21). |
+| Rosa Miranda | Reconoce en el Landing Page que la plataforma resuelve su problema de trazabilidad y solicita el registro | Landing Page con sección y call-to-action específicos para el segmento | Como visitante del segmento Recuperation Supplier, deseo acceder a la información específica para empresas que operan procesos HVOF, para identificar si la propuesta responde a mis necesidades (US45). Como visitante, deseo iniciar el registro desde el call-to-action de mi segmento, para llegar directamente a la vista de registro correspondiente en la Web Application (US47). |
 
-```mermaid
-flowchart LR
-    classDef goal fill:#1F3A5F,stroke:#0D1F33,color:#fff
-    classDef actor fill:#FFF176,stroke:#F9A825,color:#000
-    classDef impact fill:#B3E5FC,stroke:#0277BD,color:#000
-    classDef deliv fill:#C8E6C9,stroke:#2E7D32,color:#000
-
-    G1["BG1 · 5 empresas HVOF<br/>suscritas al plan Operator<br/>en 12 meses"]:::goal
-    A1["Carlos Quispe<br/>Ingeniero de Calidad"]:::actor
-    A1b["Visitante<br/>Recuperation Supplier"]:::actor
-
-    I1["Consulta la trazabilidad<br/>completa en un solo lugar"]:::impact
-    I2["Confía en que cada corrida<br/>queda registrada sin intervención"]:::impact
-    I3["Detecta desviaciones que<br/>el PLC no alarma"]:::impact
-    I4["Reconoce la propuesta<br/>y solicita el registro"]:::impact
-
-    D1["Registro de componentes<br/>y órdenes OF/WO<br/>US14 · US15 · US17"]:::deliv
-    D2["Ingesta automática<br/>de telemetría<br/>US20 · US52"]:::deliv
-    D3["Rangos nominales y<br/>detección de desviaciones<br/>US09 · US21"]:::deliv
-    D4["Landing Page con CTA<br/>por segmento<br/>US45 · US47"]:::deliv
-
-    G1 --> A1 --> I1 --> D1
-    A1 --> I2 --> D2
-    A1 --> I3 --> D3
-    G1 --> A1b --> I4 --> D4
-```
+![Impact Mapping 1](assets/img/chapter-iii/Impact%20map%201.png)
 
 ### Business Goal 2 — Evidencia de calidad aceptada por el cliente
 
@@ -1522,33 +1497,11 @@ flowchart LR
 
 | Actor | Impact | Deliverable | User Stories |
 |---|---|---|---|
-| Carlos Quispe (Ingeniero de Calidad) | Emite la evidencia de calidad en minutos, a partir de los datos ya registrados, en lugar de armarla a mano | Emisión de certificado de calidad por orden de recuperación | Como ingeniero de calidad, deseo emitir el certificado de calidad de una orden de recuperación a partir de las sesiones registradas, para entregar evidencia documentada al cliente (US35). Como supervisor de operación, deseo cerrar la orden de recuperación y marcar el componente como entregado, para habilitar la emisión del certificado y el seguimiento en campo (US18). |
-| Carlos Quispe (Ingeniero de Calidad) | Responde a una auditoría del cliente con evidencia exportable en lugar de con registros en papel | Exportación de historial de sesiones y certificados por periodo | Como ingeniero de calidad, deseo exportar el historial de sesiones y certificados de un periodo en formato CSV o PDF, para presentarlo durante una auditoría del cliente (US37). Como supervisor de operación, deseo generar el reporte de una sesión con el resumen de lecturas, desviaciones y fallas, para revisar el resultado de la corrida (US36). |
-| Rocío Mendoza (Ingeniera de Confiabilidad) | Acepta el certificado de EdgeWatch como respaldo formal del trabajo del proveedor | Portal de consulta de certificados para el cliente, con cumplimiento por parámetro y sin exposición de valores crudos | Como ingeniera de confiabilidad, deseo consultar el certificado de calidad de un componente entregado por mi proveedor, para verificar que fue recubierto dentro de tolerancia (US41). |
+| Jorge Salinas  | Emite la evidencia de calidad en minutos, a partir de los datos ya registrados, en lugar de armarla a mano | Emisión de certificado de calidad por orden de recuperación | Como ingeniero de calidad, deseo emitir el certificado de calidad de una orden de recuperación a partir de las sesiones registradas, para entregar evidencia documentada al cliente (US35). Como supervisor de operación, deseo cerrar la orden de recuperación y marcar el componente como entregado, para habilitar la emisión del certificado y el seguimiento en campo (US18). |
+| Jorge Salinas  | Responde a una auditoría del cliente con evidencia exportable en lugar de con registros en papel | Exportación de historial de sesiones y certificados por periodo | Como ingeniero de calidad, deseo exportar el historial de sesiones y certificados de un periodo en formato CSV o PDF, para presentarlo durante una auditoría del cliente (US37). Como supervisor de operación, deseo generar el reporte de una sesión con el resumen de lecturas, desviaciones y fallas, para revisar el resultado de la corrida (US36). |
+| Rosa Miranda | Acepta el certificado de EdgeWatch como respaldo formal del trabajo del proveedor | Portal de consulta de certificados para el cliente, con cumplimiento por parámetro y sin exposición de valores crudos | Como ingeniera de confiabilidad, deseo consultar el certificado de calidad de un componente entregado por mi proveedor, para verificar que fue recubierto dentro de tolerancia (US41). |
 
-```mermaid
-flowchart LR
-    classDef goal fill:#1F3A5F,stroke:#0D1F33,color:#fff
-    classDef actor fill:#FFF176,stroke:#F9A825,color:#000
-    classDef impact fill:#B3E5FC,stroke:#0277BD,color:#000
-    classDef deliv fill:#C8E6C9,stroke:#2E7D32,color:#000
-
-    G2["BG2 · 80 % de órdenes<br/>con certificado emitido<br/>a los 6 meses"]:::goal
-    A1["Carlos Quispe<br/>Ingeniero de Calidad"]:::actor
-    A2["Rocío Mendoza<br/>Ingeniera de Confiabilidad"]:::actor
-
-    I1["Emite la evidencia en minutos<br/>desde datos ya registrados"]:::impact
-    I2["Responde auditorías con<br/>evidencia exportable"]:::impact
-    I3["Acepta el certificado como<br/>respaldo formal del proveedor"]:::impact
-
-    D1["Certificado de calidad<br/>por orden<br/>US35 · US18"]:::deliv
-    D2["Exportación de evidencia<br/>y reporte de sesión<br/>US37 · US36"]:::deliv
-    D3["Portal de consulta<br/>de certificados<br/>US41"]:::deliv
-
-    G2 --> A1 --> I1 --> D1
-    A1 --> I2 --> D2
-    G2 --> A2 --> I3 --> D3
-```
+![Impact Mapping 2](assets/img/chapter-iii/Impact%20map%202.png)
 
 ### Business Goal 3 — Reducción del tiempo de diagnóstico de fallas
 
@@ -1556,37 +1509,12 @@ flowchart LR
 
 | Actor | Impact | Deliverable | User Stories |
 |---|---|---|---|
-| Supervisor de mantenimiento de máquina (rol secundario del segmento de Carlos Quispe) | Recibe el caso de falla ya abierto con sus síntomas, en lugar de reconstruirlo desde los registros del PLC | Apertura automática de casos de falla a partir de indicadores del PLC | Como supervisor de mantenimiento de máquina, deseo que el sistema abra un caso de falla cuando un tag clasificado como indicador de falla se active durante una sesión, para no depender de que el operador lo reporte (US25). |
-| Supervisor de mantenimiento de máquina | Sabe qué parte de la celda revisar antes de ir a la máquina | Diagnóstico asistido por reglas causa-efecto con identificación de parte sospechosa | Como supervisor de mantenimiento de máquina, deseo que el sistema aplique el catálogo de reglas causa-efecto al caso de falla abierto, para obtener una causa probable y la parte sospechosa (US26). Como supervisor de mantenimiento de máquina, deseo cargar el archivo de tags del PLC de una celda, para que el sistema proponga a qué parte y parámetro corresponde cada tag (US10). |
-| Supervisor de mantenimiento de máquina | Registra la causa raíz confirmada para que el conocimiento no se pierda cuando cambie el personal | Confirmación de causa raíz y catálogo de reglas editable | Como supervisor de mantenimiento de máquina, deseo confirmar o corregir la causa raíz y registrar la acción correctiva de un caso de falla, para que el conocimiento quede documentado en el sistema (US27). Como ingeniero de calidad, deseo crear, editar y desactivar reglas causa-efecto, para adaptar el diagnóstico a cada celda (US28). |
-| Supervisor de mantenimiento de máquina | Interviene una parte antes de que provoque una parada mayor | Detección de patrones recurrentes y alertas críticas | Como supervisor de mantenimiento de máquina, deseo que el sistema identifique cuando una misma parte acumula fallas del mismo tipo dentro de un periodo, para anticipar un problema mayor (US29). Como supervisor de mantenimiento de máquina, deseo recibir una alerta cuando se abra un caso de falla crítica o se detecte un patrón recurrente, para intervenir oportunamente (US32). |
+| Jorge Salinas | Recibe el caso de falla ya abierto con sus síntomas, en lugar de reconstruirlo desde los registros del PLC | Apertura automática de casos de falla a partir de indicadores del PLC | Como supervisor de mantenimiento de máquina, deseo que el sistema abra un caso de falla cuando un tag clasificado como indicador de falla se active durante una sesión, para no depender de que el operador lo reporte (US25). |
+| Jorge Salinas | Sabe qué parte de la celda revisar antes de ir a la máquina | Diagnóstico asistido por reglas causa-efecto con identificación de parte sospechosa | Como supervisor de mantenimiento de máquina, deseo que el sistema aplique el catálogo de reglas causa-efecto al caso de falla abierto, para obtener una causa probable y la parte sospechosa (US26). Como supervisor de mantenimiento de máquina, deseo cargar el archivo de tags del PLC de una celda, para que el sistema proponga a qué parte y parámetro corresponde cada tag (US10). |
+| Jorge Salinas | Registra la causa raíz confirmada para que el conocimiento no se pierda cuando cambie el personal | Confirmación de causa raíz y catálogo de reglas editable | Como supervisor de mantenimiento de máquina, deseo confirmar o corregir la causa raíz y registrar la acción correctiva de un caso de falla, para que el conocimiento quede documentado en el sistema (US27). Como ingeniero de calidad, deseo crear, editar y desactivar reglas causa-efecto, para adaptar el diagnóstico a cada celda (US28). |
+| Jorge Salinas | Interviene una parte antes de que provoque una parada mayor | Detección de patrones recurrentes y alertas críticas | Como supervisor de mantenimiento de máquina, deseo que el sistema identifique cuando una misma parte acumula fallas del mismo tipo dentro de un periodo, para anticipar un problema mayor (US29). Como supervisor de mantenimiento de máquina, deseo recibir una alerta cuando se abra un caso de falla crítica o se detecte un patrón recurrente, para intervenir oportunamente (US32). |
 
-```mermaid
-flowchart LR
-    classDef goal fill:#1F3A5F,stroke:#0D1F33,color:#fff
-    classDef actor fill:#FFF176,stroke:#F9A825,color:#000
-    classDef impact fill:#B3E5FC,stroke:#0277BD,color:#000
-    classDef deliv fill:#C8E6C9,stroke:#2E7D32,color:#000
-
-    G3["BG3 · −40 % tiempo de<br/>diagnóstico de fallas<br/>en 9 meses"]:::goal
-    A3["Supervisor de<br/>mantenimiento de máquina"]:::actor
-
-    I1["Recibe el caso ya abierto<br/>con sus síntomas"]:::impact
-    I2["Sabe qué parte revisar<br/>antes de ir a la máquina"]:::impact
-    I3["Registra la causa raíz para<br/>que el conocimiento no se pierda"]:::impact
-    I4["Interviene antes de<br/>una parada mayor"]:::impact
-
-    D1["Apertura automática<br/>de casos de falla<br/>US25"]:::deliv
-    D2["Diagnóstico por reglas y<br/>mapeo de tags<br/>US26 · US10"]:::deliv
-    D3["Confirmación de causa raíz<br/>y catálogo de reglas<br/>US27 · US28"]:::deliv
-    D4["Patrones recurrentes<br/>y alertas críticas<br/>US29 · US32"]:::deliv
-
-    G3 --> A3
-    A3 --> I1 --> D1
-    A3 --> I2 --> D2
-    A3 --> I3 --> D3
-    A3 --> I4 --> D4
-```
+![Impact Mapping 3](assets/img/chapter-iii/Impact%20map%203.png)
 
 ### Business Goal 4 — Adopción del segmento Asset Owner
 
@@ -1594,43 +1522,13 @@ flowchart LR
 
 | Actor | Impact | Deliverable | User Stories |
 |---|---|---|---|
-| Rocío Mendoza (Ingeniera de Confiabilidad) | Registra el retorno de cada componente en la plataforma en lugar de en una hoja de cálculo propia | Registro de retorno de campo con evaluación automática contra el PCR | Como ingeniera de confiabilidad, deseo registrar el retorno de un componente indicando el horómetro alcanzado y el motivo, para que el sistema evalúe si alcanzó su PCR (US40). |
-| Rocío Mendoza (Ingeniera de Confiabilidad) | Ve en una sola vista todos los componentes recuperados de la mina, sin importar qué proveedor los trabajó | Vista consolidada multi-proveedor de componentes recuperados | Como analista de compras, deseo consultar en una sola vista todos los componentes recuperados de mi organización con su proveedor, estado y fecha de entrega, para eliminar el cruce manual de información (US39). |
-| Analista de compras (rol secundario del segmento de Rocío Mendoza) | Sustenta la renovación o el cambio de un proveedor con datos de cumplimiento de PCR en lugar de con percepción | Reporte de cumplimiento de PCR agrupado por proveedor, modelo y tipo | Como ingeniera de confiabilidad, deseo consultar la tasa de cumplimiento de PCR agrupada por proveedor, modelo de máquina y tipo de componente, para sustentar la renovación o cambio de contratos con datos (US42). |
-| Carlos Quispe (Ingeniero de Calidad) | Analiza la sesión de origen de cada falla prematura reportada por la mina, en lugar de enterarse por un reclamo sin datos | Correlación automática de falla prematura con la sesión de rociado original | Como ingeniero de calidad, deseo que al registrarse una falla prematura el sistema me presente la sesión de rociado original del componente, para determinar si el origen estuvo en el recubrimiento (US43). |
-| Visitante del segmento Asset Owner | Reconoce en el Landing Page el valor de la vista consolidada y solicita el registro | Landing Page con sección y call-to-action para Asset Owner | Como visitante del segmento Asset Owner, deseo acceder a la información específica para empresas propietarias de activos, para identificar si la propuesta responde a mis necesidades (US46). |
+| Rosa Miranda | Registra el retorno de cada componente en la plataforma en lugar de en una hoja de cálculo propia | Registro de retorno de campo con evaluación automática contra el PCR | Como ingeniera de confiabilidad, deseo registrar el retorno de un componente indicando el horómetro alcanzado y el motivo, para que el sistema evalúe si alcanzó su PCR (US40). |
+| Rosa Miranda | Ve en una sola vista todos los componentes recuperados de la mina, sin importar qué proveedor los trabajó | Vista consolidada multi-proveedor de componentes recuperados | Como analista de compras, deseo consultar en una sola vista todos los componentes recuperados de mi organización con su proveedor, estado y fecha de entrega, para eliminar el cruce manual de información (US39). |
+| Rosa Miranda | Sustenta la renovación o el cambio de un proveedor con datos de cumplimiento de PCR en lugar de con percepción | Reporte de cumplimiento de PCR agrupado por proveedor, modelo y tipo | Como ingeniera de confiabilidad, deseo consultar la tasa de cumplimiento de PCR agrupada por proveedor, modelo de máquina y tipo de componente, para sustentar la renovación o cambio de contratos con datos (US42). |
+| Jorge Salinas | Analiza la sesión de origen de cada falla prematura reportada por la mina, en lugar de enterarse por un reclamo sin datos | Correlación automática de falla prematura con la sesión de rociado original | Como ingeniero de calidad, deseo que al registrarse una falla prematura el sistema me presente la sesión de rociado original del componente, para determinar si el origen estuvo en el recubrimiento (US43). |
+| Jorge Salinas | Reconoce en el Landing Page el valor de la vista consolidada y solicita el registro | Landing Page con sección y call-to-action para Asset Owner | Como visitante del segmento Asset Owner, deseo acceder a la información específica para empresas propietarias de activos, para identificar si la propuesta responde a mis necesidades (US46). |
 
-```mermaid
-flowchart LR
-    classDef goal fill:#1F3A5F,stroke:#0D1F33,color:#fff
-    classDef actor fill:#FFF176,stroke:#F9A825,color:#000
-    classDef impact fill:#B3E5FC,stroke:#0277BD,color:#000
-    classDef deliv fill:#C8E6C9,stroke:#2E7D32,color:#000
-
-    G4["BG4 · 3 mineras suscritas<br/>y 60 % de retornos<br/>registrados en 18 meses"]:::goal
-    A2["Rocío Mendoza<br/>Ingeniera de Confiabilidad"]:::actor
-    A4["Analista de compras"]:::actor
-    A1["Carlos Quispe<br/>Ingeniero de Calidad"]:::actor
-    A5["Visitante<br/>Asset Owner"]:::actor
-
-    I1["Registra el retorno en la<br/>plataforma, no en Excel"]:::impact
-    I2["Ve todos sus componentes<br/>sin importar el proveedor"]:::impact
-    I3["Decide contratos con datos<br/>de cumplimiento PCR"]:::impact
-    I4["Analiza la sesión de origen<br/>de cada falla prematura"]:::impact
-    I5["Reconoce el valor y<br/>solicita el registro"]:::impact
-
-    D1["Retorno de campo con<br/>evaluación contra PCR<br/>US40"]:::deliv
-    D2["Vista consolidada<br/>multi-proveedor<br/>US39"]:::deliv
-    D3["Reporte de cumplimiento<br/>PCR por proveedor<br/>US42"]:::deliv
-    D4["Correlación falla prematura<br/>con sesión de origen<br/>US43"]:::deliv
-    D5["Landing Page con CTA<br/>Asset Owner<br/>US46"]:::deliv
-
-    G4 --> A2 --> I1 --> D1
-    A2 --> I2 --> D2
-    G4 --> A4 --> I3 --> D3
-    G4 --> A1 --> I4 --> D4
-    G4 --> A5 --> I5 --> D5
-```
+![Impact Mapping 4](assets/img/chapter-iii/Impact%20map%204.png)
 
 ### Síntesis
 
