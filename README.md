@@ -15,13 +15,13 @@ Docente: Sanchez Seña, Alberto Wilmer
 
 **Integrantes**
 
-| Código     | Apellidos         | Nombres          |
-|------------|-------------------|------------------| 
-| u20241b962 | Navarro Aldoradin | Carolina Celeste |
-| u202315628 |    Alvarez Falen  | Esteban Valentino|
-|            |                   |                  |
-|            |                   |                  |
-|            |                   |                  |
+| Código     | Apellidos         | Nombres           |
+|------------|-------------------|-------------------| 
+| u20241b962 | Navarro Aldoradin | Carolina Celeste  |
+| u202315628 | Alvarez Falen     | Esteban Valentino |
+|            | Catacora Tupa     | Jhon Deyner       |
+|            | Vasquez Laos      | Sebastian Andrews |
+|            | Yopla Romero      | Jonathan Alberto  |
 
 
 *Setiembre, 2026*
