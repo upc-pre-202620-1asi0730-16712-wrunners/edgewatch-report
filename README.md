@@ -672,6 +672,14 @@ Perfiles entrevistados: ingeniero de confiabilidad, planner de mantenimiento, su
 | B2.7 | Si quisiera comparar qué proveedor entrega piezas que duran más, ¿cómo lo haría hoy? | ¿Lo ha intentado? ¿Cuánto le tomó? | Sustentar el valor de la vista consolidada (plan Asset Owner) |
 | B2.8 | ¿Auditan a sus proveedores? | ¿Qué revisan? ¿Qué les piden que demuestren? | Identificar los requisitos de evidencia que se trasladan al proveedor |
 
+**Bloque C — Cierre (ambos segmentos, 3 minutos)**
+
+| # | Pregunta principal | Pregunta complementaria | Propósito |
+|---|---|---|---|
+| C1 | De todo esto, ¿qué es lo que más tiempo o dolor de cabeza le genera? | ¿Por qué eso? | Priorizar pain points para el Empathy Map |
+| C2 | ¿Qué información le gustaría tener y hoy no tiene? | ¿Qué haría con ella? | Identificar necesidades no anticipadas |
+| C3 | ¿Quién decidiría en su empresa adoptar una nueva herramienta? | ¿Qué tendría que demostrarle? | Identificar al decisor de compra para cada segmento |
+| C4 | ¿Algo que no le pregunté y debería saber? | — | Cierre abierto |
 
 ### 2.2.2. Registro de entrevistas.
 ### 2.2.3. Análisis de entrevistas.
