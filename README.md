@@ -188,7 +188,7 @@ Tercero, imposibilidad de análisis retrospectivo contra el PCR. Las piezas recu
 
 El costo de esta brecha de información es significativo. El reporte True Cost of Downtime de Siemens estima que las 500 mayores empresas del mundo pierden alrededor del 11 % de sus ingresos por paradas no planificadas, equivalente a USD 1.4 billones anuales, y la falla de componentes críticos representa el 45 % de los casos reportados de downtime. En el sector minero específicamente, estimaciones de la industria sitúan el costo promedio de una parada de equipo en torno a US$ 180,000 por incidente.
 
-En síntesis, existe una desconexión entre los datos que la máquina HVOF ya genera y la capacidad de la organización para convertirlos en trazabilidad verificable, diagnóstico oportuno y aprendizaje sobre el desempeño en campo. Reliant se propone cerrar esa brecha mediante una plataforma que capture la telemetría del proceso, la vincule a la orden de trabajo y a la pieza del cliente, correlacione las fallas con el componente de máquina implicado, y permita contrastar el desempeño real en operación contra el PCR comprometido.
+En síntesis, existe una desconexión entre los datos que la máquina HVOF ya genera y la capacidad de la organización para convertirlos en trazabilidad verificable, diagnóstico oportuno y aprendizaje sobre el desempeño en campo. EdgeWatch se propone cerrar esa brecha mediante una plataforma que capture la telemetría del proceso, la vincule a la orden de trabajo y a la pieza del cliente, correlacione las fallas con el componente de máquina implicado, y permita contrastar el desempeño real en operación contra el PCR comprometido.
 
 A continuación, se muestra un árbol de problemas que ordena visualmente las causas y efectos del problema mencionados anteriormente.
 
@@ -421,7 +421,7 @@ A continuación se presenta el Lean UX Canvas (versión 2, Jeff Gothelf) elabora
 
 ## 1.3. Segmentos objetivo.
 
-EdgeWatch se dirige a organizaciones que **operan** un proceso de recubrimiento térmico HVOF, no a quienes consumen sus resultados. Esta distinción es determinante: las empresas mineras son las que exigen la garantía de vida útil y las que sufren el costo de una falla prematura, pero no operan equipos HVOF ni serían las usuarias directas de la plataforma. Actúan como la fuente de presión contractual que motiva la adquisición del producto, no como segmento de usuario. En consecuencia, se han definido dos segmentos objetivo diferenciados por el **tipo de operación** que realizan y no por su tamaño, ya que es el tipo de operación—servicio a terceros frente a operación interna— el que genera necesidades y motivaciones de compra distintas.
+EdgeWatch se dirige a organizaciones que **operan** un proceso de recubrimiento térmico HVOF, no a quienes consumen sus resultados. Esta distinción es determinante: las empresas mineras son las que exigen la garantía de vida útil y las que sufren el costo de una falla prematura, pero no operan equipos HVOF ni serían las usuarias directas de la plataforma. Actúan como la fuente de presión contractual que motiva la adquisición del producto, no como segmento de usuario. En consecuencia, se han definido dos segmentos objetivo diferenciados por el **tipo de operación** que realizan y no por su tamaño, ya que es el tipo de operación—servicio a terceros frente a operación interna, el que genera necesidades y motivaciones de compra distintas.
 
 ### Contexto de mercado
 
@@ -429,7 +429,7 @@ La minería constituye el principal motor exportador de la economía peruana. Se
 
 El ecosistema de proveedores que atiende a este sector tiene además una trayectoria de crecimiento proyectada. De acuerdo con estimaciones de la Sociedad Nacional de Industrias, el aporte de los proveedores mineros al PBI nacional se sitúa actualmente entre **3.5 % y 3.8 %**, y podría alcanzar hasta el **12 % para 2030** si se ejecuta la cartera de proyectos mineros estimada en **US$ 52,000 millones** (Energiminas, 2025).
 
-El costo del problema que Reliant atiende también está documentado. El reporte *True Cost of Downtime* de Siemens estima que las 500 mayores empresas del mundo pierden alrededor del **11 % de sus ingresos** por paradas no planificadas, y la falla de componentes críticos representa el **45 %** de los casos reportados de downtime. En el sector minero específicamente, estimaciones de la industria sitúan el costo promedio de una parada de equipo en torno a **US$ 180,000 por incidente** (Innovapptive, 2024).
+El costo del problema que EdgeWatch atiende también está documentado. El reporte *True Cost of Downtime* de Siemens estima que las 500 mayores empresas del mundo pierden alrededor del **11 % de sus ingresos** por paradas no planificadas, y la falla de componentes críticos representa el **45 %** de los casos reportados de downtime. En el sector minero específicamente, estimaciones de la industria sitúan el costo promedio de una parada de equipo en torno a **US$ 180,000 por incidente** (Innovapptive, 2024).
 
 ---
 
@@ -525,7 +525,7 @@ Ambos segmentos comparten el núcleo funcional de la plataforma: ingesta de tele
 
 El dominio del monitoreo de procesos de recubrimiento térmico presenta una particularidad competitiva relevante: **no existe actualmente un producto de software SaaS que cubra de extremo a extremo la trazabilidad del proceso HVOF vinculada a la orden de trabajo y al desempeño en campo del componente**. La oferta existente se concentra en dos extremos del espectro. Por un lado, fabricantes de sensórica industrial especializada que resuelven la medición del proceso con hardware propietario de alto costo, sin capa de gestión ni trazabilidad documental. Por otro, plataformas genéricas de MES, QMS y CMMS que resuelven la trazabilidad y la gestión de mantenimiento, pero desconocen por completo el dominio del thermal spray y no interpretan sus parámetros ni sus modos de falla.
 
-EdgeWatch se ubica deliberadamente en el espacio intermedio. Por ello, el análisis considera dos competidores directos —empresas que ofrecen monitoreo específico de procesos de thermal spray— y un competidor indirecto —plataforma de trazabilidad industrial genérica con oferta parcialmente similar—, conforme a lo establecido en el enunciado del proyecto.
+EdgeWatch se ubica deliberadamente en el espacio intermedio. Por ello, el análisis considera dos competidores directos —empresas que ofrecen monitoreo específico de procesos de thermal spray, y un competidor indirecto, plataforma de trazabilidad industrial genérica con oferta parcialmente similar—, conforme a lo establecido en el enunciado del proyecto.
 
 | # | Competidor | Tipo | Origen | Naturaleza de la oferta |
 |---|---|---|---|---|
@@ -541,7 +541,7 @@ EdgeWatch se ubica deliberadamente en el espacio intermedio. Por ello, el análi
 
 **¿Por qué llevar a cabo este análisis?**
 
-> Determinar si existe en el mercado una solución que resuelva simultáneamente la trazabilidad del proceso HVOF vinculada a la orden de trabajo, el diagnóstico de fallas orientado al componente de máquina y el contraste del desempeño en campo contra el PCR; e identificar en qué medida las alternativas actuales resultan accesibles para empresas de recubrimiento peruanas de tamaño mediano. El objetivo es validar que existe un espacio no atendido y establecer sobre qué dimensiones Reliant puede sostener una ventaja competitiva defendible.
+> Determinar si existe en el mercado una solución que resuelva simultáneamente la trazabilidad del proceso HVOF vinculada a la orden de trabajo, el diagnóstico de fallas orientado al componente de máquina y el contraste del desempeño en campo contra el PCR; e identificar en qué medida las alternativas actuales resultan accesibles para empresas de recubrimiento peruanas de tamaño mediano. El objetivo es validar que existe un espacio no atendido y establecer sobre qué dimensiones EdgeWatch puede sostener una ventaja competitiva defendible.
 
 | | **WebRunners — EdgeWatch**                                                                                                                                                                                         | **C1. Tecnar Automation** | **C2. Oerlikon Metco** | **C3. DELMIAWorks** |
 |---|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|---|---|
@@ -562,29 +562,28 @@ EdgeWatch se ubica deliberadamente en el espacio intermedio. Por ello, el análi
 A partir del análisis anterior, WebRunners establece cuatro estrategias con sus tácticas asociadas, orientadas a aprovechar las debilidades identificadas en los competidores y a mitigar las amenazas sobre la propia posición.
 
 - **Estrategia 1. Especialización de dominio frente a plataformas genéricas**  
-    Frente a la amplitud funcional de DELMIAWorks y otras plataformas MES/QMS, Reliant compite por profundidad y no por cobertura. La ventaja no consiste en tener más módulos, sino en que el sistema entiende qué significa un feedrate en cero o una sobrepresión de tolva.  
+    Frente a la amplitud funcional de DELMIAWorks y otras plataformas MES/QMS, EdgeWatch compite por profundidad y no por cobertura. La ventaja no consiste en tener más módulos, sino en que el sistema entiende qué significa un feedrate en cero o una sobrepresión de tolva.  
     **Tácticas**: incorporar en el producto un catálogo de reglas causa-efecto construido a partir de fallas reales documentadas en operación; emplear en toda la interfaz el ubiquitous language del dominio (OF, WO, PCR, sesión de rociado) en lugar de terminología genérica de manufactura; y sustentar la propuesta comercial mostrando un diagnóstico concreto que una plataforma genérica no podría producir.  
 
 
 - **Estrategia 2. Costo de entrada bajo frente a soluciones intensivas en hardware**  
-  Frente a Tecnar y Oerlikon Metco, cuyas soluciones exigen inversión de capital significativa, Reliant compite por accesibilidad, aprovechando la telemetría que el PLC del equipo ya genera.
+  Frente a Tecnar y Oerlikon Metco, cuyas soluciones exigen inversión de capital significativa, EdgeWatch
+- compite por accesibilidad, aprovechando la telemetría que el PLC del equipo ya genera.
   **Tácticas**: adoptar un modelo de suscripción mensual por equipo monitoreado, sin inversión inicial en hardware; ofrecer un periodo de prueba operando sobre datos históricos del propio cliente; e integrarse mediante un gateway con API REST que no requiere modificar el PLC ni el software del fabricante del equipo.
 
 
 - **Estrategia 3. Neutralidad frente al fabricante del equipo**
-  Frente a Oerlikon Metco, cuyo software está vinculado a su propio parque de equipos, Reliant compite por independencia: los talleres de recubrimiento suelen operar equipos de distintas marcas y generaciones.  
+  Frente a Oerlikon Metco, cuyo software está vinculado a su propio parque de equipos, EdgeWatch compite por independencia: los talleres de recubrimiento suelen operar equipos de distintas marcas y generaciones.  
   Tácticas: diseñar el contrato de ingesta de telemetría de forma agnóstica al fabricante, con mapeo configurable de tags por equipo; permitir la configuración de rangos nominales por equipo en lugar de asumir un modelo único; y posicionar comercialmente la neutralidad como argumento frente a talleres con parque mixto.
 
 
 - **Estrategia 4. Cierre del ciclo hacia el desempeño en campo**
-  Ningún competidor identificado conecta el proceso de recubrimiento con lo que ocurre después con la pieza. Esta es la dimensión donde Reliant no tiene competencia directa y donde concentra su diferenciación.   
+  Ningún competidor identificado conecta el proceso de recubrimiento con lo que ocurre después con la pieza. Esta es la dimensión donde EdgeWatch no tiene competencia directa y donde concentra su diferenciación.   
   Tácticas: hacer del análisis PCR el eje del discurso comercial y del Landing Page; construir reportes de tasa de falla por cliente y por modelo de componente que ningún otro actor puede ofrecer; y desarrollar casos documentados en los que la plataforma permita explicar el origen de una falla prematura en campo.
 
 **Mitigación de amenazas identificadas**
 
-Ante la falta de trayectoria de la startup, la táctica consiste en apoyarse en evidencia técnica verificable —casos reales de diagnóstico— en lugar de en referencias comerciales inexistentes. Ante la sensibilidad de las empresas respecto de sus parámetros de proceso, se incorporarán desde el inicio términos y condiciones explícitos sobre titularidad y confidencialidad de los datos, expuestos en el footer del Landing Page y de la aplicación. Ante la resistencia cultural al registro digital, el diseño priorizará una curva de aprendizaje mínima y flujos que reduzcan el número de pasos frente al registro manual actual.
-
----
+Ante la falta de trayectoria de la startup, la táctica consiste en apoyarse en evidencia técnica verificable, casos reales de diagnóstico, en lugar de en referencias comerciales inexistentes. Ante la sensibilidad de las empresas respecto de sus parámetros de proceso, se incorporarán desde el inicio términos y condiciones explícitos sobre titularidad y confidencialidad de los datos, expuestos en el footer del Landing Page y de la aplicación. Ante la resistencia cultural al registro digital, el diseño priorizará una curva de aprendizaje mínima y flujos que reduzcan el número de pasos frente al registro manual actual.
 
 ## 2.2. Entrevistas.
 ### 2.2.1. Diseño de entrevistas.
@@ -655,6 +654,428 @@ Ante la falta de trayectoria de la startup, la táctica consiste en apoyarse en 
 ![Jorge Salinas Paredes](./assets/img/chapter-ii/neefinding/Empathy_Map-Jorge_Salinas_Paredes.png)
 
 ## 2.4. Big Picture Event Storming.
+
+En esta sección se introduce y resume el proceso realizado por nuestro equipo, presentando las evidencias y explicaciones de las etapas del Big Picture Event Storming. En una sesión colaborativa, nuestro equipo se enfocó en entender el dominio del negocio en general, plasmando los eventos significativos y sus relaciones. Es una primera aproximación visual de alto nivel que explora el landscape del negocio, identificando procesos clave, exponiendo potenciales problemas u oportunidades del procesos de recuperación de componentes mediante recubrimiento HVOF, desde la recepción de la pieza del cliente hasta la evaluación de su desempeño en campo. La sesión siguió la guía paso a paso del Event Storming Journal (Bourgau, 2022) y fue documentada con diagramas Mermaid, alternativa permitida por el enunciado del proyecto para Diagram-as-Code. Se conservó la convención de colores del método: naranja para Domain Events, amarillo para Actors, azul para External Systems y rosado para Problems (hotspots).
+
+### Paso 1. Preparación del tablero
+
+Dado que la sesión se realizó de forma remota, la "sala" fue un tablero compartido. El equipo preparó con anticipación:
+
+- El espacio de diseño dividido en tres zonas, siguiendo la guía: *Open* (generación libre), *Explore* (ordenamiento y enriquecimiento) y *Close* (resultados).
+- La agenda visual con los nueve pasos de la guía.
+- La leyenda de colores.
+- Un Domain Event inicial preparado por la facilitadora (*SpraySessionStarted*), siguiendo el truco de Alberto Brandolini de "encender" la sesión con un evento ya colocado en el centro del tablero.
+
+```mermaid
+flowchart LR
+    classDef evento fill:#FFA726,stroke:#E65100,color:#000
+    classDef actor fill:#FFF176,stroke:#F9A825,color:#000
+    classDef externo fill:#64B5F6,stroke:#1565C0,color:#000
+    classDef problema fill:#F48FB1,stroke:#AD1457,color:#000
+    classDef zona fill:#FAFAFA,stroke:#BDBDBD,color:#616161
+
+    subgraph L["Leyenda de la sesión"]
+        direction LR
+        E["Domain Event<br/>(algo que ya ocurrió, en pasado)"]:::evento
+        A["Actor<br/>(persona con un rol)"]:::actor
+        X["External System<br/>(sistema fuera de nuestro control)"]:::externo
+        P["Problem / Hotspot<br/>(duda, conflicto o riesgo)"]:::problema
+    end
+
+    subgraph T["Tablero"]
+        direction LR
+        O["OPEN<br/>Generación de eventos"]:::zona
+        EX["EXPLORE<br/>Ordenar · Actores · Externos · Storytelling"]:::zona
+        C["CLOSE<br/>Definiciones · Problemas · Siguientes pasos"]:::zona
+        S0["SpraySessionStarted"]:::evento
+        O --> EX --> C
+        S0 -.- EX
+    end
+```
+### Paso 2. Energizante
+
+La sesión inició con una dinámica breve de cinco minutos en la que cada integrante describió, en una frase y sin usar términos técnicos, qué pasa con una pieza minera desde que se desgasta hasta que vuelve a operar. El ejercicio sirvió para nivelar el vocabulario entre los integrantes con experiencia en planta y los que no la tenían, y para dejar claro desde el inicio que el tablero se llenaría con hechos del negocio y no con funciones de software.
+
+### Paso 3. Briefing y agenda
+
+La facilitadora (Carolina) presentó el objetivo, el alcance y los casos de uso de la sesión:
+
+| Elemento | Definición acordada |
+|---|---|
+| Objetivo | Entender de extremo a extremo cómo un componente pasa por el proceso de recuperación HVOF y cómo se conoce su resultado en campo |
+| Alcance | Desde la recepción del componente del cliente hasta el registro de su retorno de campo y la evaluación contra el PCR. Incluye la operación de la celda HVOF y el diagnóstico de sus fallas. Excluye la gestión de mantenimiento correctivo/preventivo de la celda |
+| Casos de uso guía | (1) Recuperar un front rod de un cliente minero y entregarlo con evidencia de calidad. (2) Diagnosticar por qué la celda se detuvo durante una corrida. (3) Determinar si una pieza que falló en mina antes de su PCR fue mal recubierta |
+| Convenciones | Eventos en inglés, en pasado, en PascalCase. Un evento por post-it. Se permite duplicar; se depura al ordenar |
+
+### Paso 4. Generación de Domain Events
+
+Durante veinticinco minutos cada integrante colocó, de forma individual y sin discutir, todos los eventos que recordaba del dominio. La tasa de generación decayó hacia el minuto veinte, señal de pasar al siguiente paso. Se obtuvieron sesenta y ocho post-its, incluidos duplicados y eventos que después se reformularon. El tablero, tal como quedó antes de ordenar:
+
+```mermaid
+flowchart TB
+    classDef evento fill:#FFA726,stroke:#E65100,color:#000
+
+    subgraph W["Tablero — zona OPEN (sin orden)"]
+        direction TB
+        subgraph R1[" "]
+            direction LR
+            a1["ComponentReceived"]:::evento
+            a2["QualityCertificateIssued"]:::evento
+            a3["FeederZeroFeedrateAborted"]:::evento
+            a4["SpraySessionStarted"]:::evento
+            a5["ComponentReturnedFromField"]:::evento
+            a6["RoleAssigned"]:::evento
+            a7["PlcTagFileImported"]:::evento
+            a8["AlertAcknowledged"]:::evento
+        end
+        subgraph R2[" "]
+            direction LR
+            b1["HvofCellRegistered"]:::evento
+            b2["PrematureFailureDetected"]:::evento
+            b3["ParameterOutOfRangeDetected"]:::evento
+            b4["RecuperationCreated"]:::evento
+            b5["RootCauseConfirmed"]:::evento
+            b6["SubscriptionActivated"]:::evento
+            b7["HopperOverpressureBlocked"]:::evento
+            b8["PcrComplianceReportGenerated"]:::evento
+        end
+        subgraph R3[" "]
+            direction LR
+            c1["TelemetryBatchIngested"]:::evento
+            c2["OrganizationRegistered"]:::evento
+            c3["SuspectPartIdentified"]:::evento
+            c4["ComponentDelivered"]:::evento
+            c5["NominalRangesConfigured"]:::evento
+            c6["CriticalFaultAlertRaised"]:::evento
+            c7["ServiceLifeRecorded"]:::evento
+            c8["SpraySessionCompleted"]:::evento
+        end
+        subgraph R4[" "]
+            direction LR
+            d1["FaultCaseOpened"]:::evento
+            d2["CustomerRegistered"]:::evento
+            d3["TagMappingConfirmed"]:::evento
+            d4["SpindleRotationFaulted"]:::evento
+            d5["PcrTargetDefined"]:::evento
+            d6["OutOfRangeAlertRaised"]:::evento
+            d7["RecuperationClosed"]:::evento
+            d8["DiagnosticRulesApplied"]:::evento
+        end
+        subgraph R5[" "]
+            direction LR
+            e1["PlanSelected"]:::evento
+            e2["RecurringFaultPatternDetected"]:::evento
+            e3["ProcessReadingRecorded"]:::evento
+            e4["TimedShutdownFaultTriggered"]:::evento
+            e5["SessionReportGenerated"]:::evento
+            e6["HvofCellPartRegistered"]:::evento
+            e7["ProbableCauseSuggested"]:::evento
+            e8["UserAuthenticated"]:::evento
+        end
+        subgraph R6[" "]
+            direction LR
+            f1["SpraySessionAborted"]:::evento
+            f2["TagMappingProposed"]:::evento
+            f3["PcrTargetMet"]:::evento
+            f4["FaultCaseClosed"]:::evento
+            f5["EvidenceExported"]:::evento
+            f6["AlertDelivered"]:::evento
+            f7["TelemetryStreamInterrupted"]:::evento
+            f8["DustHouseOverloaded"]:::evento
+        end
+        subgraph R7[" "]
+            direction LR
+            g1["FaultFlagActivated"]:::evento
+            g2["PrematureFailureCorrelatedWithSession"]:::evento
+            g3["DiagnosticRuleCreated"]:::evento
+            g4["HvofCellStatusChanged"]:::evento
+            g5["FaultFrequencyReportGenerated"]:::evento
+            g6["AlertEscalated"]:::evento
+            g7["VisitorSubscribedToNewsletter"]:::evento
+            g8["ManualDiagnosisRequired"]:::evento
+        end
+        subgraph R8[" "]
+            direction LR
+            h1["SubscriptionExpired"]:::evento
+            h2["NotificationPreferenceUpdated"]:::evento
+            h3["FaultSymptomsRecorded"]:::evento
+            h4["XAxisMotionFaulted"]:::evento
+            h5["AccessDenied"]:::evento
+            h6["FlameTemperatureOutOfRange"]:::evento
+            h7["HourmeterAtDeliveryRecorded"]:::evento
+            h8["ComponentMarkedInProcess"]:::evento
+        end
+        R1 ~~~ R2 ~~~ R3 ~~~ R4 ~~~ R5 ~~~ R6 ~~~ R7 ~~~ R8
+    end
+```
+
+Durante la depuración se tomaron dos decisiones que quedaron registradas para el paso siguiente:
+
+- Los eventos de falla específicos del PLC (*FeederZeroFeedrateAborted*, *HopperOverpressureBlocked*, *SpindleRotationFaulted*, *XAxisMotionFaulted*, *TimedShutdownFaultTriggered*, *DustHouseOverloaded*) se agruparon bajo un evento genérico *FaultFlagActivated* con el tipo de falla como atributo. Esto evita que el tablero tenga un post-it por cada uno de los más de treinta tags de falla del PLC y refleja cómo lo procesa el sistema: el tag mapeado como indicador de falla se activa, y eso abre el caso.
+- *FlameTemperatureOutOfRange* se absorbió en *ParameterOutOfRangeDetected*, por la misma razón.
+
+### Paso 5. Ordenamiento cronológico
+
+Aquí comenzó la discusión. El equipo ordenó los eventos de izquierda a derecha y, al hacerlo, aparecieron dos flujos concurrentes que se representaron como carriles: mientras la sesión de rociado registra lecturas, en paralelo pueden abrirse casos de falla y generarse alertas. También apareció un flujo alternativo: la sesión puede terminar completada o abortada.
+
+```mermaid
+flowchart LR
+    classDef evento fill:#FFA726,stroke:#E65100,color:#000
+    classDef fase fill:#FAFAFA,stroke:#BDBDBD,color:#616161
+
+    subgraph F0["0. Configuración"]
+        direction TB
+        OrganizationRegistered:::evento --> PlanSelected:::evento --> SubscriptionActivated:::evento --> RoleAssigned:::evento
+        HvofCellRegistered:::evento --> HvofCellPartRegistered:::evento --> PlcTagFileImported:::evento --> TagMappingProposed:::evento --> TagMappingConfirmed:::evento --> NominalRangesConfigured:::evento
+        CustomerRegistered:::evento --> PcrTargetDefined:::evento
+        DiagnosticRuleCreated:::evento
+    end
+
+    subgraph F1["1. Recepción"]
+        direction TB
+        ComponentReceived:::evento --> RecuperationCreated:::evento --> ComponentMarkedInProcess:::evento
+    end
+
+    subgraph F2["2. Corrida de rociado"]
+        direction TB
+        SpraySessionStarted:::evento --> TelemetryBatchIngested:::evento --> ProcessReadingRecorded:::evento
+        ProcessReadingRecorded --> SpraySessionCompleted:::evento
+        ProcessReadingRecorded --> SpraySessionAborted:::evento
+    end
+
+    subgraph F2B["2b. Carril concurrente — Desviaciones y fallas"]
+        direction TB
+        ParameterOutOfRangeDetected:::evento --> OutOfRangeAlertRaised:::evento --> AlertDelivered:::evento --> AlertAcknowledged:::evento
+        FaultFlagActivated:::evento --> FaultCaseOpened:::evento --> FaultSymptomsRecorded:::evento --> DiagnosticRulesApplied:::evento
+        DiagnosticRulesApplied --> ProbableCauseSuggested:::evento --> SuspectPartIdentified:::evento --> CriticalFaultAlertRaised:::evento
+        DiagnosticRulesApplied --> ManualDiagnosisRequired:::evento
+        SuspectPartIdentified --> RootCauseConfirmed:::evento --> FaultCaseClosed:::evento
+        ManualDiagnosisRequired --> RootCauseConfirmed
+        FaultCaseClosed --> RecurringFaultPatternDetected:::evento
+        TelemetryStreamInterrupted:::evento
+    end
+
+    subgraph F3["3. Cierre y entrega"]
+        direction TB
+        RecuperationClosed:::evento --> HourmeterAtDeliveryRecorded:::evento --> QualityCertificateIssued:::evento --> ComponentDelivered:::evento
+        SessionReportGenerated:::evento
+    end
+
+    subgraph F4["4. Campo y PCR"]
+        direction TB
+        ComponentReturnedFromField:::evento --> ServiceLifeRecorded:::evento
+        ServiceLifeRecorded --> PcrTargetMet:::evento
+        ServiceLifeRecorded --> PrematureFailureDetected:::evento --> PrematureFailureCorrelatedWithSession:::evento
+    end
+
+    subgraph F5["5. Reportes"]
+        direction TB
+        EvidenceExported:::evento
+        FaultFrequencyReportGenerated:::evento
+        PcrComplianceReportGenerated:::evento
+    end
+
+    F0 --> F1 --> F2 --> F3 --> F4 --> F5
+    ProcessReadingRecorded -. dispara .-> ParameterOutOfRangeDetected
+    ProcessReadingRecorded -. dispara .-> FaultFlagActivated
+    SpraySessionCompleted --> RecuperationClosed
+    SpraySessionAborted -. requiere nueva corrida .-> SpraySessionStarted
+```
+
+Al ordenar, el equipo hizo explícitas tres cosas que estaban implícitas:
+
+- *HourmeterAtDeliveryRecorded* no existía en la generación inicial de todos; apareció cuando se preguntó "¿contra qué se compara el horómetro de retorno?". Sin ese dato, *ServiceLifeRecorded* no puede calcular horas logradas.
+- *ManualDiagnosisRequired* apareció al preguntar "¿y si ninguna regla coincide?". Es el flujo alternativo de *DiagnosticRulesApplied*.
+- *SpraySessionAborted* no cierra la orden: obliga a una nueva corrida. Por eso la flecha punteada regresa a *SpraySessionStarted*.
+
+### Paso 6. Actores y sistemas externos
+
+Con la historia ya ordenada, el equipo identificó quién dispara cada cadena de eventos (post-its amarillos) y qué sistemas fuera de la plataforma participan (post-its azules). Siguiendo la guía, se colocó un actor al inicio de cada cadena y no en cada evento.
+
+```mermaid
+flowchart LR
+    classDef evento fill:#FFA726,stroke:#E65100,color:#000
+    classDef actor fill:#FFF176,stroke:#F9A825,color:#000
+    classDef externo fill:#64B5F6,stroke:#1565C0,color:#000
+
+    subgraph AC["Actores"]
+        direction TB
+        Adm["Administrador de organización"]:::actor
+        Op["Operador HVOF"]:::actor
+        SupOp["Supervisor de operación"]:::actor
+        SupMant["Supervisor de mantenimiento de máquina"]:::actor
+        IngCal["Ingeniero de calidad"]:::actor
+        IngConf["Ingeniero de confiabilidad"]:::actor
+        Compras["Analista de compras"]:::actor
+        Vis["Visitante"]:::actor
+    end
+
+    subgraph EX["Sistemas externos"]
+        direction TB
+        Gw["Gateway PLC<br/>(Raspberry Pi + pylogix / simulador)"]:::externo
+        Plc["PLC CompactLogix<br/>de la celda HVOF"]:::externo
+        Mc["Mailchimp"]:::externo
+    end
+
+    subgraph EV["Inicio de cada cadena de eventos"]
+        direction TB
+        e1["OrganizationRegistered"]:::evento
+        e2["PlanSelected"]:::evento
+        e3["RoleAssigned"]:::evento
+        e4["HvofCellRegistered"]:::evento
+        e5["PlcTagFileImported"]:::evento
+        e6["TagMappingConfirmed"]:::evento
+        e7["NominalRangesConfigured"]:::evento
+        e8["DiagnosticRuleCreated"]:::evento
+        e9["CustomerRegistered"]:::evento
+        e10["PcrTargetDefined"]:::evento
+        e11["ComponentReceived"]:::evento
+        e12["RecuperationCreated"]:::evento
+        e13["SpraySessionStarted"]:::evento
+        e14["TelemetryBatchIngested"]:::evento
+        e15["FaultFlagActivated"]:::evento
+        e16["RootCauseConfirmed"]:::evento
+        e17["SpraySessionCompleted / Aborted"]:::evento
+        e18["RecuperationClosed"]:::evento
+        e19["QualityCertificateIssued"]:::evento
+        e20["ComponentReturnedFromField"]:::evento
+        e21["PcrComplianceReportGenerated"]:::evento
+        e22["AlertDelivered (EMAIL)"]:::evento
+        e23["VisitorSubscribedToNewsletter"]:::evento
+    end
+
+    Adm --> e1 & e2 & e3
+    SupMant --> e4 & e5 & e6 & e16
+    IngCal --> e7 & e8 & e10 & e19
+    SupOp --> e9 & e12 & e18
+    Op --> e11 & e13 & e17
+    IngConf --> e20
+    Compras --> e21
+    Vis --> e23
+
+    Plc --> Gw --> e14
+    Plc -. tag de falla .-> e15
+    e22 --> Mc
+    e23 --> Mc
+```
+
+Dos decisiones surgieron en este paso:
+
+- El **PLC** y el **gateway** se modelaron como dos sistemas externos distintos. El PLC es la fuente del dato; el gateway es quien lo lee vía EtherNet/IP y lo envía a la plataforma por REST. Para la demostración del curso, el gateway será un simulador que expone el mismo contrato, de modo que la plataforma no distingue si el origen es hardware real o simulado.
+- El **ingeniero de confiabilidad** de la minera (Asset Owner) es quien dispara *ComponentReturnedFromField*, no el proveedor. Es el único que sabe cuántas horas trabajó la pieza en mina. Esta observación fue la que consolidó a la minera como segundo segmento pagante.
+
+### Paso 7. Storytelling
+
+Un integrante narró la historia completa recorriendo el tablero de izquierda a derecha, usando el caso de uso guía del front rod. La audiencia interrumpió cuando algo no cuadraba. Las incoherencias que no se pudieron resolver en la sesión se estacionaron como post-its rosados (hotspots).
+
+```mermaid
+flowchart LR
+    classDef evento fill:#FFA726,stroke:#E65100,color:#000
+    classDef problema fill:#F48FB1,stroke:#AD1457,color:#000
+
+    TagMappingConfirmed:::evento
+    P1["¿Qué pasa con una lectura cuyo tag<br/>aún no tiene mapeo confirmado?<br/>→ Se almacena como pendiente, no se descarta"]:::problema
+    TagMappingConfirmed -.- P1
+
+    RecuperationClosed:::evento
+    P2["¿Se puede cerrar una orden cuya<br/>única sesión fue abortada?<br/>→ No. Requiere al menos una completada"]:::problema
+    RecuperationClosed -.- P2
+
+    QualityCertificateIssued:::evento
+    P3["¿Se emite certificado si hubo<br/>lecturas fuera de rango?<br/>→ Sí, con no conformidad y justificación"]:::problema
+    QualityCertificateIssued -.- P3
+
+    ServiceLifeRecorded:::evento
+    P4["¿PCR se mide en horas de horómetro<br/>o en meses calendario?<br/>→ Horas. Requiere horómetro de entrega"]:::problema
+    ServiceLifeRecorded -.- P4
+
+    PrematureFailureCorrelatedWithSession:::evento
+    P5["¿La minera ve los parámetros crudos<br/>del proveedor?<br/>→ No. Ve cumplimiento por parámetro, no valores"]:::problema
+    PrematureFailureCorrelatedWithSession -.- P5
+
+    RecurringFaultPatternDetected:::evento
+    P6["¿Quién define el umbral de recurrencia<br/>y en qué ventana de tiempo?<br/>→ PENDIENTE: validar con Fesa"]:::problema
+    RecurringFaultPatternDetected -.- P6
+
+    SuspectPartIdentified:::evento
+    P7["¿Y si dos reglas coinciden con<br/>partes distintas?<br/>→ Gana la de mayor prioridad; ambas quedan registradas"]:::problema
+    SuspectPartIdentified -.- P7
+```
+
+Seis de los siete hotspots se resolvieron en la sesión y sus decisiones se trasladaron directamente a los criterios de aceptación de las User Stories (US11, US18, US35, US40, US41 y US26 respectivamente). El hotspot P6 quedó pendiente de validación con el supervisor de mantenimiento durante las entrevistas de la sección 2.2.
+
+Durante la narración se capturaron también las primeras definiciones del lenguaje ubicuo, que se desarrollan en la sección 2.5:
+
+| Término | Definición capturada en la sesión |
+|---|---|
+| Component | Pieza del cliente que se recupera (front rod, cylinder block). No confundir con las partes de la celda |
+| HVOF Cell Part | Parte de la máquina HVOF (feeder, hopper, spindle, ejes, dust collector) |
+| Recuperation | Orden de recuperación identificada por OF y WO; es el trabajo sobre un componente |
+| Spray Session | Una corrida de rociado sobre un componente en una celda. Una orden puede tener varias |
+| PCR Target | Horas de operación esperadas para el componente recuperado (Planned Component Replacement) |
+| Fault Case | Caso abierto cuando un tag de falla se activa; se diagnostica, se confirma y se cierra |
+| Suspect Part | Parte de la celda que las reglas señalan como probable responsable de la falla |
+
+### Paso 8. Reverse storytelling
+
+Como fase opcional, el equipo tomó el evento de mayor valor de negocio, *PrematureFailureDetected*, y recorrió la historia hacia atrás preguntando repetidamente "¿qué tuvo que ocurrir antes para que esto pasara?". El ejercicio confirmó la cadena de trazabilidad completa y reveló un evento que faltaba.
+
+```mermaid
+flowchart RL
+    classDef evento fill:#FFA726,stroke:#E65100,color:#000
+    classDef nuevo fill:#FFA726,stroke:#AD1457,stroke-width:3px,color:#000
+
+    A["PrematureFailureDetected"]:::evento
+    B["ServiceLifeRecorded"]:::evento
+    C["ComponentReturnedFromField"]:::evento
+    D["ComponentDelivered"]:::evento
+    E["HourmeterAtDeliveryRecorded"]:::evento
+    F["QualityCertificateIssued"]:::evento
+    G["RecuperationClosed"]:::evento
+    H["SpraySessionCompleted"]:::evento
+    I["ProcessReadingRecorded"]:::evento
+    J["SpraySessionStarted"]:::evento
+    K["RecuperationCreated"]:::evento
+    L["ComponentReceived"]:::evento
+    M["PcrTargetDefined"]:::evento
+    N["CustomerLinkedToAssetOwnerOrganization"]:::nuevo
+
+    A -->|"¿qué lo disparó?"| B -->|"¿qué lo disparó?"| C
+    C -->|"¿qué debió existir?"| D --> E --> F --> G --> H --> I --> J --> K --> L
+    B -->|"¿contra qué se comparó?"| M
+    C -->|"¿quién pudo registrarlo?"| N
+```
+
+El evento descubierto, *CustomerLinkedToAssetOwnerOrganization*, resuelve una pregunta que nadie había hecho: ¿cómo puede un ingeniero de confiabilidad de la minera registrar el retorno de una pieza si la minera fue registrada como *Customer* por Fesa y no tiene cuenta propia? La respuesta es que cuando una organización Asset Owner se suscribe con el mismo RUC que un cliente ya registrado por un proveedor, ambos registros se vinculan. Este evento dio origen al segundo escenario de la US13.
+
+### Paso 9. Cierre
+
+Al terminar la sesión el equipo evaluó los resultados contra los tres criterios que propone la guía:
+
+**Entendimiento compartido del dominio.** Los integrantes sin experiencia en planta pudieron narrar la historia completa del front rod sin ayuda al final de la sesión. La distinción entre *Component* (pieza del cliente) y *HVOF Cell Part* (parte de la máquina), que había generado confusión en reuniones previas, quedó resuelta.
+
+**Problemas identificados.** Siete hotspots, seis resueltos en sesión y uno pendiente de validación externa. Las decisiones tomadas se convirtieron en criterios de aceptación, lo que evitó que las ambigüedades llegaran a la implementación.
+
+**Primeras definiciones del lenguaje ubicuo.** Siete términos capturados, que constituyen el punto de partida del glosario de la sección 2.5.
+
+**Trazabilidad hacia las User Stories.** Los eventos ordenados en el Paso 5 se distribuyen en las épicas del Capítulo III de la siguiente forma:
+
+| Fase del tablero | Eventos | Épica | User Stories |
+|---|---|---|---|
+| 0. Configuración | OrganizationRegistered, RoleAssigned, PlanSelected, SubscriptionActivated | E01, E02 | US01–US06 |
+| 0. Configuración | HvofCellRegistered … NominalRangesConfigured, DiagnosticRuleCreated | E03, E06 | US07–US12, US28 |
+| 0. Configuración | CustomerRegistered, PcrTargetDefined | E04 | US13, US16 |
+| 1. Recepción | ComponentReceived, RecuperationCreated | E04 | US14, US15 |
+| 2. Corrida | SpraySessionStarted … SpraySessionCompleted/Aborted | E05 | US19–US24 |
+| 2b. Desviaciones | ParameterOutOfRangeDetected, OutOfRangeAlertRaised, AlertDelivered | E05, E07 | US21, US31–US34 |
+| 2b. Fallas | FaultFlagActivated … RecurringFaultPatternDetected | E06 | US25–US30 |
+| 3. Cierre y entrega | RecuperationClosed, QualityCertificateIssued, ComponentDelivered | E04, E08 | US17, US18, US35, US36 |
+| 4. Campo y PCR | ComponentReturnedFromField … PrematureFailureCorrelatedWithSession | E09 | US39–US43 |
+| 5. Reportes | EvidenceExported, FaultFrequencyReportGenerated, PcrComplianceReportGenerated | E08, E09 | US37, US38, US42 |
+| Externos | AlertDelivered (EMAIL), VisitorSubscribedToNewsletter | E11, E10 | US49, US51, US52 |
+
+
+
 ## 2.5. Ubiquitous Language.
 
 # Capítulo III: Requirements Specification
@@ -1414,6 +1835,8 @@ erDiagram
 - Siemens. (2022). *The true cost of downtime 2022*. https://assets.new.siemens.com/siemens/assets/api/uuid:3d606495-dbe0-43e4-80b1-d04e27ada920/dics-b10153-00-7600truecostofdowntime2022-144.pdf
 
 - Springer Nature. (2025). Outlook of Industry 4.0 integrated technologies in thermal spray processes and applications. *Journal of Thermal Spray Technology*. https://doi.org/10.1007/s11666-025-02096-z
+
+- Bourgau, P. (2022, March 29). Step by Step Guide to run your Big Picture Event Storming. Event Storming Journal. https://www.eventstormingjournal.com/big%20picture/step-by-step-guide-to-run-your-big-picture-event-storming/
 
 
 # Anexos
