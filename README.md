@@ -655,6 +655,47 @@ Ante la falta de trayectoria de la startup, la táctica consiste en apoyarse en 
 ![Jorge Salinas Paredes](./assets/img/chapter-ii/neefinding/Empathy_Map-Jorge_Salinas_Paredes.png)
 
 ## 2.4. Big Picture Event Storming.
+
+En esta sección se introduce y resume el proceso realizado por nuestro equipo, presentando las evidencias y explicaciones de las etapas del Big Picture Event Storming. En una sesión colaborativa, nuestro equipo se enfocó en entender el dominio del negocio en general, plasmando los eventos significativos y sus relaciones. Es una primera aproximación visual de alto nivel que explora el landscape del negocio, identificando procesos clave, exponiendo potenciales problemas u oportunidades del procesos de recuperación de componentes mediante recubrimiento HVOF, desde la recepción de la pieza del cliente hasta la evaluación de su desempeño en campo. La sesión siguió la guía paso a paso del Event Storming Journal (Bourgau, 2022) y fue documentada con diagramas Mermaid, alternativa permitida por el enunciado del proyecto para Diagram-as-Code. Se conservó la convención de colores del método: naranja para Domain Events, amarillo para Actors, azul para External Systems y rosado para Problems (hotspots).
+
+### Paso 1. Preparación del tablero
+
+Dado que la sesión se realizó de forma remota, la "sala" fue un tablero compartido. El equipo preparó con anticipación:
+
+- El espacio de diseño dividido en tres zonas, siguiendo la guía: *Open* (generación libre), *Explore* (ordenamiento y enriquecimiento) y *Close* (resultados).
+- La agenda visual con los nueve pasos de la guía.
+- La leyenda de colores.
+- Un Domain Event inicial preparado por la facilitadora (*SpraySessionStarted*), siguiendo el truco de Alberto Brandolini de "encender" la sesión con un evento ya colocado en el centro del tablero.
+
+```mermaid
+flowchart LR
+    classDef evento fill:#FFA726,stroke:#E65100,color:#000
+    classDef actor fill:#FFF176,stroke:#F9A825,color:#000
+    classDef externo fill:#64B5F6,stroke:#1565C0,color:#000
+    classDef problema fill:#F48FB1,stroke:#AD1457,color:#000
+    classDef zona fill:#FAFAFA,stroke:#BDBDBD,color:#616161
+
+    subgraph L["Leyenda de la sesión"]
+        direction LR
+        E["Domain Event<br/>(algo que ya ocurrió, en pasado)"]:::evento
+        A["Actor<br/>(persona con un rol)"]:::actor
+        X["External System<br/>(sistema fuera de nuestro control)"]:::externo
+        P["Problem / Hotspot<br/>(duda, conflicto o riesgo)"]:::problema
+    end
+
+    subgraph T["Tablero"]
+        direction LR
+        O["OPEN<br/>Generación de eventos"]:::zona
+        EX["EXPLORE<br/>Ordenar · Actores · Externos · Storytelling"]:::zona
+        C["CLOSE<br/>Definiciones · Problemas · Siguientes pasos"]:::zona
+        S0["SpraySessionStarted"]:::evento
+        O --> EX --> C
+        S0 -.- EX
+    end
+```
+
+
+
 ## 2.5. Ubiquitous Language.
 
 # Capítulo III: Requirements Specification
