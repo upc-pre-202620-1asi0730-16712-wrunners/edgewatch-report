@@ -1870,12 +1870,20 @@ Cada ancla de sección (`#problema`, `#solucion`, `#segmentos`) se refleja como 
 ## 4.3. Landing Page UI Design.
 
 ### 4.3.1. Landing Page Wireframe.
+<div align="center">
+ <img src="assets/img/chapter-iv/Wireframes.png" width="600" alt="Wireframe de EdgeWatch">
+</div>
 
 ### 4.3.2. Landing Page Mock-up.
+
+<div align="center">
+ <img src="assets/img/chapter-iv/Landing.png" width="600" alt="Mock-up del Landing Page de EdgeWatch">
+</div>
 
 ## 4.4. Web Applications UX/UI Design.
 
 ### 4.4.1. Web Applications Wireframes.
+
 
 ### 4.4.2. Web Applications Wireflow Diagrams.
 
