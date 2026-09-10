@@ -693,7 +693,9 @@ flowchart LR
         S0 -.- EX
     end
 ```
+### Paso 2. Energizante
 
+La sesión inició con una dinámica breve de cinco minutos en la que cada integrante describió, en una frase y sin usar términos técnicos, qué pasa con una pieza minera desde que se desgasta hasta que vuelve a operar. El ejercicio sirvió para nivelar el vocabulario entre los integrantes con experiencia en planta y los que no la tenían, y para dejar claro desde el inicio que el tablero se llenaría con hechos del negocio y no con funciones de software.
 
 
 ## 2.5. Ubiquitous Language.
