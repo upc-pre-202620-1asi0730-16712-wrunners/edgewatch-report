@@ -1639,6 +1639,94 @@ Los cuatro Business Goals se refuerzan entre sí. BG1 y BG4 miden la adopción d
 
 ## 3.3. Product Backlog
 
+El Product Backlog reúne las 52 User Stories y 18 Technical Stories de la sección 3.1, estimadas y priorizadas. La estimación se realizó en Story Points mediante Planning Poker con la escala 1 / 2 / 3 / 5 / 8, tomando como referencia la historia US23 (finalización o aborto de sesión, 2 puntos) como unidad de comparación. La priorización responde al valor para el negocio y a los compromisos de entrega del curso, según los siguientes criterios:
+
+1. **Landing Page primero.** Las historias del sitio web estático (E10) y su servicio externo asociado (TS18) encabezan el backlog porque constituyen el canal de captación de ambos segmentos y su primera versión debe estar desplegada en la entrega AV1.
+2. **Cadena de valor core.** A continuación se ordenan las historias que permiten demostrar el flujo principal del negocio de extremo a extremo: registrar un componente y su orden de recuperación, configurar la celda, iniciar una sesión, recibir telemetría y detectar desviaciones. Sin esta cadena, ninguna otra funcionalidad tiene sentido para el usuario.
+3. **Diferenciadores.** Siguen el mapeo automático de tags, el diagnóstico de fallas asistido, el certificado de calidad y el análisis de cumplimiento PCR para el Asset Owner, que sustentan las hipótesis H-05, H-07 y H-08 y el modelo de suscripción de ambos segmentos.
+4. **Soporte.** Las alertas, la gestión de identidad y la facturación se ubican al final: son necesarias para operar la plataforma, pero no generan valor por sí mismas. Colocar autenticación o suscripciones al inicio del backlog sería un error de priorización, dado que el usuario no paga por iniciar sesión sino por trazar su proceso.
+
+**Total estimado:** 271 Story Points.
+
+Herramienta: Trello.  
+URL pública del board: https://trello.com/invite/b/6aa234c58be8ea8121c19b01/ATTIe3d8df7c2304b434249a2328489667aeE6F8F69E/edgewatch-product-backlog
+
+<img src="assets/img/chapter-iii/product-backlog.jpeg">
+
+| # Orden | User Story Id | Título | Descripción | Story Points (1 / 2 / 3 / 5 / 8) |
+|---|---|---|---|---|
+| 1 | US44 | Conocer la propuesta de valor | Como visitante, deseo conocer el problema que resuelve EdgeWatch y sus beneficios desde la página principal, para decidir si la solución es relevante para mi organización. | 3 |
+| 2 | US45 | Información para Recuperation Supplier | Como visitante del segmento Recuperation Supplier, deseo acceder a la información específica para empresas que operan procesos HVOF, para identificar si la propuesta responde a mis necesidades. | 2 |
+| 3 | US46 | Información para Asset Owner | Como visitante del segmento Asset Owner, deseo acceder a la información específica para empresas propietarias de activos, para identificar si la propuesta responde a mis necesidades. | 2 |
+| 4 | US47 | Registro desde call-to-action segmentado | Como visitante, deseo iniciar el registro desde el call-to-action de mi segmento, para llegar directamente a la vista de registro correspondiente en la Web Application. | 2 |
+| 5 | US48 | Cambio de idioma | Como visitante, deseo cambiar el idioma del Landing Page entre inglés y español, para leer el contenido en el idioma de mi preferencia. | 3 |
+| 6 | US50 | Acceso a Términos y Condiciones | Como visitante, deseo acceder a los Términos y Condiciones del servicio desde el pie de página, para conocer las reglas de uso y el tratamiento de la información antes de registrarme. | 1 |
+| 7 | US49 | Suscripción al newsletter | Como visitante, deseo suscribirme al newsletter de WebRunners con mi correo electrónico, para recibir novedades sobre EdgeWatch y el sector. | 3 |
+| 8 | TS18 | Suscripción al newsletter vía Mailchimp | Como developer, deseo consumir el endpoint POST /api/v1/newsletter/subscriptions, para registrar un correo en la audiencia de Mailchimp desde el Landing Page. | 3 |
+| 9 | US13 | Registro de cliente | Como supervisor de operación, deseo registrar los clientes de mi organización con su razón social, RUC y sede, para vincular cada componente a su propietario. | 2 |
+| 10 | US14 | Registro de componente recibido | Como operador HVOF, deseo registrar un componente recibido con su número de serie, part number, tipo, modelo de máquina y cliente, para identificarlo durante todo el proceso. | 3 |
+| 11 | US15 | Registro de orden de recuperación | Como supervisor de operación, deseo registrar la orden de recuperación con su OF y WO, horómetro de ingreso, peso y lote de polvo, para trazar el trabajo realizado sobre el componente. | 5 |
+| 12 | US16 | Definición de PCR objetivo | Como ingeniero de calidad, deseo definir el PCR objetivo en horas por tipo y modelo de componente, para contar con el estándar contra el cual se evaluará el desempeño en campo. | 3 |
+| 13 | TS07 | Registro de componente | Como developer, deseo consumir el endpoint POST /api/v1/components, para registrar un componente recibido del cliente. | 3 |
+| 14 | TS08 | Registro de orden de recuperación | Como developer, deseo consumir el endpoint POST /api/v1/recuperations, para crear la orden de recuperación con su OF y WO vinculada a un componente. | 3 |
+| 15 | US07 | Registro de celda HVOF | Como supervisor de mantenimiento de máquina, deseo registrar una celda HVOF con su código, fabricante y configuración del PLC, para que las sesiones y fallas se asocien a un equipo identificado. | 3 |
+| 16 | US08 | Registro de partes de la celda | Como supervisor de mantenimiento de máquina, deseo registrar las partes que componen una celda (alimentador de polvo, tolva, spindle, ejes, colector de polvo, entre otras), para que el diagnóstico pueda atribuir fallas a una parte específica. | 3 |
+| 17 | US09 | Configuración de rangos nominales | Como ingeniero de calidad, deseo configurar los rangos nominales de cada parámetro de proceso por celda, para que el sistema detecte desviaciones automáticamente. | 3 |
+| 18 | TS03 | Registro de celda HVOF | Como developer, deseo consumir el endpoint POST /api/v1/hvof-cells, para registrar una celda con su configuración de PLC. | 3 |
+| 19 | TS04 | Configuración de rangos nominales | Como developer, deseo consumir el endpoint PUT /api/v1/hvof-cells/{cellId}/nominal-ranges, para establecer los rangos nominales por parámetro de una celda. | 3 |
+| 20 | US19 | Inicio de sesión de rociado | Como operador HVOF, deseo iniciar una sesión de rociado seleccionando la celda y la orden de recuperación, para que las lecturas del proceso se asocien al componente correcto. | 3 |
+| 21 | US20 | Ingesta automática de lecturas | Como supervisor de operación, deseo que las lecturas del proceso lleguen automáticamente desde el gateway del PLC durante la sesión, para no depender de registros manuales. | 8 |
+| 22 | US21 | Detección de parámetro fuera de rango | Como ingeniero de calidad, deseo que el sistema marque automáticamente cada lectura que salga del rango nominal de la celda, para identificar desviaciones sin supervisión manual. | 5 |
+| 23 | US22 | Visualización de lecturas en vivo | Como operador HVOF, deseo ver los valores actuales de los parámetros durante la sesión, para reaccionar ante una desviación mientras la corrida está en curso. | 5 |
+| 24 | US23 | Finalización o aborto de sesión | Como operador HVOF, deseo completar o abortar una sesión indicando el motivo, para dejar constancia del resultado de la corrida. | 2 |
+| 25 | US24 | Historial de sesiones por celda | Como supervisor de operación, deseo consultar el historial de sesiones de una celda filtrando por fecha y orden de recuperación, para revisar corridas pasadas. | 3 |
+| 26 | TS09 | Inicio de sesión de rociado | Como developer, deseo consumir el endpoint POST /api/v1/spray-sessions, para iniciar una sesión vinculada a una celda y una orden de recuperación. | 3 |
+| 27 | TS10 | Ingesta de lecturas de telemetría | Como developer, deseo consumir el endpoint POST /api/v1/spray-sessions/{sessionId}/readings, para enviar lotes de lecturas del PLC a una sesión activa. | 8 |
+| 28 | TS11 | Consulta de lecturas de una sesión | Como developer, deseo consumir el endpoint GET /api/v1/spray-sessions/{sessionId}/readings, para obtener las lecturas de una sesión y mostrarlas en la vista de monitoreo. | 3 |
+| 29 | US52 | Recepción de telemetría desde gateway del PLC | Como supervisor de operación, deseo que la plataforma reciba la telemetría desde un gateway externo conectado al PLC de la celda, para que el registro del proceso no dependa de intervención humana. | 5 |
+| 30 | US10 | Carga de tags del PLC | Como supervisor de mantenimiento de máquina, deseo cargar el archivo de tags del PLC de una celda (CSV o JSON), para que el sistema proponga a qué parte y parámetro corresponde cada tag. | 8 |
+| 31 | US11 | Confirmación de mapeo de tags | Como supervisor de mantenimiento de máquina, deseo confirmar o corregir el mapeo propuesto para cada tag, para asegurar que las fallas se atribuyan a la parte correcta. | 5 |
+| 32 | US12 | Cambio de estado de celda | Como supervisor de mantenimiento de máquina, deseo cambiar el estado de una celda (activa, en mantenimiento, fuera de servicio), para impedir que se inicien sesiones en un equipo no disponible. | 2 |
+| 33 | TS05 | Importación de tags del PLC | Como developer, deseo consumir el endpoint POST /api/v1/hvof-cells/{cellId}/tag-imports, para cargar el archivo de tags y obtener las propuestas de mapeo. | 8 |
+| 34 | TS06 | Confirmación de mapeo de tag | Como developer, deseo consumir el endpoint PUT /api/v1/hvof-cells/{cellId}/tag-mappings/{tagId}, para confirmar o corregir el mapeo de un tag. | 3 |
+| 35 | US25 | Apertura automática de caso de falla | Como supervisor de mantenimiento de máquina, deseo que el sistema abra un caso de falla cuando un tag clasificado como indicador de falla se active durante una sesión, para no depender de que el operador lo reporte. | 8 |
+| 36 | US26 | Diagnóstico asistido por reglas causa-efecto | Como supervisor de mantenimiento de máquina, deseo que el sistema aplique el catálogo de reglas causa-efecto al caso de falla abierto, para obtener una causa probable y la parte sospechosa. | 8 |
+| 37 | US28 | Gestión del catálogo de reglas | Como ingeniero de calidad, deseo crear, editar y desactivar reglas causa-efecto indicando parámetro disparador, condición, causa probable y parte sospechosa, para adaptar el diagnóstico a cada celda. | 5 |
+| 38 | US27 | Confirmación de causa raíz | Como supervisor de mantenimiento de máquina, deseo confirmar o corregir la causa raíz y registrar la acción correctiva de un caso de falla, para que el conocimiento quede documentado en el sistema. | 3 |
+| 39 | US30 | Consulta de casos de falla | Como supervisor de mantenimiento de máquina, deseo consultar los casos de falla filtrando por celda, parte, tipo y estado, para dar seguimiento a los pendientes. | 3 |
+| 40 | US29 | Detección de patrón recurrente | Como supervisor de mantenimiento de máquina, deseo que el sistema identifique cuando una misma parte acumula fallas del mismo tipo dentro de un periodo, para anticipar un problema mayor. | 5 |
+| 41 | TS12 | Consulta de casos de falla | Como developer, deseo consumir el endpoint GET /api/v1/fault-cases, para listar los casos de falla con filtros de celda, parte, tipo y estado. | 3 |
+| 42 | TS13 | Confirmación de causa raíz | Como developer, deseo consumir el endpoint PATCH /api/v1/fault-cases/{faultCaseId}/root-cause, para registrar la causa raíz confirmada y la acción correctiva. | 2 |
+| 43 | US18 | Cierre y entrega de orden | Como supervisor de operación, deseo cerrar la orden de recuperación y marcar el componente como entregado, para habilitar la emisión del certificado y el seguimiento en campo. | 3 |
+| 44 | US35 | Emisión de certificado de calidad | Como ingeniero de calidad, deseo emitir el certificado de calidad de una orden de recuperación a partir de las sesiones registradas, para entregar evidencia documentada al cliente. | 8 |
+| 45 | US36 | Reporte de sesión | Como supervisor de operación, deseo generar el reporte de una sesión con el resumen de lecturas, desviaciones y fallas, para revisar el resultado de la corrida. | 3 |
+| 46 | US17 | Consulta de historial de componente | Como ingeniero de calidad, deseo consultar el historial completo de un componente por su número de serie, OF o WO, para responder ante un cuestionamiento del cliente. | 5 |
+| 47 | US37 | Exportación de evidencia para auditoría | Como ingeniero de calidad, deseo exportar el historial de sesiones y certificados de un periodo en formato CSV o PDF, para presentarlo durante una auditoría del cliente. | 5 |
+| 48 | US38 | Reporte de frecuencia de fallas | Como supervisor de mantenimiento de máquina, deseo consultar la frecuencia de fallas por celda y por parte en un periodo, para priorizar las intervenciones. | 3 |
+| 49 | TS14 | Emisión de certificado de calidad | Como developer, deseo consumir el endpoint POST /api/v1/recuperations/{recuperationId}/quality-certificate, para emitir el certificado de una orden cerrada. | 5 |
+| 50 | US39 | Vista consolidada de componentes recuperados | Como analista de compras, deseo consultar en una sola vista todos los componentes recuperados de mi organización con su proveedor, estado y fecha de entrega, para eliminar el cruce manual de información. | 5 |
+| 51 | US40 | Registro de retorno de campo | Como ingeniero de confiabilidad, deseo registrar el retorno de un componente indicando el horómetro alcanzado y el motivo, para que el sistema evalúe si alcanzó su PCR. | 5 |
+| 52 | US41 | Consulta de certificado por el cliente | Como ingeniero de confiabilidad, deseo consultar el certificado de calidad de un componente entregado por mi proveedor, para verificar que fue recubierto dentro de tolerancia. | 3 |
+| 53 | US42 | Cumplimiento de PCR por proveedor | Como ingeniero de confiabilidad, deseo consultar la tasa de cumplimiento de PCR agrupada por proveedor, modelo de máquina y tipo de componente, para sustentar la renovación o cambio de contratos con datos. | 8 |
+| 54 | US43 | Correlación de falla prematura con sesión de origen | Como ingeniero de calidad, deseo que al registrarse una falla prematura el sistema me presente la sesión de rociado original del componente, para determinar si el origen estuvo en el recubrimiento. | 5 |
+| 55 | TS15 | Registro de retorno de campo | Como developer, deseo consumir el endpoint POST /api/v1/components/{componentId}/field-returns, para registrar el retorno de un componente y su evaluación contra el PCR. | 3 |
+| 56 | TS16 | Reporte de cumplimiento PCR | Como developer, deseo consumir el endpoint GET /api/v1/reports/pcr-compliance, para obtener la tasa de cumplimiento agrupada por proveedor, modelo o tipo de componente. | 5 |
+| 57 | US31 | Alerta por parámetro fuera de rango | Como operador HVOF, deseo recibir una alerta en la plataforma cuando un parámetro salga de su rango nominal, para actuar mientras la corrida está en curso. | 5 |
+| 58 | US32 | Alerta por falla crítica o patrón recurrente | Como supervisor de mantenimiento de máquina, deseo recibir una alerta cuando se abra un caso de falla crítica o se detecte un patrón recurrente, para intervenir oportunamente. | 3 |
+| 59 | US33 | Preferencias de notificación | Como usuario de la plataforma, deseo configurar qué tipos de alerta recibo y por qué canal, para recibir únicamente lo relevante para mi rol. | 3 |
+| 60 | US34 | Atención de alertas | Como usuario de la plataforma, deseo marcar una alerta como atendida, para distinguir las pendientes de las ya revisadas. | 2 |
+| 61 | US51 | Entrega de alertas por correo electrónico | Como supervisor de mantenimiento de máquina, deseo recibir por correo electrónico las alertas críticas mediante el servicio externo Mailchimp, para enterarme sin estar frente a la plataforma. | 5 |
+| 62 | TS17 | Consulta de alertas del usuario | Como developer, deseo consumir el endpoint GET /api/v1/alerts, para obtener las alertas dirigidas al usuario autenticado y su estado. | 3 |
+| 63 | US01 | Registro de organización | Como administrador de una organización, deseo registrar mi organización indicando su tipo (Recuperation Supplier o Asset Owner), para habilitar el acceso de mi equipo a la plataforma. | 3 |
+| 64 | US02 | Inicio de sesión | Como usuario registrado, deseo iniciar sesión con mis credenciales, para acceder a las funciones que corresponden a mi rol. | 3 |
+| 65 | US03 | Asignación de roles | Como administrador de organización, deseo asignar roles a los usuarios de mi organización, para que cada uno acceda solo a las funciones que le corresponden. | 3 |
+| 66 | US04 | Restricción de acceso por rol | Como administrador de organización, deseo que las funciones de la plataforma se restrinjan según el rol del usuario, para proteger la información de la organización. | 3 |
+| 67 | TS01 | Registro de organización y administrador | Como developer, deseo consumir el endpoint POST /api/v1/authentication/sign-up, para registrar una organización y su usuario administrador desde la Web Application. | 3 |
+| 68 | TS02 | Autenticación de usuario | Como developer, deseo consumir el endpoint POST /api/v1/authentication/sign-in, para obtener el token de acceso que autoriza las demás peticiones. | 3 |
+| 69 | US05 | Selección de plan | Como administrador de organización, deseo seleccionar el plan correspondiente a mi tipo de organización (Operator o Asset Owner), para activar las capacidades de la plataforma. | 3 |
+| 70 | US06 | Consulta y vigencia de suscripción | Como administrador de organización, deseo consultar el estado y la vigencia de mi suscripción, para anticipar su renovación. | 2 |
+
+
 # Capítulo IV: Product Design
 
 ## 4.1. Style Guidelines.
