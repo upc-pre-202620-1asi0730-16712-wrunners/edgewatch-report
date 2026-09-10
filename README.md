@@ -1082,6 +1082,8 @@ El siguiente glosario reúne los términos del dominio de recuperación de compo
 
 Los términos se presentan en inglés, con su equivalente en español entre paréntesis cuando difiere, y agrupados por área del dominio. Las primeras definiciones fueron capturadas durante el Big Picture Event Storming (sección 2.4) y refinadas a partir de las entrevistas con los segmentos objetivo.
 
+Las definiciones de proceso y recubrimiento se basan en el glosario de proyección térmica de Gordon England (s.f.), en la guía de parámetros de proceso de Oerlikon Metco (2025) y en la literatura sobre control de calidad HVOF (Khan et al., 2019; Mauer, 2022). Los términos de control industrial y comunicación con el PLC se toman de la documentación de Rockwell Automation (2019, 2025) y de ODVA (2015, 2020). Los conceptos de alarma y gestión de alarmas siguen la norma ANSI/ISA-18.2 (International Society of Automation, 2016). Los términos de reemplazo planificado de componentes se basan en la documentación de gestión de equipos mineros de Caterpillar (2017) y en la literatura de gestión de activos (AMS, 2025). Los términos propios de la operación del proveedor (OF, WO, segmento, operación, nomenclatura de tags) provienen del conocimiento directo de planta del equipo y de las entrevistas de needfinding (sección 2.2).
+
 ### 2.5.1. Organizaciones y roles
 
 | Término | Definición |
@@ -2036,5 +2038,34 @@ erDiagram
 
 - Bourgau, P. (2022, March 29). Step by Step Guide to run your Big Picture Event Storming. Event Storming Journal. https://www.eventstormingjournal.com/big%20picture/step-by-step-guide-to-run-your-big-picture-event-storming/
 
+- AMS. (2025, 21 de marzo). Planned Component Replacements (PCR) by AMS. https://amseam.com/pcr/
+
+- Caterpillar. (2017). The benefits of following a robust demand planning process for parts [Documento corporativo]. https://s7d2.scene7.com/is/content/Caterpillar/CM20171106-41515-36760
+
+- Dmroeder. (s.f.). pylogix: Read/write data from Allen Bradley Compact/Control Logix PLCs [Repositorio de software]. GitHub. https://github.com/dmroeder/pylogix
+
+- Evans, E. (2003). Domain-driven design: Tackling complexity in the heart of software. Addison-Wesley.
+
+- Fowler, M. (2006). Ubiquitous language. https://martinfowler.com/bliki/UbiquitousLanguage.html
+
+- Gordon England. (s.f.). Glossary of thermal spray and surface engineering terms. https://www.gordonengland.co.uk/glossary.htm
+
+- International Society of Automation. (2016). ANSI/ISA-18.2-2016: Management of alarm systems for the process industries. ISA.
+
+- Khan, M. N., Shah, S., & Shamim, T. (2019). Investigation of operating parameters on high-velocity oxyfuel thermal spray coating quality for aerospace applications. The International Journal of Advanced Manufacturing Technology, 103, 2677–2690. https://doi.org/10.1007/s00170-019-03696-0
+
+- Mauer, G. (2022). Process diagnostics and control in thermal spray. Journal of Thermal Spray Technology, 31(4), 818–828.
+
+- ODVA. (2015). The Common Industrial Protocol (CIP) and the family of CIP networks (PUB00123R1). https://www.odva.org/wp-content/uploads/2020/06/PUB00123R1_Common-Industrial_Protocol_and_Family_of_CIP_Networks.pdf
+
+- ODVA. (2020). EtherNet/IP quick start for vendors handbook (PUB00213R0). https://www.odva.org/wp-content/uploads/2020/05/PUB00213R0_EtherNetIP_Developers_Guide.pdf
+
+- Oerlikon Metco. (2025). Thermal spray process parameters. https://www.oerlikon.com/metco/en/solutions-technologies/what-is-thermal-spray/thermal-spray-process-parameters/
+
+- Rockwell Automation. (2019). Logix 5000 controllers data access: Programming manual (Publicación 1756-PM020F-EN-P). https://literature.rockwellautomation.com/idc/groups/literature/documents/pm/1756-pm020_-en-p.pdf
+
+- Rockwell Automation. (2025). Logix 5000 controllers design considerations: Reference manual (Publicación 1756-RM094N-EN-P). https://literature.rockwellautomation.com/idc/groups/literature/documents/rm/1756-rm094_-en-p.pdf
+
+- Yokogawa. (s.f.). Implementing alarm management per the ANSI/ISA-18.2 standard. https://www.yokogawa.com/us/library/resources/media-publications/implementing-alarm-management-per-the-ansi-isa-182-standard-control-engineering/
 
 # Anexos
