@@ -1653,6 +1653,8 @@ URL pública del board: https://trello.com/invite/b/6aa234c58be8ea8121c19b01/ATT
 
 <img src="assets/img/chapter-iii/product-backlog.jpeg">
 
+<img src="assets/img/chapter-iii/product-backlog-epics.png">
+
 | # Orden | User Story Id | Título | Descripción | Story Points (1 / 2 / 3 / 5 / 8) |
 |---|---|---|---|---|
 | 1 | US44 | Conocer la propuesta de valor | Como visitante, deseo conocer el problema que resuelve EdgeWatch y sus beneficios desde la página principal, para decidir si la solución es relevante para mi organización. | 3 |
