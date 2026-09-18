@@ -21,7 +21,7 @@ Docente: Sanchez Seña, Alberto Wilmer
 | U202315628 | Alvarez Falen     | Esteban Valentino |
 | U202425159 | Catacora Tupa     | Jhon Deyner       |
 |            | Vasquez Laos      | Sebastian Andrews |
-|            | Yopla Romero      | Jonathan Alberto  |
+| U202410376 | Yopla Romero      | Jonathan Alberto  |
 
 
 *Setiembre, 2026*
@@ -141,10 +141,13 @@ El URL del repositorio para el Project Report en la organización de github es e
 
 El curso contribuye al cumplimiento del Student Outcome ABET: ABET – EAC - Student Outcome 5 Criterio: La capacidad de funcionar efectivamente en un equipo cuyos miembros juntos proporcionan liderazgo, crean un entorno de colaboración e inclusivo, establecen objetivos, planifican tareas y cumplen objetivos. En el siguiente cuadro se describe las acciones realizadas y enunciados de conclusiones por parte del grupo, que permiten sustentar el haber alcanzado el logro del ABET – EAC - Student Outcome 5.
 
-| Criterio específico                                                                             | Acciones realizadas | Conclusiones |
-|:-----------------------------------------------------------------------------------------------:|:-------------------:|:------------:|
-| Trabaja en equipo para proporcionar liderazgo en forma conjunta                                 |                     |              |
-| Crea un entorno colaborativo e inclusivo, establece metas, planifica tareas y cumple objetivos. |                     |              |
+| Nombre | Aportes en el proyecto | Cumplió a tiempo |
+|--------|--------------------------|:---:|
+| *Esteban Valentino Alvarez Falen* | - Descripción de la Startup<br>- Perfiles de integrantes del equipo<br>- Lean UX Problem Statements<br>- Análisis competitivo<br>- Style Guidelines (General)<br>- Style Guidelines (Web)<br>- SEO Tags and Meta Tags | Sí |
+| *Jhon Deyner Catacora Tupa* | - Perfiles de integrantes del equipo<br>- Lean UX Assumptions<br>- Segmentos objetivo<br>- Registro de entrevistas<br>- User Personas<br>- Organization Systems<br>- Labeling Systems<br>- Searching Systems<br>- Navigation Systems | Sí |
+| *Carolina Celeste Navarro Aldoradin* | - Startup Profile<br>- Solution Profile<br>- Antecedentes y problemática<br>- Impact Mapping<br>- User Stories<br>- Interviews Design<br>- Big Picture Event Storming<br>- Product Backlog from Trello<br>- Diagramas de Clase<br>- Diagramas de Base de Datos | Sí |
+| *Sebastian Andrews Vasquez Laos* | - Lean UX Hypothesis Statements<br>- Lean UX Canvas<br>- Diseño de entrevistas<br>- Registro de entrevistas<br>- Análisis de entrevistas<br>- Design-Level Event Storming<br>- Software Architecture Context Diagram<br>- Software Architecture Container Diagrams<br>- Software Architecture Components Diagrams<br>- Software Configuration Management | Sí |
+| *Jonathan Alberto Yopla Romero* | - Estrategias y tácticas frente a competidores<br>- Segmentos objetivo<br>- Análisis de entrevistas<br>- User Task Matrix<br>- User Journey Mapping<br>- Empathy Mapping<br>- Ubiquitous Language<br>- Landing Page UI Design<br>- Web Applications UX/UI Design<br>- Web Applications Prototyping<br>- Sprint Planning 1<br>- Aspect Leaders and Collaborators<br>- Sprint Backlog 1<br>- Development Evidence for Sprint Review | Sí |
 
 # Capítulo I: Introducción
 ## 1.1. Startup Profile
@@ -688,7 +691,24 @@ Entrevistado #1
 |-------|--------------|
 | **Nombre del entrevistado** | David Morales |
 | **Edad** | 24 años |
-| **Screenshot de la entrevista** | ![image alt](https://github.com/unity20012006-cell/edgewatch-report/blob/4c7b8754d2aac8a877f274e4942271f0e04d1e27/Captura%20de%20pantalla%202026-09-18%20033539.png)  |
+| **Screenshot de la entrevista** | ![image alt](assets/img/chapter-i/intervieews/Captura%20de%20pantalla%202026-09-18%20033539.png)  |
+| **Link de la entrevista** | [[Agregar enlace]](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20221b734_upc_edu_pe/IQCApSWsPon_RLsgnBkGd3c3AVApScEenb4n1Ws12sFWqSw?e=SgQJDg&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D) |
+| **Tiempo de inicio y duración** | 00:00 - 11:46 |
+
+| Campo | Información |
+|-------|--------------|
+| **Resumen** | David Morales es supervisor de mantenimiento y cuenta con formación en Ingeniería Industrial. Actualmente trabaja en Lima y tiene aproximadamente dos años desempeñándose en su cargo. Sus principales responsabilidades consisten en coordinar equipos de trabajo, priorizar actividades de mantenimiento y asegurar la continuidad operativa de los equipos. Utiliza herramientas como SAP, Excel, Teams, correo corporativo y WhatsApp para gestionar información y comunicarse con distintas áreas. Durante la entrevista señaló que uno de los mayores problemas en su trabajo es la dispersión de la información en múltiples sistemas y documentos, lo que dificulta la toma rápida de decisiones y el análisis de fallas. También indicó que la recuperación de componentes involucra distintos proveedores, registros históricos y documentación técnica que muchas veces se encuentra distribuida entre SAP, correos electrónicos y carpetas compartidas. Esta situación genera retrasos al momento de investigar fallas, comparar proveedores o elaborar reportes. David manifestó que le gustaría contar con una solución centralizada que le permita acceder de forma rápida al historial de componentes, proveedores, reparaciones y resultados de mantenimiento para mejorar la eficiencia de su trabajo y reducir el tiempo invertido en la búsqueda de información. |
+| **Frustraciones identificadas** | - Información dispersa en múltiples sistemas.<br>- Dificultad para tomar decisiones rápidas ante imprevistos.<br>- Tiempo excesivo buscando registros históricos.<br>- Procesos manuales para comparar desempeño de proveedores.<br>- Elaboración de informes requiere recopilar información de diversas fuentes. |
+| **Objetivos identificados** | - Mejorar la organización de la información de mantenimiento.<br>- Acceder rápidamente al historial de componentes recuperados.<br>- Facilitar el seguimiento de proveedores y reparaciones.<br>- Optimizar la toma de decisiones en situaciones críticas.<br>- Reducir tiempos de búsqueda y análisis de información. |
+| **Herramientas utilizadas** | Laptop, teléfono móvil, Google Chrome, SAP, Excel, Microsoft Teams, correo corporativo y WhatsApp. |
+
+Entrevistado #2
+
+| Campo | Información |
+|-------|--------------|
+| **Nombre del entrevistado** | David Morales |
+| **Edad** | 24 años |
+| **Screenshot de la entrevista** | ![image alt](assets/img/chapter-i/intervieews/Captura%20de%20pantalla%202026-09-18%20033539.png)  |
 | **Link de la entrevista** | [[Agregar enlace]](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20221b734_upc_edu_pe/IQCApSWsPon_RLsgnBkGd3c3AVApScEenb4n1Ws12sFWqSw?e=SgQJDg&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D) |
 | **Tiempo de inicio y duración** | 00:00 - 11:46 |
 
