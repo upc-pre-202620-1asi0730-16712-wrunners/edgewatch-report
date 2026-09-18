@@ -160,12 +160,11 @@ Ser la plataforma de referencia en Latinoamérica para el monitoreo y la trazabi
 
 ### 1.1.2. Perfiles de integrantes del equipo
 
-| Foto | Nombres y apellidos | Código | Descripción de carrera | Principales conocimientos técnicos y habilidades |
-|:---|:-----------|:---|:----------------------------|:--------------------------------------------------------------|
-| ![Carolina Navarro](assets/img/chapter-i/startup-profile/carolina-navarro.jpeg){width=1in} | Carolina Celeste Navarro Aldoradin | u20241b962 | Ingeniería de Software, Universidad Peruana de Ciencias Aplicadas | Cuento con conocimiento del lenguaje Java, C#, C++, Javascript, Python y Ladder. Asimismo, cuento con experiencia en proyectos de integración, monitoreo e IoT en entornos industriales. |
-| ![Esteban Alvarez](assets/img/chapter-i/startup-profile/Esteban-alvarez.png){width=1in} | Esteban Valentino Alvarez Falen | U202315628 | Ingeniería de Software, Universidad Peruana de Ciencias Aplicadas | Soy un estudiante de la carrera de Ingeniería de Software, estoy en la universidad UPC. No cuento con experiencia laboral en programas, sin embargo a lo largo de mi carrera estoy realizando proyectos para mejorar en código, trabajo en equipo y organización de proyectos. Soy una persona que le gusta pensar en soluciones y encontrar motivaciones para innovar e implementar. |
-| ![Jhon Catacora](assets/img/chapter-i/startup-profile/jhon-catacora.jpeg){width=1in} | Jhon Deyner Catacora Tupa | U202425159 | Ingeniería de Software, Universidad Peruana de Ciencias Aplicadas | Estudiante de la carrera de Ingeniería de software, me considero una persona colaborativa, con facilidad para comunicar ideas y trabajar en equipo, además de mantener siempre una actitud abierta al aprendizaje y la mejora continua. Estas cualidades me han permitido aportar soluciones innovadoras y crecer tanto en lo técnico como en lo personal. |
-
+| Foto de participante | Nombres y apellidos | Código de estudiante | Descripción de carrera | Principales conocimiento técnicos y habilidades |
+|:---|:---|:---|:---|:---|
+| <img src="assets/img/chapter-i/startup-profile/carolina-navarro.jpeg" width="150"> | Carolina Celeste Navarro Aldoradin | u20241b962 | Ingeniería de Software, Universidad Peruana de Ciencias Aplicadas | Cuento con conocimiento del lenguaje Java, C#, C++, Javascript, Python y Ladder. Asimismo, cuento con experiencia en proyectos de integración, monitoreo e IoT en entornos industriales. |
+| <img src="assets/img/chapter-i/startup-profile/Esteban-alvarez.png" width="150"> | Esteban Valentino Alvarez Falen | U202315628 | Ingeniería de Software, Universidad Peruana de Ciencias Aplicadas | Soy un estudiante de la carrera de Ingeniería de Software, estoy en la universidad UPC. No cuento con experiencia laboral en programas, sin embargo a lo largo de mi carrera estoy realizando proyectos para mejorar en código, trabajo en equipo y organización de proyectos. Soy una persona que le gusta pensar en soluciones y encontrar motivaciones para innovar e implementar. |
+|  | Sebastian Andrews Vasquez Laos | U20221B734 | Ingeniería de Software, Universidad Peruana de Ciencias Aplicadas | Soy estudiante de la carrera de Ingeniería de Software en la Universidad Peruana de Ciencias Aplicadas. Cuento con conocimientos en programación, desarrollo de software y resolución de problemas adquiridos durante mi formación académica. Me interesa el trabajo en equipo, el aprendizaje continuo y la aplicación de la tecnología para desarrollar soluciones innovadoras y eficientes que generen valor en distintos entornos. |
 
 ## 1.2. Solution Profile
 
@@ -680,6 +679,27 @@ Perfiles entrevistados: ingeniero de confiabilidad, planner de mantenimiento, su
 | C4 | ¿Algo que no le pregunté y debería saber? | — | Cierre abierto |
 
 ### 2.2.2. Registro de entrevistas.
+
+**Segmento Supervisor de Mantenimiento**
+
+Entrevistado #1
+
+| Campo | Información |
+|-------|--------------|
+| **Nombre del entrevistado** | David Morales |
+| **Edad** | 24 años |
+| **Screenshot de la entrevista** | ![image alt](https://github.com/unity20012006-cell/edgewatch-report/blob/4c7b8754d2aac8a877f274e4942271f0e04d1e27/Captura%20de%20pantalla%202026-09-18%20033539.png)  |
+| **Link de la entrevista** | [[Agregar enlace]](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20221b734_upc_edu_pe/IQCApSWsPon_RLsgnBkGd3c3AVApScEenb4n1Ws12sFWqSw?e=SgQJDg&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D) |
+| **Tiempo de inicio y duración** | 00:00 - 11:46 |
+
+| Campo | Información |
+|-------|--------------|
+| **Resumen** | David Morales es supervisor de mantenimiento y cuenta con formación en Ingeniería Industrial. Actualmente trabaja en Lima y tiene aproximadamente dos años desempeñándose en su cargo. Sus principales responsabilidades consisten en coordinar equipos de trabajo, priorizar actividades de mantenimiento y asegurar la continuidad operativa de los equipos. Utiliza herramientas como SAP, Excel, Teams, correo corporativo y WhatsApp para gestionar información y comunicarse con distintas áreas. Durante la entrevista señaló que uno de los mayores problemas en su trabajo es la dispersión de la información en múltiples sistemas y documentos, lo que dificulta la toma rápida de decisiones y el análisis de fallas. También indicó que la recuperación de componentes involucra distintos proveedores, registros históricos y documentación técnica que muchas veces se encuentra distribuida entre SAP, correos electrónicos y carpetas compartidas. Esta situación genera retrasos al momento de investigar fallas, comparar proveedores o elaborar reportes. David manifestó que le gustaría contar con una solución centralizada que le permita acceder de forma rápida al historial de componentes, proveedores, reparaciones y resultados de mantenimiento para mejorar la eficiencia de su trabajo y reducir el tiempo invertido en la búsqueda de información. |
+| **Frustraciones identificadas** | - Información dispersa en múltiples sistemas.<br>- Dificultad para tomar decisiones rápidas ante imprevistos.<br>- Tiempo excesivo buscando registros históricos.<br>- Procesos manuales para comparar desempeño de proveedores.<br>- Elaboración de informes requiere recopilar información de diversas fuentes. |
+| **Objetivos identificados** | - Mejorar la organización de la información de mantenimiento.<br>- Acceder rápidamente al historial de componentes recuperados.<br>- Facilitar el seguimiento de proveedores y reparaciones.<br>- Optimizar la toma de decisiones en situaciones críticas.<br>- Reducir tiempos de búsqueda y análisis de información. |
+| **Herramientas utilizadas** | Laptop, teléfono móvil, Google Chrome, SAP, Excel, Microsoft Teams, correo corporativo y WhatsApp. |
+
+
 ### 2.2.3. Análisis de entrevistas.
 ## 2.3. Needfinding.
 ### 2.3.1. User Personas.
