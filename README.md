@@ -690,27 +690,28 @@ Entrevistado #1
 
 | Campo | Información |
 |-------|--------------|
-| **Nombre del entrevistado** | David Morales |
+| **Nombre del entrevistado** | Aaron Ramirez |
 | **Edad** | 24 años |
-| **Screenshot de la entrevista** | ![image alt](assets/img/chapter-i/intervieews/Captura%20de%20pantalla%202026-09-18%20033539.png)  |
-| **Link de la entrevista** | [[Agregar enlace]](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20221b734_upc_edu_pe/IQCApSWsPon_RLsgnBkGd3c3AVApScEenb4n1Ws12sFWqSw?e=SgQJDg&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D) |
-| **Tiempo de inicio y duración** | 00:00 - 11:46 |
+| **Screenshot de la entrevista** | ![image alt](assets/img/chapter-i/intervieews/aaronRamirez.png)  |
+| **Link de la entrevista** | [[Enlace entrevista]](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202410376_upc_edu_pe/IQBs-1FmG7h4TKP8ZA-_jbPCAc8dBNia7aRvxhqm3WRkjfE?e=PJEVaj&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D) |
+| **Tiempo de inicio y duración** | 00:00 - 7:58 |
 
 | Campo | Información |
 |-------|--------------|
-| **Resumen** | David Morales es supervisor de mantenimiento y cuenta con formación en Ingeniería Industrial. Actualmente trabaja en Lima y tiene aproximadamente dos años desempeñándose en su cargo. Sus principales responsabilidades consisten en coordinar equipos de trabajo, priorizar actividades de mantenimiento y asegurar la continuidad operativa de los equipos. Utiliza herramientas como SAP, Excel, Teams, correo corporativo y WhatsApp para gestionar información y comunicarse con distintas áreas. Durante la entrevista señaló que uno de los mayores problemas en su trabajo es la dispersión de la información en múltiples sistemas y documentos, lo que dificulta la toma rápida de decisiones y el análisis de fallas. También indicó que la recuperación de componentes involucra distintos proveedores, registros históricos y documentación técnica que muchas veces se encuentra distribuida entre SAP, correos electrónicos y carpetas compartidas. Esta situación genera retrasos al momento de investigar fallas, comparar proveedores o elaborar reportes. David manifestó que le gustaría contar con una solución centralizada que le permita acceder de forma rápida al historial de componentes, proveedores, reparaciones y resultados de mantenimiento para mejorar la eficiencia de su trabajo y reducir el tiempo invertido en la búsqueda de información. |
-| **Frustraciones identificadas** | - Información dispersa en múltiples sistemas.<br>- Dificultad para tomar decisiones rápidas ante imprevistos.<br>- Tiempo excesivo buscando registros históricos.<br>- Procesos manuales para comparar desempeño de proveedores.<br>- Elaboración de informes requiere recopilar información de diversas fuentes. |
-| **Objetivos identificados** | - Mejorar la organización de la información de mantenimiento.<br>- Acceder rápidamente al historial de componentes recuperados.<br>- Facilitar el seguimiento de proveedores y reparaciones.<br>- Optimizar la toma de decisiones en situaciones críticas.<br>- Reducir tiempos de búsqueda y análisis de información. |
+| **Resumen** | Aaron Ramirez es especialista de Gestión y Desarrollo, con experiencia en la coordinación y seguimiento de iniciativas orientadas a mejorar los procesos y el desempeño de los equipos. Actualmente trabaja en Lima y cuenta con aproximadamente dos años de experiencia en su posición. Entre sus principales funciones se encuentran gestionar información de distintas áreas, dar seguimiento a actividades y proyectos, coordinar con equipos multidisciplinarios y contribuir en la identificación de oportunidades de mejora. En su trabajo utiliza herramientas como SAP, Excel, Microsoft Teams, correo corporativo y WhatsApp para organizar información, realizar seguimiento de actividades y mantener la comunicación con diferentes equipos y áreas de la organización. Durante la entrevista, señaló que uno de los principales desafíos que enfrenta es la dispersión de información en diferentes plataformas, documentos y canales de comunicación. Esta situación dificulta consolidar antecedentes, realizar seguimiento oportuno y obtener una visión completa de los procesos para tomar decisiones de manera ágil. Asimismo, mencionó que parte de la información relevante para sus actividades se encuentra distribuida entre sistemas corporativos, correos electrónicos, archivos compartidos y registros históricos, lo que genera tiempo adicional dedicado a localizar, validar y organizar datos. Aaron manifestó interés en contar con una solución centralizada que facilite el acceso y consulta de información relevante, permitiéndole integrar antecedentes, registros y documentación de distintas fuentes. Una herramienta de este tipo le permitiría reducir el tiempo destinado a la búsqueda de información, mejorar el seguimiento de iniciativas y contar con una visión más completa para apoyar la gestión y el desarrollo de los equipos y procesos. |
+| **Frustraciones identificadas** | - Información distribuida entre diferentes sistemas, archivos y canales de comunicación.<br>- Dificultad para consolidar información de distintas áreas de manera rápida.<br>- Tiempo elevado buscando antecedentes y registros históricos.<br>- Procesos manuales para recopilar, validar y comparar información.<br>- Elaboración de reportes requiere consultar múltiples fuentes y documentos.<br>- Falta de una vista centralizada que facilite el seguimiento de iniciativas y resultados. |
+| **Objetivos identificados** | - Centralizar y organizar la información relevante para la gestión.<br>- Acceder rápidamente a antecedentes y registros históricos.<br>- Facilitar el seguimiento de iniciativas, actividades y resultados.<br>- Mejorar la coordinación y comunicación entre diferentes áreas.<br>- Agilizar el análisis de información para apoyar la toma de decisiones.<br>- Reducir el tiempo destinado a buscar, consolidar y validar información. |
 | **Herramientas utilizadas** | Laptop, teléfono móvil, Google Chrome, SAP, Excel, Microsoft Teams, correo corporativo y WhatsApp. |
 
-Entrevistado #2
+
+Entrevistado #7
 
 | Campo | Información |
 |-------|--------------|
 | **Nombre del entrevistado** | David Morales |
 | **Edad** | 24 años |
 | **Screenshot de la entrevista** | ![image alt](assets/img/chapter-i/intervieews/Captura%20de%20pantalla%202026-09-18%20033539.png)  |
-| **Link de la entrevista** | [[Agregar enlace]](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20221b734_upc_edu_pe/IQCApSWsPon_RLsgnBkGd3c3AVApScEenb4n1Ws12sFWqSw?e=SgQJDg&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D) |
+| **Link de la entrevista** | [[Enlace a entrevista]](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20221b734_upc_edu_pe/IQCApSWsPon_RLsgnBkGd3c3AVApScEenb4n1Ws12sFWqSw?e=SgQJDg&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D) |
 | **Tiempo de inicio y duración** | 00:00 - 11:46 |
 
 | Campo | Información |
