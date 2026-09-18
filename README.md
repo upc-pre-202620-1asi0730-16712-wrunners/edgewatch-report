@@ -20,7 +20,7 @@ Docente: Sanchez Seña, Alberto Wilmer
 | U20241b962 | Navarro Aldoradin | Carolina Celeste  |
 | U202315628 | Alvarez Falen     | Esteban Valentino |
 | U202425159 | Catacora Tupa     | Jhon Deyner       |
-|            | Vasquez Laos      | Sebastian Andrews |
+| U20221B734 | Vasquez Laos      | Sebastian Andrews |
 | U202410376 | Yopla Romero      | Jonathan Alberto  |
 
 
@@ -2645,6 +2645,29 @@ Durante el Sprint 1, se realizó el despliegue de la landing page del proyecto u
 ### 5.3.3. Evaluaciones según heurísticas.
 ## 5.4. Video About-the-Product.
 # Conclusiones
+
+## Conclusiones
+
+1. EdgeWatch responde a una problemática real del sector industrial: la falta de trazabilidad, monitoreo y análisis oportuno de los procesos de recubrimiento HVOF.
+
+2. La investigación realizada permitió identificar que la información del proceso se encuentra dispersa entre registros manuales, archivos locales y diferentes sistemas, lo que dificulta el seguimiento de las órdenes de trabajo y la generación de evidencias de calidad.
+
+3. El análisis de usuarios permitió reconocer las necesidades principales de los Ingenieros de Calidad, Supervisores de Mantenimiento y Operadores. Mientras unos requieren respaldar la calidad del servicio, otros necesitan detectar desviaciones y diagnosticar fallas con mayor rapidez.
+
+4. La aplicación de Lean UX, entrevistas, User Personas, Journey Mapping, Event Storming e Impact Mapping permitió transformar las necesidades identificadas en requerimientos y funcionalidades concretas para la solución.
+
+5. La propuesta integra funcionalidades importantes como la ingesta de telemetría, el monitoreo de parámetros, las alertas en tiempo real, el diagnóstico asistido, la generación de certificados y el seguimiento del desempeño de los componentes frente al PCR.
+
+6. Los diagramas de arquitectura, clases y base de datos contribuyeron a representar de manera ordenada la estructura y el funcionamiento esperado del sistema, sirviendo como base para una futura implementación.
+
+7. El uso de GitHub, ramas, commits y pull requests facilitó la organización del trabajo colaborativo, la integración de los aportes individuales y el control de versiones del informe.
+
+8. EdgeWatch tiene el potencial de reducir los tiempos de diagnóstico, mejorar la toma de decisiones y fortalecer la relación entre los proveedores de recubrimiento y sus clientes mediante información confiable y consultable.
+
+9. Para validar completamente la propuesta, será necesario implementar un prototipo funcional y realizar pruebas con datos reales y usuarios del sector industrial.
+
+10. En conclusión, el proyecto establece una base sólida para una plataforma especializada en la trazabilidad y monitoreo de procesos HVOF, alineando las necesidades del negocio, los usuarios y la solución tecnológica propuesta.
+
 ## Conclusiones y recomendaciones.
 ## Video About-the-Team.
 
