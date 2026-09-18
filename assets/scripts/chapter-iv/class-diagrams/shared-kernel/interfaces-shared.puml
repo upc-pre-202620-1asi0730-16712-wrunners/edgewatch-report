@@ -1,0 +1,30 @@
+@startuml EdgeWatch_SharedKernel_Interfaces
+skinparam packageStyle rectangle
+skinparam classAttributeIconSize 0
+skinparam linetype ortho
+skinparam nodesep 40
+skinparam ranksep 60
+hide empty members
+
+package "SharedKernel" #F5F5F5 {
+
+
+    package "shared.interfaces" {
+        class HealthController <<REST>> {
+            + health(): ResponseEntity
+        }
+        class GlobalExceptionHandler <<REST Advice>> {
+            + handleDomainException(ex): ResponseEntity<ErrorResource>
+            + handleValidation(ex): ResponseEntity<ErrorResource>
+            + handleNotFound(ex): ResponseEntity<ErrorResource>
+        }
+        class ErrorResource <<Resource>> {
+            - code: String
+            - message: String
+            - timestamp: Instant
+        }
+        GlobalExceptionHandler ..> ErrorResource
+    }
+}
+
+@enduml

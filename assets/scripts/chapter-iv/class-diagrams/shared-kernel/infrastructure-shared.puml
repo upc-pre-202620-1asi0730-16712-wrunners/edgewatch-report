@@ -1,0 +1,42 @@
+@startuml EdgeWatch_SharedKernel_Infrastructure
+skinparam packageStyle rectangle
+skinparam classAttributeIconSize 0
+skinparam linetype ortho
+skinparam nodesep 40
+skinparam ranksep 60
+hide empty members
+
+package "SharedKernel" #F5F5F5 {
+
+
+    package "shared.infrastructure" {
+        class SpringIntegrationEventPublisher <<Adapter>> {
+            - applicationEventPublisher: ApplicationEventPublisher
+            + publish(event: IntegrationEvent): void
+        }
+        class SnakeCasePhysicalNamingStrategy <<Persistence>> {
+            + toPhysicalTableName(name, context): Identifier
+            + toPhysicalColumnName(name, context): Identifier
+        }
+        class SecurityConfig <<Configuration>> {
+            + filterChain(http: HttpSecurity): SecurityFilterChain
+        }
+        class CorsConfig <<Configuration>> {
+            + corsConfigurer(): WebMvcConfigurer
+        }
+        class OpenApiConfiguration <<Configuration>> {
+            + customOpenApi(): OpenAPI
+        }
+        class StandardUnitConversionService <<Adapter>> {
+            - conversionTable: Map<UnitPair, BigDecimal>
+            + convert(value: BigDecimal, from: Unit, to: Unit): BigDecimal
+            + canonicalUnitFor(category: UnitCategoryEnum): Unit
+        }
+        IntegrationEventPublisher <|.. SpringIntegrationEventPublisher
+        UnitConversionService <|.. StandardUnitConversionService
+    }
+
+
+}
+
+@enduml

@@ -1,0 +1,157 @@
+@startuml EdgeWatch_SharedKernel_Full
+skinparam packageStyle rectangle
+skinparam classAttributeIconSize 0
+skinparam linetype ortho
+skinparam nodesep 40
+skinparam ranksep 60
+hide empty members
+
+package "SharedKernel" #F5F5F5 {
+
+    package "shared.domain" {
+        abstract class AuditableModel {
+            - id: Long
+            - createdAt: Instant
+            - updatedAt: Instant
+        }
+        abstract class AuditableAbstractAggregateRoot {
+            + registerEvent(event: Object): void
+            + clearDomainEvents(): void
+        }
+        AuditableModel <|-- AuditableAbstractAggregateRoot
+
+        abstract class IntegrationEvent {
+            - eventId: UUID
+            - occurredAt: Instant
+            - sourceContext: String
+            - organizationId: Long
+        }
+
+        class PlcTimestamp <<Value Object>> {
+            - epochMillis: long
+            - plcClockOffsetMillis: long
+            + toInstant(): Instant
+        }
+        class TimeWindow <<Value Object>> {
+            - start: Instant
+            - end: Instant
+            - zone: ZoneId
+            + duration(): Duration
+            + contains(instant: Instant): boolean
+        }
+        class ReportingPeriod <<Value Object>> {
+            - from: LocalDate
+            - to: LocalDate
+            - grouping: PeriodGroupingEnum
+            + validate(): void
+        }
+        class SamplingInterval <<Value Object>> {
+            - millis: int
+            + validate(): void
+        }
+        enum PeriodGroupingEnum {
+            DAILY
+            WEEKLY
+            MONTHLY
+        }
+        ReportingPeriod --> PeriodGroupingEnum
+
+        class Unit <<Value Object>> {
+            - symbol: String
+            - category: UnitCategoryEnum
+            - system: UnitSystemEnum
+            + validate(): void
+        }
+        enum UnitCategoryEnum {
+            PRESSURE
+            TEMPERATURE
+            FLOW
+            SPEED
+            LENGTH
+            MASS
+            TIME
+            RATIO
+            DIMENSIONLESS
+        }
+        enum UnitSystemEnum {
+            INTERNATIONAL_SYSTEM
+            IMPERIAL_SYSTEM
+        }
+        Unit --> UnitCategoryEnum
+        Unit --> UnitSystemEnum
+
+        class Money <<Value Object>> {
+            - amount: BigDecimal
+            - currency: Currency
+        }
+        class Hourmeter <<Value Object>> {
+            - hours: BigDecimal
+            + minus(other: Hourmeter): Hourmeter
+        }
+        class Weight <<Value Object>> {
+            - value: BigDecimal
+            - unit: Unit
+        }
+        class Ruc <<Value Object>> {
+            - value: String
+            + validate(): void
+        }
+        Weight "1" --> "1" Unit : measuredIn
+    }
+
+    package "shared.application" {
+        interface IntegrationEventPublisher <<Port>> {
+            + publish(event: IntegrationEvent): void
+        }
+        interface UnitConversionService <<Port>> {
+            + convert(value: BigDecimal, from: Unit, to: Unit): BigDecimal
+            + canonicalUnitFor(category: UnitCategoryEnum): Unit
+        }
+    }
+
+    package "shared.infrastructure" {
+        class SpringIntegrationEventPublisher <<Adapter>> {
+            - applicationEventPublisher: ApplicationEventPublisher
+            + publish(event: IntegrationEvent): void
+        }
+        class SnakeCasePhysicalNamingStrategy <<Persistence>> {
+            + toPhysicalTableName(name, context): Identifier
+            + toPhysicalColumnName(name, context): Identifier
+        }
+        class SecurityConfig <<Configuration>> {
+            + filterChain(http: HttpSecurity): SecurityFilterChain
+        }
+        class CorsConfig <<Configuration>> {
+            + corsConfigurer(): WebMvcConfigurer
+        }
+        class OpenApiConfiguration <<Configuration>> {
+            + customOpenApi(): OpenAPI
+        }
+        class StandardUnitConversionService <<Adapter>> {
+            - conversionTable: Map<UnitPair, BigDecimal>
+            + convert(value: BigDecimal, from: Unit, to: Unit): BigDecimal
+            + canonicalUnitFor(category: UnitCategoryEnum): Unit
+        }
+        IntegrationEventPublisher <|.. SpringIntegrationEventPublisher
+        UnitConversionService <|.. StandardUnitConversionService
+    }
+
+    package "shared.interfaces" {
+        class HealthController <<REST>> {
+            + health(): ResponseEntity
+        }
+        class GlobalExceptionHandler <<REST Advice>> {
+            + handleDomainException(ex): ResponseEntity<ErrorResource>
+            + handleValidation(ex): ResponseEntity<ErrorResource>
+            + handleNotFound(ex): ResponseEntity<ErrorResource>
+        }
+        class ErrorResource <<Resource>> {
+            - code: String
+            - message: String
+            - timestamp: Instant
+        }
+        GlobalExceptionHandler ..> ErrorResource
+    }
+}
+
+@enduml

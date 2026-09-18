@@ -1,0 +1,24 @@
+@startuml EdgeWatch_SharedKernel_Application
+skinparam packageStyle rectangle
+skinparam classAttributeIconSize 0
+skinparam linetype ortho
+skinparam nodesep 40
+skinparam ranksep 60
+hide empty members
+
+package "SharedKernel" #F5F5F5 {
+
+
+    package "shared.application" {
+        interface IntegrationEventPublisher <<Port>> {
+            + publish(event: IntegrationEvent): void
+        }
+        interface UnitConversionService <<Port>> {
+            + convert(value: BigDecimal, from: Unit, to: Unit): BigDecimal
+            + canonicalUnitFor(category: UnitCategoryEnum): Unit
+        }
+    }
+
+}
+
+@enduml
