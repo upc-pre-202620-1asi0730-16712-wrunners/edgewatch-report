@@ -6,7 +6,7 @@
 ***Carrera de Ingeniería de Software***  
 *5to ciclo*  
 **1ASI0730**  
-**Desarrollo de Aplicaciones Open Source**  
+**Aplicaciones Web**  
 NRC: 16712  
 Docente: Sanchez Seña, Alberto Wilmer
 ## **"Informe del Trabajo Final"**
