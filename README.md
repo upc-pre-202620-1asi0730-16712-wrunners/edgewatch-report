@@ -52,8 +52,8 @@ El URL del repositorio para el Project Report en la organización de github es e
 - [1.1.1. Descripción de la Startup](#111-descripción-de-la-startup)
 - [1.1.2. Perfiles de integrantes del equipo](#112-perfiles-de-integrantes-del-equipo)
 - [1.2. Solution Profile](#12-solution-profile)
-- [1.2.1 Antecedentes y problemática](#121-antecedentes-y-problemática)
-- [1.2.2 Lean UX Process.](#122-lean-ux-process)
+- [1.2.1. Antecedentes y problemática](#121-antecedentes-y-problemática)
+- [1.2.2. Lean UX Process.](#122-lean-ux-process)
 - [1.2.2.1. Lean UX Problem Statements.](#1221-lean-ux-problem-statements)
 - [1.2.2.2. Lean UX Assumptions.](#1222-lean-ux-assumptions)
 - [1.2.2.3. Lean UX Hypothesis Statements.](#1223-lean-ux-hypothesis-statements)
@@ -86,7 +86,7 @@ El URL del repositorio para el Project Report en la organización de github es e
 - [4.1.1. General Style Guidelines.](#411-general-style-guidelines)
 - [4.1.2. Web Style Guidelines.](#412-web-style-guidelines)
 - [4.2. Information Architecture.](#42-information-architecture)
-- [4.2.1. Organization Systems. ](#421-organization-systems)
+- [4.2.1. Organization Systems.](#421-organization-systems)
 - [4.2.2. Labeling Systems.](#422-labeling-systems)
 - [4.2.3. SEO Tags and Meta Tags](#423-seo-tags-and-meta-tags)
 - [4.2.4. Searching Systems.](#424-searching-systems)
@@ -116,15 +116,15 @@ El URL del repositorio para el Project Report en la organización de github es e
 - [5.1.3. Source Code Style Guide & Conventions.](#513-source-code-style-guide--conventions)
 - [5.1.4. Software Deployment Configuration.](#514-software-deployment-configuration)
 - [5.2. Landing Page, Services & Applications Implementation.](#52-landing-page-services--applications-implementation)
-- [5.2.X. Sprint n](#52x-sprint-n)
-- [5.2.X.1. Sprint Planning n.](#52x1-sprint-planning-n)
-- [5.2.X.2. Aspect Leaders and Collaborators.](#52x2-aspect-leaders-and-collaborators)
-- [5.2.X.3. Sprint Backlog n.](#52x3-sprint-backlog-n)
-- [5.2.X.4. Development Evidence for Sprint Review.](#52x4-development-evidence-for-sprint-review)
-- [5.2.X.5. Execution Evidence for Sprint Review.](#52x5-execution-evidence-for-sprint-review)
-- [5.2.X.6. Services Documentation Evidence for Sprint Review.](#52x6-services-documentation-evidence-for-sprint-review)
-- [5.2.X.7. Software Deployment Evidence for Sprint Review.](#52x7-software-deployment-evidence-for-sprint-review)
-- [5.2.X.8. Team Collaboration Insights during Sprint.](#52x8-team-collaboration-insights-during-sprint)
+- [5.2.1. Sprint 1](#521-sprint-1)
+- [5.2.1.1. Sprint Planning 1.](#5211-sprint-planning-1)
+- [5.2.1.2. Aspect Leaders and Collaborators.](#5212-aspect-leaders-and-collaborators)
+- [5.2.1.3. Sprint Backlog 1.](#5213-sprint-backlog-1)
+- [5.2.1.4. Development Evidence for Sprint Review.](#5214-development-evidence-for-sprint-review)
+- [5.2.1.5. Execution Evidence for Sprint Review.](#5215-execution-evidence-for-sprint-review)
+- [5.2.1.6. Services Documentation Evidence for Sprint Review.](#5216-services-documentation-evidence-for-sprint-review)
+- [5.2.1.7. Software Deployment Evidence for Sprint Review.](#5217-software-deployment-evidence-for-sprint-review)
+- [5.2.1.8. Team Collaboration Insights during Sprint.](#5218-team-collaboration-insights-during-sprint)
 - [5.3. Validation Interviews.](#53-validation-interviews)
 - [5.3.1. Diseño de Entrevistas.](#531-diseño-de-entrevistas)
 - [5.3.2. Registro de Entrevistas.](#532-registro-de-entrevistas)
@@ -172,7 +172,8 @@ Ser la plataforma de referencia en Latinoamérica para el monitoreo y la trazabi
 
 ## 1.2. Solution Profile
 
-### 1.2.1 Antecedentes y problemática
+### 1.2.1. Antecedentes y problemática
+
 La minería constituye el principal motor exportador de la economía peruana. Según el Boletín Estadístico Minero del Ministerio de Energía y Minas, las exportaciones de productos mineros totalizaron US$ 62,848 millones durante 2025, un crecimiento de 27.2 % respecto al año anterior, y representaron alrededor del 67.5 % del valor total exportado por el país. Esta magnitud implica que cualquier interrupción en la cadena de operación minera tiene un impacto directo sobre la economía nacional.
 
 Para sostener esa operación, las mineras dependen de componentes sometidos a desgaste abrasivo severo: ejes de bombas de lodo, rodillos, válvulas e impulsores. Una de las tecnologías más empleadas para extender la vida útil de estas piezas es el recubrimiento por proyección térmica de alta velocidad (HVOF, High Velocity Oxygen Fuel), que deposita capas metálicas de alta densidad y resistencia al desgaste. En el Perú, este servicio no lo ejecuta la minera directamente, sino empresas especializadas que operan como proveedores del sector.
@@ -281,7 +282,7 @@ class ED1,ED2,ED3,ED4,ED5 efectoDirecto
 class EF1,EF2,EF3,EF4 efectoFinal
 ```
 
-### 1.2.2 Lean UX Process.
+### 1.2.2. Lean UX Process.
 
 El Lean UX Process permite a WebRunners validar de forma temprana las creencias que sustentan EdgeWatch, evitando construir funcionalidad sobre supuestos no verificados. El proceso parte de un enunciado único del problema para todo el proyecto, del cual se derivan los assumptions organizados en cinco categorías, y de estos, específicamente de los feature assumptions, se formulan los hypothesis statements que el equipo someterá a validación durante los sprints. Se aplica la versión del template Brand new initiative, dado que EdgeWatch no constituye la evolución de un producto existente sino una iniciativa nueva.
 
@@ -312,6 +313,7 @@ A continuación se enumeran las creencias resultantes de la sesión de discusió
 6. Creemos que el conocimiento del dominio industrial que posee el equipo constituye una barrera de entrada frente a competidores de software genérico de mantenimiento.
 
 **Business Outcome Assumptions**
+
 1. Creemos que el éxito se evidenciará en la cantidad de órdenes de trabajo cerradas en la plataforma con certificado de calidad emitido.
 2. Creemos que el éxito se evidenciará en la reducción del tiempo promedio entre la ocurrencia de una falla y la identificación de su causa probable.
 3. Creemos que el éxito se evidenciará en la tasa de renovación de la suscripción al término del primer año.
@@ -320,6 +322,7 @@ A continuación se enumeran las creencias resultantes de la sesión de discusió
 6. Creemos que el éxito se evidenciará en la reducción del número de reclamos de clientes por fallas prematuras que no pudieron ser explicadas.
 
 **User Assumptions**
+
 1. Creemos que el usuario principal del segmento de empresas de servicio es el Ingeniero de Calidad o Jefe de Procesos, responsable de que el recubrimiento cumpla las especificaciones acordadas con el cliente.
 2. Creemos que el usuario principal del segmento de plantas con línea in-house es el Jefe o Supervisor de Mantenimiento, responsable de la disponibilidad del equipo de recubrimiento.
 3. Creemos que el operador de la cabina de rociado es un usuario secundario que interactúa con la plataforma principalmente para iniciar y cerrar sesiones, y para atender alertas.
@@ -328,6 +331,7 @@ A continuación se enumeran las creencias resultantes de la sesión de discusió
 6. Creemos que el técnico de mantenimiento no requiere que el sistema le indique qué hacer, sino dónde mirar: qué componente de máquina está implicado en la falla.
 
 **User Outcome and Benefit Assumptions**
+
 1. Creemos que el Ingeniero de Calidad busca poder respaldar ante su cliente que un lote fue recubierto dentro de tolerancias, sin depender de reconstruir información desde registros dispersos.
 2. Creemos que el Jefe de Mantenimiento busca reducir el tiempo que dedica a determinar por qué se detuvo el equipo.
 3. Creemos que ambos perfiles buscan anticipar fallas recurrentes antes de que impacten una ventana de producción comprometida.
@@ -336,6 +340,7 @@ A continuación se enumeran las creencias resultantes de la sesión de discusió
 6. Creemos que el operador obtiene valor al ser advertido de una desviación mientras la sesión está en curso, y no al finalizarla.
 
 **Feature Assumptions**
+
 1. Creemos que un endpoint REST de ingesta de telemetría que registre las lecturas de proceso durante la sesión de rociado permitirá conservar el dato que hoy se pierde.
 2. Creemos que vincular cada sesión de rociado con su OF, WO, cliente y modelo de componente permitirá reconstruir la historia completa de cualquier pieza.
 3. Creemos que permitir la configuración de rangos nominales por equipo y la detección automática de desviaciones permitirá identificar condiciones fuera de tolerancia sin depender de la vigilancia del operador.
@@ -346,7 +351,8 @@ A continuación se enumeran las creencias resultantes de la sesión de discusió
 8. Creemos que el registro de vida útil en campo contrastado contra el PCR comprometido permitirá evaluar el desempeño real del recubrimiento a lo largo del tiempo.
 9. Creemos que reportes de tasa de falla agrupados por cliente y por modelo de componente revelarán patrones que hoy no son visibles para la organización.
 
-### 1.2.2.3. Lean UX Hypothesis Statements.
+#### 1.2.2.3. Lean UX Hypothesis Statements.
+
 Se formula un hypothesis statement por cada feature assumption enunciado en la sección anterior, siguiendo el template establecido.  
 
 ---
@@ -364,6 +370,7 @@ Se formula un hypothesis statement por cada feature assumption enunciado en la s
 **Si** los Ingenieros de Calidad en empresas de servicio de recubrimiento HVOF  
 **Obtienen** la capacidad de reconstruir la historia completa de cualquier componente recubierto a demanda  
 **Con** la vinculación de cada sesión de rociado con su orden de fabricación, orden de trabajo, cliente y modelo de componente.  
+
 ---
 **Hypothesis Statement 03. Rangos nominales y detección de desviaciones**  
 
@@ -371,6 +378,7 @@ Se formula un hypothesis statement por cada feature assumption enunciado en la s
 **Si** los Ingenieros de Calidad y los Operadores de cabina de rociado  
 **Obtienen** la identificación automática de condiciones fuera de tolerancia sin depender de una supervisión manual continua  
 **Con** la configuración de rangos nominales de parámetros por equipo y la detección automática de desviaciones.  
+
 ---
 **Hypothesis Statement 04. Alertas en tiempo real**  
 
@@ -378,6 +386,7 @@ Se formula un hypothesis statement por cada feature assumption enunciado en la s
 **Si** los Operadores de cabina de rociado y los Supervisores de Mantenimiento  
 **Obtienen** conocimiento oportuno de una desviación mientras la sesión aún está en curso y no después de que finalice  
 **Con** un módulo de alertas en tiempo real que notifique al usuario responsable cuando se detecte una desviación o falla.  
+
 ---
 **Hypothesis Statement 05. Diagnóstico asistido por reglas causa-efecto**  
 
@@ -385,6 +394,7 @@ Se formula un hypothesis statement por cada feature assumption enunciado en la s
 **Si** los Supervisores de Mantenimiento y los técnicos de mantenimiento  
 **Obtienen** un diagnóstico que señale la pieza específica de la máquina involucrada en lugar de un código de falla sin procesar  
 **Con** un catálogo configurable de reglas causa-efecto que correlacione la falla con una pieza de máquina sospechosa.
+
 ---
 **Hypothesis Statement 06. Detección de patrones recurrentes de falla**  
 
@@ -392,6 +402,7 @@ Se formula un hypothesis statement por cada feature assumption enunciado en la s
 **Si** los Supervisores de Mantenimiento tanto en empresas de servicio de recubrimiento como en plantas con línea in-house  
 **Obtienen** visibilidad temprana de las piezas de máquina que están fallando reiteradamente  
 **Con** la detección automática de patrones recurrentes de falla agrupados por pieza de máquina y por equipo.  
+
 ---
 **Hypothesis Statement 07. Certificados de calidad por orden de trabajo**  
 
@@ -399,6 +410,7 @@ Se formula un hypothesis statement por cada feature assumption enunciado en la s
 **Si** los Ingenieros de Calidad en empresas de servicio de recubrimiento HVOF  
 **Obtienen** la capacidad de entregar a sus clientes mineros un respaldo documentado de que el lote fue recubierto dentro de las tolerancias  
 **Con** la generación exportable de certificados de calidad por orden de trabajo.  
+
 ---
 **Hypothesis Statement 08. Registro de vida útil contra PCR**  
 
@@ -406,7 +418,8 @@ Se formula un hypothesis statement por cada feature assumption enunciado en la s
 **Si** los Ingenieros de Calidad y los Supervisores de Mantenimiento  
 **Obtienen** la capacidad de determinar si una falla prematura en campo se originó en el proceso de recubrimiento o por una causa externa  
 **Con** el registro de vida útil en campo contrastado contra el objetivo de Reemplazo Planificado de Componentes (PCR) comprometido.  
---- 
+
+---
 
 **Hypothesis Statement 09. Reportes de tasa de falla por cliente y modelo**  
 
@@ -414,9 +427,11 @@ Se formula un hypothesis statement por cada feature assumption enunciado en la s
 **Si** los Ingenieros de Calidad y los Jefes de Planta  
 **Obtienen** visibilidad sobre patrones de falla que no son observables a partir de órdenes de trabajo individuales  
 **Con** reportes de tasa de fallas agrupados por cliente y por modelo de componente.
+
 ---
 
-### 1.2.2.4. Lean UX Canvas.
+#### 1.2.2.4. Lean UX Canvas.
+
 A continuación se presenta el Lean UX Canvas (versión 2, Jeff Gothelf) elaborado por el equipo, el cual consolida en un solo artefacto el problema de negocio, los resultados esperados, los usuarios, las soluciones propuestas y las hipótesis derivadas de las secciones anteriores. Los cuadros 7 y 8 establecen la prioridad de aprendizaje del equipo para el primer ciclo de validación.
 
 
@@ -564,23 +579,20 @@ EdgeWatch se ubica deliberadamente en el espacio intermedio. Por ello, el análi
 A partir del análisis anterior, WebRunners establece cuatro estrategias con sus tácticas asociadas, orientadas a aprovechar las debilidades identificadas en los competidores y a mitigar las amenazas sobre la propia posición.
 
 - **Estrategia 1. Especialización de dominio frente a plataformas genéricas**  
-    Frente a la amplitud funcional de DELMIAWorks y otras plataformas MES/QMS, EdgeWatch compite por profundidad y no por cobertura. La ventaja no consiste en tener más módulos, sino en que el sistema entiende qué significa un feedrate en cero o una sobrepresión de tolva.  
-    **Tácticas**: incorporar en el producto un catálogo de reglas causa-efecto construido a partir de fallas reales documentadas en operación; emplear en toda la interfaz el ubiquitous language del dominio (OF, WO, PCR, sesión de rociado) en lugar de terminología genérica de manufactura; y sustentar la propuesta comercial mostrando un diagnóstico concreto que una plataforma genérica no podría producir.  
-
+  Frente a la amplitud funcional de DELMIAWorks y otras plataformas MES/QMS, EdgeWatch compite por profundidad y no por cobertura. La ventaja no consiste en tener más módulos, sino en que el sistema entiende qué significa un feedrate en cero o una sobrepresión de tolva.  
+  **Tácticas**: incorporar en el producto un catálogo de reglas causa-efecto construido a partir de fallas reales documentadas en operación; emplear en toda la interfaz el ubiquitous language del dominio (OF, WO, PCR, sesión de rociado) en lugar de terminología genérica de manufactura; y sustentar la propuesta comercial mostrando un diagnóstico concreto que una plataforma genérica no podría producir.
 
 - **Estrategia 2. Costo de entrada bajo frente a soluciones intensivas en hardware**  
   Frente a Tecnar y Oerlikon Metco, cuyas soluciones exigen inversión de capital significativa, EdgeWatch compite por accesibilidad, aprovechando la telemetría que el PLC del equipo ya genera.  
   **Tácticas**: adoptar un modelo de suscripción mensual por equipo monitoreado, sin inversión inicial en hardware; ofrecer un periodo de prueba operando sobre datos históricos del propio cliente; e integrarse mediante un gateway con API REST que no requiere modificar el PLC ni el software del fabricante del equipo.
 
-
-- **Estrategia 3. Neutralidad frente al fabricante del equipo**
+- **Estrategia 3. Neutralidad frente al fabricante del equipo**  
   Frente a Oerlikon Metco, cuyo software está vinculado a su propio parque de equipos, EdgeWatch compite por independencia: los talleres de recubrimiento suelen operar equipos de distintas marcas y generaciones.  
-  Tácticas: diseñar el contrato de ingesta de telemetría de forma agnóstica al fabricante, con mapeo configurable de tags por equipo; permitir la configuración de rangos nominales por equipo en lugar de asumir un modelo único; y posicionar comercialmente la neutralidad como argumento frente a talleres con parque mixto.
+  **Tácticas**: diseñar el contrato de ingesta de telemetría de forma agnóstica al fabricante, con mapeo configurable de tags por equipo; permitir la configuración de rangos nominales por equipo en lugar de asumir un modelo único; y posicionar comercialmente la neutralidad como argumento frente a talleres con parque mixto.
 
-
-- **Estrategia 4. Cierre del ciclo hacia el desempeño en campo**
-  Ningún competidor identificado conecta el proceso de recubrimiento con lo que ocurre después con la pieza. Esta es la dimensión donde EdgeWatch no tiene competencia directa y donde concentra su diferenciación.   
-  Tácticas: hacer del análisis PCR el eje del discurso comercial y del Landing Page; construir reportes de tasa de falla por cliente y por modelo de componente que ningún otro actor puede ofrecer; y desarrollar casos documentados en los que la plataforma permita explicar el origen de una falla prematura en campo.
+- **Estrategia 4. Cierre del ciclo hacia el desempeño en campo**  
+  Ningún competidor identificado conecta el proceso de recubrimiento con lo que ocurre después con la pieza. Esta es la dimensión donde EdgeWatch no tiene competencia directa y donde concentra su diferenciación.  
+  **Tácticas**: hacer del análisis PCR el eje del discurso comercial y del Landing Page; construir reportes de tasa de falla por cliente y por modelo de componente que ningún otro actor puede ofrecer; y desarrollar casos documentados en los que la plataforma permita explicar el origen de una falla prematura en campo.
 
 **Mitigación de amenazas identificadas**
 
@@ -698,11 +710,7 @@ Entrevistado #1
 
 | Campo | Información |
 |-------|--------------|
-| **Resumen** | Aaron Ramirez es especialista de Gestión y Desarrollo, con experiencia en la coordinación y seguimiento de iniciativas enfocadas en optimizar procesos y fortalecer el desempeño de los equipos. Actualmente trabaja en Lima y tiene aproximadamente dos años de experiencia en su posición. Entre sus principales responsabilidades se encuentran gestionar información de distintas áreas, realizar seguimiento a actividades y proyectos, coordinar con equipos multidisciplinarios y detectar oportunidades de mejora dentro de la organización.
-
-Para desarrollar sus actividades utiliza herramientas como SAP, Excel, Microsoft Teams, correo corporativo y WhatsApp, principalmente para organizar información, hacer seguimiento de tareas y mantener una comunicación constante con diferentes equipos y áreas.
-
-Durante la entrevista, comentó que uno de los principales retos en su trabajo es encontrar información que se encuentra distribuida entre distintos sistemas, documentos y canales de comunicación. Esta dispersión dificulta reunir antecedentes, hacer seguimiento de manera oportuna y obtener una visión integral de los procesos al momento de tomar decisiones. También indicó que parte de la información necesaria para sus funciones está almacenada en sistemas corporativos, correos electrónicos, carpetas compartidas y registros históricos, lo que implica invertir tiempo adicional en buscar y revisar. |
+| **Resumen** | Aaron Ramirez es especialista de Gestión y Desarrollo, con experiencia en la coordinación y seguimiento de iniciativas enfocadas en optimizar procesos y fortalecer el desempeño de los equipos. Actualmente trabaja en Lima y tiene aproximadamente dos años de experiencia en su posición. Entre sus principales responsabilidades se encuentran gestionar información de distintas áreas, realizar seguimiento a actividades y proyectos, coordinar con equipos multidisciplinarios y detectar oportunidades de mejora dentro de la organización.<br><br>Para desarrollar sus actividades utiliza herramientas como SAP, Excel, Microsoft Teams, correo corporativo y WhatsApp, principalmente para organizar información, hacer seguimiento de tareas y mantener una comunicación constante con diferentes equipos y áreas.<br><br>Durante la entrevista, comentó que uno de los principales retos en su trabajo es encontrar información que se encuentra distribuida entre distintos sistemas, documentos y canales de comunicación. Esta dispersión dificulta reunir antecedentes, hacer seguimiento de manera oportuna y obtener una visión integral de los procesos al momento de tomar decisiones. También indicó que parte de la información necesaria para sus funciones está almacenada en sistemas corporativos, correos electrónicos, carpetas compartidas y registros históricos, lo que implica invertir tiempo adicional en buscar y revisar. |
 | **Frustraciones identificadas** | - Información distribuida entre diferentes sistemas, archivos y canales de comunicación.<br>- Dificultad para consolidar información de distintas áreas de manera rápida.<br>- Tiempo elevado buscando antecedentes y registros históricos.<br>- Procesos manuales para recopilar, validar y comparar información.<br>- Elaboración de reportes requiere consultar múltiples fuentes y documentos.<br>- Falta de una vista centralizada que facilite el seguimiento de iniciativas y resultados. |
 | **Objetivos identificados** | - Centralizar y organizar la información relevante para la gestión.<br>- Acceder rápidamente a antecedentes y registros históricos.<br>- Facilitar el seguimiento de iniciativas, actividades y resultados.<br>- Mejorar la coordinación y comunicación entre diferentes áreas.<br>- Agilizar el análisis de información para apoyar la toma de decisiones.<br>- Reducir el tiempo destinado a buscar, consolidar y validar información. |
 | **Herramientas utilizadas** | Laptop, teléfono móvil, Google Chrome, SAP, Excel, Microsoft Teams, correo corporativo y WhatsApp. |
@@ -719,10 +727,7 @@ Entrevistado #2
 
 | Campo | Información |
 |-------|--------------|
-| **Resumen** | Christian Rimac es especialista de Gestión y Desarrollo, con experiencia en la coordinación y seguimiento de iniciativas enfocadas en optimizar procesos y mejorar el desempeño de los equipos. Actualmente trabaja en Lima y cuenta con aproximadamente dos años de experiencia en su posición. Entre sus principales funciones se encuentran gestionar información de diferentes áreas, realizar seguimiento a actividades y proyectos, coordinar con equipos multidisciplinarios y apoyar en la identificación de oportunidades de mejora.
-En sus actividades utiliza herramientas como SAP, Excel, Microsoft Teams, correo corporativo y WhatsApp para organizar información, monitorear avances y mantener una comunicación fluida con las distintas áreas de la organización.
-Durante la entrevista, comentó que uno de los principales retos que encuentra en su trabajo es la información distribuida en distintas plataformas, documentos y medios de comunicación. Esta situación hace más complejo consolidar antecedentes, realizar seguimientos oportunos y obtener una visión integral de los procesos para responder rápidamente ante diferentes situaciones. Asimismo, señaló que parte de la información que necesita se encuentra repartida entre sistemas corporativos, correos electrónicos, carpetas compartidas y registros históricos, generando tiempo adicional para localizar, revisar y ordenar los datos.
-Christian manifestó interés en disponer de una solución centralizada que facilite la consulta y organización de información relevante, integrando antecedentes, registros y documentación provenientes de diversas fuentes. Una herramienta de este tipo le permitiría reducir el tiempo empleado en la búsqueda de información, facilitar el seguimiento de iniciativas y contar con una visión más completa para apoyar la gestión y el desarrollo de los equipos y procesos. |
+| **Resumen** | Christian Rimac es especialista de Gestión y Desarrollo, con experiencia en la coordinación y seguimiento de iniciativas enfocadas en optimizar procesos y mejorar el desempeño de los equipos. Actualmente trabaja en Lima y cuenta con aproximadamente dos años de experiencia en su posición. Entre sus principales funciones se encuentran gestionar información de diferentes áreas, realizar seguimiento a actividades y proyectos, coordinar con equipos multidisciplinarios y apoyar en la identificación de oportunidades de mejora.<br><br>En sus actividades utiliza herramientas como SAP, Excel, Microsoft Teams, correo corporativo y WhatsApp para organizar información, monitorear avances y mantener una comunicación fluida con las distintas áreas de la organización.<br><br>Durante la entrevista, comentó que uno de los principales retos que encuentra en su trabajo es la información distribuida en distintas plataformas, documentos y medios de comunicación. Esta situación hace más complejo consolidar antecedentes, realizar seguimientos oportunos y obtener una visión integral de los procesos para responder rápidamente ante diferentes situaciones. Asimismo, señaló que parte de la información que necesita se encuentra repartida entre sistemas corporativos, correos electrónicos, carpetas compartidas y registros históricos, generando tiempo adicional para localizar, revisar y ordenar los datos.<br><br>Christian manifestó interés en disponer de una solución centralizada que facilite la consulta y organización de información relevante, integrando antecedentes, registros y documentación provenientes de diversas fuentes. Una herramienta de este tipo le permitiría reducir el tiempo empleado en la búsqueda de información, facilitar el seguimiento de iniciativas y contar con una visión más completa para apoyar la gestión y el desarrollo de los equipos y procesos. |
 | **Objetivos identificados** | - Centralizar y organizar la información relevante para la gestión.<br>- Acceder rápidamente a antecedentes y registros históricos.<br>- Facilitar el seguimiento de iniciativas, actividades y resultados.<br>- Mejorar la coordinación y comunicación entre diferentes áreas.<br>- Agilizar el análisis de información para apoyar la toma de decisiones.<br>- Reducir el tiempo destinado a buscar, consolidar y validar información. |
 | **Herramientas utilizadas** | Laptop, teléfono móvil, Google Chrome, SAP, Excel, Microsoft Teams, correo corporativo y WhatsApp. |
 
@@ -738,10 +743,7 @@ Entrevistado #3
 
 | Campo | Información |
 |-------|--------------|
-| **Resumen** | Carlos Velasquez es especialista de Gestión y Desarrollo, con experiencia en la coordinación y seguimiento de iniciativas enfocadas en optimizar procesos y fortalecer el desempeño de los equipos. Actualmente trabaja en Lima y cuenta con aproximadamente dos años de experiencia en su posición. Entre sus principales responsabilidades se encuentran gestionar información de diferentes áreas, hacer seguimiento a actividades y proyectos, coordinar con equipos multidisciplinarios y participar en la identificación de oportunidades de mejora.
-En su día a día utiliza herramientas como SAP, Excel, Microsoft Teams, correo corporativo y WhatsApp para organizar información, monitorear avances y mantener una comunicación constante con las distintas áreas y equipos de la organización.
-Durante la entrevista, señaló que uno de los principales desafíos que encuentra en su trabajo es la información dispersa entre diversas plataformas, documentos y canales de comunicación. Esta situación dificulta reunir antecedentes de manera rápida, realizar un seguimiento adecuado y obtener una visión general de los procesos cuando se requiere tomar decisiones con agilidad. También mencionó que información importante para sus actividades se encuentra distribuida entre sistemas corporativos, correos electrónicos, carpetas compartidas y registros históricos, lo que demanda tiempo adicional para encontrar, revisar y consolidar los datos.
-Carlos manifestó interés en disponer de una solución centralizada que permita acceder y consultar de manera más eficiente la información relevante, integrando antecedentes, registros y documentación provenientes de diferentes fuentes. Una herramienta de este tipo podría ayudarle a disminuir el tiempo invertido en la búsqueda de información, mejorar el seguimiento de iniciativas y disponer de una visión más completa para contribuir a la gestión y desarrollo de los equipos y procesos. |
+| **Resumen** | Carlos Velasquez es especialista de Gestión y Desarrollo, con experiencia en la coordinación y seguimiento de iniciativas enfocadas en optimizar procesos y fortalecer el desempeño de los equipos. Actualmente trabaja en Lima y cuenta con aproximadamente dos años de experiencia en su posición. Entre sus principales responsabilidades se encuentran gestionar información de diferentes áreas, hacer seguimiento a actividades y proyectos, coordinar con equipos multidisciplinarios y participar en la identificación de oportunidades de mejora.<br><br>En su día a día utiliza herramientas como SAP, Excel, Microsoft Teams, correo corporativo y WhatsApp para organizar información, monitorear avances y mantener una comunicación constante con las distintas áreas y equipos de la organización.<br><br>Durante la entrevista, señaló que uno de los principales desafíos que encuentra en su trabajo es la información dispersa entre diversas plataformas, documentos y canales de comunicación. Esta situación dificulta reunir antecedentes de manera rápida, realizar un seguimiento adecuado y obtener una visión general de los procesos cuando se requiere tomar decisiones con agilidad. También mencionó que información importante para sus actividades se encuentra distribuida entre sistemas corporativos, correos electrónicos, carpetas compartidas y registros históricos, lo que demanda tiempo adicional para encontrar, revisar y consolidar los datos.<br><br>Carlos manifestó interés en disponer de una solución centralizada que permita acceder y consultar de manera más eficiente la información relevante, integrando antecedentes, registros y documentación provenientes de diferentes fuentes. Una herramienta de este tipo podría ayudarle a disminuir el tiempo invertido en la búsqueda de información, mejorar el seguimiento de iniciativas y disponer de una visión más completa para contribuir a la gestión y desarrollo de los equipos y procesos. |
 | **Frustraciones identificadas** | - Información distribuida entre diferentes sistemas, archivos y canales de comunicación.<br>- Dificultad para consolidar información de distintas áreas de manera rápida.<br>- Tiempo elevado buscando antecedentes y registros históricos.<br>- Procesos manuales para recopilar, validar y comparar información.<br>- Elaboración de reportes requiere consultar múltiples fuentes y documentos.<br>- Falta de una vista centralizada que facilite el seguimiento de iniciativas y resultados. |
 | **Objetivos identificados** | - Centralizar y organizar la información relevante para la gestión.<br>- Acceder rápidamente a antecedentes y registros históricos.<br>- Facilitar el seguimiento de iniciativas, actividades y resultados.<br>- Mejorar la coordinación y comunicación entre diferentes áreas.<br>- Agilizar el análisis de información para apoyar la toma de decisiones.<br>- Reducir el tiempo destinado a buscar, consolidar y validar información. |
 | **Herramientas utilizadas** | Laptop, teléfono móvil, Google Chrome, SAP, Excel, Microsoft Teams, correo corporativo y WhatsApp. |
@@ -777,10 +779,7 @@ Entrevistado #5
 
 | Campo | Información |
 |-------|--------------|
-| **Resumen** | Belisa Romero es supervisora de mantenimiento y cuenta con formación en Ingeniería Industrial. Actualmente trabaja en Lima y tiene aproximadamente dos años de experiencia desempeñándose en su cargo. Entre sus principales responsabilidades se encuentran coordinar equipos de trabajo, organizar y priorizar actividades de mantenimiento y asegurar la continuidad operativa de los equipos.
-Para desarrollar sus funciones utiliza herramientas como SAP, Excel, Microsoft Teams, correo corporativo y WhatsApp, principalmente para gestionar información, realizar seguimiento a las actividades y mantener comunicación con las diferentes áreas involucradas.
-Durante la entrevista, comentó que uno de los principales inconvenientes que enfrenta es la información distribuida entre diferentes sistemas y documentos, lo que puede dificultar la toma de decisiones oportunas y el análisis de las fallas. Asimismo, señaló que los procesos relacionados con la recuperación de componentes requieren consultar información de distintos proveedores, registros históricos y documentación técnica, la cual suele encontrarse repartida entre SAP, correos electrónicos y carpetas compartidas.
-Esta dispersión de información genera demoras al momento de investigar el origen de una falla, revisar antecedentes de componentes, comparar alternativas de proveedores o preparar reportes. Belisa expresó interés en contar con una solución centralizada que le permita consultar rápidamente el historial de componentes, proveedores, reparaciones y resultados de mantenimiento, con el objetivo de agilizar sus actividades y disminuir el tiempo dedicado a localizar y consolidar información. |
+| **Resumen** | Belisa Romero es supervisora de mantenimiento y cuenta con formación en Ingeniería Industrial. Actualmente trabaja en Lima y tiene aproximadamente dos años de experiencia desempeñándose en su cargo. Entre sus principales responsabilidades se encuentran coordinar equipos de trabajo, organizar y priorizar actividades de mantenimiento y asegurar la continuidad operativa de los equipos.<br><br>Para desarrollar sus funciones utiliza herramientas como SAP, Excel, Microsoft Teams, correo corporativo y WhatsApp, principalmente para gestionar información, realizar seguimiento a las actividades y mantener comunicación con las diferentes áreas involucradas.<br><br>Durante la entrevista, comentó que uno de los principales inconvenientes que enfrenta es la información distribuida entre diferentes sistemas y documentos, lo que puede dificultar la toma de decisiones oportunas y el análisis de las fallas. Asimismo, señaló que los procesos relacionados con la recuperación de componentes requieren consultar información de distintos proveedores, registros históricos y documentación técnica, la cual suele encontrarse repartida entre SAP, correos electrónicos y carpetas compartidas.<br><br>Esta dispersión de información genera demoras al momento de investigar el origen de una falla, revisar antecedentes de componentes, comparar alternativas de proveedores o preparar reportes. Belisa expresó interés en contar con una solución centralizada que le permita consultar rápidamente el historial de componentes, proveedores, reparaciones y resultados de mantenimiento, con el objetivo de agilizar sus actividades y disminuir el tiempo dedicado a localizar y consolidar información. |
 | **Frustraciones identificadas** | - Información dispersa en múltiples sistemas.<br>- Dificultad para tomar decisiones rápidas ante imprevistos.<br>- Tiempo excesivo buscando registros históricos.<br>- Procesos manuales para comparar desempeño de proveedores.<br>- Elaboración de informes requiere recopilar información de diversas fuentes. |
 | **Objetivos identificados** | - Mejorar la organización de la información de mantenimiento.<br>- Acceder rápidamente al historial de componentes recuperados.<br>- Facilitar el seguimiento de proveedores y reparaciones.<br>- Optimizar la toma de decisiones en situaciones críticas.<br>- Reducir tiempos de búsqueda y análisis de información. |
 | **Herramientas utilizadas** | Laptop, teléfono móvil, Google Chrome, SAP, Excel, Microsoft Teams, correo corporativo y WhatsApp. |
@@ -798,9 +797,7 @@ Entrevistado #6
 
 | Campo | Información |
 |-------|--------------|
-| **Resumen** | Leonardo Palomino es supervisor de mantenimiento y cuenta con formación en Ingeniería Industrial. Actualmente trabaja en Lima y tiene aproximadamente dos años de experiencia en su cargo. Sus principales responsabilidades incluyen coordinar equipos de trabajo, organizar y priorizar las actividades de mantenimiento y velar por la continuidad operativa de los equipos.
-En sus labores utiliza herramientas como SAP, Excel, Microsoft Teams, correo corporativo y WhatsApp para gestionar información, hacer seguimiento a las tareas y comunicarse con las distintas áreas involucradas en las operaciones.
-Durante la entrevista, indicó que uno de los principales retos que enfrenta es la información dispersa entre diversos sistemas, documentos y canales. |
+| **Resumen** | Leonardo Palomino es supervisor de mantenimiento y cuenta con formación en Ingeniería Industrial. Actualmente trabaja en Lima y tiene aproximadamente dos años de experiencia en su cargo. Sus principales responsabilidades incluyen coordinar equipos de trabajo, organizar y priorizar las actividades de mantenimiento y velar por la continuidad operativa de los equipos.<br><br>En sus labores utiliza herramientas como SAP, Excel, Microsoft Teams, correo corporativo y WhatsApp para gestionar información, hacer seguimiento a las tareas y comunicarse con las distintas áreas involucradas en las operaciones.<br><br>Durante la entrevista, indicó que uno de los principales retos que enfrenta es la información dispersa entre diversos sistemas, documentos y canales. |
 | **Frustraciones identificadas** | - Información dispersa en múltiples sistemas.<br>- Dificultad para tomar decisiones rápidas ante imprevistos.<br>- Tiempo excesivo buscando registros históricos.<br>- Procesos manuales para comparar desempeño de proveedores.<br>- Elaboración de informes requiere recopilar información de diversas fuentes. |
 | **Objetivos identificados** | - Mejorar la organización de la información de mantenimiento.<br>- Acceder rápidamente al historial de componentes recuperados.<br>- Facilitar el seguimiento de proveedores y reparaciones.<br>- Optimizar la toma de decisiones en situaciones críticas.<br>- Reducir tiempos de búsqueda y análisis de información. |
 | **Herramientas utilizadas** | Laptop, teléfono móvil, Google Chrome, SAP, Excel, Microsoft Teams, correo corporativo y WhatsApp. |
@@ -818,10 +815,7 @@ Entrevistado #7
 
 | Campo | Información |
 |-------|--------------|
-| **Resumen** | Feliz Zegarra es supervisor de mantenimiento y cuenta con formación en Ingeniería Industrial. Actualmente trabaja en Lima y tiene aproximadamente dos años de experiencia en el cargo. Entre sus principales responsabilidades se encuentran coordinar equipos de trabajo, definir prioridades dentro de las actividades de mantenimiento y asegurar que los equipos mantengan su continuidad operativa.
-Para realizar sus funciones utiliza herramientas como SAP, Excel, Microsoft Teams, correo corporativo y WhatsApp, que le permiten gestionar información, dar seguimiento a las actividades y mantener comunicación con las diferentes áreas involucradas.
-Durante la entrevista, señaló que uno de los principales inconvenientes en su trabajo es la información distribuida en distintos sistemas y documentos. Esta situación dificulta acceder rápidamente a los antecedentes necesarios, tomar decisiones oportunas y realizar un análisis adecuado de las fallas. Asimismo, mencionó que la recuperación de componentes requiere consultar información de diversos proveedores, registros históricos y documentación técnica, la cual suele encontrarse repartida entre SAP, correos electrónicos y carpetas compartidas.
-Esta dispersión de información puede generar retrasos al investigar fallas, revisar el historial de componentes, comparar proveedores o preparar reportes. Feliz manifestó interés en contar con una solución centralizada que le permita acceder de manera rápida al historial de componentes, proveedores, reparaciones y resultados de mantenimiento. Una herramienta de este tipo le ayudaría a agilizar sus actividades, facilitar el análisis de información y reducir el tiempo empleado en la búsqueda y consolidación de datos. |
+| **Resumen** | Feliz Zegarra es supervisor de mantenimiento y cuenta con formación en Ingeniería Industrial. Actualmente trabaja en Lima y tiene aproximadamente dos años de experiencia en el cargo. Entre sus principales responsabilidades se encuentran coordinar equipos de trabajo, definir prioridades dentro de las actividades de mantenimiento y asegurar que los equipos mantengan su continuidad operativa.<br><br>Para realizar sus funciones utiliza herramientas como SAP, Excel, Microsoft Teams, correo corporativo y WhatsApp, que le permiten gestionar información, dar seguimiento a las actividades y mantener comunicación con las diferentes áreas involucradas.<br><br>Durante la entrevista, señaló que uno de los principales inconvenientes en su trabajo es la información distribuida en distintos sistemas y documentos. Esta situación dificulta acceder rápidamente a los antecedentes necesarios, tomar decisiones oportunas y realizar un análisis adecuado de las fallas. Asimismo, mencionó que la recuperación de componentes requiere consultar información de diversos proveedores, registros históricos y documentación técnica, la cual suele encontrarse repartida entre SAP, correos electrónicos y carpetas compartidas.<br><br>Esta dispersión de información puede generar retrasos al investigar fallas, revisar el historial de componentes, comparar proveedores o preparar reportes. Feliz manifestó interés en contar con una solución centralizada que le permita acceder de manera rápida al historial de componentes, proveedores, reparaciones y resultados de mantenimiento. Una herramienta de este tipo le ayudaría a agilizar sus actividades, facilitar el análisis de información y reducir el tiempo empleado en la búsqueda y consolidación de datos. |
 | **Frustraciones identificadas** | - Información dispersa en múltiples sistemas.<br>- Dificultad para tomar decisiones rápidas ante imprevistos.<br>- Tiempo excesivo buscando registros históricos.<br>- Procesos manuales para comparar desempeño de proveedores.<br>- Elaboración de informes requiere recopilar información de diversas fuentes. |
 | **Objetivos identificados** | - Mejorar la organización de la información de mantenimiento.<br>- Acceder rápidamente al historial de componentes recuperados.<br>- Facilitar el seguimiento de proveedores y reparaciones.<br>- Optimizar la toma de decisiones en situaciones críticas.<br>- Reducir tiempos de búsqueda y análisis de información. |
 | **Herramientas utilizadas** | Laptop, teléfono móvil, Google Chrome, SAP, Excel, Microsoft Teams, correo corporativo y WhatsApp. |
@@ -834,13 +828,13 @@ Esta dispersión de información puede generar retrasos al investigar fallas, re
 
 #### Ficha de User Persona 1 — Segmento 1: Empresas de servicio especializado en recubrimiento HVOF
 
-![Rosa Miranda Alegria](./assets/img/chapter-ii/neefinding/User_Persona-Rosa_Miranda_Alegria.png){width=80%}
+<img src="./assets/img/chapter-ii/neefinding/User_Persona-Rosa_Miranda_Alegria.png" alt="Rosa Miranda Alegria" width="80%">
 
 ---
 
 #### Ficha de User Persona 2 — Segmento 2: Plantas industriales con línea de recubrimiento in-house
 
-![Jorge Salinas Paredes](./assets/img/chapter-ii/neefinding/User_Persona-Jorge_Salinas_Paredes.png){width=80%}
+<img src="./assets/img/chapter-ii/neefinding/User_Persona-Jorge_Salinas_Paredes.png" alt="Jorge Salinas Paredes" width="80%">
 
 ### 2.3.2. User Task Matrix.
 
@@ -887,11 +881,11 @@ Esta dispersión de información puede generar retrasos al investigar fallas, re
 
 #### Empathy Map — Rosa Miranda (Segmento 1)
 
-![Rosa Miranda Alegria](./assets/img/chapter-ii/neefinding/Empathy_Map-Rosa_Miranda_Alegria.png){width=80%}
+<img src="./assets/img/chapter-ii/neefinding/Empathy_Map-Rosa_Miranda_Alegria.png" alt="Rosa Miranda Alegria" width="80%">
 
 #### Empathy Map — Jorge Salinas (Segmento 2)
 
-![Jorge Salinas Paredes](./assets/img/chapter-ii/neefinding/Empathy_Map-Jorge_Salinas_Paredes.png){width=80%}
+<img src="./assets/img/chapter-ii/neefinding/Empathy_Map-Jorge_Salinas_Paredes.png" alt="Jorge Salinas Paredes" width="80%">
 
 ## 2.4. Big Picture Event Storming.
 
@@ -932,6 +926,7 @@ flowchart LR
         S0 -.- EX
     end
 ```
+
 ### Paso 2. Energizante
 
 La sesión inició con una dinámica breve de cinco minutos en la que cada integrante describió, en una frase y sin usar términos técnicos, qué pasa con una pieza minera desde que se desgasta hasta que vuelve a operar. El ejercicio sirvió para nivelar el vocabulario entre los integrantes con experiencia en planta y los que no la tenían, y para dejar claro desde el inicio que el tablero se llenaría con hechos del negocio y no con funciones de software.
@@ -1634,7 +1629,7 @@ Los Business Goals cumplen los criterios SMART: son específicos, medibles, alca
 | Jorge Salinas | Detecta desviaciones de proceso que hoy pasan inadvertidas porque el PLC no las alarma | Configuración de rangos nominales y detección automática de desviaciones | Como ingeniero de calidad, deseo configurar los rangos nominales de cada parámetro de proceso por celda, para que el sistema detecte desviaciones automáticamente (US09). Como ingeniero de calidad, deseo que el sistema marque automáticamente cada lectura que salga del rango nominal de la celda, para identificar desviaciones sin supervisión manual (US21). |
 | Rosa Miranda | Reconoce en el Landing Page que la plataforma resuelve su problema de trazabilidad y solicita el registro | Landing Page con sección y call-to-action específicos para el segmento | Como visitante del segmento Recuperation Supplier, deseo acceder a la información específica para empresas que operan procesos HVOF, para identificar si la propuesta responde a mis necesidades (US45). Como visitante, deseo iniciar el registro desde el call-to-action de mi segmento, para llegar directamente a la vista de registro correspondiente en la Web Application (US47). |
 
-![Impact Mapping 1](assets/img/chapter-iii/impact-map-1.png){width=80%}
+<img src="assets/img/chapter-iii/impact-map-1.png" alt="Impact Mapping 1" width="80%">
 
 ### Business Goal 2 — Evidencia de calidad aceptada por el cliente
 
@@ -1646,7 +1641,7 @@ Los Business Goals cumplen los criterios SMART: son específicos, medibles, alca
 | Jorge Salinas  | Responde a una auditoría del cliente con evidencia exportable en lugar de con registros en papel | Exportación de historial de sesiones y certificados por periodo | Como ingeniero de calidad, deseo exportar el historial de sesiones y certificados de un periodo en formato CSV o PDF, para presentarlo durante una auditoría del cliente (US37). Como supervisor de operación, deseo generar el reporte de una sesión con el resumen de lecturas, desviaciones y fallas, para revisar el resultado de la corrida (US36). |
 | Rosa Miranda | Acepta el certificado de EdgeWatch como respaldo formal del trabajo del proveedor | Portal de consulta de certificados para el cliente, con cumplimiento por parámetro y sin exposición de valores crudos | Como ingeniera de confiabilidad, deseo consultar el certificado de calidad de un componente entregado por mi proveedor, para verificar que fue recubierto dentro de tolerancia (US41). |
 
-![Impact Mapping 2](assets/img/chapter-iii/impact-map-2.png){width=80%}
+<img src="assets/img/chapter-iii/impact-map-2.png" alt="Impact Mapping 2" width="80%">
 
 ### Business Goal 3 — Reducción del tiempo de diagnóstico de fallas
 
@@ -1659,7 +1654,7 @@ Los Business Goals cumplen los criterios SMART: son específicos, medibles, alca
 | Jorge Salinas | Registra la causa raíz confirmada para que el conocimiento no se pierda cuando cambie el personal | Confirmación de causa raíz y catálogo de reglas editable | Como supervisor de mantenimiento de máquina, deseo confirmar o corregir la causa raíz y registrar la acción correctiva de un caso de falla, para que el conocimiento quede documentado en el sistema (US27). Como ingeniero de calidad, deseo crear, editar y desactivar reglas causa-efecto, para adaptar el diagnóstico a cada celda (US28). |
 | Jorge Salinas | Interviene una parte antes de que provoque una parada mayor | Detección de patrones recurrentes y alertas críticas | Como supervisor de mantenimiento de máquina, deseo que el sistema identifique cuando una misma parte acumula fallas del mismo tipo dentro de un periodo, para anticipar un problema mayor (US29). Como supervisor de mantenimiento de máquina, deseo recibir una alerta cuando se abra un caso de falla crítica o se detecte un patrón recurrente, para intervenir oportunamente (US32). |
 
-![Impact Mapping 3](assets/img/chapter-iii/impact-map-3.png){width=80%}
+<img src="assets/img/chapter-iii/impact-map-3.png" alt="Impact Mapping 3" width="80%">
 
 ### Business Goal 4 — Adopción del segmento Asset Owner
 
@@ -1673,7 +1668,7 @@ Los Business Goals cumplen los criterios SMART: son específicos, medibles, alca
 | Jorge Salinas | Analiza la sesión de origen de cada falla prematura reportada por la mina, en lugar de enterarse por un reclamo sin datos | Correlación automática de falla prematura con la sesión de rociado original | Como ingeniero de calidad, deseo que al registrarse una falla prematura el sistema me presente la sesión de rociado original del componente, para determinar si el origen estuvo en el recubrimiento (US43). |
 | Jorge Salinas | Reconoce en el Landing Page el valor de la vista consolidada y solicita el registro | Landing Page con sección y call-to-action para Asset Owner | Como visitante del segmento Asset Owner, deseo acceder a la información específica para empresas propietarias de activos, para identificar si la propuesta responde a mis necesidades (US46). |
 
-![Impact Mapping 4](assets/img/chapter-iii/impact-map-4.png){width=80%}
+<img src="assets/img/chapter-iii/impact-map-4.png" alt="Impact Mapping 4" width="80%">
 
 ### Síntesis
 
@@ -1694,9 +1689,9 @@ El Product Backlog reúne las 52 User Stories y 18 Technical Stories de la secci
 Herramienta: Trello.  
 URL pública del board: <https://trello.com/invite/b/6aa234c58be8ea8121c19b01/ATTIe3d8df7c2304b434249a2328489667aeE6F8F69E/edgewatch-product-backlog>
 
-![Tablero de Product Backlog en Trello](assets/img/chapter-iii/product-backlog.jpeg){width=80%}
+<img src="assets/img/chapter-iii/product-backlog.jpeg" alt="Tablero de Product Backlog en Trello" width="80%">
 
-![Épicas del Product Backlog en Trello](assets/img/chapter-iii/product-backlog-epics.png){width=80%}
+<img src="assets/img/chapter-iii/product-backlog-epics.png" alt="Épicas del Product Backlog en Trello" width="80%">
 
 | # Orden | User Story Id | Título | Descripción | Story Points (1 / 2 / 3 / 5 / 8) |
 |---|---|---|---|---|
@@ -2004,29 +1999,29 @@ Cada ancla de sección (`#problema`, `#solucion`, `#segmentos`) se refleja como 
 
 ### 4.3.1. Landing Page Wireframe.
 
-![Wireframe de EdgeWatch](assets/img/chapter-iv/Wireframes.png){width=80%}
+<img src="assets/img/chapter-iv/Wireframes.png" alt="Wireframe de EdgeWatch" width="80%">
 
 ### 4.3.2. Landing Page Mock-up.
 
-![Mock-up del Landing Page de EdgeWatch](assets/img/chapter-iv/Landing.png){width=80%}
+<img src="assets/img/chapter-iv/Landing.png" alt="Mock-up del Landing Page de EdgeWatch" width="80%">
 
 ## 4.4. Web Applications UX/UI Design.
 
 ### 4.4.1. Web Applications Wireframes.
 
-![Wireframe 1 de la Web Application](assets/img/chapter-iv/wireframe-1.png){width=80%}
+<img src="assets/img/chapter-iv/wireframe-1.png" alt="Wireframe 1 de la Web Application" width="80%">
 
-![Wireframe 2 de la Web Application](assets/img/chapter-iv/wireframe-2.png){width=80%}
+<img src="assets/img/chapter-iv/wireframe-2.png" alt="Wireframe 2 de la Web Application" width="80%">
 
-![Wireframe 3 de la Web Application](assets/img/chapter-iv/wireframe-3.png){width=80%}
+<img src="assets/img/chapter-iv/wireframe-3.png" alt="Wireframe 3 de la Web Application" width="80%">
 
-![Wireframe 4 de la Web Application](assets/img/chapter-iv/wireframe-4.png){width=80%}
+<img src="assets/img/chapter-iv/wireframe-4.png" alt="Wireframe 4 de la Web Application" width="80%">
 
-![Wireframe 5 de la Web Application](assets/img/chapter-iv/wireframe-5.png){width=80%}
+<img src="assets/img/chapter-iv/wireframe-5.png" alt="Wireframe 5 de la Web Application" width="80%">
 
-![Wireframe 6 de la Web Application](assets/img/chapter-iv/wireframe-6.png){width=80%}
+<img src="assets/img/chapter-iv/wireframe-6.png" alt="Wireframe 6 de la Web Application" width="80%">
 
-![Wireframe 7 de la Web Application](assets/img/chapter-iv/wireframe-7.png){width=80%}
+<img src="assets/img/chapter-iv/wireframe-7.png" alt="Wireframe 7 de la Web Application" width="80%">
 
 ### 4.4.2. Web Applications Wireflow Diagrams.
 **A. Onboarding y acceso**
@@ -2083,19 +2078,19 @@ ORIGEN --> PCRCOMP
 
 ### 4.4.3. Web Applications Mock-ups.
 
-![Mock-up 1 de la Web Application](assets/img/chapter-iv/mockup-1.png){width=80%}
+<img src="assets/img/chapter-iv/mockup-1.png" alt="Mock-up 1 de la Web Application" width="80%">
 
-![Mock-up 2 de la Web Application](assets/img/chapter-iv/mockup-2.png){width=80%}
+<img src="assets/img/chapter-iv/mockup-2.png" alt="Mock-up 2 de la Web Application" width="80%">
 
-![Mock-up 3 de la Web Application](assets/img/chapter-iv/mockup-3.png){width=80%}
+<img src="assets/img/chapter-iv/mockup-3.png" alt="Mock-up 3 de la Web Application" width="80%">
 
-![Mock-up 4 de la Web Application](assets/img/chapter-iv/mockup-4.png){width=80%}
+<img src="assets/img/chapter-iv/mockup-4.png" alt="Mock-up 4 de la Web Application" width="80%">
 
-![Mock-up 5 de la Web Application](assets/img/chapter-iv/mockup-5.png){width=80%}
+<img src="assets/img/chapter-iv/mockup-5.png" alt="Mock-up 5 de la Web Application" width="80%">
 
-![Mock-up 6 de la Web Application](assets/img/chapter-iv/mockup-6.png){width=80%}
+<img src="assets/img/chapter-iv/mockup-6.png" alt="Mock-up 6 de la Web Application" width="80%">
 
-![Mock-up 7 de la Web Application](assets/img/chapter-iv/mockup-7.png){width=80%}
+<img src="assets/img/chapter-iv/mockup-7.png" alt="Mock-up 7 de la Web Application" width="80%">
 
 ### 4.4.4. Web Applications User Flow Diagrams.
 **Flujo 1 — Rosa Miranda (Ingeniero de Calidad): sustentar ante el cliente minero que un lote fue recubierto dentro de tolerancias** *(Journey Map 1, 2.3.3)*
@@ -2427,7 +2422,7 @@ El modelo relacional se despliega sobre MySQL y refleja de forma directa el diag
 
 <img src="assets/img/chapter-iv/db-diagrams/DatabaseDiagram.png">
 
-Para una mejor visualizacion, redimirse a los archivos individuales. 
+Para una mejor visualización, remitirse a los archivos individuales.
 
 # Capítulo V: Product Implementation, Validation & Deployment
 ## 5.1. Software Configuration Management.
@@ -2735,13 +2730,16 @@ A continuación, se documenta la evidencia de ejecución del Landing Page implem
 | **US48** | Cambio de idioma | Funcionamiento del componente interactivo **Language Switcher** en navbar superior y menú móvil (EN/ES). La activación conmuta de forma instantánea todo el DOM mediante el motor i18n sin refrescar la ventana y persiste la preferencia de idioma del visitante en `localStorage`. |
 
 #### 5.2.1.6. Services Documentation Evidence for Sprint Review.
-Durante el Sprint 1 no se trabajaron endpoints documentados, ya que el alcance se centró exclusivamente enel desarrollo del Landing Page. La documentación OpenAPI comenzará en el Sprint 2.
+
+Durante el Sprint 1 no se trabajaron endpoints documentados, ya que el alcance se centró exclusivamente en el desarrollo del Landing Page. La documentación OpenAPI comenzará en el Sprint 2.
 
 #### 5.2.1.7. Software Deployment Evidence for Sprint Review.
+
 Durante el Sprint 1, se realizó el despliegue de la landing page del proyecto utilizando **GitHub Pages**.
-**Repositorio**: edgewatch-website
-**URL de producción**: https://upc-pre-202620-1asi0730-16712-wrunners.github.io/edgewatch-website/
-**Rama desplegada**: main
+
+- **Repositorio**: edgewatch-website
+- **URL de producción**: <https://upc-pre-202620-1asi0730-16712-wrunners.github.io/edgewatch-website/>
+- **Rama desplegada**: main
 
 #### 5.2.1.8. Team Collaboration Insights during Sprint.
 
@@ -2754,7 +2752,7 @@ Durante el Sprint 1, se realizó el despliegue de la landing page del proyecto u
 ## 5.4. Video About-the-Product.
 # Conclusiones
 
-## Conclusiones
+## Conclusiones y recomendaciones.
 
 1. EdgeWatch responde a una problemática real del sector industrial: la falta de trazabilidad, monitoreo y análisis oportuno de los procesos de recubrimiento HVOF.
 
@@ -2776,10 +2774,10 @@ Durante el Sprint 1, se realizó el despliegue de la landing page del proyecto u
 
 10. En conclusión, el proyecto establece una base sólida para una plataforma especializada en la trazabilidad y monitoreo de procesos HVOF, alineando las necesidades del negocio, los usuarios y la solución tecnológica propuesta.
 
-## Conclusiones y recomendaciones.
 ## Video About-the-Team.
 
 # Bibliografía
+
 - AMS. (2025, 21 de marzo). *Planned Component Replacements (PCR) by AMS*. https://amseam.com/pcr/
 
 - Automation World. (2025). *How to solve the hidden risks of paper manufacturing on the factory floor*. https://www.automationworld.com/control/article/55378030/how-to-solve-the-hidden-risks-of-paper-manufacturing-on-the-factory-floor
