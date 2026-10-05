@@ -125,6 +125,15 @@ El URL del repositorio para el Project Report en la organización de github es e
 - [5.2.1.6. Services Documentation Evidence for Sprint Review.](#5216-services-documentation-evidence-for-sprint-review)
 - [5.2.1.7. Software Deployment Evidence for Sprint Review.](#5217-software-deployment-evidence-for-sprint-review)
 - [5.2.1.8. Team Collaboration Insights during Sprint.](#5218-team-collaboration-insights-during-sprint)
+- [5.2.2. Sprint 2](#522-sprint-2)
+- [5.2.2.1. Sprint Planning 2.](#5221-sprint-planning-2)
+- [5.2.2.2. Aspect Leaders and Collaborators.](#5222-aspect-leaders-and-collaborators)
+- [5.2.2.3. Sprint Backlog 2.](#5223-sprint-backlog-2)
+- [5.2.2.4. Development Evidence for Sprint Review.](#5224-development-evidence-for-sprint-review)
+- [5.2.2.5. Execution Evidence for Sprint Review.](#5225-execution-evidence-for-sprint-review)
+- [5.2.2.6. Services Documentation Evidence for Sprint Review.](#5226-services-documentation-evidence-for-sprint-review)
+- [5.2.2.7. Software Deployment Evidence for Sprint Review.](#5227-software-deployment-evidence-for-sprint-review)
+- [5.2.2.8. Team Collaboration Insights during Sprint.](#5228-team-collaboration-insights-during-sprint)
 - [5.3. Validation Interviews.](#53-validation-interviews)
 - [5.3.1. Diseño de Entrevistas.](#531-diseño-de-entrevistas)
 - [5.3.2. Registro de Entrevistas.](#532-registro-de-entrevistas)
@@ -2744,6 +2753,274 @@ Durante el Sprint 1, se realizó el despliegue de la landing page del proyecto u
 #### 5.2.1.8. Team Collaboration Insights during Sprint.
 
 ![Collaboration Insights](assets/img/chapter-v/collaboration-insights.png)
+
+### 5.2.2. Sprint 2
+
+En este Sprint el equipo se enfocó en construir la primera versión de la Web Application de EdgeWatch (`edgewatch-webapp`). El alcance se limitó deliberadamente a los bounded contexts que habilitan el flujo mínimo de operación de una celda HVOF desde el frontend: **IAM** (registro de organización, inicio de sesión y roles), **Billing** (selección de plan y suscripción), **Equipment** (sistemas HVOF, subsistemas, partes y recetas con rangos nominales) y **Process Monitoring** (inicio, monitoreo, finalización e historial de sesiones de rociado). Los bounded contexts de Traceability, Fault Diagnosis, Notifications y Reporting quedan fuera del Sprint; de Traceability solo se incluyen las vistas base de navegación y la consulta de órdenes de recuperación necesaria para iniciar una sesión.
+
+La Web Application se desarrolló con Vue 3, Vite, PrimeVue, Pinia, Vue Router y Vue I18n, organizada por bounded context en capas `domain`, `application`, `infrastructure` y `presentation`. Como el backend aún no está disponible, la aplicación consume una Fake API construida con json-server, que expone los mismos recursos bajo el prefijo `/api/v1` definidos para la REST API.
+
+#### 5.2.2.1. Sprint Planning 2.
+
+Resumen de la reunión de Sprint Planning realizada por el equipo al inicio del Sprint 2.
+
+| Sprint # | Sprint 2 |
+|---|---|
+| **Sprint Planning Background** | |
+| Fecha | 2026-09-30 |
+| Hora | 8:00 PM |
+| Lugar | Reunión virtual vía Google Meet |
+| Preparado por | Navarro Aldoradin, Carolina Celeste |
+| Asistentes (a la reunión de planning) | Navarro Aldoradin, Carolina Celeste / Alvarez Falen, Esteban Valentino / Catacora Tupa, Jhon Deyner / Vasquez Laos, Sebastian Andrews / Yopla Romero, Jonathan Alberto |
+| **Resumen del Sprint n-1 Review** | En el Sprint 1 se implementó y desplegó en GitHub Pages la primera versión del Landing Page (`edgewatch-website`), con las secciones de propuesta de valor, información por segmento, call-to-action segmentado y cambio de idioma (US44 a US48), integradas en develop mediante tres Pull Requests y publicadas como versión v1.0.0. |
+| **Resumen de la Retrospectiva del Sprint n-1** | El equipo acordó mantener el modelo Gitflow, los Pull Requests por funcionalidad y el estándar Conventional Commits, que facilitaron la revisión y la trazabilidad de los cambios. Como punto de mejora, se decidió nombrar cada rama feature según la User Story que implementa y referenciar el ID de la historia en el título del Pull Request. |
+| **Sprint Goal & User Stories** | |
+| Sprint 2 Goal | Nuestro enfoque está en ofrecer a las organizaciones del segmento Recuperation Supplier una Web Application en la que puedan registrarse, gestionar el acceso de su equipo, configurar sus celdas HVOF con sus rangos nominales y ejecutar sesiones de rociado monitoreando sus parámetros en vivo. Creemos que esto entrega control y visibilidad del proceso de recubrimiento a los Ingenieros de Calidad, Supervisores y Operadores HVOF. Esto se confirmará cuando un administrador pueda registrar su organización, elegir un plan y asignar roles, y un operador pueda iniciar una sesión sobre una celda configurada, ver la clasificación de cada parámetro frente a su receta, finalizar o abortar la sesión y consultarla en el historial. |
+| Sprint 2 Velocity | 44 Story Points |
+| Suma de Story Points | 44 Story Points |
+
+**Historias de usuario incluidas en el Sprint 2**
+
+| # Orden | User Story Id | Título | Story Points |
+|---|---|---|---|
+| 1 | US07 | Registro de celda HVOF | 3 |
+| 2 | US08 | Registro de partes de la celda | 3 |
+| 3 | US09 | Configuración de rangos nominales | 3 |
+| 4 | US19 | Inicio de sesión de rociado | 3 |
+| 5 | US21 | Detección de parámetro fuera de rango | 5 |
+| 6 | US22 | Visualización de lecturas en vivo | 5 |
+| 7 | US23 | Finalización o aborto de sesión | 2 |
+| 8 | US24 | Historial de sesiones por celda | 3 |
+| 9 | US01 | Registro de organización | 3 |
+| 10 | US02 | Inicio de sesión | 3 |
+| 11 | US03 | Asignación de roles | 3 |
+| 12 | US04 | Restricción de acceso por rol | 3 |
+| 13 | US05 | Selección de plan | 3 |
+| 14 | US06 | Consulta y vigencia de suscripción | 2 |
+
+#### 5.2.2.2. Aspect Leaders and Collaborators.
+
+Para el Sprint 2 el equipo WebRunners mantuvo la distribución matricial de roles definida en el Sprint 1, en concordancia con el **ABET Student Outcome 5**, ajustando las responsabilidades de cada aspecto al desarrollo de la Web Application. Cada aspecto cuenta con un **Líder (Aspect Leader)** responsable de coordinar las actividades y asegurar el cumplimiento de los objetivos, junto con **Colaboradores (Collaborators)** que participan en la implementación, la revisión por pares y la validación cruzada.
+
+| Aspecto / Rol | Descripción de Responsabilidades | Líder (Aspect Leader) | Colaboradores (Collaborators) |
+|---|---|---|---|
+| **Product Owner & Gestión de Requisitos** | Selección de las User Stories del Sprint 2 según el orden del Product Backlog, refinamiento de criterios de aceptación de los bounded contexts IAM, Billing, Equipment y Process Monitoring, y delimitación del alcance frente a los contextos que se abordarán en Sprints posteriores. | Navarro Aldoradin, Carolina Celeste | Alvarez Falen, Esteban Valentino<br>Catacora Tupa, Jhon Deyner |
+| **Scrum Master & Gestión Ágil** | Facilitación de las ceremonias Scrum del Sprint 2, seguimiento del avance de las ramas feature y remoción de impedimentos, con monitoreo de la velocidad del equipo (44 Story Points planificados). | Navarro Aldoradin, Carolina Celeste | Vasquez Laos, Sebastian Andrews<br>Yopla Romero, Jonathan Alberto |
+| **Desarrollo Frontend & UI/UX** | Implementación de la Web Application en Vue 3 + Vite con PrimeVue y PrimeFlex, estructura por bounded context y capas DDD, stores de Pinia, enrutamiento con guards por rol e internacionalización inglés/español con Vue I18n. | Catacora Tupa, Jhon Deyner | Navarro Aldoradin, Carolina Celeste<br>Alvarez Falen, Esteban Valentino |
+| **Desarrollo Backend & Servicios API** | Definición de los recursos y rutas `/api/v1` que consume la Web Application, mantenimiento de la Fake API en json-server como contrato provisional y alineamiento de sus recursos con la futura REST API en ASP.NET Core. | Vasquez Laos, Sebastian Andrews | Catacora Tupa, Jhon Deyner<br>Yopla Romero, Jonathan Alberto |
+| **Gestión de Base de Datos y Persistencia** | Elaboración de los datos de prueba de la Fake API (organizaciones, usuarios, roles, planes, sistemas HVOF, recetas, sesiones y lecturas) consistentes con el modelo relacional de 4.8.1. | Yopla Romero, Jonathan Alberto | Vasquez Laos, Sebastian Andrews<br>Navarro Aldoradin, Carolina Celeste |
+| **DevOps, SCM & Despliegue Continuo** | Administración del repositorio `edgewatch-webapp` con Gitflow, una rama feature por User Story, revisión y fusión de Pull Requests hacia develop y configuración de variables de entorno por ambiente. | Catacora Tupa, Jhon Deyner | Yopla Romero, Jonathan Alberto<br>Alvarez Falen, Esteban Valentino |
+| **Aseguramiento de Calidad (QA) & Accesibilidad** | Verificación funcional de los flujos de registro, inicio de sesión, configuración de celdas y sesiones de rociado, pruebas de acceso por rol y revisión de contraste y legibilidad de la interfaz. | Alvarez Falen, Esteban Valentino | Catacora Tupa, Jhon Deyner<br>Vasquez Laos, Sebastian Andrews |
+| **Documentación Técnica & Trazabilidad** | Actualización del Project Report con la evidencia del Sprint 2, trazabilidad entre User Stories, ramas, commits y Pull Requests, y registro de los endpoints consumidos por la Web Application. | Alvarez Falen, Esteban Valentino | Navarro Aldoradin, Carolina Celeste<br>Yopla Romero, Jonathan Alberto |
+
+#### 5.2.2.3. Sprint Backlog 2.
+
+El Sprint Backlog 2 desglosa las User Stories priorizadas en tareas técnicas de la Web Application: configuración base del proyecto, entidades de dominio, assemblers y clientes de API, stores de Pinia, vistas y rutas de cada bounded context. Cada grupo de tareas se desarrolló en una rama feature del repositorio `edgewatch-webapp` y se integró en develop mediante un Pull Request.
+
+| UserStoryId | UserStoryTitle | Work-Item/TaskId | Work-Item/Task Title | Description | Estimation | AssignedTo | Status |
+|---|---|---|---|---|:---:|---|:---:|
+| — | Base de la Web Application | TSK-WA-01 | Configuración del proyecto Vue 3 + Vite | Creación del proyecto, dependencias (PrimeVue, Pinia, Vue Router, Vue I18n, Axios), alias `@` y variables de entorno por ambiente. | 2h | Carolina Celeste Navarro Aldoradin | Completed |
+| — | Base de la Web Application | TSK-WA-02 | Fake API con json-server | Datos de prueba de todos los recursos y reescritura de rutas para exponerlos bajo `/api/v1`. | 3h | Carolina Celeste Navarro Aldoradin | Completed |
+| — | Base de la Web Application | TSK-WA-03 | Layout, router y vistas base | Shell de la aplicación con toolbar, router con títulos por ruta, vistas de inicio, acerca de y 404, y vistas base de cada bounded context. | 4h | Carolina Celeste Navarro Aldoradin | Completed |
+| — | Base de la Web Application | TSK-WA-04 | Internacionalización de la Web Application | Diccionarios en inglés y español, LanguageSwitcher y FooterContent en el layout, y traducción de todas las vistas. | 3h | Carolina Celeste Navarro Aldoradin | Completed |
+| US07 | Registro de celda HVOF | TSK-WA-05 | Capa de infraestructura compartida | BaseApi con cliente Axios y BaseEndpoint con operaciones CRUD reutilizables por todos los bounded contexts. | 2h | Jhon Deyner Catacora Tupa | Completed |
+| US07 | Registro de celda HVOF | TSK-WA-06 | Dominio e infraestructura de sistemas HVOF | Entidades HvofSystem y Controller, assemblers y EquipmentApi para sistemas y controladores. | 3h | Jhon Deyner Catacora Tupa | Completed |
+| US07 | Registro de celda HVOF | TSK-WA-07 | Store y vistas de sistemas HVOF | Store de Equipment, listado de sistemas, formulario de creación/edición, detalle con pestaña de controladores y formulario de controlador. | 5h | Jhon Deyner Catacora Tupa | Completed |
+| US08 | Registro de partes de la celda | TSK-WA-08 | Dominio e infraestructura de subsistemas y partes | Entidades HvofSubsystem y HvofPart, assemblers y métodos de la API. | 2h | Jhon Deyner Catacora Tupa | Completed |
+| US08 | Registro de partes de la celda | TSK-WA-09 | Vistas de subsistemas y partes | Formularios de subsistema y parte, pestaña de subsistemas en el detalle del sistema HVOF y rutas por rol. | 4h | Jhon Deyner Catacora Tupa | Completed |
+| US09 | Configuración de rangos nominales | TSK-WA-10 | Entidad Recipe con validación de umbrales | Receta con aplicabilidades por tipo de componente y modelo de máquina, y validación del orden de los umbrales de parada, advertencia y rango nominal. | 3h | Jhon Deyner Catacora Tupa | Completed |
+| US09 | Configuración de rangos nominales | TSK-WA-11 | Formulario y pestaña de recetas | Formulario de receta con edición de bandas por parámetro, pestaña de recetas en el detalle del sistema y rutas restringidas. | 5h | Jhon Deyner Catacora Tupa | Completed |
+| US19 | Inicio de sesión de rociado | TSK-WA-12 | Dominio, API y store de sesiones | Entidad SpraySession, assembler, ProcessMonitoringApi y store de Process Monitoring. | 3h | Jhon Deyner Catacora Tupa | Completed |
+| US19 | Inicio de sesión de rociado | TSK-WA-13 | Vista de inicio de sesión de rociado | Selección del sistema HVOF, la orden de recuperación y la receta, y listado de sesiones con su estado. | 4h | Jhon Deyner Catacora Tupa | Completed |
+| US21 | Detección de parámetro fuera de rango | TSK-WA-14 | Clasificador de bandas de lectura | Entidad ProcessReading y clasificación de cada valor en nominal, fuera de nominal, advertencia o parada según la receta. | 3h | Jhon Deyner Catacora Tupa | Completed |
+| US22 | Visualización de lecturas en vivo | TSK-WA-15 | Consulta periódica de lecturas | Métodos de la API por sesión y banda, y consulta automática de lecturas cada 5 segundos con conteo por banda en el store. | 3h | Jhon Deyner Catacora Tupa | Completed |
+| US22 | Visualización de lecturas en vivo | TSK-WA-16 | Detalle de sesión con tarjetas de parámetros | Componente ParameterCard y vista de detalle de sesión con el valor actual, la unidad y la banda de cada parámetro. | 4h | Jhon Deyner Catacora Tupa | Completed |
+| US23 | Finalización o aborto de sesión | TSK-WA-17 | Completar y abortar sesión | Acciones del store, diálogo de aborto con motivo y botones de completar/abortar en el detalle de la sesión. | 3h | Jhon Deyner Catacora Tupa | Completed |
+| US24 | Historial de sesiones por celda | TSK-WA-18 | Filtros e indicador de desviaciones | Conteo de desviaciones por sesión y filtros por sistema HVOF, orden de recuperación y rango de fechas en el listado de sesiones. | 3h | Jhon Deyner Catacora Tupa | Completed |
+| US01 | Registro de organización | TSK-WA-19 | Dominio e infraestructura de registro | Entidades Organization, User y Role, SignUpCommand, assembler e IamApi. | 3h | Jhon Deyner Catacora Tupa | Completed |
+| US01 | Registro de organización | TSK-WA-20 | Formulario de registro | Store de IAM, formulario de registro de organización y administrador, y rutas de IAM. | 3h | Jhon Deyner Catacora Tupa | Completed |
+| US02 | Inicio de sesión | TSK-WA-21 | Autenticación y estado de sesión | Comando y assembler de inicio de sesión, estado de sesión con signIn/signOut en el store y formulario de inicio de sesión. | 3h | Jhon Deyner Catacora Tupa | Completed |
+| US02 | Inicio de sesión | TSK-WA-22 | Guard e interceptor de autenticación | Guard que protege las rutas privadas, interceptor que adjunta el token a cada petición y sección de sesión en el toolbar. | 3h | Jhon Deyner Catacora Tupa | Completed |
+| US03 | Asignación de roles | TSK-WA-23 | Gestión de usuarios y roles | Usuarios y roles en IamApi y en el store, listado de usuarios y formulario de asignación de roles. | 4h | Jhon Deyner Catacora Tupa | Completed |
+| US04 | Restricción de acceso por rol | TSK-WA-24 | Restricción de rutas por rol | Metadatos de roles en las rutas de usuarios, equipos y sesiones, y validación en el guard de autenticación. | 2h | Jhon Deyner Catacora Tupa | Completed |
+| US05 | Selección de plan | TSK-WA-25 | Dominio, API y store de Billing | Entidades Plan y Subscription, BillingApi, assemblers y store de Billing. | 2h | Jhon Deyner Catacora Tupa | Completed |
+| US05 | Selección de plan | TSK-WA-26 | Vista de selección de plan | Selección del plan Operator o Asset Owner según el tipo de organización y creación de la suscripción. | 2h | Jhon Deyner Catacora Tupa | Completed |
+| US06 | Consulta y vigencia de suscripción | TSK-WA-27 | Vista de detalle de suscripción | Consulta del plan, el estado y la vigencia de la suscripción, con acceso desde el toolbar. | 2h | Jhon Deyner Catacora Tupa | Completed |
+| — | Mejora visual | TSK-WA-28 | Ajustes de layout y contraste | Layout de ancho completo y paleta de mayor contraste en modo claro y oscuro. | 1h | Jhon Deyner Catacora Tupa | Completed |
+
+#### 5.2.2.4. Development Evidence for Sprint Review.
+
+A continuación, se presenta el registro de la evidencia de desarrollo del Sprint 2 en el repositorio [`edgewatch-webapp`](https://github.com/upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp). La tabla detalla los commits de la rama develop bajo el estándar Conventional Commits, la rama de origen según el modelo Gitflow, el identificador hash, el mensaje de commit, el resumen de las modificaciones y la fecha de registro. Cada rama feature se integró en develop mediante un Pull Request (#1 a #14).
+
+| Repository | Branch | CommitId | Commit Message | Commit MessageBody (resumen) | Committed on |
+|---|---|---|---|---|:---:|
+| edgewatch-webapp | main | 5a6df8a | chore: initial commit | Inicialización del repositorio de la Web Application con la plantilla de Vue 3 + Vite. | 2026-10-01 |
+| edgewatch-webapp | develop | 8d4634c | chore: update project metadata. | Actualización del nombre, descripción, autor y licencia del proyecto en package.json. | 2026-10-01 |
+| edgewatch-webapp | develop | 4140a15 | chore: add dependencies. | Incorporación de PrimeVue, PrimeFlex, Pinia, Vue Router, Vue I18n, Axios y json-server. | 2026-10-01 |
+| edgewatch-webapp | develop | 04ed754 | chore: add development and production environment variable files. | Archivos de variables de entorno con la URL base de la API y las rutas de cada endpoint. | 2026-10-01 |
+| edgewatch-webapp | develop | aca78d2 | chore: configure i18n, pinia, router and PrimeVue. | Configuración inicial de i18n, Pinia, Vue Router y PrimeVue en main.js. | 2026-10-01 |
+| edgewatch-webapp | develop | 24fc620 | chore: add fake API data, routes and launcher. | Fake API con json-server: base de datos de prueba, reescritura de rutas /api/v1 y script de arranque. | 2026-10-01 |
+| edgewatch-webapp | feature/navigate-the-application | 91fb8fe | feat(shared): add Home, About and PageNotFound views. | Vistas compartidas de inicio, acerca de y página no encontrada. | 2026-10-01 |
+| edgewatch-webapp | feature/navigate-the-application | 77cc074 | feat(traceability): add CustomerList, ComponentList and RecuperationList views. | Vistas de listado de clientes, componentes y órdenes de recuperación (estructura base). | 2026-10-01 |
+| edgewatch-webapp | feature/navigate-the-application | d7d4fc4 | feat(equipment): add HvofSystemList view. | Vista base del listado de sistemas HVOF. | 2026-10-01 |
+| edgewatch-webapp | feature/navigate-the-application | b46a231 | feat(process-monitoring): add SpraySessionList view. | Vista base del listado de sesiones de rociado. | 2026-10-01 |
+| edgewatch-webapp | feature/navigate-the-application | 043f2d1 | feat: add traceability, equipment and process-monitoring routes. | Rutas de los bounded contexts Traceability, Equipment y Process Monitoring. | 2026-10-01 |
+| edgewatch-webapp | feature/navigate-the-application | e39bed1 | feat(shared): add application router. | Router de la aplicación con título dinámico por ruta y página 404. | 2026-10-01 |
+| edgewatch-webapp | feature/navigate-the-application | ac43dfc | feat(shared): add Layout component and wire it into the app shell. | Componente Layout con toolbar de navegación integrado al shell de la aplicación. | 2026-10-01 |
+| edgewatch-webapp | feature/navigate-the-application | db64422 | chore: add @ path alias for src. | Alias @ hacia src en Vite y jsconfig para importaciones absolutas. | 2026-10-01 |
+| edgewatch-webapp | feature/navigate-the-application | 2106297 | feat(traceability): add recuperation list file. | Archivo de la vista de listado de órdenes de recuperación. | 2026-10-01 |
+| edgewatch-webapp | develop | 4904cf9 | Merge pull request #1 from feature/navigate-the-application | Fusión de la navegación base de la Web Application en develop. | 2026-10-01 |
+| edgewatch-webapp | feature/switch-application-language | 20b78f2 | feat(i18n): add English ad Spanish dictionaries. | Diccionarios de traducción en inglés y español para la Web Application. | 2026-10-01 |
+| edgewatch-webapp | feature/switch-application-language | 62fc18c | feat(shared): add FooterContent component. | Componente de pie de página compartido. | 2026-10-01 |
+| edgewatch-webapp | feature/switch-application-language | ce8a5cf | feat(shared): translate the Layout and wire LanguageSwitcher and FooterContent. | Traducción del Layout e integración del LanguageSwitcher y el FooterContent. | 2026-10-01 |
+| edgewatch-webapp | feature/switch-application-language | 3d5be15 | feat: translate shared and bounded-context views. | Traducción de las vistas compartidas y de los bounded contexts. | 2026-10-01 |
+| edgewatch-webapp | develop | 9b44f99 | Merge pull request #2 from feature/switch-application-language | Fusión del soporte bilingüe (EN/ES) de la Web Application en develop. | 2026-10-01 |
+| edgewatch-webapp | feature/manage-hvof-systems | c103baf | chore(shared): add placeholder BaseApi and BaseEndpoint pending F3–F5. | Clases BaseApi (cliente Axios) y BaseEndpoint (operaciones CRUD genéricas). | 2026-10-04 |
+| edgewatch-webapp | feature/manage-hvof-systems | 2a6a534 | feat(equipment): add HvofSystem and Controller entities. | Entidades de dominio HvofSystem y Controller. | 2026-10-04 |
+| edgewatch-webapp | feature/manage-hvof-systems | 1d2e5eb | feat(equipment): add HvofSystemAssembler and ControllerAssembler. | Assemblers que convierten respuestas de la API en entidades HvofSystem y Controller. | 2026-10-04 |
+| edgewatch-webapp | feature/manage-hvof-systems | 458ac3b | feat(equipment): add EquipmentApi, systems and controllers. | EquipmentApi con los endpoints de sistemas HVOF y controladores. | 2026-10-04 |
+| edgewatch-webapp | feature/manage-hvof-systems | 71b31c2 | feat(equipment): add HVOF system and controller translations. | Traducciones de sistemas HVOF y controladores. | 2026-10-04 |
+| edgewatch-webapp | feature/manage-hvof-systems | d89dc6d | chore(i18n): add placeholder common and errors keys pending F3–F5. | Claves de traducción comunes y de errores reutilizadas por los formularios. | 2026-10-04 |
+| edgewatch-webapp | feature/manage-hvof-systems | 7b760ae | feat(equipment): add equipment store, systems and controllers. | Store de Pinia de Equipment con carga, creación y edición de sistemas y controladores. | 2026-10-04 |
+| edgewatch-webapp | feature/manage-hvof-systems | c3c9487 | feat(equipment): fill in the HvofSystemList view. | Listado de sistemas HVOF de la organización con acceso al detalle y a la creación. | 2026-10-04 |
+| edgewatch-webapp | feature/manage-hvof-systems | 954bfe4 | feat(equipment): add HvofSystemForm view with create and edit modes. | Formulario de sistema HVOF con modos de creación y edición. | 2026-10-04 |
+| edgewatch-webapp | feature/manage-hvof-systems | 5458a28 | feat(equipment): add ControllerForm view. | Formulario de registro y edición de controladores PLC del sistema. | 2026-10-04 |
+| edgewatch-webapp | feature/manage-hvof-systems | a5c1c10 | feat(equipment): add HvofSystemDetail view with the controllers tab. | Vista de detalle del sistema HVOF con la pestaña de controladores. | 2026-10-04 |
+| edgewatch-webapp | feature/manage-hvof-systems | 3375057 | feat(equipment): add HVOF system and controller routes. | Rutas de sistemas HVOF y controladores restringidas por rol. | 2026-10-04 |
+| edgewatch-webapp | develop | e7979d2 | Merge pull request #3 from feature/manage-hvof-systems | Fusión de la gestión de sistemas HVOF (US07) en develop. | 2026-10-04 |
+| edgewatch-webapp | feature/manage-hvof-subsystems | c204ee3 | feat(equipment): add HvofSubsystem and HvofPart entities. | Entidades de dominio HvofSubsystem y HvofPart. | 2026-10-04 |
+| edgewatch-webapp | feature/manage-hvof-subsystems | c96eb33 | feat(equipment): add subsystem and part assemblers and API methods. | Assemblers y métodos de la API para subsistemas y partes. | 2026-10-04 |
+| edgewatch-webapp | feature/manage-hvof-subsystems | 48ad72f | feat(equipment): add subsystem and part translations. | Traducciones de subsistemas y partes. | 2026-10-04 |
+| edgewatch-webapp | feature/manage-hvof-subsystems | 698524e | chore(i18n): add placeholder customers.delete-header key pending F3. | Clave de traducción para el diálogo de eliminación reutilizado en partes. | 2026-10-04 |
+| edgewatch-webapp | feature/manage-hvof-subsystems | f6a7406 | feat(equipment): add subsystems and parts to the equipment store. | Subsistemas y partes en el store de Equipment (carga, creación, edición y eliminación). | 2026-10-04 |
+| edgewatch-webapp | feature/manage-hvof-subsystems | be9b746 | feat(equipment): add HvofSubsystemForm view. | Formulario de registro y edición de subsistemas de la celda. | 2026-10-04 |
+| edgewatch-webapp | feature/manage-hvof-subsystems | 69fff56 | feat(equipment): add HvofPartForm view. | Formulario de registro de partes dentro de un subsistema. | 2026-10-04 |
+| edgewatch-webapp | feature/manage-hvof-subsystems | c14e905 | feat(equipment): add the subsystems tab to HvofSystemDetail. | Pestaña de subsistemas y partes en el detalle del sistema HVOF. | 2026-10-04 |
+| edgewatch-webapp | feature/manage-hvof-subsystems | 88b3da6 | feat(equipment): add subsystem and part routes. | Rutas de subsistemas y partes restringidas por rol. | 2026-10-04 |
+| edgewatch-webapp | develop | b40cf6c | Merge pull request #4 from feature/manage-hvof-subsystems | Fusión de la gestión de subsistemas y partes (US08) en develop. | 2026-10-04 |
+| edgewatch-webapp | feature/manage-recipes | c5504cc | chore(traceability): add placeholder Component entity and type translations pending F3–F5. | Entidad Component y traducciones de tipos de componente usadas por las recetas. | 2026-10-04 |
+| edgewatch-webapp | feature/manage-recipes | 8a3334a | feat(equipment): add Recipe entity with threshold validator. | Entidad Recipe con validación del orden de umbrales de cada parámetro. | 2026-10-04 |
+| edgewatch-webapp | feature/manage-recipes | ac12587 | feat(equipment): add recipes assembler, API methods and store functions. | Assembler, métodos de la API y funciones del store para recetas. | 2026-10-04 |
+| edgewatch-webapp | feature/manage-recipes | 1d732d1 | feat(equipment): add recipe translations. | Traducciones de recetas y parámetros de proceso. | 2026-10-04 |
+| edgewatch-webapp | feature/manage-recipes | 2436fbf | feat(equipment): add RecipeForm view with applicabilities and parameter bands. | Formulario de receta con aplicabilidades por componente y bandas de parámetros. | 2026-10-04 |
+| edgewatch-webapp | feature/manage-recipes | 8d3ba69 | feat(equipment): add the recipes tab to HvofSystemDetail. | Pestaña de recetas en el detalle del sistema HVOF. | 2026-10-04 |
+| edgewatch-webapp | feature/manage-recipes | 682bb7d | feat(equipment): add recipe routes. | Rutas de recetas restringidas a los roles autorizados. | 2026-10-04 |
+| edgewatch-webapp | develop | f7846d3 | Merge pull request #5 from feature/manage-recipes | Fusión de la gestión de recetas y rangos nominales (US09) en develop. | 2026-10-04 |
+| edgewatch-webapp | feature/start-spray-session | ca8cea5 | chore(traceability): add placeholder TraceabilityApi and traceability store pending F3–F5. | TraceabilityApi y store de Traceability para consultar órdenes de recuperación. | 2026-10-04 |
+| edgewatch-webapp | feature/start-spray-session | 77ed4f3 | feat(process-monitoring): add SpraySession entity. | Entidad de dominio SpraySession. | 2026-10-04 |
+| edgewatch-webapp | feature/start-spray-session | 48d0df4 | feat(process-monitoring): add SpraySessionAssembler and ProcessMonitoringApi. | SpraySessionAssembler y ProcessMonitoringApi con los endpoints de sesiones. | 2026-10-04 |
+| edgewatch-webapp | feature/start-spray-session | 138c68a | feat(process-monitoring): add spray session translations. | Traducciones de sesiones de rociado. | 2026-10-04 |
+| edgewatch-webapp | feature/start-spray-session | 9ada2fe | feat(process-monitoring): add process monitoring store, sessions only. | Store de Process Monitoring con la gestión de sesiones. | 2026-10-04 |
+| edgewatch-webapp | feature/start-spray-session | 21757eb | feat(process-monitoring): fill in the SpraySessionList view. | Listado de sesiones de rociado con estado, sistema y orden de recuperación. | 2026-10-04 |
+| edgewatch-webapp | feature/start-spray-session | d749633 | feat(process-monitoring): add SpraySessionStart view. | Vista para iniciar una sesión seleccionando sistema HVOF, orden y receta. | 2026-10-04 |
+| edgewatch-webapp | feature/start-spray-session | 1567177 | feat(process-monitoring): add spray session routes. | Rutas de sesiones de rociado restringidas por rol. | 2026-10-04 |
+| edgewatch-webapp | develop | 0980e99 | Merge pull request #6 from feature/start-spray-session | Fusión del inicio de sesión de rociado (US19) en develop. | 2026-10-04 |
+| edgewatch-webapp | feature/monitor-live-readings | 6f5f803 | feat(process-monitoring): add ProcessReading entity and band classifier. | Entidad ProcessReading y clasificador de bandas (nominal, fuera de nominal, advertencia, parada). | 2026-10-04 |
+| edgewatch-webapp | feature/monitor-live-readings | 2db1ae5 | feat(process-monitoring): add ProcessReadingAssembler and readings API methods. | Assembler de lecturas y métodos de la API para consultarlas por sesión y banda. | 2026-10-04 |
+| edgewatch-webapp | feature/monitor-live-readings | 6c7225c | feat(process-monitoring): add session detail translations. | Traducciones del detalle de sesión. | 2026-10-04 |
+| edgewatch-webapp | feature/monitor-live-readings | 6c20e79 | feat(process-monitoring): add readings, polling and band counts to the store. | Lecturas, consulta periódica cada 5 segundos y conteo por banda en el store. | 2026-10-04 |
+| edgewatch-webapp | feature/monitor-live-readings | d52cc62 | feat(process-monitoring): add ParameterCard component. | Componente ParameterCard con el último valor, la unidad y la banda del parámetro. | 2026-10-04 |
+| edgewatch-webapp | feature/monitor-live-readings | e9f52b5 | feat(process-monitoring): add SpraySessionDetail view with live parameter cards. | Vista de detalle de sesión con tarjetas de parámetros en vivo. | 2026-10-04 |
+| edgewatch-webapp | feature/monitor-live-readings | 2512794 | feat(process-monitoring): add the session detail route. | Ruta del detalle de sesión. | 2026-10-04 |
+| edgewatch-webapp | develop | 8f6d833 | Merge pull request #7 from feature/monitor-live-readings | Fusión del monitoreo de lecturas en vivo (US21, US22) en develop. | 2026-10-04 |
+| edgewatch-webapp | feature/finish-spray-session | 2dbfa83 | feat(process-monitoring): add finish session translations. | Traducciones para finalizar y abortar sesiones. | 2026-10-04 |
+| edgewatch-webapp | feature/finish-spray-session | ec87b12 | feat(process-monitoring): add completeSession and abortSession to the store. | Funciones completeSession y abortSession en el store. | 2026-10-04 |
+| edgewatch-webapp | feature/finish-spray-session | 7d2c3ed | feat(process-monitoring): add AbortSessionDialog component. | Diálogo de confirmación para abortar una sesión con motivo. | 2026-10-04 |
+| edgewatch-webapp | feature/finish-spray-session | eea7bae | feat(process-monitoring): add complete and abort actions to SpraySessionDetail. | Acciones de completar y abortar en el detalle de la sesión. | 2026-10-04 |
+| edgewatch-webapp | develop | c27c56f | Merge pull request #8 from feature/finish-spray-session | Fusión de la finalización de sesiones (US23) en develop. | 2026-10-04 |
+| edgewatch-webapp | feature/browse-session-history | 1ca7ef2 | feat(process-monitoring): add per-session deviation count. | Cálculo del número de desviaciones por sesión. | 2026-10-04 |
+| edgewatch-webapp | feature/browse-session-history | 0eb89d0 | feat(process-monitoring): add filters and deviation count to SpraySessionList. | Filtros por sistema, orden de recuperación y rango de fechas, y conteo de desviaciones en el listado de sesiones. | 2026-10-04 |
+| edgewatch-webapp | develop | 56a84ef | Merge pull request #9 from feature/browse-session-history | Fusión del historial de sesiones (US24) en develop. | 2026-10-04 |
+| edgewatch-webapp | feature/register-a-new-organization | 664ea7f | feat(iam): add Organization, User, Role entities and SignUpCommand. | Entidades Organization, User y Role, y comando SignUpCommand. | 2026-10-04 |
+| edgewatch-webapp | feature/register-a-new-organization | 3dd40e9 | feat(iam): add sign-up resource, assembler and IamApi. | Recurso, assembler de registro e IamApi. | 2026-10-04 |
+| edgewatch-webapp | feature/register-a-new-organization | 42e721c | feat(iam): add IAM translations. | Traducciones de IAM. | 2026-10-04 |
+| edgewatch-webapp | feature/register-a-new-organization | 0f2a679 | feat(iam): add iam store, sign-up only. | Store de IAM con el registro de organizaciones. | 2026-10-04 |
+| edgewatch-webapp | feature/register-a-new-organization | 262d14b | feat(iam): add SignUpForm view. | Formulario de registro de organización y usuario administrador. | 2026-10-04 |
+| edgewatch-webapp | feature/register-a-new-organization | a57a4a4 | feat(iam): add IAM routes and mount them in the router. | Rutas de IAM montadas en el router de la aplicación. | 2026-10-04 |
+| edgewatch-webapp | develop | 151e1e3 | Merge pull request #10 from feature/register-a-new-organization | Fusión del registro de organizaciones (US01) en develop. | 2026-10-04 |
+| edgewatch-webapp | feature/sign-in-and-manage-the-session | d1c7ec5 | feat(iam): add sign-in command, resource, assembler and API method. | Comando, recurso, assembler y método de la API para el inicio de sesión. | 2026-10-04 |
+| edgewatch-webapp | feature/sign-in-and-manage-the-session | 88e5aaa | feat(iam): add session state, signIn and signOut to the iam store. | Estado de sesión, signIn y signOut en el store de IAM. | 2026-10-04 |
+| edgewatch-webapp | feature/sign-in-and-manage-the-session | dc60704 | feat(iam): add SignInForm view and route. | Formulario de inicio de sesión y su ruta. | 2026-10-04 |
+| edgewatch-webapp | feature/sign-in-and-manage-the-session | 9a78032 | feat(iam): add authenticationGuard and protect the routes. | Guard de autenticación que protege las rutas privadas. | 2026-10-04 |
+| edgewatch-webapp | feature/sign-in-and-manage-the-session | 4676aed | feat(iam): add iamInterceptor to BaseApi. | Interceptor que adjunta el token de sesión a cada petición de BaseApi. | 2026-10-04 |
+| edgewatch-webapp | feature/sign-in-and-manage-the-session | ea15694 | feat(shared): add AuthenticationSection and filter the toolbar by session and organization type. | Sección de autenticación en el toolbar y menú filtrado por sesión y tipo de organización. | 2026-10-04 |
+| edgewatch-webapp | feature/sign-in-and-manage-the-session | 4abec15 | refactor: take organization and operator from the iam store. | La organización y el operador se obtienen del store de IAM en lugar de valores fijos. | 2026-10-04 |
+| edgewatch-webapp | develop | b95cd25 | Merge pull request #11 from feature/sign-in-and-manage-the-session | Fusión del inicio de sesión y gestión de sesión (US02) en develop. | 2026-10-04 |
+| edgewatch-webapp | feature/manage-user-roles | 3e4d02d | chore: add missing roles to the fake API. | Roles faltantes agregados a la Fake API. | 2026-10-04 |
+| edgewatch-webapp | feature/manage-user-roles | 33ffe14 | feat(iam): add users and roles to IamApi and the iam store. | Usuarios y roles en IamApi y en el store de IAM. | 2026-10-04 |
+| edgewatch-webapp | feature/manage-user-roles | 0250190 | feat(iam): add user and role translations. | Traducciones de usuarios y roles. | 2026-10-04 |
+| edgewatch-webapp | feature/manage-user-roles | da28a8b | feat(iam): add UserList and UserRoleForm views. | Listado de usuarios y formulario de asignación de roles. | 2026-10-04 |
+| edgewatch-webapp | feature/manage-user-roles | 202df79 | feat(iam): add user routes guarded by role and role-based access to equipment and sessions. | Rutas de usuarios protegidas por rol y acceso por rol a equipos y sesiones. | 2026-10-04 |
+| edgewatch-webapp | develop | ed515a2 | Merge pull request #12 from feature/manage-user-roles | Fusión de la gestión de roles y restricción de acceso (US03, US04) en develop. | 2026-10-04 |
+| edgewatch-webapp | feature/select-subscription-plan | 8156e3e | feat(billing): add Plan and Subscription entities. | Entidades de dominio Plan y Subscription. | 2026-10-04 |
+| edgewatch-webapp | feature/select-subscription-plan | bb661ac | feat(billing): add billing infrastructure and store. | BillingApi, assemblers y store de Billing. | 2026-10-04 |
+| edgewatch-webapp | feature/select-subscription-plan | ed03037 | feat(billing): add billing translations. | Traducciones de Billing. | 2026-10-04 |
+| edgewatch-webapp | feature/select-subscription-plan | 53aff9c | feat(billing): add PlanSelection and SubscriptionDetail views. | Vistas de selección de plan y detalle de suscripción. | 2026-10-04 |
+| edgewatch-webapp | feature/select-subscription-plan | 47bffcb | feat(billing): add billing routes and the subscription toolbar option. | Rutas de Billing y opción de suscripción en el toolbar. | 2026-10-04 |
+| edgewatch-webapp | develop | 2237732 | Merge pull request #13 from feature/select-subscription-plan | Fusión de la selección de plan y consulta de suscripción (US05, US06) en develop. | 2026-10-04 |
+| edgewatch-webapp | feature/improve-layout-styles | 9ba0969 | style: use full-width layout, higher-contrast palette and black toolbar text | Layout de ancho completo, paleta de mayor contraste y texto negro en el toolbar. | 2026-10-05 |
+| edgewatch-webapp | develop | 3e3c38b | Merge pull request #14 from feature/improve-layout-styles | Fusión de las mejoras de estilos del layout en develop. | 2026-10-05 |
+
+#### 5.2.2.5. Execution Evidence for Sprint Review.
+
+A continuación, se documenta la evidencia de ejecución de la Web Application para el Sprint 2, validando cada User Story mediante las funcionalidades e interfaces disponibles en la aplicación ejecutada localmente contra la Fake API:
+
+| ID | User Story | Evidencia en Web Application |
+|:---:|---|---|
+| **US07** | Registro de celda HVOF | En **Equipment > HVOF Systems** (`/equipment/hvof-systems`) se listan los sistemas HVOF de la organización. Los roles autorizados registran y editan un sistema y, desde su detalle, registran sus **controladores PLC** en la pestaña correspondiente. |
+| **US08** | Registro de partes de la celda | En la pestaña **Subsystems** del detalle del sistema HVOF se registran los subsistemas de la celda (por ejemplo, alimentador de polvo o sistema de enfriamiento) y, dentro de cada uno, sus **partes**, que pueden agregarse o eliminarse. |
+| **US09** | Configuración de rangos nominales | En la pestaña **Recipes** se crea o edita una receta con su especificación de polvo, las combinaciones de tipo de componente y modelo de máquina a las que aplica, y por cada parámetro el setpoint, el rango nominal y los umbrales de advertencia y parada. El formulario impide guardar umbrales desordenados. |
+| **US19** | Inicio de sesión de rociado | En **Spray Sessions > Start session** (`/process-monitoring/spray-sessions/new`) el operador selecciona el sistema HVOF, la orden de recuperación y la receta, e inicia la sesión, que queda registrada en estado en curso. |
+| **US21** | Detección de parámetro fuera de rango | Cada lectura se clasifica frente a la receta en **nominal**, **fuera de nominal**, **advertencia** o **parada**. La banda se muestra con color y etiqueta en cada tarjeta de parámetro y se resume en el conteo por banda de la sesión. |
+| **US22** | Visualización de lecturas en vivo | El detalle de sesión (`/process-monitoring/spray-sessions/:id`) presenta una **ParameterCard** por parámetro con su último valor y unidad, y actualiza las lecturas automáticamente cada 5 segundos mientras la sesión está en curso. |
+| **US23** | Finalización o aborto de sesión | Desde el detalle de una sesión en curso, el operador la **completa** o la **aborta**; el aborto solicita confirmación y motivo en un diálogo. La consulta periódica de lecturas se detiene al cerrar la sesión. |
+| **US24** | Historial de sesiones por celda | El listado de sesiones muestra estado, sistema, orden de recuperación y **número de desviaciones** de cada sesión, con filtros por sistema HVOF, orden de recuperación y rango de fechas. |
+| **US01** | Registro de organización | El formulario **Sign Up** (`/iam/sign-up`) registra, en un formulario por pasos, la organización con su nombre, RUC (validado en 11 dígitos) y tipo (Recuperation Supplier o Asset Owner) junto con su usuario administrador. |
+| **US02** | Inicio de sesión | El formulario **Sign In** (`/iam/sign-in`) autentica al usuario y guarda la sesión. Las rutas privadas redirigen al inicio de sesión cuando no hay sesión activa, y el toolbar muestra el usuario y la opción de cerrar sesión. |
+| **US03** | Asignación de roles | En **Users** (`/iam/users`), el administrador de la organización consulta los usuarios y asigna sus roles (administrador, ingeniero de calidad, supervisor de mantenimiento, operador HVOF, supervisor de operación, entre otros). |
+| **US04** | Restricción de acceso por rol | El guard de autenticación valida el rol y el tipo de organización antes de cada navegación: el menú se adapta a la sesión y al tipo de organización, y las rutas restringidas (por ejemplo, crear sistemas o recetas) redirigen al inicio si el usuario no tiene el rol requerido. |
+| **US05** | Selección de plan | En **Plans** (`/billing/plans`) el administrador elige el plan **Operator** o **Asset Owner** con su precio mensual y sus límites, y se crea la suscripción de la organización. |
+| **US06** | Consulta y vigencia de suscripción | En **Subscription** (`/billing/subscription`), accesible desde el toolbar, se consulta el plan contratado, el estado y las fechas de vigencia de la suscripción. |
+
+#### 5.2.2.6. Services Documentation Evidence for Sprint Review.
+
+Durante el Sprint 2 no se documentaron endpoints en OpenAPI, ya que la REST API en ASP.NET Core aún no se ha implementado. La Web Application consume una Fake API en json-server que expone los recursos bajo el prefijo `/api/v1`, con la misma estructura de rutas prevista para la REST API. Las rutas se configuran mediante variables de entorno, de modo que al disponer del backend solo cambia la URL base. A continuación se listan los endpoints consumidos en este Sprint:
+
+| Bounded Context | Endpoint | Métodos | Uso en la Web Application | User Stories |
+|---|---|---|---|---|
+| IAM | `/api/v1/organizations` | GET, POST | Registro y consulta de la organización del usuario | US01, US02 |
+| IAM | `/api/v1/users` | GET, POST, PATCH | Registro del administrador, inicio de sesión (Fake API) y asignación de roles | US01, US02, US03 |
+| IAM | `/api/v1/roles` | GET | Catálogo de roles para asignar a los usuarios | US03, US04 |
+| Billing | `/api/v1/plans` | GET | Planes disponibles con precio y límites | US05 |
+| Billing | `/api/v1/subscriptions` | GET, POST | Creación y consulta de la suscripción de la organización | US05, US06 |
+| Equipment | `/api/v1/hvofSystems` | GET, POST, PUT | Registro, edición y consulta de sistemas HVOF | US07 |
+| Equipment | `/api/v1/controllers` | GET, POST, PUT | Registro y edición de controladores PLC del sistema | US07 |
+| Equipment | `/api/v1/hvofSubsystems` | GET, POST, PUT | Registro y edición de subsistemas | US08 |
+| Equipment | `/api/v1/hvofParts` | GET, POST, DELETE | Registro y eliminación de partes de un subsistema | US08 |
+| Equipment | `/api/v1/recipes` | GET, POST, PUT, PATCH | Recetas con aplicabilidades y rangos por parámetro | US09 |
+| Traceability | `/api/v1/recuperations` | GET | Órdenes de recuperación disponibles al iniciar una sesión | US19 |
+| Process Monitoring | `/api/v1/spraySessions` | GET, POST, PATCH | Inicio, listado, finalización y aborto de sesiones | US19, US23, US24 |
+| Process Monitoring | `/api/v1/processReadings` | GET | Lecturas de una sesión, ordenadas por tiempo y filtradas por banda | US21, US22, US24 |
+
+En producción, los endpoints `/api/v1/authentication/sign-in` y `/api/v1/authentication/sign-up` reemplazarán la autenticación simulada sobre `/users` y `/organizations`, que solo se usa en desarrollo.
+
+#### 5.2.2.7. Software Deployment Evidence for Sprint Review.
+
+Durante el Sprint 2 la Web Application no se desplegó en un entorno público; su ejecución se realizó en local mientras se implementa la REST API. El despliegue en Firebase Hosting, descrito en 5.1.4, se realizará cuando la aplicación pueda conectarse al backend.
+
+- **Repositorio**: edgewatch-webapp
+- **Rama integrada**: develop (Pull Requests #1 a #14)
+- **Ejecución local de la Fake API**: `npm run api` (json-server en el puerto 3000)
+- **Ejecución local de la Web Application**: `npm run dev` (servidor de desarrollo de Vite)
+
+#### 5.2.2.8. Team Collaboration Insights during Sprint.
+
+La siguiente tabla resume la actividad registrada en la rama develop del repositorio `edgewatch-webapp` durante el Sprint 2:
+
+| Integrante | Ramas feature trabajadas | Commits | Pull Requests fusionados |
+|---|---|:---:|:---:|
+| Navarro Aldoradin, Carolina Celeste | feature/navigate-the-application, feature/switch-application-language (y configuración inicial en develop) | 21 | 2 |
+| Catacora Tupa, Jhon Deyner | feature/manage-hvof-systems, feature/manage-hvof-subsystems, feature/manage-recipes, feature/start-spray-session, feature/monitor-live-readings, feature/finish-spray-session, feature/browse-session-history, feature/register-a-new-organization, feature/sign-in-and-manage-the-session, feature/manage-user-roles, feature/select-subscription-plan, feature/improve-layout-styles | 85 | 12 |
 
 ## 5.3. Validation Interviews.
 ### 5.3.1. Diseño de Entrevistas.
