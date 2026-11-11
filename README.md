@@ -21,7 +21,6 @@ Docente: Sanchez Seña, Alberto Wilmer
 | U202315628 | Alvarez Falen     | Esteban Valentino |
 | U202425159 | Catacora Tupa     | Jhon Deyner       |
 | U20221B734 | Vasquez Laos      | Sebastian Andrews |
-| U202410376 | Yopla Romero      | Jonathan Alberto  |
 
 
 *Setiembre, 2026*
@@ -42,7 +41,7 @@ Docente: Sanchez Seña, Alberto Wilmer
 | 0.5.0 | 2026-09-10 | Catacora Tupa, Jhon Deyner / Navarro Aldoradin, Carolina Celeste / Alvarez Falen, Esteban Valentino | Wireframe y mock-up del Landing Page, Product Backlog (tabla y Trello) e imágenes de Impact Mapping. |
 | 0.6.0 | 2026-09-16 | Catacora Tupa, Jhon Deyner | Software Configuration Management, wireframes y mock-ups de la Web Application. |
 | 0.7.0 | 2026-09-17 | Alvarez Falen, Esteban Valentino / Catacora Tupa, Jhon Deyner / Vasquez Laos, Sebastian Andrews | Capítulo V: Sprint 1 (Landing Page), registro de entrevistas y revisión de imágenes y traducciones. |
-| 1.0.0 | 2026-09-18 | Navarro Aldoradin, Carolina Celeste / Vasquez Laos, Sebastian Andrews / Yopla Romero, Jonathan Alberto | Diagramas de clases y de base de datos, registro de entrevistas y actualización del Student Outcome. Versión entregada en AV1 (release 1.0.0). |
+| 1.0.0 | 2026-09-18 | Navarro Aldoradin, Carolina Celeste / Vasquez Laos, Sebastian Andrews | Diagramas de clases y de base de datos, registro de entrevistas y actualización del Student Outcome. Versión entregada en AV1 (release 1.0.0). |
 | 1.1.0 | 2026-10-05 | Catacora Tupa, Jhon Deyner | Corrección de formato Markdown, Sprint 2 (Web Application) y perfil de integrante. |
 | 1.2.0 | 2026-10-05 | Catacora Tupa, Jhon Deyner | Revisión de cumplimiento con el enunciado para TB1: registro de versiones, Student Outcome con la estructura del Anexo A, técnica 5W2H, Lean UX Canvas, análisis SWOT, análisis de entrevistas, introducciones y explicaciones de los artefactos de los Capítulos II y IV, Component Diagram de la Web Application, corrección de la configuración real de los productos en el Capítulo V, Leadership-and-Collaboration Matrix por Sprint, recomendaciones y anexo de videos. |
 
@@ -55,7 +54,7 @@ El URL del repositorio para el Project Report en la organización de GitHub es e
 
 El informe se elabora de forma colaborativa en Markdown, aplicando GitFlow: cada sección se desarrolla en una rama `feature/*` que se integra en `develop` mediante merge o Pull Request, y cada entrega se publica en `main` a través de una rama `release/*` etiquetada con Semantic Versioning. Los mensajes de commit siguen Conventional Commits (`feat(chapter-ii): ...`, `docs(chapter-v): ...`).
 
-**AV1 (release 1.0.0).** El equipo distribuyó los capítulos según la Leadership-and-Collaboration Matrix del Sprint 1. Carolina Navarro elaboró la estructura del informe, el Capítulo I, el Big Picture EventStorming, el Ubiquitous Language, las User Stories, el Impact Mapping, el Product Backlog y los diagramas de clases y de base de datos. Jhon Catacora desarrolló el Needfinding, las Style Guidelines, la Information Architecture, los diseños de UI y la configuración de software. Esteban Alvarez trabajó los perfiles, las imágenes de Impact Mapping y el Sprint 1. Sebastian Vasquez y Jonathan Yopla registraron las entrevistas y actualizaron el Student Outcome.
+**AV1 (release 1.0.0).** El equipo distribuyó los capítulos según la Leadership-and-Collaboration Matrix del Sprint 1. Carolina Navarro elaboró la estructura del informe, el Capítulo I, el Big Picture EventStorming, el Ubiquitous Language, las User Stories, el Impact Mapping, el Product Backlog y los diagramas de clases y de base de datos. Jhon Catacora desarrolló el Needfinding, las Style Guidelines, la Information Architecture, los diseños de UI y la configuración de software. Esteban Alvarez trabajó los perfiles, las imágenes de Impact Mapping y el Sprint 1. Sebastian Vasquez registró las entrevistas y actualizó el Student Outcome.
 
 **TB1.** Se corrigió el formato del informe, se agregó el Sprint 2 dedicado a la Web Application y se revisó el cumplimiento de cada sección con el enunciado del trabajo final, integrando los cambios en `develop` mediante los Pull Requests #13, #14 y #15.
 
@@ -67,7 +66,6 @@ Aportes registrados en la rama `develop` del repositorio del informe (commits y 
 | Catacora Tupa, Jhon Deyner | JhonDCT | 12 | 10 | 22 |
 | Alvarez Falen, Esteban Valentino | Valentino10113 | 6 | 3 | 9 |
 | Vasquez Laos, Sebastian Andrews | unity20012006-cell | 6 | 1 | 7 |
-| Yopla Romero, Jonathan Alberto | JonathanYoplaRomero | 6 | 1 | 7 |
 
 <div style="page-break-after: always"></div>
 
@@ -174,6 +172,15 @@ Aportes registrados en la rama `develop` del repositorio del informe (commits y 
 - [5.2.2.6. Services Documentation Evidence for Sprint Review.](#5226-services-documentation-evidence-for-sprint-review)
 - [5.2.2.7. Software Deployment Evidence for Sprint Review.](#5227-software-deployment-evidence-for-sprint-review)
 - [5.2.2.8. Team Collaboration Insights during Sprint.](#5228-team-collaboration-insights-during-sprint)
+- [5.2.3. Sprint 3](#523-sprint-3)
+- [5.2.3.1. Sprint Planning 3.](#5231-sprint-planning-3)
+- [5.2.3.2. Aspect Leaders and Collaborators.](#5232-aspect-leaders-and-collaborators)
+- [5.2.3.3. Sprint Backlog 3.](#5233-sprint-backlog-3)
+- [5.2.3.4. Development Evidence for Sprint Review.](#5234-development-evidence-for-sprint-review)
+- [5.2.3.5. Execution Evidence for Sprint Review.](#5235-execution-evidence-for-sprint-review)
+- [5.2.3.6. Services Documentation Evidence for Sprint Review.](#5236-services-documentation-evidence-for-sprint-review)
+- [5.2.3.7. Software Deployment Evidence for Sprint Review.](#5237-software-deployment-evidence-for-sprint-review)
+- [5.2.3.8. Team Collaboration Insights during Sprint.](#5238-team-collaboration-insights-during-sprint)
 - [5.3. Validation Interviews.](#53-validation-interviews)
 - [5.3.1. Diseño de Entrevistas.](#531-diseño-de-entrevistas)
 - [5.3.2. Registro de Entrevistas.](#532-registro-de-entrevistas)
@@ -200,8 +207,8 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
 
 | Criterio específico | Acciones realizadas | Conclusiones |
 |---|---|---|
-| Trabaja en equipo para proporcionar liderazgo en forma conjunta | **Navarro Aldoradin, Carolina Celeste**<br>*AV1*<br>- Lideró los aspectos de Product Owner y Scrum Master del Sprint 1: priorización del Product Backlog y conducción de las ceremonias Scrum.<br>- Facilitó la sesión de Big Picture EventStorming y la definición del Ubiquitous Language.<br>*TB1*<br>- Configuró la base de la Web Application (proyecto Vue, Fake API, navegación e internacionalización) sobre la que trabajó el resto del Sprint 2.<br><br>**Catacora Tupa, Jhon Deyner**<br>*AV1*<br>- Lideró los aspectos de Desarrollo Frontend y DevOps del Sprint 1: implementación y despliegue del Landing Page en GitHub Pages.<br>*TB1*<br>- Lideró la implementación de la Web Application en el Sprint 2 (IAM, Billing, Equipment y Process Monitoring) y la revisión e integración de los Pull Requests en `develop`.<br><br>**Alvarez Falen, Esteban Valentino**<br>*AV1*<br>- Lideró los aspectos de Aseguramiento de Calidad y Documentación Técnica del Sprint 1, coordinando la consolidación del informe.<br><br>**Vasquez Laos, Sebastian Andrews**<br>*AV1*<br>- Lideró el aspecto de Desarrollo Backend y Servicios API, definiendo la arquitectura de la REST API en ASP.NET Core.<br><br>**Yopla Romero, Jonathan Alberto**<br>*AV1*<br>- Lideró el aspecto de Gestión de Base de Datos y Persistencia, a cargo del modelo relacional en MySQL. | - El equipo distribuyó el liderazgo por aspectos (Leadership-and-Collaboration Matrix), de modo que cada integrante condujo al menos un frente del proyecto en cada Sprint.<br>- El liderazgo compartido permitió avanzar en paralelo sobre el informe, el Landing Page y la Web Application sin depender de una sola persona.<br>- La rotación de colaboradores entre aspectos facilitó que todos los integrantes conocieran el dominio HVOF y el ubiquitous language del producto. |
-| Crea un entorno colaborativo e inclusivo, establece metas, planifica tareas y cumple objetivos. | **Navarro Aldoradin, Carolina Celeste**<br>*AV1*<br>- Startup Profile, Solution Profile, antecedentes y problemática.<br>- Diseño de entrevistas, User Stories, Impact Mapping y Product Backlog en Trello.<br>- Diagramas de clases y de base de datos.<br>*TB1*<br>- Configuración inicial, navegación e internacionalización de la Web Application.<br><br>**Catacora Tupa, Jhon Deyner**<br>*AV1*<br>- Lean UX Assumptions, segmentos objetivo, registro de entrevistas y User Personas.<br>- Organization, Labeling, Searching y Navigation Systems; wireframes y mock-ups.<br>- Software Configuration Management.<br>*TB1*<br>- Sprint 2 de la Web Application (US01–US09, US19, US21–US24) y su documentación en el informe.<br>- Corrección de formato del informe y revisión de cumplimiento con el enunciado.<br><br>**Alvarez Falen, Esteban Valentino**<br>*AV1*<br>- Descripción de la startup, perfiles, Lean UX Problem Statements y análisis competitivo.<br>- Style Guidelines y SEO Tags and Meta Tags.<br>- Sprint Planning 1.<br><br>**Vasquez Laos, Sebastian Andrews**<br>*AV1*<br>- Lean UX Hypothesis Statements, diseño, registro y análisis de entrevistas.<br>- Design-Level EventStorming y diagramas C4.<br><br>**Yopla Romero, Jonathan Alberto**<br>*AV1*<br>- Estrategias y tácticas frente a competidores, User Task Matrix, User Journey Mapping y Empathy Mapping.<br>- Landing Page UI Design, Web Applications UX/UI Design y Sprint Backlog 1. | - El equipo estableció metas por Sprint mediante Sprint Goals y las descompuso en tareas con responsables y estimaciones en el Sprint Backlog.<br>- El uso de GitFlow, Pull Requests y Conventional Commits creó un entorno de trabajo transparente, donde cada aporte queda registrado y revisado.<br>- La meta de AV1 (Landing Page implementado y desplegado) se cumplió dentro del plazo, y para TB1 se completó la primera versión de la Web Application definida en el Sprint Goal 2. |
+| Trabaja en equipo para proporcionar liderazgo en forma conjunta | **Navarro Aldoradin, Carolina Celeste**<br>*AV1*<br>- Lideró los aspectos de Product Owner y Scrum Master del Sprint 1: priorización del Product Backlog y conducción de las ceremonias Scrum.<br>- Facilitó la sesión de Big Picture EventStorming y la definición del Ubiquitous Language.<br>*TB1*<br>- Configuró la base de la Web Application (proyecto Vue, Fake API, navegación e internacionalización) sobre la que trabajó el resto del Sprint 2.<br><br>**Catacora Tupa, Jhon Deyner**<br>*AV1*<br>- Lideró los aspectos de Desarrollo Frontend y DevOps del Sprint 1: implementación y despliegue del Landing Page en GitHub Pages.<br>*TB1*<br>- Lideró la implementación de la Web Application en el Sprint 2 (IAM, Billing, Equipment y Process Monitoring) y la revisión e integración de los Pull Requests en `develop`.<br><br>**Alvarez Falen, Esteban Valentino**<br>*AV1*<br>- Lideró los aspectos de Aseguramiento de Calidad y Documentación Técnica del Sprint 1, coordinando la consolidación del informe.<br><br>**Vasquez Laos, Sebastian Andrews**<br>*AV1*<br>- Lideró el aspecto de Desarrollo Backend y Servicios API, definiendo la arquitectura de la REST API en ASP.NET Core.<br>- Lideró el aspecto de Gestión de Base de Datos y Persistencia, a cargo del modelo relacional en MySQL. | - El equipo distribuyó el liderazgo por aspectos (Leadership-and-Collaboration Matrix), de modo que cada integrante condujo al menos un frente del proyecto en cada Sprint.<br>- El liderazgo compartido permitió avanzar en paralelo sobre el informe, el Landing Page y la Web Application sin depender de una sola persona.<br>- La rotación de colaboradores entre aspectos facilitó que todos los integrantes conocieran el dominio HVOF y el ubiquitous language del producto. |
+| Crea un entorno colaborativo e inclusivo, establece metas, planifica tareas y cumple objetivos. | **Navarro Aldoradin, Carolina Celeste**<br>*AV1*<br>- Startup Profile, Solution Profile, antecedentes y problemática.<br>- Diseño de entrevistas, User Stories, Impact Mapping y Product Backlog en Trello.<br>- Diagramas de clases y de base de datos.<br>*TB1*<br>- Configuración inicial, navegación e internacionalización de la Web Application.<br><br>**Catacora Tupa, Jhon Deyner**<br>*AV1*<br>- Lean UX Assumptions, segmentos objetivo, registro de entrevistas y User Personas.<br>- Organization, Labeling, Searching y Navigation Systems; wireframes y mock-ups.<br>- Software Configuration Management.<br>*TB1*<br>- Sprint 2 de la Web Application (US01–US09, US19, US21–US24) y su documentación en el informe.<br>- Corrección de formato del informe y revisión de cumplimiento con el enunciado.<br><br>**Alvarez Falen, Esteban Valentino**<br>*AV1*<br>- Descripción de la startup, perfiles, Lean UX Problem Statements y análisis competitivo.<br>- Style Guidelines y SEO Tags and Meta Tags.<br>- Sprint Planning 1.<br><br>**Vasquez Laos, Sebastian Andrews**<br>*AV1*<br>- Lean UX Hypothesis Statements, diseño, registro y análisis de entrevistas.<br>- Design-Level EventStorming y diagramas C4.<br>- Estrategias y tácticas frente a competidores, User Task Matrix, User Journey Mapping y Empathy Mapping.<br>- Landing Page UI Design, Web Applications UX/UI Design y Sprint Backlog 1. | - El equipo estableció metas por Sprint mediante Sprint Goals y las descompuso en tareas con responsables y estimaciones en el Sprint Backlog.<br>- El uso de GitFlow, Pull Requests y Conventional Commits creó un entorno de trabajo transparente, donde cada aporte queda registrado y revisado.<br>- La meta de AV1 (Landing Page implementado y desplegado) se cumplió dentro del plazo, y para TB1 se completó la primera versión de la Web Application definida en el Sprint Goal 2. |
 
 # Capítulo I: Introducción
 ## 1.1. Startup Profile
@@ -222,7 +229,6 @@ Ser la plataforma de referencia en Latinoamérica para el monitoreo y la trazabi
 | <img src="assets/img/chapter-i/startup-profile/carolina-navarro.jpeg" width="150"> | Carolina Celeste Navarro Aldoradin | U20241B962 | Ingeniería de Software, Universidad Peruana de Ciencias Aplicadas | Cuento con conocimiento del lenguaje Java, C#, C++, Javascript, Python y Ladder. Asimismo, cuento con experiencia en proyectos de integración, monitoreo e IoT en entornos industriales. |
 | <img src="assets/img/chapter-i/startup-profile/Esteban-alvarez.png" width="150"> | Esteban Valentino Alvarez Falen | U202315628 | Ingeniería de Software, Universidad Peruana de Ciencias Aplicadas | Soy un estudiante de la carrera de Ingeniería de Software, estoy en la universidad UPC. No cuento con experiencia laboral en programas, sin embargo a lo largo de mi carrera estoy realizando proyectos para mejorar en código, trabajo en equipo y organización de proyectos. Soy una persona que le gusta pensar en soluciones y encontrar motivaciones para innovar e implementar. |
 | <img src="assets/img/chapter-i/startup-profile/jhon-catacora.jpeg" width="150"> | Jhon Deyner Catacora Tupa | U202425159 | Ingeniería de Software, Universidad Peruana de Ciencias Aplicadas | Soy estudiante de Ingeniería de Software con interés en el desarrollo web frontend. Cuento con conocimientos en JavaScript, HTML5, CSS3 y Vue 3, y en el uso de Git con Gitflow para el trabajo colaborativo. Me interesa construir interfaces claras y bien organizadas, aplicando buenas prácticas de diseño de software. |
-| <img src="assets/img/chapter-i/startup-profile/yopla_imagen.png" width="150"> | Jonathan Alberto Yopla Romero | U202410376 | Ingeniería de Software, Universidad Peruana de Ciencias Aplicadas | Estudiante de Ingeniería de Software. Cuento con experiencia programando en diversos lenguajes como C++ y Javascript, así como en el desarrollo web. Además, domino el inglés. |
 |  | Sebastian Andrews Vasquez Laos | U20221B734 | Ingeniería de Software, Universidad Peruana de Ciencias Aplicadas | Soy estudiante de la carrera de Ingeniería de Software en la Universidad Peruana de Ciencias Aplicadas. Cuento con conocimientos en programación, desarrollo de software y resolución de problemas adquiridos durante mi formación académica. Me interesa el trabajo en equipo, el aprendizaje continuo y la aplicación de la tecnología para desarrollar soluciones innovadoras y eficientes que generen valor en distintos entornos. |
 
 ## 1.2. Solution Profile
@@ -3016,7 +3022,7 @@ Resumen de la reunión de Sprint Planning realizada por el equipo al inicio del 
 | Hora | 8:00 PM |
 | Lugar | Reunión virtual vía Google Meet |
 | Preparado por | Navarro Aldoradin, Carolina Celeste |
-| Asistentes (a la reunión de planning) | Navarro Aldoradin, Carolina Celeste / Alvarez Falen, Esteban Valentino / Catacora Tupa, Jhon Deyner / Vasquez Laos, Sebastian Andrews / Yopla Romero, Jonathan Alberto |
+| Asistentes (a la reunión de planning) | Navarro Aldoradin, Carolina Celeste / Alvarez Falen, Esteban Valentino / Catacora Tupa, Jhon Deyner / Vasquez Laos, Sebastian Andrews |
 | **Resumen del Sprint n-1 Review** | No aplica. Es el primer Sprint. |
 | **Resumen de la Retrospectiva del Sprint n-1** | No aplica. Al ser el primer Sprint, el equipo no cuenta con una retrospectiva previa. |
 | **Sprint Goal & User Stories** | |
@@ -3046,13 +3052,13 @@ A continuación, se detalla la asignación de roles, responsabilidades, líderes
 | Aspecto / Rol | Descripción de Responsabilidades | Líder (Aspect Leader) | Colaboradores (Collaborators) |
 |---|---|---|---|
 | **Product Owner & Gestión de Requisitos** | Definición y refinamiento del Product Backlog y Sprint Backlog, especificación de historias de usuario con criterios de aceptación Gherkin y priorización del alcance de cara a los segmentos Recuperation Supplier y Asset Owner. | Navarro Aldoradin, Carolina Celeste | Alvarez Falen, Esteban Valentino<br>Catacora Tupa, Jhon Deyner |
-| **Scrum Master & Gestión Ágil** | Facilitación y conducción de las ceremonias Scrum (Planning, Daily Stand-ups, Review y Retrospectiva), remoción de impedimentos operativos y monitoreo de la velocidad del equipo (19 Story Points planificados para el Sprint 1). | Navarro Aldoradin, Carolina Celeste | Vasquez Laos, Sebastian Andrews<br>Yopla Romero, Jonathan Alberto |
+| **Scrum Master & Gestión Ágil** | Facilitación y conducción de las ceremonias Scrum (Planning, Daily Stand-ups, Review y Retrospectiva), remoción de impedimentos operativos y monitoreo de la velocidad del equipo (19 Story Points planificados para el Sprint 1). | Navarro Aldoradin, Carolina Celeste | Vasquez Laos, Sebastian Andrews |
 | **Desarrollo Frontend & UI/UX** | Diseño e implementación de la interfaz del Landing Page (Vue 3, HTML5 semántico, CSS3 moderno), estructuración de layout responsivo multidispositivo, interactividad de componentes y sistema de internacionalización (i18n inglés/español). | Catacora Tupa, Jhon Deyner | Alvarez Falen, Esteban Valentino<br>Vasquez Laos, Sebastian Andrews |
-| **Desarrollo Backend & Servicios API** | Arquitectura del servicio REST API en ASP.NET Core (.NET 8), definición de contratos y endpoints en Swagger/OpenAPI, diseño de la ingesta de telemetría y desarrollo de la integración con el servicio externo de newsletter vía Mailchimp (TS18). | Vasquez Laos, Sebastian Andrews | Navarro Aldoradin, Carolina Celeste<br>Yopla Romero, Jonathan Alberto |
-| **Gestión de Base de Datos y Persistencia** | Modelado lógico y físico de la base de datos relacional en MySQL 8.0, gestión de migraciones mediante Entity Framework Core (Pomelo), aplicación de convenciones snake_case y optimización de persistencia para trazabilidad y telemetría. | Yopla Romero, Jonathan Alberto | Vasquez Laos, Sebastian Andrews<br>Navarro Aldoradin, Carolina Celeste |
-| **DevOps, SCM & Despliegue Continuo** | Administración del repositorio central y flujos de trabajo en Gitflow, definición de políticas de ramas y revisión de Pull Requests, orquestación de pipelines de CI/CD con GitHub Actions y gestión de despliegues en Firebase Hosting y Azure. | Catacora Tupa, Jhon Deyner | Yopla Romero, Jonathan Alberto<br>Alvarez Falen, Esteban Valentino |
+| **Desarrollo Backend & Servicios API** | Arquitectura del servicio REST API en ASP.NET Core (.NET 8), definición de contratos y endpoints en Swagger/OpenAPI, diseño de la ingesta de telemetría y desarrollo de la integración con el servicio externo de newsletter vía Mailchimp (TS18). | Vasquez Laos, Sebastian Andrews | Navarro Aldoradin, Carolina Celeste |
+| **Gestión de Base de Datos y Persistencia** | Modelado lógico y físico de la base de datos relacional en MySQL 8.0, gestión de migraciones mediante Entity Framework Core (Pomelo), aplicación de convenciones snake_case y optimización de persistencia para trazabilidad y telemetría. | Vasquez Laos, Sebastian Andrews | Navarro Aldoradin, Carolina Celeste |
+| **DevOps, SCM & Despliegue Continuo** | Administración del repositorio central y flujos de trabajo en Gitflow, definición de políticas de ramas y revisión de Pull Requests, orquestación de pipelines de CI/CD con GitHub Actions y gestión de despliegues en Firebase Hosting y Azure. | Catacora Tupa, Jhon Deyner | Vasquez Laos, Sebastian Andrews<br>Alvarez Falen, Esteban Valentino |
 | **Aseguramiento de Calidad (QA) & Accesibilidad** | Planificación de casos de prueba funcional, verificación cross-browser y responsive, y aseguramiento de estándares de accesibilidad digital WCAG 2.1 nivel AA (roles ARIA, contraste cromático, etiquetado descriptivo y navegación por teclado). | Alvarez Falen, Esteban Valentino | Catacora Tupa, Jhon Deyner<br>Vasquez Laos, Sebastian Andrews |
-| **Documentación Técnica & Trazabilidad** | Redacción y mantenimiento del Project Report según los estándares académicos de la UPC, trazabilidad de evidencias de sprint, diagramación arquitectónica en Mermaid y consolidación bibliográfica bajo normas APA. | Alvarez Falen, Esteban Valentino | Navarro Aldoradin, Carolina Celeste<br>Yopla Romero, Jonathan Alberto |
+| **Documentación Técnica & Trazabilidad** | Redacción y mantenimiento del Project Report según los estándares académicos de la UPC, trazabilidad de evidencias de sprint, diagramación arquitectónica en Mermaid y consolidación bibliográfica bajo normas APA. | Alvarez Falen, Esteban Valentino | Navarro Aldoradin, Carolina Celeste<br>Vasquez Laos, Sebastian Andrews |
 
 **Leadership-and-Collaboration Matrix (LACX) del Sprint 1** (L: Leader, C: Collaborator)
 
@@ -3061,8 +3067,7 @@ A continuación, se detalla la asignación de roles, responsabilidades, líderes
 | Navarro Aldoradin, Carolina Celeste | genixmvp | L | L | — | C | C | — | — | C |
 | Alvarez Falen, Esteban Valentino | Valentino10113 | C | — | C | — | — | C | L | L |
 | Catacora Tupa, Jhon Deyner | JhonDCT | C | — | L | — | — | L | C | — |
-| Vasquez Laos, Sebastian Andrews | unity20012006-cell | — | C | C | L | C | — | C | — |
-| Yopla Romero, Jonathan Alberto | JonathanYoplaRomero | — | C | — | C | L | C | — | C |
+| Vasquez Laos, Sebastian Andrews | unity20012006-cell | — | C | C | L | L | C | C | C |
 
 #### 5.2.1.3. Sprint Backlog 1.
 
@@ -3158,7 +3163,7 @@ Durante el Sprint 1, se realizó el despliegue de la landing page del proyecto u
 
 ### 5.2.2. Sprint 2
 
-En este Sprint el equipo se enfocó en construir la primera versión de la Web Application de EdgeWatch (`edgewatch-webapp`). El alcance se limitó deliberadamente a los bounded contexts que habilitan el flujo mínimo de operación de una celda HVOF desde el frontend: **IAM** (registro de organización, inicio de sesión y roles), **Billing** (selección de plan y suscripción), **Equipment** (sistemas HVOF, subsistemas, partes y recetas con rangos nominales) y **Process Monitoring** (inicio, monitoreo, finalización e historial de sesiones de rociado). Los bounded contexts de Traceability, Fault Diagnosis, Notifications y Reporting quedan fuera del Sprint; de Traceability solo se incluyen las vistas base de navegación y la consulta de órdenes de recuperación necesaria para iniciar una sesión.
+En este Sprint el equipo se enfocó en construir la primera versión de la Web Application de EdgeWatch (`edgewatch-webapp`). El alcance se limitó deliberadamente a los bounded contexts que habilitan el flujo mínimo de operación de una celda HVOF desde el frontend: **IAM** (registro de organización, inicio de sesión y roles), **Billing** (selección de plan y suscripción), **Equipment** (sistemas HVOF, subsistemas, partes y recetas con rangos nominales), **Traceability** (clientes, componentes recibidos y órdenes de recuperación) y **Process Monitoring** (inicio, monitoreo, finalización e historial de sesiones de rociado). Los bounded contexts de Fault Diagnosis, Notifications y Reporting quedan fuera del Sprint. El Sprint cerró con la publicación de la versión v1.0.0 de la Web Application.
 
 La Web Application se desarrolló con Vue 3, Vite, PrimeVue, Pinia, Vue Router y Vue I18n, organizada por bounded context en capas `domain`, `application`, `infrastructure` y `presentation`. Como el backend aún no está disponible, la aplicación consume una Fake API construida con json-server, que expone los mismos recursos bajo el prefijo `/api/v1` definidos para la REST API.
 
@@ -3173,13 +3178,13 @@ Resumen de la reunión de Sprint Planning realizada por el equipo al inicio del 
 | Hora | 8:00 PM |
 | Lugar | Reunión virtual vía Google Meet |
 | Preparado por | Navarro Aldoradin, Carolina Celeste |
-| Asistentes (a la reunión de planning) | Navarro Aldoradin, Carolina Celeste / Alvarez Falen, Esteban Valentino / Catacora Tupa, Jhon Deyner / Vasquez Laos, Sebastian Andrews / Yopla Romero, Jonathan Alberto |
+| Asistentes (a la reunión de planning) | Navarro Aldoradin, Carolina Celeste / Alvarez Falen, Esteban Valentino / Catacora Tupa, Jhon Deyner / Vasquez Laos, Sebastian Andrews |
 | **Resumen del Sprint n-1 Review** | En el Sprint 1 se implementó y desplegó en GitHub Pages la primera versión del Landing Page (`edgewatch-website`), con las secciones de propuesta de valor, información por segmento, call-to-action segmentado y cambio de idioma (US44 a US48), integradas en develop mediante tres Pull Requests y publicadas como versión v1.0.0. |
 | **Resumen de la Retrospectiva del Sprint n-1** | El equipo acordó mantener el modelo Gitflow, los Pull Requests por funcionalidad y el estándar Conventional Commits, que facilitaron la revisión y la trazabilidad de los cambios. Como punto de mejora, se decidió nombrar cada rama feature según la User Story que implementa y referenciar el ID de la historia en el título del Pull Request. |
 | **Sprint Goal & User Stories** | |
-| Sprint 2 Goal | Nuestro enfoque está en ofrecer a las organizaciones del segmento Recuperation Supplier una Web Application en la que puedan registrarse, gestionar el acceso de su equipo, configurar sus celdas HVOF con sus rangos nominales y ejecutar sesiones de rociado monitoreando sus parámetros en vivo. Creemos que esto entrega control y visibilidad del proceso de recubrimiento a los Ingenieros de Calidad, Supervisores y Operadores HVOF. Esto se confirmará cuando un administrador pueda registrar su organización, elegir un plan y asignar roles, y un operador pueda iniciar una sesión sobre una celda configurada, ver la clasificación de cada parámetro frente a su receta, finalizar o abortar la sesión y consultarla en el historial. |
-| Sprint 2 Velocity | 44 Story Points |
-| Suma de Story Points | 44 Story Points |
+| Sprint 2 Goal | Nuestro enfoque está en ofrecer a las organizaciones del segmento Recuperation Supplier una Web Application en la que puedan registrarse, gestionar el acceso de su equipo, configurar sus celdas HVOF con sus rangos nominales, registrar los clientes, componentes y órdenes de recuperación que atienden, y ejecutar sesiones de rociado monitoreando sus parámetros en vivo. Creemos que esto entrega control y visibilidad del proceso de recubrimiento a los Ingenieros de Calidad, Supervisores y Operadores HVOF. Esto se confirmará cuando un administrador pueda registrar su organización, elegir un plan y asignar roles, y un operador pueda registrar un componente con su orden de recuperación, iniciar una sesión sobre una celda configurada, ver la clasificación de cada parámetro frente a su receta, finalizar o abortar la sesión y consultarla en el historial. |
+| Sprint 2 Velocity | 54 Story Points |
+| Suma de Story Points | 54 Story Points |
 
 **Historias de usuario incluidas en el Sprint 2**
 
@@ -3199,6 +3204,9 @@ Resumen de la reunión de Sprint Planning realizada por el equipo al inicio del 
 | 12 | US04 | Restricción de acceso por rol | 3 |
 | 13 | US05 | Selección de plan | 3 |
 | 14 | US06 | Consulta y vigencia de suscripción | 2 |
+| 15 | US13 | Registro de cliente | 2 |
+| 16 | US14 | Registro de componente recibido | 3 |
+| 17 | US15 | Registro de orden de recuperación | 5 |
 
 #### 5.2.2.2. Aspect Leaders and Collaborators.
 
@@ -3206,14 +3214,14 @@ Para el Sprint 2 el equipo WebRunners mantuvo la distribución matricial de role
 
 | Aspecto / Rol | Descripción de Responsabilidades | Líder (Aspect Leader) | Colaboradores (Collaborators) |
 |---|---|---|---|
-| **Product Owner & Gestión de Requisitos** | Selección de las User Stories del Sprint 2 según el orden del Product Backlog, refinamiento de criterios de aceptación de los bounded contexts IAM, Billing, Equipment y Process Monitoring, y delimitación del alcance frente a los contextos que se abordarán en Sprints posteriores. | Navarro Aldoradin, Carolina Celeste | Alvarez Falen, Esteban Valentino<br>Catacora Tupa, Jhon Deyner |
-| **Scrum Master & Gestión Ágil** | Facilitación de las ceremonias Scrum del Sprint 2, seguimiento del avance de las ramas feature y remoción de impedimentos, con monitoreo de la velocidad del equipo (44 Story Points planificados). | Navarro Aldoradin, Carolina Celeste | Vasquez Laos, Sebastian Andrews<br>Yopla Romero, Jonathan Alberto |
+| **Product Owner & Gestión de Requisitos** | Selección de las User Stories del Sprint 2 según el orden del Product Backlog, refinamiento de criterios de aceptación de los bounded contexts IAM, Billing, Equipment, Traceability y Process Monitoring, y delimitación del alcance frente a los contextos que se abordarán en Sprints posteriores. | Navarro Aldoradin, Carolina Celeste | Alvarez Falen, Esteban Valentino<br>Catacora Tupa, Jhon Deyner |
+| **Scrum Master & Gestión Ágil** | Facilitación de las ceremonias Scrum del Sprint 2, seguimiento del avance de las ramas feature y remoción de impedimentos, con monitoreo de la velocidad del equipo (54 Story Points planificados). | Navarro Aldoradin, Carolina Celeste | Vasquez Laos, Sebastian Andrews |
 | **Desarrollo Frontend & UI/UX** | Implementación de la Web Application en Vue 3 + Vite con PrimeVue y PrimeFlex, estructura por bounded context y capas DDD, stores de Pinia, enrutamiento con guards por rol e internacionalización inglés/español con Vue I18n. | Catacora Tupa, Jhon Deyner | Navarro Aldoradin, Carolina Celeste<br>Alvarez Falen, Esteban Valentino |
-| **Desarrollo Backend & Servicios API** | Definición de los recursos y rutas `/api/v1` que consume la Web Application, mantenimiento de la Fake API en json-server como contrato provisional y alineamiento de sus recursos con la futura REST API en ASP.NET Core. | Vasquez Laos, Sebastian Andrews | Catacora Tupa, Jhon Deyner<br>Yopla Romero, Jonathan Alberto |
-| **Gestión de Base de Datos y Persistencia** | Elaboración de los datos de prueba de la Fake API (organizaciones, usuarios, roles, planes, sistemas HVOF, recetas, sesiones y lecturas) consistentes con el modelo relacional de 4.8.1. | Yopla Romero, Jonathan Alberto | Vasquez Laos, Sebastian Andrews<br>Navarro Aldoradin, Carolina Celeste |
-| **DevOps, SCM & Despliegue Continuo** | Administración del repositorio `edgewatch-webapp` con Gitflow, una rama feature por User Story, revisión y fusión de Pull Requests hacia develop y configuración de variables de entorno por ambiente. | Catacora Tupa, Jhon Deyner | Yopla Romero, Jonathan Alberto<br>Alvarez Falen, Esteban Valentino |
+| **Desarrollo Backend & Servicios API** | Definición de los recursos y rutas `/api/v1` que consume la Web Application, mantenimiento de la Fake API en json-server como contrato provisional y alineamiento de sus recursos con la futura REST API en ASP.NET Core. | Vasquez Laos, Sebastian Andrews | Catacora Tupa, Jhon Deyner |
+| **Gestión de Base de Datos y Persistencia** | Elaboración de los datos de prueba de la Fake API (organizaciones, usuarios, roles, planes, sistemas HVOF, recetas, sesiones y lecturas) consistentes con el modelo relacional de 4.8.1. | Vasquez Laos, Sebastian Andrews | Navarro Aldoradin, Carolina Celeste |
+| **DevOps, SCM & Despliegue Continuo** | Administración del repositorio `edgewatch-webapp` con Gitflow, una rama feature por User Story, revisión y fusión de Pull Requests hacia develop y configuración de variables de entorno por ambiente. | Catacora Tupa, Jhon Deyner | Vasquez Laos, Sebastian Andrews<br>Alvarez Falen, Esteban Valentino |
 | **Aseguramiento de Calidad (QA) & Accesibilidad** | Verificación funcional de los flujos de registro, inicio de sesión, configuración de celdas y sesiones de rociado, pruebas de acceso por rol y revisión de contraste y legibilidad de la interfaz. | Alvarez Falen, Esteban Valentino | Catacora Tupa, Jhon Deyner<br>Vasquez Laos, Sebastian Andrews |
-| **Documentación Técnica & Trazabilidad** | Actualización del Project Report con la evidencia del Sprint 2, trazabilidad entre User Stories, ramas, commits y Pull Requests, y registro de los endpoints consumidos por la Web Application. | Alvarez Falen, Esteban Valentino | Navarro Aldoradin, Carolina Celeste<br>Yopla Romero, Jonathan Alberto |
+| **Documentación Técnica & Trazabilidad** | Actualización del Project Report con la evidencia del Sprint 2, trazabilidad entre User Stories, ramas, commits y Pull Requests, y registro de los endpoints consumidos por la Web Application. | Alvarez Falen, Esteban Valentino | Navarro Aldoradin, Carolina Celeste<br>Vasquez Laos, Sebastian Andrews |
 
 **Leadership-and-Collaboration Matrix (LACX) del Sprint 2** (L: Leader, C: Collaborator)
 
@@ -3222,8 +3230,7 @@ Para el Sprint 2 el equipo WebRunners mantuvo la distribución matricial de role
 | Navarro Aldoradin, Carolina Celeste | genixmvp | L | L | C | — | C | — | — | C |
 | Alvarez Falen, Esteban Valentino | Valentino10113 | C | — | C | — | — | C | L | L |
 | Catacora Tupa, Jhon Deyner | JhonDCT | C | — | L | C | — | L | C | — |
-| Vasquez Laos, Sebastian Andrews | unity20012006-cell | — | C | — | L | C | — | C | — |
-| Yopla Romero, Jonathan Alberto | JonathanYoplaRomero | — | C | — | C | L | C | — | C |
+| Vasquez Laos, Sebastian Andrews | unity20012006-cell | — | C | — | L | L | C | C | C |
 
 #### 5.2.2.3. Sprint Backlog 2.
 
@@ -3259,10 +3266,19 @@ El Sprint Backlog 2 desglosa las User Stories priorizadas en tareas técnicas de
 | US05 | Selección de plan | TSK-WA-26 | Vista de selección de plan | Selección del plan Operator o Asset Owner según el tipo de organización y creación de la suscripción. | 2h | Jhon Deyner Catacora Tupa | Done |
 | US06 | Consulta y vigencia de suscripción | TSK-WA-27 | Vista de detalle de suscripción | Consulta del plan, el estado y la vigencia de la suscripción, con acceso desde el toolbar. | 2h | Jhon Deyner Catacora Tupa | Done |
 | — | Mejora visual | TSK-WA-28 | Ajustes de layout y contraste | Layout de ancho completo y paleta de mayor contraste en modo claro y oscuro. | 1h | Jhon Deyner Catacora Tupa | Done |
+| — | Base de la Web Application | TSK-WA-29 | Datos de prueba para las funcionalidades restantes | Datos de prueba de la Fake API para los bounded contexts restantes y ejecución local de json-server con sus rutas. | 2h | Jhon Deyner Catacora Tupa | Done |
+| US13 | Registro de cliente | TSK-WA-30 | Dominio, API y store de clientes | BaseApi y BaseEndpoint completos, entidad Customer, CustomerAssembler, clientes en TraceabilityApi y en el store de Traceability. | 3h | Carolina Celeste Navarro Aldoradin | Done |
+| US13 | Registro de cliente | TSK-WA-31 | Vistas de clientes | Listado de clientes con acciones de edición y eliminación, formulario de creación/edición y rutas. | 3h | Carolina Celeste Navarro Aldoradin | Done |
+| US14 | Registro de componente recibido | TSK-WA-32 | Dominio, API y store de componentes | Entidad Component con tipos, estados y máquina, ComponentAssembler, componentes en TraceabilityApi y en el store. | 3h | Carolina Celeste Navarro Aldoradin | Done |
+| US14 | Registro de componente recibido | TSK-WA-33 | Vistas de componentes | Listado de componentes, formulario de creación/edición y rutas. | 3h | Carolina Celeste Navarro Aldoradin | Done |
+| US15 | Registro de orden de recuperación | TSK-WA-34 | Dominio, API y store de órdenes de recuperación | Entidad Recuperation, RecuperationAssembler, órdenes en TraceabilityApi y en el store. | 3h | Carolina Celeste Navarro Aldoradin | Done |
+| US15 | Registro de orden de recuperación | TSK-WA-35 | Vistas de órdenes de recuperación | Listado de órdenes, formulario de creación/edición y rutas. | 3h | Carolina Celeste Navarro Aldoradin | Done |
+| — | Términos e idioma por defecto | TSK-WA-36 | Términos y Condiciones, SEO e idioma por defecto | Inglés como idioma por defecto, meta tags de SEO, etiqueta del LanguageSwitcher sincronizada con el idioma del documento y vista pública de Términos y Condiciones enlazada desde el footer. | 3h | Carolina Celeste Navarro Aldoradin | Done |
+| — | Release | TSK-WA-37 | README y release v1.0.0 | README del proyecto en reemplazo de la plantilla de Vite, CHANGELOG y versión 1.0.0. | 1h | Carolina Celeste Navarro Aldoradin | Done |
 
 #### 5.2.2.4. Development Evidence for Sprint Review.
 
-A continuación, se presenta el registro de la evidencia de desarrollo del Sprint 2 en el repositorio [`edgewatch-webapp`](https://github.com/upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp). La tabla detalla los commits de la rama develop bajo el estándar Conventional Commits, la rama de origen según el modelo Gitflow, el identificador hash, el mensaje de commit, el resumen de las modificaciones y la fecha de registro. Cada rama feature se integró en develop mediante un Pull Request (#1 a #14).
+A continuación, se presenta el registro de la evidencia de desarrollo del Sprint 2 en el repositorio [`edgewatch-webapp`](https://github.com/upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp). La tabla detalla los commits de la rama develop bajo el estándar Conventional Commits, la rama de origen según el modelo Gitflow, el identificador hash, el mensaje de commit, el resumen de las modificaciones y la fecha de registro. Cada rama feature se integró en develop mediante un Pull Request (#1 a #15) o mediante merge directo en develop, y el Sprint cerró con la rama `release/1.0.0` que publicó la versión v1.0.0.
 
 | Repository | Branch | CommitId | Commit Message | Commit MessageBody (resumen) | Committed on |
 |---|---|---|---|---|:---:|
@@ -3281,97 +3297,132 @@ A continuación, se presenta el registro de la evidencia de desarrollo del Sprin
 | upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/navigate-the-application | ac43dfc | feat(shared): add Layout component and wire it into the app shell. | Componente Layout con toolbar de navegación integrado al shell de la aplicación. | 2026-10-01 |
 | upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/navigate-the-application | db64422 | chore: add @ path alias for src. | Alias @ hacia src en Vite y jsconfig para importaciones absolutas. | 2026-10-01 |
 | upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/navigate-the-application | 2106297 | feat(traceability): add recuperation list file. | Archivo de la vista de listado de órdenes de recuperación. | 2026-10-01 |
-| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | develop | 4904cf9 | Merge pull request #1 from feature/navigate-the-application | Fusión de la navegación base de la Web Application en develop. | 2026-10-01 |
-| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/switch-application-language | 20b78f2 | feat(i18n): add English ad Spanish dictionaries. | Diccionarios de traducción en inglés y español para la Web Application. | 2026-10-01 |
-| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/switch-application-language | 62fc18c | feat(shared): add FooterContent component. | Componente de pie de página compartido. | 2026-10-01 |
-| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/switch-application-language | ce8a5cf | feat(shared): translate the Layout and wire LanguageSwitcher and FooterContent. | Traducción del Layout e integración del LanguageSwitcher y el FooterContent. | 2026-10-01 |
-| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/switch-application-language | 3d5be15 | feat: translate shared and bounded-context views. | Traducción de las vistas compartidas y de los bounded contexts. | 2026-10-01 |
-| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | develop | 9b44f99 | Merge pull request #2 from feature/switch-application-language | Fusión del soporte bilingüe (EN/ES) de la Web Application en develop. | 2026-10-01 |
-| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/manage-hvof-systems | c103baf | chore(shared): add placeholder BaseApi and BaseEndpoint pending F3–F5. | Clases BaseApi (cliente Axios) y BaseEndpoint (operaciones CRUD genéricas). | 2026-10-04 |
-| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/manage-hvof-systems | 2a6a534 | feat(equipment): add HvofSystem and Controller entities. | Entidades de dominio HvofSystem y Controller. | 2026-10-04 |
-| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/manage-hvof-systems | 1d2e5eb | feat(equipment): add HvofSystemAssembler and ControllerAssembler. | Assemblers que convierten respuestas de la API en entidades HvofSystem y Controller. | 2026-10-04 |
-| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/manage-hvof-systems | 458ac3b | feat(equipment): add EquipmentApi, systems and controllers. | EquipmentApi con los endpoints de sistemas HVOF y controladores. | 2026-10-04 |
-| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/manage-hvof-systems | 71b31c2 | feat(equipment): add HVOF system and controller translations. | Traducciones de sistemas HVOF y controladores. | 2026-10-04 |
-| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/manage-hvof-systems | d89dc6d | chore(i18n): add placeholder common and errors keys pending F3–F5. | Claves de traducción comunes y de errores reutilizadas por los formularios. | 2026-10-04 |
-| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/manage-hvof-systems | 7b760ae | feat(equipment): add equipment store, systems and controllers. | Store de Pinia de Equipment con carga, creación y edición de sistemas y controladores. | 2026-10-04 |
-| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/manage-hvof-systems | c3c9487 | feat(equipment): fill in the HvofSystemList view. | Listado de sistemas HVOF de la organización con acceso al detalle y a la creación. | 2026-10-04 |
-| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/manage-hvof-systems | 954bfe4 | feat(equipment): add HvofSystemForm view with create and edit modes. | Formulario de sistema HVOF con modos de creación y edición. | 2026-10-04 |
-| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/manage-hvof-systems | 5458a28 | feat(equipment): add ControllerForm view. | Formulario de registro y edición de controladores PLC del sistema. | 2026-10-04 |
-| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/manage-hvof-systems | a5c1c10 | feat(equipment): add HvofSystemDetail view with the controllers tab. | Vista de detalle del sistema HVOF con la pestaña de controladores. | 2026-10-04 |
-| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/manage-hvof-systems | 3375057 | feat(equipment): add HVOF system and controller routes. | Rutas de sistemas HVOF y controladores restringidas por rol. | 2026-10-04 |
-| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | develop | e7979d2 | Merge pull request #3 from feature/manage-hvof-systems | Fusión de la gestión de sistemas HVOF (US07) en develop. | 2026-10-04 |
-| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/manage-hvof-subsystems | c204ee3 | feat(equipment): add HvofSubsystem and HvofPart entities. | Entidades de dominio HvofSubsystem y HvofPart. | 2026-10-04 |
-| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/manage-hvof-subsystems | c96eb33 | feat(equipment): add subsystem and part assemblers and API methods. | Assemblers y métodos de la API para subsistemas y partes. | 2026-10-04 |
-| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/manage-hvof-subsystems | 48ad72f | feat(equipment): add subsystem and part translations. | Traducciones de subsistemas y partes. | 2026-10-04 |
-| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/manage-hvof-subsystems | 698524e | chore(i18n): add placeholder customers.delete-header key pending F3. | Clave de traducción para el diálogo de eliminación reutilizado en partes. | 2026-10-04 |
-| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/manage-hvof-subsystems | f6a7406 | feat(equipment): add subsystems and parts to the equipment store. | Subsistemas y partes en el store de Equipment (carga, creación, edición y eliminación). | 2026-10-04 |
-| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/manage-hvof-subsystems | be9b746 | feat(equipment): add HvofSubsystemForm view. | Formulario de registro y edición de subsistemas de la celda. | 2026-10-04 |
-| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/manage-hvof-subsystems | 69fff56 | feat(equipment): add HvofPartForm view. | Formulario de registro de partes dentro de un subsistema. | 2026-10-04 |
-| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/manage-hvof-subsystems | c14e905 | feat(equipment): add the subsystems tab to HvofSystemDetail. | Pestaña de subsistemas y partes en el detalle del sistema HVOF. | 2026-10-04 |
-| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/manage-hvof-subsystems | 88b3da6 | feat(equipment): add subsystem and part routes. | Rutas de subsistemas y partes restringidas por rol. | 2026-10-04 |
-| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | develop | b40cf6c | Merge pull request #4 from feature/manage-hvof-subsystems | Fusión de la gestión de subsistemas y partes (US08) en develop. | 2026-10-04 |
-| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/manage-recipes | c5504cc | chore(traceability): add placeholder Component entity and type translations pending F3–F5. | Entidad Component y traducciones de tipos de componente usadas por las recetas. | 2026-10-04 |
-| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/manage-recipes | 8a3334a | feat(equipment): add Recipe entity with threshold validator. | Entidad Recipe con validación del orden de umbrales de cada parámetro. | 2026-10-04 |
-| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/manage-recipes | ac12587 | feat(equipment): add recipes assembler, API methods and store functions. | Assembler, métodos de la API y funciones del store para recetas. | 2026-10-04 |
-| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/manage-recipes | 1d732d1 | feat(equipment): add recipe translations. | Traducciones de recetas y parámetros de proceso. | 2026-10-04 |
-| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/manage-recipes | 2436fbf | feat(equipment): add RecipeForm view with applicabilities and parameter bands. | Formulario de receta con aplicabilidades por componente y bandas de parámetros. | 2026-10-04 |
-| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/manage-recipes | 8d3ba69 | feat(equipment): add the recipes tab to HvofSystemDetail. | Pestaña de recetas en el detalle del sistema HVOF. | 2026-10-04 |
-| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/manage-recipes | 682bb7d | feat(equipment): add recipe routes. | Rutas de recetas restringidas a los roles autorizados. | 2026-10-04 |
-| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | develop | f7846d3 | Merge pull request #5 from feature/manage-recipes | Fusión de la gestión de recetas y rangos nominales (US09) en develop. | 2026-10-04 |
-| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/start-spray-session | ca8cea5 | chore(traceability): add placeholder TraceabilityApi and traceability store pending F3–F5. | TraceabilityApi y store de Traceability para consultar órdenes de recuperación. | 2026-10-04 |
-| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/start-spray-session | 77ed4f3 | feat(process-monitoring): add SpraySession entity. | Entidad de dominio SpraySession. | 2026-10-04 |
-| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/start-spray-session | 48d0df4 | feat(process-monitoring): add SpraySessionAssembler and ProcessMonitoringApi. | SpraySessionAssembler y ProcessMonitoringApi con los endpoints de sesiones. | 2026-10-04 |
-| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/start-spray-session | 138c68a | feat(process-monitoring): add spray session translations. | Traducciones de sesiones de rociado. | 2026-10-04 |
-| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/start-spray-session | 9ada2fe | feat(process-monitoring): add process monitoring store, sessions only. | Store de Process Monitoring con la gestión de sesiones. | 2026-10-04 |
-| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/start-spray-session | 21757eb | feat(process-monitoring): fill in the SpraySessionList view. | Listado de sesiones de rociado con estado, sistema y orden de recuperación. | 2026-10-04 |
-| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/start-spray-session | d749633 | feat(process-monitoring): add SpraySessionStart view. | Vista para iniciar una sesión seleccionando sistema HVOF, orden y receta. | 2026-10-04 |
-| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/start-spray-session | 1567177 | feat(process-monitoring): add spray session routes. | Rutas de sesiones de rociado restringidas por rol. | 2026-10-04 |
-| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | develop | 0980e99 | Merge pull request #6 from feature/start-spray-session | Fusión del inicio de sesión de rociado (US19) en develop. | 2026-10-04 |
-| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/monitor-live-readings | 6f5f803 | feat(process-monitoring): add ProcessReading entity and band classifier. | Entidad ProcessReading y clasificador de bandas (nominal, fuera de nominal, advertencia, parada). | 2026-10-04 |
-| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/monitor-live-readings | 2db1ae5 | feat(process-monitoring): add ProcessReadingAssembler and readings API methods. | Assembler de lecturas y métodos de la API para consultarlas por sesión y banda. | 2026-10-04 |
-| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/monitor-live-readings | 6c7225c | feat(process-monitoring): add session detail translations. | Traducciones del detalle de sesión. | 2026-10-04 |
-| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/monitor-live-readings | 6c20e79 | feat(process-monitoring): add readings, polling and band counts to the store. | Lecturas, consulta periódica cada 5 segundos y conteo por banda en el store. | 2026-10-04 |
-| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/monitor-live-readings | d52cc62 | feat(process-monitoring): add ParameterCard component. | Componente ParameterCard con el último valor, la unidad y la banda del parámetro. | 2026-10-04 |
-| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/monitor-live-readings | e9f52b5 | feat(process-monitoring): add SpraySessionDetail view with live parameter cards. | Vista de detalle de sesión con tarjetas de parámetros en vivo. | 2026-10-04 |
-| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/monitor-live-readings | 2512794 | feat(process-monitoring): add the session detail route. | Ruta del detalle de sesión. | 2026-10-04 |
-| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | develop | 8f6d833 | Merge pull request #7 from feature/monitor-live-readings | Fusión del monitoreo de lecturas en vivo (US21, US22) en develop. | 2026-10-04 |
-| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/finish-spray-session | 2dbfa83 | feat(process-monitoring): add finish session translations. | Traducciones para finalizar y abortar sesiones. | 2026-10-04 |
-| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/finish-spray-session | ec87b12 | feat(process-monitoring): add completeSession and abortSession to the store. | Funciones completeSession y abortSession en el store. | 2026-10-04 |
-| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/finish-spray-session | 7d2c3ed | feat(process-monitoring): add AbortSessionDialog component. | Diálogo de confirmación para abortar una sesión con motivo. | 2026-10-04 |
-| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/finish-spray-session | eea7bae | feat(process-monitoring): add complete and abort actions to SpraySessionDetail. | Acciones de completar y abortar en el detalle de la sesión. | 2026-10-04 |
-| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | develop | c27c56f | Merge pull request #8 from feature/finish-spray-session | Fusión de la finalización de sesiones (US23) en develop. | 2026-10-04 |
-| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/browse-session-history | 1ca7ef2 | feat(process-monitoring): add per-session deviation count. | Cálculo del número de desviaciones por sesión. | 2026-10-04 |
-| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/browse-session-history | 0eb89d0 | feat(process-monitoring): add filters and deviation count to SpraySessionList. | Filtros por sistema, orden de recuperación y rango de fechas, y conteo de desviaciones en el listado de sesiones. | 2026-10-04 |
-| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | develop | 56a84ef | Merge pull request #9 from feature/browse-session-history | Fusión del historial de sesiones (US24) en develop. | 2026-10-04 |
-| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/register-a-new-organization | 664ea7f | feat(iam): add Organization, User, Role entities and SignUpCommand. | Entidades Organization, User y Role, y comando SignUpCommand. | 2026-10-04 |
-| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/register-a-new-organization | 3dd40e9 | feat(iam): add sign-up resource, assembler and IamApi. | Recurso, assembler de registro e IamApi. | 2026-10-04 |
-| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/register-a-new-organization | 42e721c | feat(iam): add IAM translations. | Traducciones de IAM. | 2026-10-04 |
-| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/register-a-new-organization | 0f2a679 | feat(iam): add iam store, sign-up only. | Store de IAM con el registro de organizaciones. | 2026-10-04 |
-| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/register-a-new-organization | 262d14b | feat(iam): add SignUpForm view. | Formulario de registro de organización y usuario administrador. | 2026-10-04 |
-| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/register-a-new-organization | a57a4a4 | feat(iam): add IAM routes and mount them in the router. | Rutas de IAM montadas en el router de la aplicación. | 2026-10-04 |
-| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | develop | 151e1e3 | Merge pull request #10 from feature/register-a-new-organization | Fusión del registro de organizaciones (US01) en develop. | 2026-10-04 |
-| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/sign-in-and-manage-the-session | d1c7ec5 | feat(iam): add sign-in command, resource, assembler and API method. | Comando, recurso, assembler y método de la API para el inicio de sesión. | 2026-10-04 |
-| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/sign-in-and-manage-the-session | 88e5aaa | feat(iam): add session state, signIn and signOut to the iam store. | Estado de sesión, signIn y signOut en el store de IAM. | 2026-10-04 |
-| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/sign-in-and-manage-the-session | dc60704 | feat(iam): add SignInForm view and route. | Formulario de inicio de sesión y su ruta. | 2026-10-04 |
-| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/sign-in-and-manage-the-session | 9a78032 | feat(iam): add authenticationGuard and protect the routes. | Guard de autenticación que protege las rutas privadas. | 2026-10-04 |
-| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/sign-in-and-manage-the-session | 4676aed | feat(iam): add iamInterceptor to BaseApi. | Interceptor que adjunta el token de sesión a cada petición de BaseApi. | 2026-10-04 |
-| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/sign-in-and-manage-the-session | ea15694 | feat(shared): add AuthenticationSection and filter the toolbar by session and organization type. | Sección de autenticación en el toolbar y menú filtrado por sesión y tipo de organización. | 2026-10-04 |
-| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/sign-in-and-manage-the-session | 4abec15 | refactor: take organization and operator from the iam store. | La organización y el operador se obtienen del store de IAM en lugar de valores fijos. | 2026-10-04 |
-| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | develop | b95cd25 | Merge pull request #11 from feature/sign-in-and-manage-the-session | Fusión del inicio de sesión y gestión de sesión (US02) en develop. | 2026-10-04 |
-| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/manage-user-roles | 3e4d02d | chore: add missing roles to the fake API. | Roles faltantes agregados a la Fake API. | 2026-10-04 |
-| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/manage-user-roles | 33ffe14 | feat(iam): add users and roles to IamApi and the iam store. | Usuarios y roles en IamApi y en el store de IAM. | 2026-10-04 |
-| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/manage-user-roles | 0250190 | feat(iam): add user and role translations. | Traducciones de usuarios y roles. | 2026-10-04 |
-| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/manage-user-roles | da28a8b | feat(iam): add UserList and UserRoleForm views. | Listado de usuarios y formulario de asignación de roles. | 2026-10-04 |
-| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/manage-user-roles | 202df79 | feat(iam): add user routes guarded by role and role-based access to equipment and sessions. | Rutas de usuarios protegidas por rol y acceso por rol a equipos y sesiones. | 2026-10-04 |
-| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | develop | ed515a2 | Merge pull request #12 from feature/manage-user-roles | Fusión de la gestión de roles y restricción de acceso (US03, US04) en develop. | 2026-10-04 |
-| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/select-subscription-plan | 8156e3e | feat(billing): add Plan and Subscription entities. | Entidades de dominio Plan y Subscription. | 2026-10-04 |
-| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/select-subscription-plan | bb661ac | feat(billing): add billing infrastructure and store. | BillingApi, assemblers y store de Billing. | 2026-10-04 |
-| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/select-subscription-plan | ed03037 | feat(billing): add billing translations. | Traducciones de Billing. | 2026-10-04 |
-| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/select-subscription-plan | 53aff9c | feat(billing): add PlanSelection and SubscriptionDetail views. | Vistas de selección de plan y detalle de suscripción. | 2026-10-04 |
-| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/select-subscription-plan | 47bffcb | feat(billing): add billing routes and the subscription toolbar option. | Rutas de Billing y opción de suscripción en el toolbar. | 2026-10-04 |
-| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | develop | 2237732 | Merge pull request #13 from feature/select-subscription-plan | Fusión de la selección de plan y consulta de suscripción (US05, US06) en develop. | 2026-10-04 |
-| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/improve-layout-styles | 9ba0969 | style: use full-width layout, higher-contrast palette and black toolbar text | Layout de ancho completo, paleta de mayor contraste y texto negro en el toolbar. | 2026-10-05 |
-| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | develop | 3e3c38b | Merge pull request #14 from feature/improve-layout-styles | Fusión de las mejoras de estilos del layout en develop. | 2026-10-05 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | develop | 0dddff3 | Merge pull request #1 from feature/navigate-the-application | Fusión de la navegación base de la Web Application en develop. | 2026-10-01 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/switch-application-language | aa0500d | feat(i18n): add English ad Spanish dictionaries. | Diccionarios de traducción en inglés y español para la Web Application. | 2026-10-01 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/switch-application-language | d9e040b | feat(shared): add FooterContent component. | Componente de pie de página compartido. | 2026-10-01 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/switch-application-language | cd32b46 | feat(shared): translate the Layout and wire LanguageSwitcher and FooterContent. | Traducción del Layout e integración del LanguageSwitcher y el FooterContent. | 2026-10-01 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/switch-application-language | 1cd21d3 | feat: translate shared and bounded-context views. | Traducción de las vistas compartidas y de los bounded contexts. | 2026-10-01 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | develop | 3a6685f | Merge pull request #2 from feature/switch-application-language | Fusión del soporte bilingüe (EN/ES) de la Web Application en develop. | 2026-10-01 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/manage-hvof-systems | f0b4667 | chore(shared): add placeholder BaseApi and BaseEndpoint pending F3–F5. | Clases BaseApi (cliente Axios) y BaseEndpoint (operaciones CRUD genéricas). | 2026-10-04 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/manage-hvof-systems | cfba54f | feat(equipment): add HvofSystem and Controller entities. | Entidades de dominio HvofSystem y Controller. | 2026-10-04 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/manage-hvof-systems | 1356f2f | feat(equipment): add HvofSystemAssembler and ControllerAssembler. | Assemblers que convierten respuestas de la API en entidades HvofSystem y Controller. | 2026-10-04 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/manage-hvof-systems | 10f2370 | feat(equipment): add EquipmentApi, systems and controllers. | EquipmentApi con los endpoints de sistemas HVOF y controladores. | 2026-10-04 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/manage-hvof-systems | dc367eb | feat(equipment): add HVOF system and controller translations. | Traducciones de sistemas HVOF y controladores. | 2026-10-04 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/manage-hvof-systems | bc99396 | chore(i18n): add placeholder common and errors keys pending F3–F5. | Claves de traducción comunes y de errores reutilizadas por los formularios. | 2026-10-04 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/manage-hvof-systems | a9a42df | feat(equipment): add equipment store, systems and controllers. | Store de Pinia de Equipment con carga, creación y edición de sistemas y controladores. | 2026-10-04 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/manage-hvof-systems | 0bb2aa0 | feat(equipment): fill in the HvofSystemList view. | Listado de sistemas HVOF de la organización con acceso al detalle y a la creación. | 2026-10-04 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/manage-hvof-systems | 494072a | feat(equipment): add HvofSystemForm view with create and edit modes. | Formulario de sistema HVOF con modos de creación y edición. | 2026-10-04 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/manage-hvof-systems | a87427a | feat(equipment): add ControllerForm view. | Formulario de registro y edición de controladores PLC del sistema. | 2026-10-04 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/manage-hvof-systems | 2182b43 | feat(equipment): add HvofSystemDetail view with the controllers tab. | Vista de detalle del sistema HVOF con la pestaña de controladores. | 2026-10-04 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/manage-hvof-systems | ce28e5d | feat(equipment): add HVOF system and controller routes. | Rutas de sistemas HVOF y controladores restringidas por rol. | 2026-10-04 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | develop | d4fb866 | Merge pull request #3 from feature/manage-hvof-systems | Fusión de la gestión de sistemas HVOF (US07) en develop. | 2026-10-04 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/manage-hvof-subsystems | 155dd42 | feat(equipment): add HvofSubsystem and HvofPart entities. | Entidades de dominio HvofSubsystem y HvofPart. | 2026-10-04 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/manage-hvof-subsystems | 52a9104 | feat(equipment): add subsystem and part assemblers and API methods. | Assemblers y métodos de la API para subsistemas y partes. | 2026-10-04 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/manage-hvof-subsystems | 889192d | feat(equipment): add subsystem and part translations. | Traducciones de subsistemas y partes. | 2026-10-04 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/manage-hvof-subsystems | e9d57b8 | chore(i18n): add placeholder customers.delete-header key pending F3. | Clave de traducción para el diálogo de eliminación reutilizado en partes. | 2026-10-04 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/manage-hvof-subsystems | 91a1d03 | feat(equipment): add subsystems and parts to the equipment store. | Subsistemas y partes en el store de Equipment (carga, creación, edición y eliminación). | 2026-10-04 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/manage-hvof-subsystems | ee38b3f | feat(equipment): add HvofSubsystemForm view. | Formulario de registro y edición de subsistemas de la celda. | 2026-10-04 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/manage-hvof-subsystems | c815ea6 | feat(equipment): add HvofPartForm view. | Formulario de registro de partes dentro de un subsistema. | 2026-10-04 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/manage-hvof-subsystems | 6f326e5 | feat(equipment): add the subsystems tab to HvofSystemDetail. | Pestaña de subsistemas y partes en el detalle del sistema HVOF. | 2026-10-04 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/manage-hvof-subsystems | a8421ce | feat(equipment): add subsystem and part routes. | Rutas de subsistemas y partes restringidas por rol. | 2026-10-04 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | develop | f28f558 | Merge pull request #4 from feature/manage-hvof-subsystems | Fusión de la gestión de subsistemas y partes (US08) en develop. | 2026-10-04 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/manage-recipes | 8a263bc | chore(traceability): add placeholder Component entity and type translations pending F3–F5. | Entidad Component y traducciones de tipos de componente usadas por las recetas. | 2026-10-04 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/manage-recipes | c7349da | feat(equipment): add Recipe entity with threshold validator. | Entidad Recipe con validación del orden de umbrales de cada parámetro. | 2026-10-04 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/manage-recipes | 770213b | feat(equipment): add recipes assembler, API methods and store functions. | Assembler, métodos de la API y funciones del store para recetas. | 2026-10-04 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/manage-recipes | 503108d | feat(equipment): add recipe translations. | Traducciones de recetas y parámetros de proceso. | 2026-10-04 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/manage-recipes | e401a79 | feat(equipment): add RecipeForm view with applicabilities and parameter bands. | Formulario de receta con aplicabilidades por componente y bandas de parámetros. | 2026-10-04 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/manage-recipes | 90fe0d5 | feat(equipment): add the recipes tab to HvofSystemDetail. | Pestaña de recetas en el detalle del sistema HVOF. | 2026-10-04 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/manage-recipes | 7b3f8d1 | feat(equipment): add recipe routes. | Rutas de recetas restringidas a los roles autorizados. | 2026-10-04 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | develop | 4bc74ae | Merge pull request #5 from feature/manage-recipes | Fusión de la gestión de recetas y rangos nominales (US09) en develop. | 2026-10-04 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/start-spray-session | 8d4bf63 | chore(traceability): add placeholder TraceabilityApi and traceability store pending F3–F5. | TraceabilityApi y store de Traceability para consultar órdenes de recuperación. | 2026-10-04 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/start-spray-session | ecc8033 | feat(process-monitoring): add SpraySession entity. | Entidad de dominio SpraySession. | 2026-10-04 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/start-spray-session | 88ffe95 | feat(process-monitoring): add SpraySessionAssembler and ProcessMonitoringApi. | SpraySessionAssembler y ProcessMonitoringApi con los endpoints de sesiones. | 2026-10-04 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/start-spray-session | ea643d4 | feat(process-monitoring): add spray session translations. | Traducciones de sesiones de rociado. | 2026-10-04 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/start-spray-session | b32505f | feat(process-monitoring): add process monitoring store, sessions only. | Store de Process Monitoring con la gestión de sesiones. | 2026-10-04 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/start-spray-session | 36c660f | feat(process-monitoring): fill in the SpraySessionList view. | Listado de sesiones de rociado con estado, sistema y orden de recuperación. | 2026-10-04 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/start-spray-session | b7d7d9f | feat(process-monitoring): add SpraySessionStart view. | Vista para iniciar una sesión seleccionando sistema HVOF, orden y receta. | 2026-10-04 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/start-spray-session | 7207a39 | feat(process-monitoring): add spray session routes. | Rutas de sesiones de rociado restringidas por rol. | 2026-10-04 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | develop | 18a9a81 | Merge pull request #6 from feature/start-spray-session | Fusión del inicio de sesión de rociado (US19) en develop. | 2026-10-04 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/monitor-live-readings | 44d402a | feat(process-monitoring): add ProcessReading entity and band classifier. | Entidad ProcessReading y clasificador de bandas (nominal, fuera de nominal, advertencia, parada). | 2026-10-04 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/monitor-live-readings | 0abc567 | feat(process-monitoring): add ProcessReadingAssembler and readings API methods. | Assembler de lecturas y métodos de la API para consultarlas por sesión y banda. | 2026-10-04 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/monitor-live-readings | e7b5a29 | feat(process-monitoring): add session detail translations. | Traducciones del detalle de sesión. | 2026-10-04 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/monitor-live-readings | d5edea6 | feat(process-monitoring): add readings, polling and band counts to the store. | Lecturas, consulta periódica cada 5 segundos y conteo por banda en el store. | 2026-10-04 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/monitor-live-readings | 37c6c4d | feat(process-monitoring): add ParameterCard component. | Componente ParameterCard con el último valor, la unidad y la banda del parámetro. | 2026-10-04 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/monitor-live-readings | 5342e73 | feat(process-monitoring): add SpraySessionDetail view with live parameter cards. | Vista de detalle de sesión con tarjetas de parámetros en vivo. | 2026-10-04 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/monitor-live-readings | 23d2f27 | feat(process-monitoring): add the session detail route. | Ruta del detalle de sesión. | 2026-10-04 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | develop | f13240d | Merge pull request #7 from feature/monitor-live-readings | Fusión del monitoreo de lecturas en vivo (US21, US22) en develop. | 2026-10-04 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/finish-spray-session | 08ab9b7 | feat(process-monitoring): add finish session translations. | Traducciones para finalizar y abortar sesiones. | 2026-10-04 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/finish-spray-session | ce61d18 | feat(process-monitoring): add completeSession and abortSession to the store. | Funciones completeSession y abortSession en el store. | 2026-10-04 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/finish-spray-session | 4b3db07 | feat(process-monitoring): add AbortSessionDialog component. | Diálogo de confirmación para abortar una sesión con motivo. | 2026-10-04 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/finish-spray-session | 038fc39 | feat(process-monitoring): add complete and abort actions to SpraySessionDetail. | Acciones de completar y abortar en el detalle de la sesión. | 2026-10-04 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | develop | 2bdc5ad | Merge pull request #8 from feature/finish-spray-session | Fusión de la finalización de sesiones (US23) en develop. | 2026-10-04 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/browse-session-history | e821456 | feat(process-monitoring): add per-session deviation count. | Cálculo del número de desviaciones por sesión. | 2026-10-04 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/browse-session-history | feacd60 | feat(process-monitoring): add filters and deviation count to SpraySessionList. | Filtros por sistema, orden de recuperación y rango de fechas, y conteo de desviaciones en el listado de sesiones. | 2026-10-04 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | develop | dc2e802 | Merge pull request #9 from feature/browse-session-history | Fusión del historial de sesiones (US24) en develop. | 2026-10-04 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/register-a-new-organization | b6e9b62 | feat(iam): add Organization, User, Role entities and SignUpCommand. | Entidades Organization, User y Role, y comando SignUpCommand. | 2026-10-04 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/register-a-new-organization | d60d9bc | feat(iam): add sign-up resource, assembler and IamApi. | Recurso, assembler de registro e IamApi. | 2026-10-04 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/register-a-new-organization | d3c7d95 | feat(iam): add IAM translations. | Traducciones de IAM. | 2026-10-04 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/register-a-new-organization | 0007489 | feat(iam): add iam store, sign-up only. | Store de IAM con el registro de organizaciones. | 2026-10-04 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/register-a-new-organization | 80b1268 | feat(iam): add SignUpForm view. | Formulario de registro de organización y usuario administrador. | 2026-10-04 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/register-a-new-organization | d698c4f | feat(iam): add IAM routes and mount them in the router. | Rutas de IAM montadas en el router de la aplicación. | 2026-10-04 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | develop | e57fbfa | Merge pull request #10 from feature/register-a-new-organization | Fusión del registro de organizaciones (US01) en develop. | 2026-10-04 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/sign-in-and-manage-the-session | d066fd7 | feat(iam): add sign-in command, resource, assembler and API method. | Comando, recurso, assembler y método de la API para el inicio de sesión. | 2026-10-04 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/sign-in-and-manage-the-session | d6ef8f3 | feat(iam): add session state, signIn and signOut to the iam store. | Estado de sesión, signIn y signOut en el store de IAM. | 2026-10-04 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/sign-in-and-manage-the-session | 0700798 | feat(iam): add SignInForm view and route. | Formulario de inicio de sesión y su ruta. | 2026-10-04 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/sign-in-and-manage-the-session | e61e31f | feat(iam): add authenticationGuard and protect the routes. | Guard de autenticación que protege las rutas privadas. | 2026-10-04 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/sign-in-and-manage-the-session | 77dd307 | feat(iam): add iamInterceptor to BaseApi. | Interceptor que adjunta el token de sesión a cada petición de BaseApi. | 2026-10-04 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/sign-in-and-manage-the-session | 5774e05 | feat(shared): add AuthenticationSection and filter the toolbar by session and organization type. | Sección de autenticación en el toolbar y menú filtrado por sesión y tipo de organización. | 2026-10-04 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/sign-in-and-manage-the-session | 9c7a555 | refactor: take organization and operator from the iam store. | La organización y el operador se obtienen del store de IAM en lugar de valores fijos. | 2026-10-04 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | develop | d1879ce | Merge pull request #11 from feature/sign-in-and-manage-the-session | Fusión del inicio de sesión y gestión de sesión (US02) en develop. | 2026-10-04 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/manage-user-roles | 14ad676 | chore: add missing roles to the fake API. | Roles faltantes agregados a la Fake API. | 2026-10-04 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/manage-user-roles | 1ea9da9 | feat(iam): add users and roles to IamApi and the iam store. | Usuarios y roles en IamApi y en el store de IAM. | 2026-10-04 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/manage-user-roles | edf43e2 | feat(iam): add user and role translations. | Traducciones de usuarios y roles. | 2026-10-04 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/manage-user-roles | 801e34f | feat(iam): add UserList and UserRoleForm views. | Listado de usuarios y formulario de asignación de roles. | 2026-10-04 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/manage-user-roles | 15eda2d | feat(iam): add user routes guarded by role and role-based access to equipment and sessions. | Rutas de usuarios protegidas por rol y acceso por rol a equipos y sesiones. | 2026-10-04 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | develop | 0208d78 | Merge pull request #12 from feature/manage-user-roles | Fusión de la gestión de roles y restricción de acceso (US03, US04) en develop. | 2026-10-04 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/select-subscription-plan | b116fee | feat(billing): add Plan and Subscription entities. | Entidades de dominio Plan y Subscription. | 2026-10-04 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/select-subscription-plan | 23fe0e4 | feat(billing): add billing infrastructure and store. | BillingApi, assemblers y store de Billing. | 2026-10-04 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/select-subscription-plan | 5cf7729 | feat(billing): add billing translations. | Traducciones de Billing. | 2026-10-04 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/select-subscription-plan | 877cf40 | feat(billing): add PlanSelection and SubscriptionDetail views. | Vistas de selección de plan y detalle de suscripción. | 2026-10-04 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/select-subscription-plan | 086b8c7 | feat(billing): add billing routes and the subscription toolbar option. | Rutas de Billing y opción de suscripción en el toolbar. | 2026-10-04 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | develop | be565ab | Merge pull request #13 from feature/select-subscription-plan | Fusión de la selección de plan y consulta de suscripción (US05, US06) en develop. | 2026-10-04 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/improve-layout-styles | e6b84fd | style: use full-width layout, higher-contrast palette and black toolbar text | Layout de ancho completo, paleta de mayor contraste y texto negro en el toolbar. | 2026-10-05 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | develop | 4926616 | Merge pull request #14 from feature/improve-layout-styles | Fusión de las mejoras de estilos del layout en develop. | 2026-10-05 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/add-mock-data | d618a3e | chore: add mock data for features F6-F16 and run the local json-server with routes. | Datos de prueba de la Fake API para las funcionalidades restantes y ejecución local de json-server con sus rutas. | 2026-10-05 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | develop | 8135559 | Merge pull request #15 from feature/add-mock-data | Fusión de los datos de prueba de la Fake API en develop. | 2026-10-05 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/manage-customers | 8fde758 | refactor(shared): complete BaseApi and BaseEndpoint. | Implementación completa de BaseApi y BaseEndpoint. | 2026-10-05 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/manage-customers | 3a831ac | feat(traceability): add Customer entity. | Entidad de dominio Customer. | 2026-10-05 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/manage-customers | ddec0a2 | feat(traceability): add CustomerAssembler. | Assembler de clientes. | 2026-10-05 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/manage-customers | 6ed45c3 | feat(traceability): add customers to TraceabilityApi. | Endpoints de clientes en TraceabilityApi. | 2026-10-05 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/manage-customers | efbd4a3 | feat(traceability): add customer translations. | Traducciones de clientes. | 2026-10-05 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/manage-customers | 759f6e0 | feat(traceability): add customers to the traceability store. | Clientes en el store de Traceability. | 2026-10-05 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/manage-customers | c5f9190 | feat(traceability): fill in the CustomerList view with edit and delete actions. | Listado de clientes con acciones de edición y eliminación. | 2026-10-05 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/manage-customers | 520b8a9 | feat(traceability): add CustomerForm view with create and edit modes. | Formulario de cliente con modos de creación y edición. | 2026-10-05 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/manage-customers | e59dc22 | feat(traceability): add the create and edit customer routes. | Rutas de creación y edición de clientes. | 2026-10-05 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/manage-components | fc8d2bf | feat(traceability): complete the Component entity with types, statuses and machine. | Entidad Component con tipos, estados y datos de la máquina. | 2026-10-05 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/manage-components | d5df9c4 | feat(traceability): add ComponentAssembler. | Assembler de componentes. | 2026-10-05 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/manage-components | 9a01c4e | feat(traceability): add components to TraceabilityApi. | Endpoints de componentes en TraceabilityApi. | 2026-10-05 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/manage-components | bbe8889 | feat(traceability): add component translations. | Traducciones de componentes. | 2026-10-05 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/manage-components | b5db518 | feat(traceability): add components to the traceability store. | Componentes en el store de Traceability. | 2026-10-05 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/manage-components | 64d8914 | feat(traceability): fill in the ComponentList view. | Listado de componentes. | 2026-10-05 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/manage-components | 20eae28 | feat(traceability): add ComponentForm view with create and edit modes. | Formulario de componente con modos de creación y edición. | 2026-10-05 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/manage-components | cbe0583 | feat(traceability): add the create and edit component routes. | Rutas de creación y edición de componentes. | 2026-10-05 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/manage-recuperations | dea3490 | feat(traceability): add Recuperation entity. | Entidad de dominio Recuperation. | 2026-10-05 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/manage-recuperations | be7bff6 | feat(traceability): add RecuperationAssembler. | Assembler de órdenes de recuperación. | 2026-10-05 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/manage-recuperations | fd7b166 | feat(traceability): add recuperations to TraceabilityApi. | Endpoints de órdenes de recuperación en TraceabilityApi. | 2026-10-05 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/manage-recuperations | 81d9a28 | feat(traceability): add recuperation translations. | Traducciones de órdenes de recuperación. | 2026-10-05 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/manage-recuperations | 6fda7d5 | feat(traceability): add recuperations to the traceability store. | Órdenes de recuperación en el store de Traceability. | 2026-10-05 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/manage-recuperations | b1c867e | feat(traceability): fill in the RecuperationList view. | Listado de órdenes de recuperación. | 2026-10-05 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/manage-recuperations | 5ff5e16 | feat(traceability): add RecuperationForm view with create and edit modes. | Formulario de orden de recuperación con modos de creación y edición. | 2026-10-05 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/manage-recuperations | 95db887 | feat(traceability): add the create and edit recuperation routes. | Rutas de creación y edición de órdenes de recuperación. | 2026-10-05 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/terms-and-default-language | e553910 | fix(i18n): use English as the default language. | Inglés como idioma por defecto de la aplicación. | 2026-10-05 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/terms-and-default-language | 1d569fc | feat(shared): add SEO meta tags and set English as the document language. | Meta tags de SEO e idioma del documento en inglés. | 2026-10-05 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/terms-and-default-language | 4fa6282 | feat(shared): add language switcher label and terms and conditions translations. | Traducciones de la etiqueta del LanguageSwitcher y de los Términos y Condiciones. | 2026-10-05 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/terms-and-default-language | b034e6c | feat(shared): label the LanguageSwitcher and sync the document language. | Etiqueta accesible del LanguageSwitcher y sincronización del idioma del documento. | 2026-10-05 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/terms-and-default-language | 12c1850 | feat(shared): add TermsAndConditions view. | Vista de Términos y Condiciones. | 2026-10-05 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/terms-and-default-language | fc8fc26 | feat(shared): add the public terms route and the footer link. | Ruta pública de Términos y Condiciones y enlace desde el footer. | 2026-10-05 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/terms-and-default-language | c8614b5 | docs: replace the Vite template README with the project README. | README del proyecto en reemplazo de la plantilla de Vite. | 2026-10-05 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | release/1.0.0 | 1f70a90 | chore(release): 1.0.0. | Versión 1.0.0 de la Web Application y su CHANGELOG. | 2026-10-05 |
 
 #### 5.2.2.5. Execution Evidence for Sprint Review.
 
@@ -3393,6 +3444,9 @@ A continuación, se documenta la evidencia de ejecución de la Web Application p
 | **US04** | Restricción de acceso por rol | El guard de autenticación valida el rol y el tipo de organización antes de cada navegación: el menú se adapta a la sesión y al tipo de organización, y las rutas restringidas (por ejemplo, crear sistemas o recetas) redirigen al inicio si el usuario no tiene el rol requerido. |
 | **US05** | Selección de plan | En **Plans** (`/billing/plans`) el administrador elige el plan **Operator** o **Asset Owner** con su precio mensual y sus límites, y se crea la suscripción de la organización. |
 | **US06** | Consulta y vigencia de suscripción | En **Subscription** (`/billing/subscription`), accesible desde el toolbar, se consulta el plan contratado, el estado y las fechas de vigencia de la suscripción. |
+| **US13** | Registro de cliente | En **Customers** (`/traceability/customers`) se listan los clientes de la organización y se registran o editan con su razón social, RUC y sede; el listado incluye acciones de edición y eliminación. |
+| **US14** | Registro de componente recibido | En **Components** (`/traceability/components`) se registra un componente con su cliente, número de serie, part number, tipo, estado y máquina de origen, y se edita desde el listado. |
+| **US15** | Registro de orden de recuperación | En **Recuperations** (`/traceability/recuperations`) se registra la orden de recuperación con su OF y WO vinculada a un componente y su cliente; las órdenes registradas quedan disponibles al iniciar una sesión de rociado. |
 
 #### 5.2.2.6. Services Documentation Evidence for Sprint Review.
 
@@ -3410,7 +3464,9 @@ Durante el Sprint 2 no se documentaron endpoints en OpenAPI, ya que la REST API 
 | Equipment | `/api/v1/hvofSubsystems` | GET, POST, PUT | Registro y edición de subsistemas | US08 |
 | Equipment | `/api/v1/hvofParts` | GET, POST, DELETE | Registro y eliminación de partes de un subsistema | US08 |
 | Equipment | `/api/v1/recipes` | GET, POST, PUT, PATCH | Recetas con aplicabilidades y rangos por parámetro | US09 |
-| Traceability | `/api/v1/recuperations` | GET | Órdenes de recuperación disponibles al iniciar una sesión | US19 |
+| Traceability | `/api/v1/customers` | GET, POST, PUT, DELETE | Registro, edición, eliminación y consulta de clientes | US13 |
+| Traceability | `/api/v1/components` | GET, POST, PUT | Registro, edición y consulta de componentes recibidos | US14 |
+| Traceability | `/api/v1/recuperations` | GET, POST, PUT | Registro y edición de órdenes de recuperación y consulta al iniciar una sesión | US15, US19 |
 | Process Monitoring | `/api/v1/spraySessions` | GET, POST, PATCH | Inicio, listado, finalización y aborto de sesiones | US19, US23, US24 |
 | Process Monitoring | `/api/v1/processReadings` | GET | Lecturas de una sesión, ordenadas por tiempo y filtradas por banda | US21, US22, US24 |
 
@@ -3418,10 +3474,14 @@ En producción, los endpoints `/api/v1/authentication/sign-in` y `/api/v1/authen
 
 #### 5.2.2.7. Software Deployment Evidence for Sprint Review.
 
-Durante el Sprint 2 la Web Application no se desplegó en un entorno público; su ejecución se realizó en local mientras se implementa la REST API. El despliegue en Firebase Hosting, descrito en 5.1.4, se realizará cuando la aplicación pueda conectarse al backend.
+Al cierre del Sprint 2 la versión v1.0.0 de la Web Application se desplegó en **Firebase Hosting**, según el esquema descrito en 5.1.4. Como la REST API aún no estaba disponible, la versión publicada consume la Fake API desplegada en Vercel, que expone los mismos recursos bajo `/api/v1`.
 
 - **Repositorio**: edgewatch-webapp
-- **Rama integrada**: develop (Pull Requests #1 a #14)
+- **Rama integrada**: develop (Pull Requests #1 a #15)
+- **Versión publicada**: v1.0.0 (rama `release/1.0.0`, 2026-10-05)
+- **URL de producción**: <https://edgewatch-webapp-10050010.web.app/>
+- **Fake API en producción**: <https://edgewatch-mock-api.vercel.app/api/v1>
+- **Fecha de publicación en Firebase Hosting**: 2026-10-06
 - **Ejecución local de la Fake API**: `npm run api` (json-server en el puerto 3000)
 - **Ejecución local de la Web Application**: `npm run dev` (servidor de desarrollo de Vite)
 
@@ -3431,14 +3491,709 @@ La siguiente tabla resume la actividad registrada en la rama develop del reposit
 
 | Integrante | Ramas feature trabajadas | Commits | Pull Requests fusionados |
 |---|---|:---:|:---:|
-| Navarro Aldoradin, Carolina Celeste | feature/navigate-the-application, feature/switch-application-language (y configuración inicial en develop) | 21 | 2 |
-| Catacora Tupa, Jhon Deyner | feature/manage-hvof-systems, feature/manage-hvof-subsystems, feature/manage-recipes, feature/start-spray-session, feature/monitor-live-readings, feature/finish-spray-session, feature/browse-session-history, feature/register-a-new-organization, feature/sign-in-and-manage-the-session, feature/manage-user-roles, feature/select-subscription-plan, feature/improve-layout-styles | 85 | 12 |
+| Navarro Aldoradin, Carolina Celeste | feature/navigate-the-application, feature/switch-application-language, feature/manage-customers, feature/manage-components, feature/manage-recuperations, feature/terms-and-default-language, release/1.0.0 (y configuración inicial en develop) | 52 | 2 |
+| Catacora Tupa, Jhon Deyner | feature/add-mock-data, feature/manage-hvof-systems, feature/manage-hvof-subsystems, feature/manage-recipes, feature/start-spray-session, feature/monitor-live-readings, feature/finish-spray-session, feature/browse-session-history, feature/register-a-new-organization, feature/sign-in-and-manage-the-session, feature/manage-user-roles, feature/select-subscription-plan, feature/improve-layout-styles | 74 | 13 |
+
+### 5.2.3. Sprint 3
+
+En este Sprint el equipo construyó la REST API de EdgeWatch (`edgewatch-platform`) y conectó a ella la Web Application (`edgewatch-webapp`), que hasta el Sprint 2 consumía una Fake API. La REST API cubre los bounded contexts **IAM**, **Equipment**, **Traceability**, **Process Monitoring**, **Fault Diagnosis** y **Reporting**, sobre un **Shared Kernel** con eventos de dominio. La Web Application incorporó las vistas de Fault Diagnosis y Reporting, gráficos de tendencia, análisis de sesiones, un dashboard de operaciones y un flujo de Quick Start, además del tema visual de la marca. En el Landing Page (`edgewatch-website`) se agregó el acceso al inicio de sesión de la Web Application. Billing se mantiene sobre la Fake API y los bounded contexts de Notifications quedan para un Sprint posterior.
+
+La REST API se desarrolló en C# con ASP.NET Core 10, Entity Framework Core 10 y MySQL, organizada por bounded context en las capas `Domain`, `Application`, `Infrastructure` e `Interfaces`. Los command services devuelven `Result<T>` con un `Error` de dominio, que `ProblemDetailsFactory` convierte en respuestas RFC 9457 localizadas en inglés y español. Los aggregates registran eventos de dominio que se publican con Cortex.Mediator al guardar la unidad de trabajo; así, Fault Diagnosis abre casos de falla al recibir el evento `OutOfBandReadingDetectedEvent` de Process Monitoring. La autenticación usa JWT con contraseñas cifradas con BCrypt, y la documentación se genera con OpenAPI y Scalar. El Sprint cerró con las versiones v1.0.1 de la REST API, v2.0.1 de la Web Application y v1.1.0 del Landing Page.
+
+#### 5.2.3.1. Sprint Planning 3.
+
+Resumen de la reunión de Sprint Planning realizada por el equipo al inicio del Sprint 3.
+
+| Sprint # | Sprint 3 |
+|---|---|
+| **Sprint Planning Background** | |
+| Fecha | 2026-10-06 |
+| Hora | 8:00 PM |
+| Lugar | Reunión virtual vía Google Meet |
+| Preparado por | Navarro Aldoradin, Carolina Celeste |
+| Asistentes (a la reunión de planning) | Navarro Aldoradin, Carolina Celeste / Alvarez Falen, Esteban Valentino / Catacora Tupa, Jhon Deyner / Vasquez Laos, Sebastian Andrews |
+| **Resumen del Sprint n-1 Review** | En el Sprint 2 se implementó la versión v1.0.0 de la Web Application (`edgewatch-webapp`) en Vue 3, con los bounded contexts IAM, Billing, Equipment, Traceability y Process Monitoring (54 Story Points), integrados en develop mediante quince Pull Requests y desplegados en Firebase Hosting contra una Fake API publicada en Vercel. |
+| **Resumen de la Retrospectiva del Sprint n-1** | El equipo valoró la organización por bounded context y capas DDD, que facilitó dividir el trabajo por User Story, y la Fake API como contrato provisional del backend. Como puntos de mejora, se acordó distribuir las ramas feature entre todos los integrantes, implementar la REST API para dejar de depender de datos simulados y documentar cada endpoint con OpenAPI desde su primera versión. |
+| **Sprint Goal & User Stories** | |
+| Sprint 3 Goal | Nuestro enfoque está en ofrecer a las organizaciones del segmento Recuperation Supplier una plataforma conectada a una REST API real, en la que sus sesiones de rociado queden persistidas, las lecturas fuera de banda abran casos de falla con su causa probable y cada sesión u orden de recuperación pueda documentarse en un reporte PDF. Creemos que esto entrega trazabilidad persistente y evidencia de calidad a los Ingenieros de Calidad, Supervisores de Mantenimiento y Operadores HVOF. Esto se confirmará cuando un usuario autenticado con JWT pueda configurar una celda con su receta publicada, registrar una orden de recuperación, ejecutar una sesión cuyas lecturas fuera de banda generen casos de falla, atender y resolver esos casos, y generar el reporte PDF de la sesión y el certificado de calidad de la orden. |
+| Sprint 3 Velocity | 78 Story Points |
+| Suma de Story Points | 78 Story Points |
+
+**Historias de usuario incluidas en el Sprint 3**
+
+| # Orden | User Story Id | Título | Story Points |
+|---|---|---|---|
+| 1 | TS07 | Registro de componente | 3 |
+| 2 | TS08 | Registro de orden de recuperación | 3 |
+| 3 | TS03 | Registro de celda HVOF | 3 |
+| 4 | TS04 | Configuración de rangos nominales | 3 |
+| 5 | TS09 | Inicio de sesión de rociado | 3 |
+| 6 | TS10 | Ingesta de lecturas de telemetría | 8 |
+| 7 | TS11 | Consulta de lecturas de una sesión | 3 |
+| 8 | US25 | Apertura automática de caso de falla | 8 |
+| 9 | US26 | Diagnóstico asistido por reglas causa-efecto | 8 |
+| 10 | US28 | Gestión del catálogo de reglas | 5 |
+| 11 | US27 | Confirmación de causa raíz | 3 |
+| 12 | US30 | Consulta de casos de falla | 3 |
+| 13 | TS12 | Consulta de casos de falla | 3 |
+| 14 | TS13 | Confirmación de causa raíz | 2 |
+| 15 | US18 | Cierre y entrega de orden | 3 |
+| 16 | US35 | Emisión de certificado de calidad | 8 |
+| 17 | US36 | Reporte de sesión | 3 |
+| 18 | TS01 | Registro de organización y administrador | 3 |
+| 19 | TS02 | Autenticación de usuario | 3 |
+
+#### 5.2.3.2. Aspect Leaders and Collaborators.
+
+Para el Sprint 3 el equipo WebRunners mantuvo la distribución matricial de roles definida en los Sprints anteriores, en concordancia con el **ABET Student Outcome 5**, ajustando las responsabilidades de cada aspecto al desarrollo de la REST API y a la integración de la Web Application con ella. Cada aspecto cuenta con un **Líder (Aspect Leader)** responsable de coordinar las actividades y asegurar el cumplimiento de los objetivos, junto con **Colaboradores (Collaborators)** que participan en la implementación, la revisión por pares y la validación cruzada.
+
+| Aspecto / Rol | Descripción de Responsabilidades | Líder (Aspect Leader) | Colaboradores (Collaborators) |
+|---|---|---|---|
+| **Product Owner & Gestión de Requisitos** | Selección de las User Stories y Technical Stories del Sprint 3 según el orden del Product Backlog, refinamiento de los criterios de aceptación de Fault Diagnosis y Reporting, y definición de las transiciones válidas de órdenes, recetas, sesiones y casos de falla. | Navarro Aldoradin, Carolina Celeste | Alvarez Falen, Esteban Valentino<br>Catacora Tupa, Jhon Deyner |
+| **Scrum Master & Gestión Ágil** | Facilitación de las ceremonias Scrum del Sprint 3, seguimiento de las ramas feature de los tres repositorios y remoción de impedimentos, con monitoreo de la velocidad del equipo (78 Story Points planificados). | Navarro Aldoradin, Carolina Celeste | Vasquez Laos, Sebastian Andrews |
+| **Desarrollo Frontend & UI/UX** | Conexión de la Web Application con la REST API (JWT, Problem Details localizados y sub-recursos anidados), vistas de Fault Diagnosis y Reporting, gráficos de tendencia, análisis de sesiones, dashboard de operaciones, Quick Start y tema visual de la marca EdgeWatch. | Catacora Tupa, Jhon Deyner | Navarro Aldoradin, Carolina Celeste<br>Alvarez Falen, Esteban Valentino<br>Vasquez Laos, Sebastian Andrews |
+| **Desarrollo Backend & Servicios API** | Implementación de la REST API en ASP.NET Core: Shared Kernel con eventos de dominio, aggregates, command y query services, facades entre bounded contexts, controladores REST con Problem Details localizados y documentación OpenAPI. | Alvarez Falen, Esteban Valentino | Catacora Tupa, Jhon Deyner<br>Navarro Aldoradin, Carolina Celeste<br>Vasquez Laos, Sebastian Andrews |
+| **Gestión de Base de Datos y Persistencia** | Configuración de Entity Framework Core con MySQL, convención snake_case, auditoría de entidades, identificadores fuertemente tipados y migraciones de cada bounded context, aplicadas automáticamente al iniciar la API. | Vasquez Laos, Sebastian Andrews | Catacora Tupa, Jhon Deyner<br>Alvarez Falen, Esteban Valentino |
+| **DevOps, SCM & Despliegue Continuo** | Administración de los repositorios con Gitflow, una rama por funcionalidad, ramas `release/*` etiquetadas con Semantic Versioning y CHANGELOG, Dockerfile de la REST API, variables de entorno por ambiente y publicación del Landing Page. | Catacora Tupa, Jhon Deyner | Navarro Aldoradin, Carolina Celeste<br>Alvarez Falen, Esteban Valentino |
+| **Aseguramiento de Calidad (QA) & Accesibilidad** | Verificación de los endpoints desde Scalar y de los flujos de la Web Application contra la REST API, corrección de errores de navegación y del Quick Start, y actualización de dependencias con vulnerabilidades conocidas. | Alvarez Falen, Esteban Valentino | Vasquez Laos, Sebastian Andrews<br>Catacora Tupa, Jhon Deyner |
+| **Documentación Técnica & Trazabilidad** | README de la REST API y de la Web Application, actualización del Project Report con la evidencia del Sprint 3 y trazabilidad entre User Stories, ramas, commits y versiones publicadas. | Alvarez Falen, Esteban Valentino | Catacora Tupa, Jhon Deyner<br>Vasquez Laos, Sebastian Andrews |
+
+**Leadership-and-Collaboration Matrix (LACX) del Sprint 3** (L: Leader, C: Collaborator)
+
+| Team Member (Last Name, First Name) | GitHub Username | Product Owner & Requisitos | Scrum Master | Frontend & UI/UX | Backend & API | Base de Datos | DevOps & SCM | QA & Accesibilidad | Documentación |
+|---|---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| Navarro Aldoradin, Carolina Celeste | genixmvp | L | L | C | C | — | C | — | — |
+| Alvarez Falen, Esteban Valentino | Valentino10113 | C | — | C | L | C | C | L | L |
+| Catacora Tupa, Jhon Deyner | JhonDCT | C | — | L | C | C | L | C | C |
+| Vasquez Laos, Sebastian Andrews | unity20012006-cell | — | C | C | C | L | — | C | C |
+
+#### 5.2.3.3. Sprint Backlog 3.
+
+El Sprint Backlog 3 desglosa las User Stories y Technical Stories priorizadas en tareas técnicas de la REST API, de la Web Application y del Landing Page. Cada grupo de tareas se desarrolló en una rama de su repositorio y se integró en develop mediante Pull Request o merge.
+
+| UserStoryId | UserStoryTitle | Work-Item/TaskId | Work-Item/Task Title | Description | Estimation (Hours) | AssignedTo | Status (To-do / In-Process / To-Review / Done) |
+|---|---|---|---|---|:---:|---|:---:|
+| — | Base de la REST API | TSK-API-01 | Configuración del proyecto y Shared Kernel inicial | Solución ASP.NET Core, paquetes, configuración por ambiente, AppDbContext, BaseRepository, UnitOfWork, auditoría, Problem Details localizados, rutas kebab-case, CORS, OpenAPI y Scalar. | 6h | Esteban Valentino Alvarez Falen | Done |
+| — | Base de la REST API | TSK-API-02 | Conversión y validación de enumeraciones | Conversión de enumeraciones a UPPER_SNAKE_CASE en persistencia y atributo `EnumValue` para validar recursos. | 2h | Jhon Deyner Catacora Tupa | Done |
+| — | Base de la REST API | TSK-API-03 | Actualización del Shared Kernel | AggregateRoot con eventos de dominio y Cortex.Mediator, Result y Error, identificadores fuertemente tipados, behaviors de comandos, manejador global de excepciones, esquema Bearer en OpenAPI y Dockerfile. | 6h | Esteban Valentino Alvarez Falen | Done |
+| TS03 | Registro de celda HVOF | TSK-API-04 | Registro y consulta de sistemas HVOF | Aggregate HvofSystem, persistencia, migración `AddHvofSystems` y endpoints de registro y consulta. | 4h | Esteban Valentino Alvarez Falen | Done |
+| TS03 | Registro de celda HVOF | TSK-API-05 | Subsistemas, partes y controladores | Entidades y sub-recursos `/hvof-systems/{id}/subsystems`, `/parts` y `/controllers` con su persistencia y mensajes localizados. | 5h | Carolina Celeste Navarro Aldoradin | Done |
+| TS03 | Registro de celda HVOF | TSK-API-06 | Edición de equipos | Comandos y endpoints de actualización de sistemas, subsistemas, controladores, partes y recetas, y eliminación de partes. | 4h | Sebastian Andrews Vasquez Laos | Done |
+| TS04 | Configuración de rangos nominales | TSK-API-07 | Recetas con bandas de umbral | Aggregate Recipe con parámetros, aplicabilidades, bandas de umbral y ciclo DRAFT → ACTIVE → RETIRED, y facade de Equipment con snapshots de bandas. | 6h | Esteban Valentino Alvarez Falen | Done |
+| TS07 | Registro de componente | TSK-API-08 | Clientes y componentes recibidos | Aggregates Customer (con RUC) y RecoveredComponent, servicios, migraciones `AddCustomers` y `AddComponents`, y sus endpoints. | 6h | Jhon Deyner Catacora Tupa | Done |
+| TS08 | Registro de orden de recuperación | TSK-API-09 | Órdenes de recuperación | Aggregate Recuperation con sesiones vinculadas, validación de cliente y componente, migración `AddRecuperations` y endpoints. | 5h | Jhon Deyner Catacora Tupa | Done |
+| US18 | Cierre y entrega de orden | TSK-API-10 | Transiciones de estado de la orden | `PATCH /api/v1/recuperations/{id}` con las transiciones RECEIVED → IN_PROGRESS → COMPLETED → DELIVERED / REWORK; la entrega devuelve el componente a IN_SERVICE. | 2h | Jhon Deyner Catacora Tupa | Done |
+| — | Corrección de persistencia | TSK-API-11 | Columnas de fecha de las órdenes | Conversión explícita de las columnas DateOnly para el proveedor de MySQL y migración `FixRecuperationDateColumns`. | 1h | Esteban Valentino Alvarez Falen | Done |
+| TS01 | Registro de organización y administrador | TSK-API-12 | Dominio y servicios de IAM | Aggregates Organization y User, entidad Role, comandos de sign-up, sign-in y asignación de roles, siembra de roles y facade de IAM. | 5h | Jhon Deyner Catacora Tupa | Done |
+| TS02 | Autenticación de usuario | TSK-API-13 | Tokens JWT y autorización | Hashing con BCrypt, servicio de tokens JWT, middleware de autorización, atributos `Authorize` / `AllowAnonymous` y migración `AddIam`. | 5h | Jhon Deyner Catacora Tupa | Done |
+| TS01 / TS02 | Registro y autenticación | TSK-API-14 | Endpoints de IAM | Controladores de usuarios, tokens, roles y organizaciones, y exigencia de usuario autenticado en Equipment y Traceability. | 3h | Jhon Deyner Catacora Tupa | Done |
+| TS09 | Inicio de sesión de rociado | TSK-API-15 | Aggregate SpraySession | Sesión con bandas congeladas de la receta, comandos de inicio, finalización y aborto, y servicios externos hacia Equipment y Traceability. | 5h | Jhon Deyner Catacora Tupa | Done |
+| TS10 | Ingesta de lecturas de telemetría | TSK-API-16 | Ingesta y clasificación de lecturas | `POST /api/v1/spray-sessions/{id}/readings` con clasificación de cada lectura por banda y evento de lectura fuera de banda. | 5h | Jhon Deyner Catacora Tupa | Done |
+| TS11 | Consulta de lecturas de una sesión | TSK-API-17 | Lecturas y desviaciones | Endpoints de lecturas en orden temporal con filtro por banda y de conteo de desviaciones de la sesión. | 2h | Jhon Deyner Catacora Tupa | Done |
+| US25 / US26 | Apertura automática y diagnóstico de fallas | TSK-API-18 | Casos de falla por reglas causa-efecto | Aggregates FaultRule y FaultCase, reglas por defecto por organización y apertura de casos desde el evento de lectura fuera de banda, con coincidencia de reglas y periodo de enfriamiento. | 6h | Carolina Celeste Navarro Aldoradin | Done |
+| US28 / US27 / TS12 / TS13 | Reglas y casos de falla | TSK-API-19 | Endpoints de Fault Diagnosis | Controladores de reglas (solo administradores) y de casos de falla con atención y resolución registrando al usuario. | 4h | Carolina Celeste Navarro Aldoradin | Done |
+| — | Migración de contextos | TSK-API-20 | Migración de Equipment, Process Monitoring y Fault Diagnosis | Migración `AddEquipmentProcessMonitoringAndFaultDiagnosis`. | 1h | Carolina Celeste Navarro Aldoradin | Done |
+| US35 / US36 | Certificado y reporte de sesión | TSK-API-21 | Bounded context Reporting | Aggregates ReportTemplate y GeneratedReport, plantillas estándar sembradas por organización, endpoints y migración `AddReporting`. | 6h | Sebastian Andrews Vasquez Laos | Done |
+| — | Documentación y release | TSK-API-22 | README y releases de la REST API | README con bounded contexts, endpoints y configuración, CHANGELOG, normalización de finales de línea y versiones v1.0.0 y v1.0.1. | 2h | Jhon Deyner Catacora Tupa / Carolina Celeste Navarro Aldoradin | Done |
+| TS01 / TS02 / TS09 | Integración con la REST API | TSK-WA-38 | Conexión de la Web Application con la plataforma | Variables de entorno hacia la REST API, header Accept-Language, sub-recursos anidados, sesión con JWT, registro, asignación de roles, equipos y sesiones a través de la plataforma; Billing permanece en la Fake API. | 6h | Carolina Celeste Navarro Aldoradin | Done |
+| TS11 | Consulta de lecturas de una sesión | TSK-WA-39 | Gráficos de tendencia | Chart.js, tema con colores de banda, gráficos de tendencia por parámetro y de distribución por banda, y pestañas de tarjetas en vivo y tendencias. | 5h | Sebastian Andrews Vasquez Laos | Done |
+| TS11 | Consulta de lecturas de una sesión | TSK-WA-40 | Análisis de sesión | Vista de análisis con estadísticas, desviación normalizada frente a los umbrales y exportación CSV. | 5h | Esteban Valentino Alvarez Falen | Done |
+| US30 / US27 / US28 | Casos y reglas de falla | TSK-WA-41 | Vistas de Fault Diagnosis | Entidades, FaultDiagnosisApi, store, listado de casos con atención y resolución y listado de reglas con diálogo de creación y edición. | 5h | Jhon Deyner Catacora Tupa | Done |
+| — | Dashboard de operaciones | TSK-WA-42 | Dashboard para proveedores | KpiCard y gráficos de sesiones por día y de casos de falla por parámetro en la vista de inicio. | 4h | Sebastian Andrews Vasquez Laos | Done |
+| — | Tema de marca | TSK-WA-43 | Tema visual EdgeWatch | Preset de PrimeVue con la marca y barra lateral con navegación agrupada. | 3h | Carolina Celeste Navarro Aldoradin | Done |
+| — | Quick Start | TSK-WA-44 | Aprovisionamiento de planta demo | Servicio que crea sistema HVOF, subsistemas, receta, cliente, componente y orden, con checklist de la sesión y estado vacío del dashboard. | 4h | Jhon Deyner Catacora Tupa | Done |
+| — | Quick Start | TSK-WA-45 | Correcciones del Quick Start y la navegación | Navegación de la barra lateral, errores de la plataforma visibles, reutilización de órdenes abiertas y reintento del número de orden. | 3h | Esteban Valentino Alvarez Falen / Sebastian Andrews Vasquez Laos | Done |
+| US35 / US36 | Certificado y reporte de sesión | TSK-WA-46 | Reportes PDF | API y store de Reporting, constructor de plantillas con vista previa, generación de PDF con jsPDF desde la sesión y registro de reportes generados. | 6h | Carolina Celeste Navarro Aldoradin / Jhon Deyner Catacora Tupa | Done |
+| — | Seguridad y release | TSK-WA-47 | Dependencias, documentación y releases | Actualización de jsPDF y dependencias auditadas, README, licencia de PrimeUI y versiones v2.0.0 y v2.0.1. | 3h | Esteban Valentino Alvarez Falen / Carolina Celeste Navarro Aldoradin | Done |
+| — | Landing Page | TSK-LP-13 | Enlace de inicio de sesión | Botón de inicio de sesión en la navegación de escritorio y móvil que dirige a la Web Application, y versión v1.1.0. | 1h | Jhon Deyner Catacora Tupa | Done |
+
+#### 5.2.3.4. Development Evidence for Sprint Review.
+
+A continuación, se presenta el registro de la evidencia de desarrollo del Sprint 3 en los repositorios [`edgewatch-platform`](https://github.com/upc-pre-202620-1asi0730-16712-wrunners/edgewatch-platform), [`edgewatch-webapp`](https://github.com/upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp) y [`edgewatch-website`](https://github.com/upc-pre-202620-1asi0730-16712-wrunners/edgewatch-website). La tabla detalla los commits integrados en develop bajo el estándar Conventional Commits, la rama de origen según el modelo Gitflow, el identificador hash, el mensaje de commit, el resumen de las modificaciones y la fecha de registro. En `edgewatch-platform`, las ramas de Traceability se rebasaron unas sobre otras, por lo que el historial de develop contiene copias de sus commits; la tabla registra solo los que introducen trabajo nuevo en cada rama.
+
+**REST API (`edgewatch-platform`)**
+
+| Repository | Branch | CommitId | Commit Message | Commit MessageBody (resumen) | Committed on |
+|---|---|---|---|---|:---:|
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-platform | main | 7d07cad | chore: initial commit. | Inicialización del repositorio y de la solución de la REST API en ASP.NET Core. | 2026-11-02 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-platform | develop | 809f357 | chore: configure packages, database connection and environments. | Paquetes de EF Core, MySQL, OpenAPI y Scalar, cadena de conexión y archivos de configuración por ambiente. | 2026-11-02 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-platform | feature/add-shared-kernel | bff761d | feat(shared): add shared kernel persistence, problem details and localization. | AppDbContext, BaseRepository, UnitOfWork, interceptor de auditoría, Problem Details localizados y recursos en inglés y español. | 2026-11-02 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-platform | feature/add-shared-kernel | 89ce8aa | feat(shared): add application startup configuration with localization, CORS and OpenAPI. | Configuración de arranque con rutas kebab-case, localización, CORS, OpenAPI y Scalar. | 2026-11-02 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-platform | develop | 55ed65f | Merge pull request #1 from feature/add-shared-kernel | Fusión del Shared Kernel inicial en develop. | 2026-11-02 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-platform | feature/register-hvof-system | 319110b | chore: stop tracking build output. | Exclusión de las carpetas de compilación del control de versiones. | 2026-11-02 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-platform | feature/register-hvof-system | 2f427b5 | feat(equipment): add HvofSystem aggregate, value objects, command and repository contract. | Aggregate HvofSystem, value objects HvofSystemCode, FuelType y HvofSystemStatus, comando de registro y contrato de repositorio. | 2026-11-02 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-platform | feature/register-hvof-system | e4a5931 | feat(equipment): add HvofSystem persistence configuration, repository and migration. | Configuración del modelo, repositorio y migración `AddHvofSystems`. | 2026-11-02 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-platform | feature/register-hvof-system | f16b4f3 | feat(equipment): add register HVOF system endpoint with localized problem details. | Endpoint `POST /api/v1/hvof-systems` con errores localizados para código inválido o duplicado. | 2026-11-02 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-platform | develop | 41bdd5d | Merge pull request #2 from feature/register-hvof-system | Fusión del registro de sistemas HVOF (TS03) en develop. | 2026-11-02 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-platform | feature/retrieve-hvof-systems | e657e6e | feat(equipment): add HVOF system queries and retrieval endpoints. | Queries por id y por organización y endpoints de consulta de sistemas HVOF. | 2026-11-03 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-platform | develop | c0fffdc | Merge pull request #3 from feature/retrieve-hvof-systems | Fusión de la consulta de sistemas HVOF en develop. | 2026-11-03 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-platform | chore/untrack-build-files | e18bee4 | chore: stop build output. | Retiro de los artefactos de compilación ya versionados. | 2026-11-03 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-platform | develop | e646cef | Merge pull request #4 from chore/untrack-build-files | Fusión de la limpieza de artefactos de compilación en develop. | 2026-11-03 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-platform | refactor/shared-enum-helpers | 700a939 | refactor(shared): add reusable UPPER_SNAKE enum conversion and enum value validation. | Conversión reutilizable de enumeraciones a UPPER_SNAKE_CASE y atributo `EnumValue` para validar recursos. | 2026-11-07 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-platform | refactor/shared-enum-helpers | 13825ba | chore: fix gitignore | Ajuste del `.gitignore` del repositorio. | 2026-11-07 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-platform | develop | a9e6e7d | Merge pull request #5 from refactor/shared-enum-helpers | Fusión de los helpers de enumeraciones del Shared Kernel en develop. | 2026-11-07 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-platform | feature/manage-customers | ef5a82a | feat(traceability): add Customer aggregate, Ruc value object, commands, queries and repository contract. | Aggregate Customer, value object Ruc, comandos, queries y contrato de repositorio. | 2026-11-07 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-platform | feature/manage-customers | 4ff3023 | feat(traceability): add customer command and query services. | Command y query services de clientes. | 2026-11-07 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-platform | feature/manage-customers | b5e9389 | feat(traceability): add customer persistence configuration, repository and AddCustomers migration. | Configuración del modelo, repositorio y migración `AddCustomers`. | 2026-11-07 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-platform | feature/manage-customers | 1c9dca4 | feat(traceability): add customers endpoints with localized problem details. | Endpoints de registro, consulta y actualización de clientes con errores localizados. | 2026-11-07 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-platform | develop | c74101d | Merge pull request #6 from feature/manage-customers | Fusión de la gestión de clientes en develop. | 2026-11-07 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-platform | feature/manage-components | 8074124 | feat(traceability): add RecoveredComponent aggregate with type and status enums. | Aggregate RecoveredComponent con las enumeraciones ComponentType y ComponentStatus. | 2026-11-07 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-platform | feature/manage-components | a3220e7 | feat(traceability): add component command and query services. | Command y query services de componentes. | 2026-11-07 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-platform | feature/manage-components | d34d5dc | feat(traceability): add component persistence configuration, repository and AddComponents migration. | Configuración del modelo, repositorio y migración `AddComponents`. | 2026-11-07 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-platform | feature/manage-components | 934a5fc | feat(traceability): add components endpoints with localized problem details. | Endpoints de registro, consulta (con filtro por cliente) y actualización de componentes. | 2026-11-07 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-platform | develop | 44a11f4 | Merge pull request #7 from feature/manage-components | Fusión de la gestión de componentes recibidos (TS07) en develop. | 2026-11-07 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-platform | feature/manage-recuperations | 31639d2 | feat(traceability): add Recuperation aggregate with status transitions and linked sessions. | Aggregate Recuperation con transiciones de estado y sesiones de rociado vinculadas. | 2026-11-07 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-platform | feature/manage-recuperations | 8144536 | feat(traceability): add recuperation command and query services with component status effects. | Command y query services de órdenes con actualización del estado del componente. | 2026-11-07 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-platform | feature/manage-recuperations | 87fa908 | feat(traceability): add recuperation persistence with owned linked sessions and AddRecuperations migration. | Persistencia de órdenes con sesiones vinculadas como owned entities y migración `AddRecuperations`. | 2026-11-07 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-platform | feature/manage-recuperations | 8d7c45d | feat(traceability): add recuperations endpoints with status transition. | Endpoints de apertura, consulta, actualización y cambio de estado de órdenes de recuperación. | 2026-11-07 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-platform | feature/upgrade-shared-kernel | 54e396e | chore: add mediator, bcrypt and jwt packages. | Paquetes de Cortex.Mediator, BCrypt y JWT. | 2026-11-10 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-platform | feature/upgrade-shared-kernel | 7e6f2b7 | feat(shared): add domain event, aggregate root and entity id contracts. | Contratos de evento de dominio, aggregate root e identificador de entidad. | 2026-11-10 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-platform | feature/upgrade-shared-kernel | 2322067 | feat(shared): add domain error model and application result. | Modelo de error de dominio y Result de aplicación. | 2026-11-10 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-platform | feature/upgrade-shared-kernel | 9a74af5 | feat(shared): add event handler contract and domain events dispatch interceptor. | Contrato de event handler e interceptor que despacha los eventos de dominio al guardar. | 2026-11-10 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-platform | feature/upgrade-shared-kernel | 3a06b18 | feat(shared): add strongly typed id value converter. | Conversor de valores para identificadores fuertemente tipados. | 2026-11-10 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-platform | feature/upgrade-shared-kernel | 07537e4 | feat(shared): add logging, exception handling and transaction command behaviors. | Behaviors de logging, manejo de excepciones y transacción para los comandos. | 2026-11-10 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-platform | feature/upgrade-shared-kernel | ace07d5 | feat(shared): add common and error message resources. | Recursos de mensajes comunes y de error. | 2026-11-10 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-platform | feature/upgrade-shared-kernel | 27097cb | feat(shared): add problem details factory and global exception handler. | ProblemDetailsFactory y manejador global de excepciones. | 2026-11-10 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-platform | feature/upgrade-shared-kernel | d5497bc | feat(shared): add bearer security scheme transformer for open api. | Transformer de OpenAPI con el esquema de seguridad Bearer. | 2026-11-10 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-platform | feature/upgrade-shared-kernel | b0eaa70 | refactor(equipment): turn hvof system into an aggregate root raising a registered event. | HvofSystem como aggregate root que emite el evento de registro. | 2026-11-10 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-platform | feature/upgrade-shared-kernel | ba4b392 | refactor(equipment): add equipment errors and migrate the hvof system command service to the shared result. | Errores de Equipment y command service de sistemas HVOF migrado al Result compartido. | 2026-11-10 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-platform | feature/upgrade-shared-kernel | 1e41e8e | refactor(equipment): map results to problem details with the equipment action result assembler. | Conversión de resultados a Problem Details con el assembler de Equipment. | 2026-11-10 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-platform | feature/upgrade-shared-kernel | 423f53d | chore: register mediator, interceptors, localizers and problem details factory. | Registro de mediator, interceptores, localizadores y ProblemDetailsFactory. | 2026-11-10 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-platform | feature/upgrade-shared-kernel | e3a2435 | chore: add dockerfile. | Dockerfile multietapa para compilar y publicar la API. | 2026-11-10 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-platform | develop | 0efc5cc | Merge branch 'feature/upgrade-shared-kernel' into develop | Fusión de la actualización del Shared Kernel en develop. | 2026-11-10 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-platform | feature/add-iam-bounded-context | e47c396 | feat(iam): add value objects, role entity and user roles. | Value objects, entidad Role y roles de usuario. | 2026-11-10 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-platform | feature/add-iam-bounded-context | 0d97600 | feat(iam): add organization and user aggregates with registered events. | Aggregates Organization y User con eventos de registro. | 2026-11-10 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-platform | feature/add-iam-bounded-context | b6d66f0 | feat(iam): add sign-up, sign-in, assign roles and seed roles commands. | Comandos de sign-up, sign-in, asignación de roles y siembra de roles. | 2026-11-10 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-platform | feature/add-iam-bounded-context | b7dcb79 | feat(iam): add user, role and organization queries. | Queries de usuarios, roles y organizaciones. | 2026-11-10 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-platform | feature/add-iam-bounded-context | 633879d | feat(iam): add iam errors and repository contracts. | Errores de IAM y contratos de repositorio. | 2026-11-10 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-platform | feature/add-iam-bounded-context | b38062d | feat(iam): add hashing and token outbound service contracts. | Contratos de los servicios de hashing y de tokens. | 2026-11-10 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-platform | feature/add-iam-bounded-context | 177b7a1 | feat(iam): add command and query service contracts. | Contratos de los command y query services. | 2026-11-10 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-platform | feature/add-iam-bounded-context | c4faa83 | feat(iam): add user and role command services. | Command services de usuarios y roles. | 2026-11-10 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-platform | feature/add-iam-bounded-context | 9d4dfe8 | feat(iam): add user, role and organization query services. | Query services de usuarios, roles y organizaciones. | 2026-11-10 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-platform | feature/add-iam-bounded-context | 69c7e94 | feat(iam): add user registered event handler. | Event handler del registro de usuario. | 2026-11-10 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-platform | feature/add-iam-bounded-context | 577fd06 | feat(iam): add iam context facade. | Facade del contexto IAM para los demás bounded contexts. | 2026-11-10 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-platform | feature/add-iam-bounded-context | 7e77db4 | feat(iam): add bcrypt hashing service. | Servicio de hashing de contraseñas con BCrypt. | 2026-11-10 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-platform | feature/add-iam-bounded-context | 327718c | feat(iam): add jwt token settings and service. | Configuración y servicio de tokens JWT. | 2026-11-10 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-platform | feature/add-iam-bounded-context | 9060905 | feat(iam): add request authorization middleware and authorize attributes. | Middleware de autorización de peticiones y atributos Authorize y AllowAnonymous. | 2026-11-10 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-platform | feature/add-iam-bounded-context | 72a2804 | feat(iam): add entity framework configuration and repositories. | Configuración de Entity Framework Core y repositorios de IAM. | 2026-11-10 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-platform | feature/add-iam-bounded-context | 7b223a0 | feat(iam): add sign-up, sign-in, user, role and organization resources. | Recursos de sign-up, sign-in, usuarios, roles y organizaciones. | 2026-11-10 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-platform | feature/add-iam-bounded-context | 28a48c3 | feat(iam): add command and resource assemblers and the iam action result assembler. | Assemblers de comandos y recursos y assembler de resultados de IAM. | 2026-11-10 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-platform | feature/add-iam-bounded-context | 9d5e3fa | feat(iam): add users, tokens, roles and organizations controllers. | Controladores de usuarios, tokens, roles y organizaciones. | 2026-11-10 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-platform | feature/add-iam-bounded-context | 78410f2 | feat(iam): add iam error and validation messages in english and spanish. | Mensajes de error y validación de IAM en inglés y español. | 2026-11-10 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-platform | feature/add-iam-bounded-context | 40dd81e | feat(iam): require a signed-in user on equipment and traceability endpoints. | Exigencia de usuario autenticado en los endpoints de Equipment y Traceability. | 2026-11-10 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-platform | feature/add-iam-bounded-context | e2c2653 | chore: register iam services, token settings, authorization middleware and role seeding. | Registro de servicios de IAM, configuración de tokens, middleware de autorización y siembra de roles. | 2026-11-10 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-platform | develop | 41bc5a7 | Merge branch 'feature/add-iam-bounded-context' into develop | Fusión del bounded context IAM (TS01, TS02) en develop. | 2026-11-10 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-platform | feature/register-subsystems-and-controllers | 024d9eb | feat(equipment): add subsystem, part, device and protocol value objects. | Value objects de subsistemas, partes, dispositivos y protocolos. | 2026-11-10 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-platform | feature/register-subsystems-and-controllers | 355318b | feat(equipment): add hvof subsystem, hvof part and controller entities. | Entidades HvofSubsystem, HvofPart y Controller. | 2026-11-10 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-platform | feature/register-subsystems-and-controllers | fd92306 | feat(equipment): compose the hvof system aggregate with subsystems and controllers. | Aggregate HvofSystem compuesto por subsistemas y controladores. | 2026-11-10 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-platform | feature/register-subsystems-and-controllers | 386e60e | feat(equipment): add subsystem, part and controller commands and queries. | Comandos y queries de subsistemas, partes y controladores. | 2026-11-10 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-platform | feature/register-subsystems-and-controllers | 64ca65b | feat(equipment): add subsystem and controller errors and repository composition loading. | Errores de subsistemas y controladores y carga de la composición en el repositorio. | 2026-11-10 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-platform | feature/register-subsystems-and-controllers | 9e23d95 | feat(equipment): handle subsystem, part and controller commands and queries. | Manejo de los comandos y queries de subsistemas, partes y controladores. | 2026-11-10 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-platform | feature/register-subsystems-and-controllers | 642c23e | feat(equipment): configure subsystems, parts and controllers persistence. | Persistencia de subsistemas, partes y controladores. | 2026-11-10 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-platform | feature/register-subsystems-and-controllers | 102b315 | feat(equipment): add subsystem, part and controller resources and assemblers. | Recursos y assemblers de subsistemas, partes y controladores. | 2026-11-10 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-platform | feature/register-subsystems-and-controllers | 66967e5 | feat(equipment): add subsystem and controller sub-resource controllers. | Controladores REST de los sub-recursos de subsistemas y controladores. | 2026-11-10 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-platform | feature/register-subsystems-and-controllers | 58baaa0 | feat(equipment): add subsystem and controller messages in english and spanish. | Mensajes de subsistemas y controladores en inglés y español. | 2026-11-10 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-platform | develop | 60669be | Merge branch 'feature/register-subsystems-and-controllers' into develop | Fusión del registro de subsistemas, partes y controladores en develop. | 2026-11-10 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-platform | feature/manage-recipes | d22a64a | feat(equipment): add recipe status, unit category, reading band and threshold bands value objects. | Value objects de estado de receta, categoría de unidad, banda de lectura y bandas de umbral. | 2026-11-10 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-platform | feature/manage-recipes | 386749e | feat(equipment): add recipe parameter entity. | Entidad RecipeParameter. | 2026-11-10 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-platform | feature/manage-recipes | 222eef2 | feat(equipment): add recipe aggregate with publication lifecycle and published event. | Aggregate Recipe con ciclo de publicación y evento de publicación. | 2026-11-10 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-platform | feature/manage-recipes | 8e216eb | feat(equipment): add create, publish and retire recipe commands and recipe queries. | Comandos de creación, publicación y retiro de recetas y queries de recetas. | 2026-11-10 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-platform | feature/manage-recipes | 4d20bc9 | feat(equipment): add recipe errors and repository contract. | Errores de recetas y contrato de repositorio. | 2026-11-10 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-platform | feature/manage-recipes | 60143cc | feat(equipment): add recipe command and query services. | Command y query services de recetas. | 2026-11-10 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-platform | feature/manage-recipes | 0808c24 | feat(equipment): add equipment context facade with recipe band snapshots. | Facade del contexto Equipment con snapshots de las bandas de la receta. | 2026-11-10 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-platform | feature/manage-recipes | 6a68fae | feat(equipment): configure recipe persistence and repository. | Persistencia y repositorio de recetas. | 2026-11-10 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-platform | feature/manage-recipes | ad7596c | feat(equipment): add recipe resources and assemblers. | Recursos y assemblers de recetas. | 2026-11-10 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-platform | feature/manage-recipes | a6544d9 | feat(equipment): add recipes controller. | Controlador REST de recetas. | 2026-11-10 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-platform | feature/manage-recipes | d4532fc | feat(equipment): add recipe messages in english and spanish. | Mensajes de recetas en inglés y español. | 2026-11-10 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-platform | feature/manage-recipes | 690e9e8 | chore: register recipe services and equipment context facade. | Registro de los servicios de recetas y de la facade de Equipment. | 2026-11-10 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-platform | develop | 409b66a | Merge branch 'feature/manage-recipes' into develop | Fusión de la gestión de recetas (TS04) en develop. | 2026-11-10 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-platform | feature/monitor-spray-sessions | e1fadfc | feat(traceability): add traceability context facade. | Facade del contexto Traceability. | 2026-11-10 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-platform | feature/monitor-spray-sessions | d4cc137 | feat(process-monitoring): add session status, abort reason, band and recipe band snapshot value objects. | Value objects de estado de sesión, motivo de aborto, banda y snapshot de bandas de la receta. | 2026-11-10 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-platform | feature/monitor-spray-sessions | 1f66f3a | feat(process-monitoring): add process reading entity. | Entidad ProcessReading. | 2026-11-10 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-platform | feature/monitor-spray-sessions | b3d4139 | feat(process-monitoring): add spray session aggregate with frozen recipe bands and deviation events. | Aggregate SpraySession con bandas congeladas de la receta y eventos de desviación. | 2026-11-10 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-platform | feature/monitor-spray-sessions | 329cfac | feat(process-monitoring): add start, complete, abort and ingest readings commands and queries. | Comandos de inicio, finalización, aborto e ingesta de lecturas, y queries de sesiones. | 2026-11-10 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-platform | feature/monitor-spray-sessions | b5d4ae4 | feat(process-monitoring): add process monitoring errors and repository contracts. | Errores de Process Monitoring y contratos de repositorio. | 2026-11-10 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-platform | feature/monitor-spray-sessions | 370c87d | feat(process-monitoring): add external equipment and traceability services. | Servicios externos hacia Equipment y Traceability (anti-corruption layer). | 2026-11-10 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-platform | feature/monitor-spray-sessions | b23a1c7 | feat(process-monitoring): add spray session command and query services. | Command y query services de sesiones de rociado. | 2026-11-10 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-platform | feature/monitor-spray-sessions | c565769 | feat(process-monitoring): add spray session started event handler. | Event handler del inicio de sesión que vincula la sesión a la orden de recuperación. | 2026-11-10 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-platform | feature/monitor-spray-sessions | 27c1f2d | feat(process-monitoring): configure spray session and process reading persistence. | Persistencia de sesiones de rociado y lecturas de proceso. | 2026-11-10 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-platform | feature/monitor-spray-sessions | 9c8e284 | feat(process-monitoring): add session and reading resources and assemblers. | Recursos y assemblers de sesiones y lecturas. | 2026-11-10 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-platform | feature/monitor-spray-sessions | 5ed1b85 | feat(process-monitoring): add spray sessions controller with readings and deviations. | Controlador de sesiones de rociado con lecturas y desviaciones. | 2026-11-10 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-platform | feature/monitor-spray-sessions | 0b7482c | feat(process-monitoring): add messages in english and spanish. | Mensajes de Process Monitoring en inglés y español. | 2026-11-10 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-platform | feature/monitor-spray-sessions | 0b78758 | chore: register process monitoring services and traceability context facade. | Registro de servicios de Process Monitoring y de la facade de Traceability. | 2026-11-10 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-platform | develop | 01e736e | Merge branch 'feature/monitor-spray-sessions' into develop | Fusión del monitoreo de sesiones de rociado (TS09, TS10, TS11) en develop. | 2026-11-10 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-platform | feature/diagnose-faults | 37fcebc | fix(process-monitoring): make the abort reason conversion explicit for nullable enums. | Conversión explícita del motivo de aborto para enumeraciones nulables. | 2026-11-10 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-platform | feature/diagnose-faults | 284cb85 | feat(fault-diagnosis): add fault band and fault case status value objects. | Value objects de banda de falla y estado del caso de falla. | 2026-11-10 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-platform | feature/diagnose-faults | b65147b | feat(fault-diagnosis): add fault rule and fault case aggregates with opened event. | Aggregates FaultRule y FaultCase con evento de apertura. | 2026-11-10 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-platform | feature/diagnose-faults | 5de85db | feat(fault-diagnosis): add rule, seed, open, acknowledge and resolve commands and queries. | Comandos y queries de reglas, siembra, apertura, atención y resolución de casos. | 2026-11-10 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-platform | feature/diagnose-faults | 7fab059 | feat(fault-diagnosis): add fault diagnosis errors and repository contracts. | Errores de Fault Diagnosis y contratos de repositorio. | 2026-11-10 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-platform | feature/diagnose-faults | 77b7aa3 | feat(fault-diagnosis): add fault rule command service with the default rules. | Command service de reglas con las reglas por defecto. | 2026-11-10 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-platform | feature/diagnose-faults | e7c4cb0 | feat(fault-diagnosis): add fault case command service with rule matching and cooldown. | Command service de casos de falla con coincidencia de reglas y periodo de enfriamiento. | 2026-11-10 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-platform | feature/diagnose-faults | bf7a56b | feat(fault-diagnosis): add fault rule and fault case query services. | Query services de reglas y casos de falla. | 2026-11-10 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-platform | feature/diagnose-faults | 81752c2 | feat(fault-diagnosis): open fault cases from out of band reading events. | Apertura de casos de falla a partir de los eventos de lecturas fuera de banda. | 2026-11-10 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-platform | feature/diagnose-faults | c865c90 | feat(fault-diagnosis): configure fault rule and fault case persistence. | Persistencia de reglas y casos de falla. | 2026-11-10 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-platform | feature/diagnose-faults | 8d13936 | feat(fault-diagnosis): add resources and assemblers. | Recursos y assemblers de Fault Diagnosis. | 2026-11-10 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-platform | feature/diagnose-faults | 9229652 | feat(fault-diagnosis): add fault rules and fault cases controllers. | Controladores de reglas y casos de falla. | 2026-11-10 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-platform | feature/diagnose-faults | be043e6 | feat(fault-diagnosis): add messages in english and spanish. | Mensajes de Fault Diagnosis en inglés y español. | 2026-11-10 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-platform | feature/diagnose-faults | ff288c5 | chore: register fault diagnosis services. | Registro de los servicios de Fault Diagnosis. | 2026-11-10 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-platform | develop | f446c21 | Merge branch 'feature/diagnose-faults' into develop | Fusión del diagnóstico de fallas (US25, US26, US28, TS12, TS13) en develop. | 2026-11-10 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-platform | develop | ce2ae4f | feat(iam): add iam migration. | Migración `AddIam`. | 2026-11-11 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-platform | feature/update-equipment | b9748d5 | fix(shared): remove the duplicated machine model validation message. | Eliminación del mensaje de validación duplicado del modelo de máquina. | 2026-11-10 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-platform | feature/update-equipment | 85ea447 | feat(equipment): add update and remove part commands and the editable behavior of systems, subsystems, controllers and recipes. | Comandos de actualización y de eliminación de partes y comportamiento editable de sistemas, subsistemas, controladores y recetas. | 2026-11-10 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-platform | feature/update-equipment | 06cd3da | feat(equipment): handle update and remove part commands. | Manejo de los comandos de actualización y de eliminación de partes. | 2026-11-10 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-platform | feature/update-equipment | e4803c8 | feat(equipment): add update endpoints for systems, subsystems, controllers, parts and recipes. | Endpoints de actualización de sistemas, subsistemas, controladores, partes y recetas. | 2026-11-10 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-platform | feature/update-equipment | 046d568 | feat(equipment): add update messages in english and spanish. | Mensajes de actualización en inglés y español. | 2026-11-10 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-platform | develop | df836f3 | Merge branch 'feature/update-equipment' into develop | Fusión de la edición de equipos en develop. | 2026-11-10 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-platform | develop | 9eba0fb | feat(equipment): add equipment, process monitoring and fault diagnosis migration. | Migración `AddEquipmentProcessMonitoringAndFaultDiagnosis`. | 2026-11-11 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-platform | feature/document-platform | 368cdc1 | docs: add the platform readme with bounded contexts, endpoints and setup. | README de la plataforma con los bounded contexts, endpoints y configuración. | 2026-11-10 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-platform | develop | e9a15ff | Merge branch 'feature/document-platform' into develop | Fusión de la documentación de la plataforma en develop. | 2026-11-10 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-platform | fix/recuperation-date-columns | 98c3862 | fix(traceability): convert the recuperation DateOnly columns explicitly for the MySQL provider. | Conversión explícita de las columnas DateOnly de las órdenes de recuperación para el proveedor de MySQL. | 2026-11-10 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-platform | develop | 2f8c5c3 | Merge branch 'fix/recuperation-date-columns' into develop | Fusión de la corrección de columnas de fecha en develop. | 2026-11-10 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-platform | fix/recuperation-date-columns | 7a94c42 | chore(traceability): add the FixRecuperationDateColumns migration. | Migración `FixRecuperationDateColumns`. | 2026-11-11 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-platform | develop | aacd154 | Merge branch 'fix/recuperation-date-columns' into develop | Fusión de la migración de corrección de fechas en develop. | 2026-11-11 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-platform | feature/add-reporting-bounded-context | deac2a5 | feat(reporting): add the report template and generated report aggregates with their commands, queries and errors. | Aggregates ReportTemplate y GeneratedReport con sus comandos, queries y errores. | 2026-11-10 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-platform | feature/add-reporting-bounded-context | 45efe3e | feat(reporting): add the command and query services with the standard templates seeded per organization. | Command y query services con las plantillas estándar sembradas por organización. | 2026-11-10 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-platform | feature/add-reporting-bounded-context | a30cc4a | feat(reporting): persist templates, sections, widgets and generated reports and register the context. | Persistencia de plantillas, secciones, widgets y reportes generados, y registro del contexto. | 2026-11-10 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-platform | feature/add-reporting-bounded-context | e0e5431 | feat(reporting): expose the report templates and generated reports endpoints with localized problem details. | Endpoints de plantillas de reporte y reportes generados con Problem Details localizados. | 2026-11-10 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-platform | develop | 0249f94 | Merge branch 'feature/add-reporting-bounded-context' into develop | Fusión del bounded context Reporting en develop. | 2026-11-10 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-platform | feature/add-reporting-bounded-context | b2d6931 | chore(reporting): add the AddReporting migration. | Migración `AddReporting`. | 2026-11-11 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-platform | develop | b61fd0d | Merge branch 'feature/add-reporting-bounded-context' into develop | Fusión de la migración de Reporting en develop. | 2026-11-11 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-platform | release/1.0.0 | 417daa3 | chore(release): bump version to 1.0.0 and add the changelog. | Versión 1.0.0 de la REST API y su CHANGELOG. | 2026-11-11 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-platform | develop | b6a4677 | Merge branch 'release/1.0.0' into develop | Fusión de la release 1.0.0 en develop. | 2026-11-11 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-platform | feature/normalize-line-endings | 91a3ab9 | chore: normalize line endings to LF with .gitattributes. | Normalización de finales de línea a LF con `.gitattributes`. | 2026-11-11 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-platform | develop | 6556d7d | Merge branch 'feature/normalize-line-endings' into develop | Fusión de la normalización de finales de línea en develop. | 2026-11-11 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-platform | develop | ed81c49 | Merge remote-tracking branch 'origin/develop' into develop | Sincronización de develop con el remoto. | 2026-11-11 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-platform | release/1.0.1 | 03ee0be | chore(release): bump version to 1.0.1 and update the changelog. | Versión 1.0.1 y actualización del CHANGELOG. | 2026-11-11 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-platform | develop | 274e2fd | Merge branch 'release/1.0.1' into develop | Fusión de la release 1.0.1 en develop. | 2026-11-11 |
+
+
+**Web Application (`edgewatch-webapp`)**
+
+| Repository | Branch | CommitId | Commit Message | Commit MessageBody (resumen) | Committed on |
+|---|---|---|---|---|:---:|
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | develop | 12b1ba5 | Merge branch 'release/1.0.0' into develop | Fusión de la release 1.0.0 en develop. | 2026-11-11 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/connect-to-platform | 9fdafed | chore: point the environments to the EdgeWatch Platform and the fake API only for billing. | Variables de entorno apuntando a la EdgeWatch Platform, con la Fake API solo para Billing. | 2026-11-10 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/connect-to-platform | 65ae5d9 | feat(shared): add Accept-Language, nested sub-resources and problem details messages to the HTTP layer. | Header Accept-Language, sub-recursos anidados y mensajes de Problem Details en la capa HTTP. | 2026-11-10 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/connect-to-platform | 45d9976 | feat(iam): sign in with tokens, sign up with users and assign roles through the platform. | Inicio de sesión con tokens, registro con usuarios y asignación de roles a través de la plataforma. | 2026-11-10 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/connect-to-platform | 84183c0 | feat(equipment): load subsystems, parts, controllers and recipes from the platform sub-resources. | Carga de subsistemas, partes, controladores y recetas desde los sub-recursos de la plataforma. | 2026-11-10 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/connect-to-platform | 8f18e03 | feat(process-monitoring): start, end and feed spray sessions through the platform. | Inicio, finalización y envío de lecturas de sesiones de rociado a través de la plataforma. | 2026-11-10 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/connect-to-platform | c449be0 | feat(billing): keep billing on the fake API. | Billing se mantiene sobre la Fake API. | 2026-11-10 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/connect-to-platform | bd69c4b | chore: point the environments to the EdgeWatch Platform and describe the connection in the readme. | Variables de entorno de la plataforma y descripción de la conexión en el README. | 2026-11-10 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | develop | 12a2d6e | Merge branch 'feature/connect-to-platform' into develop | Fusión de la conexión con la REST API en develop. | 2026-11-10 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/add-parameter-trend-charts | 9d55b74 | chore: add chart.js and register the PrimeVue chart component. | Chart.js y registro del componente Chart de PrimeVue. | 2026-11-10 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/add-parameter-trend-charts | 930decb | feat(shared): add the chart theme with band colors and themed defaults. | Tema de gráficos con los colores de las bandas. | 2026-11-10 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/add-parameter-trend-charts | 9f67210 | feat(process-monitoring): add reading series helpers for grouping, statistics and compliance. | Funciones de series de lecturas para agrupación, estadísticas y cumplimiento. | 2026-11-10 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/add-parameter-trend-charts | 1230756 | feat(process-monitoring): add parameter trend and band distribution charts. | Gráficos de tendencia por parámetro y de distribución por banda. | 2026-11-10 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/add-parameter-trend-charts | 362436a | feat(process-monitoring): show live cards and trends tabs in the session detail. | Pestañas de tarjetas en vivo y tendencias en el detalle de la sesión. | 2026-11-10 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/add-parameter-trend-charts | 400dfa1 | feat(i18n): add chart translations in english and spanish. | Traducciones de los gráficos en inglés y español. | 2026-11-10 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | develop | b50e62f | Merge branch 'feature/add-parameter-trend-charts' into develop | Fusión de los gráficos de tendencia en develop. | 2026-11-10 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/analyze-spray-session | 2561174 | feat(shared): add csv exporter with BOM and excel friendly separator. | Exportador CSV con BOM y separador compatible con Excel. | 2026-11-10 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/analyze-spray-session | 6a61a79 | feat(process-monitoring): add normalized deviation chart against the recipe thresholds. | Gráfico de desviación normalizada frente a los umbrales de la receta. | 2026-11-10 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/analyze-spray-session | 5047bba | feat(process-monitoring): add the spray session analysis view with statistics, deviations and csv export. | Vista de análisis de la sesión con estadísticas, desviaciones y exportación CSV. | 2026-11-10 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/analyze-spray-session | 88c3c39 | feat(process-monitoring): register the analysis route and link it from the session list and detail. | Ruta del análisis y enlaces desde el listado y el detalle de sesiones. | 2026-11-10 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/analyze-spray-session | 4a0453b | feat(i18n): add session analysis translations in english and spanish. | Traducciones del análisis de sesión en inglés y español. | 2026-11-10 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | develop | 090ba39 | Merge branch 'feature/analyze-spray-session' into develop | Fusión del análisis de sesiones en develop. | 2026-11-10 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/browse-fault-cases | 5576acb | feat(fault-diagnosis): add fault case and fault rule entities. | Entidades FaultCase y FaultRule. | 2026-11-10 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/browse-fault-cases | f4ddb2b | feat(fault-diagnosis): add assemblers and the fault diagnosis api. | Assemblers y FaultDiagnosisApi. | 2026-11-10 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/browse-fault-cases | 5bac236 | feat(fault-diagnosis): add the fault diagnosis store. | Store de Fault Diagnosis. | 2026-11-10 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/browse-fault-cases | 1019599 | feat(fault-diagnosis): add the fault case list with acknowledge and resolve actions. | Listado de casos de falla con acciones de atender y resolver. | 2026-11-10 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/browse-fault-cases | 9ac55ba | feat(fault-diagnosis): add the fault rule list with create and edit dialog. | Listado de reglas de falla con diálogo de creación y edición. | 2026-11-10 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/browse-fault-cases | 5d60724 | feat(fault-diagnosis): register the routes, the navigation option and the link from the session detail. | Rutas, opción de navegación y enlace desde el detalle de la sesión. | 2026-11-10 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/browse-fault-cases | 0e6f140 | feat(i18n): add fault diagnosis translations in english and spanish. | Traducciones de Fault Diagnosis en inglés y español. | 2026-11-10 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | develop | eabd823 | Merge branch 'feature/browse-fault-cases' into develop | Fusión de la consulta de casos de falla (US27, US28, US30) en develop. | 2026-11-10 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/add-operations-dashboard | 43b0c8c | feat(shared): add kpi card component. | Componente KpiCard. | 2026-11-10 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/add-operations-dashboard | 1b2ff61 | feat(shared): add sessions per day and fault cases by parameter charts. | Gráficos de sesiones por día y de casos de falla por parámetro. | 2026-11-10 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/add-operations-dashboard | e8a5b81 | feat(shared): turn the home into the operations dashboard for suppliers. | Inicio convertido en el dashboard de operaciones para proveedores. | 2026-11-10 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/add-operations-dashboard | d18d566 | feat(i18n): add dashboard translations in english and spanish. | Traducciones del dashboard en inglés y español. | 2026-11-10 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | develop | e011d16 | Merge branch 'feature/add-operations-dashboard' into develop | Fusión del dashboard de operaciones en develop. | 2026-11-10 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/document-webapp | 6a5ce56 | docs: describe the fault diagnosis, charts, analysis and dashboard features. | Documentación de diagnóstico de fallas, gráficos, análisis y dashboard en el README. | 2026-11-10 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | develop | 228b4f1 | Merge branch 'feature/document-webapp' into develop | Fusión de la documentación de la Web Application en develop. | 2026-11-10 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/apply-edgewatch-brand-theme | e6290fd | feat(shared): define the EdgeWatch brand preset and global styles. | Preset de marca EdgeWatch y estilos globales. | 2026-11-10 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/apply-edgewatch-brand-theme | 0a107ff | feat(shared): replace the toolbar with a navy sidebar layout with grouped navigation. | Barra lateral azul marino con navegación agrupada en reemplazo del toolbar. | 2026-11-10 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/apply-edgewatch-brand-theme | b3b3d26 | style(shared): align KPI cards and chart series with the brand colors. | KPI cards y series de gráficos alineadas con los colores de la marca. | 2026-11-10 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | develop | fbef34c | Merge branch 'feature/apply-edgewatch-brand-theme' into develop | Fusión del tema de marca EdgeWatch en develop. | 2026-11-10 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/add-quick-start | a526071 | refactor(traceability): return promises from the fetch functions of the store. | Las funciones de carga del store de Traceability devuelven promesas. | 2026-11-10 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/add-quick-start | 8b55af9 | feat(shared): add the demo plant and the quick start service that provisions it across contexts. | Planta demo y servicio de Quick Start que la aprovisiona en todos los bounded contexts. | 2026-11-10 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/add-quick-start | c4a2baa | feat(shared): add the quick start view with the session checklist and the dashboard empty state. | Vista Quick Start con checklist de la sesión y estado vacío del dashboard. | 2026-11-10 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | develop | 37564a0 | Merge branch 'feature/add-quick-start' into develop | Fusión del Quick Start en develop. | 2026-11-10 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | fix/sidebar-navigation-and-quick-start-errors | 9e76a74 | fix(shared): let the sidebar links navigate (the prevented click blocked the router). | Los enlaces de la barra lateral vuelven a navegar. | 2026-11-10 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | fix/sidebar-navigation-and-quick-start-errors | e9488b2 | fix(shared): show the platform error when a quick start step or the session start fails. | El Quick Start muestra el error de la plataforma cuando falla un paso o el inicio de la sesión. | 2026-11-10 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | develop | f764516 | Merge branch 'fix/sidebar-navigation-and-quick-start-errors' into develop | Fusión de las correcciones de navegación y del Quick Start en develop. | 2026-11-10 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | fix/quick-start-recuperation-reuse | e385c8d | fix(traceability): resolve to null instead of the error count when a request fails. | El store de Traceability devuelve null cuando una petición falla. | 2026-11-10 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | fix/quick-start-recuperation-reuse | 49077a1 | fix(shared): reuse any open order of the demo component and take a free work order number when needed. | Reutilización de la orden abierta del componente demo y número de orden libre. | 2026-11-10 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | develop | 5861ece | Merge branch 'fix/quick-start-recuperation-reuse' into develop | Fusión de la reutilización de órdenes del Quick Start en develop. | 2026-11-10 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | fix/quick-start-work-order-conflicts | 6505f8b | fix(shared): retry the demo work order number with a suffix when it is taken platform-wide. | Reintento del número de orden demo con sufijo cuando ya existe en la plataforma. | 2026-11-10 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | develop | f83bb54 | Merge branch 'fix/quick-start-work-order-conflicts' into develop | Fusión de la corrección de conflictos de número de orden en develop. | 2026-11-10 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/generate-pdf-reports | 83d0b30 | feat(reporting): add the report template and generated report entities, API gateway and store. | Entidades de plantilla y reporte generado, API y store de Reporting. | 2026-11-10 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/generate-pdf-reports | 8cb197f | feat(reporting): gather the session data across contexts and render templates to PDF with jsPDF. | Recolección de los datos de la sesión entre contextos y generación del PDF con jsPDF. | 2026-11-10 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/generate-pdf-reports | 4151ea2 | feat(reporting): add the template builder with live preview, the templates and generated reports views. | Constructor de plantillas con vista previa en vivo y vistas de plantillas y reportes generados. | 2026-11-10 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/generate-pdf-reports | a8da141 | feat(process-monitoring): generate PDF reports from the session detail and analysis views. | Generación de reportes PDF desde el detalle y el análisis de la sesión. | 2026-11-10 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | develop | 4c66cb1 | Merge branch 'feature/generate-pdf-reports' into develop | Fusión de la generación de reportes PDF (US35, US36) en develop. | 2026-11-10 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | fix/upgrade-vulnerable-dependencies | 9f370fd | chore: upgrade jsPDF to 4.x and patch the audited dependencies. | jsPDF 4.x y parches de las dependencias auditadas. | 2026-11-11 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | develop | b40f821 | Merge branch 'fix/upgrade-vulnerable-dependencies' into develop | Fusión de la actualización de dependencias vulnerables en develop. | 2026-11-11 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | release/2.0.0 | 8a7914f | chore(release): bump version to 2.0.0 and update the changelog. | Versión 2.0.0 y actualización del CHANGELOG. | 2026-11-11 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | develop | 62c4e23 | Merge branch 'release/2.0.0' into develop | Fusión de la release 2.0.0 en develop. | 2026-11-11 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/add-primeui-license-key | 14a5875 | chore: normalize line endings to LF with .gitattributes. | Normalización de finales de línea a LF con `.gitattributes`. | 2026-11-11 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/add-primeui-license-key | 7a89de3 | chore: configure the PrimeUI community license key for development. | Licencia comunitaria de PrimeUI para desarrollo. | 2026-11-11 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | develop | e1ac4ca | Merge branch 'feature/add-primeui-license-key' into develop | Fusión de la licencia de PrimeUI en develop. | 2026-11-11 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | develop | 2ffab63 | Merge remote-tracking branch 'origin/develop' into develop | Sincronización de develop con el remoto. | 2026-11-11 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | release/2.0.1 | 9209f91 | chore(release): bump version to 2.0.1 and update the changelog. | Versión 2.0.1 y actualización del CHANGELOG. | 2026-11-11 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | develop | 6e9ad36 | Merge branch 'release/2.0.1' into develop | Fusión de la release 2.0.1 en develop. | 2026-11-11 |
+
+
+**Landing Page (`edgewatch-website`)**
+
+| Repository | Branch | CommitId | Commit Message | Commit MessageBody (resumen) | Committed on |
+|---|---|---|---|---|:---:|
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-website | feature/intranet-sign-in | c6ad7c0 | feat: add sign-in link to EdgeWatch intranet | Enlace de inicio de sesión hacia la Web Application en el Landing Page. | 2026-10-06 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-website | develop | d45ae15 | Merge branch 'feature/intranet-sign-in' into develop | Fusión del enlace de inicio de sesión en develop. | 2026-10-06 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-website | main | a4e0128 | Release v1.1.0 | Publicación de la versión v1.1.0 del Landing Page. | 2026-10-06 |
+
+
+#### 5.2.3.5. Execution Evidence for Sprint Review.
+
+A continuación, se documenta la evidencia de ejecución del Sprint 3, validando cada User Story y Technical Story con la REST API ejecutada localmente contra MySQL y la Web Application conectada a ella:
+
+| ID | User Story | Evidencia en REST API y Web Application |
+|:---:|---|---|
+| **TS01** | Registro de organización y administrador | `POST /api/v1/users` registra la organización y su usuario administrador (ROLE_ORG_ADMIN) y responde 201; un RUC o correo ya registrado responde 409. El formulario **Sign Up** de la Web Application usa este endpoint. |
+| **TS02** | Autenticación de usuario | `POST /api/v1/tokens` valida las credenciales y emite un token JWT; las credenciales inválidas responden 401. La Web Application guarda el token y lo envía en el header `Authorization: Bearer` de cada petición; sin él, los endpoints protegidos responden 401. |
+| **TS03** | Registro de celda HVOF | `POST /api/v1/hvof-systems` registra la celda y responde 409 ante un código duplicado; los sub-recursos `/subsystems`, `/parts` y `/controllers` registran su composición. En la Web Application, el detalle del sistema HVOF carga subsistemas, partes y controladores desde la plataforma. |
+| **TS04** | Configuración de rangos nominales | `POST /api/v1/recipes` crea una receta en estado DRAFT con sus bandas por parámetro, y `PATCH /api/v1/recipes/{id}/status` la publica (ACTIVE, retirando la anterior) o la retira; un orden de umbrales inválido responde 422. |
+| **TS07** | Registro de componente | `POST /api/v1/components` registra el componente en estado RECEIVED; un cliente inexistente responde 404 y un número de serie duplicado responde 409. |
+| **TS08** | Registro de orden de recuperación | `POST /api/v1/recuperations` abre la orden en estado RECEIVED y marca el componente como IN_RECUPERATION; un número de orden duplicado responde 409. |
+| **US18** | Cierre y entrega de orden | `PATCH /api/v1/recuperations/{id}` avanza la orden hasta DELIVERED, lo que devuelve el componente a IN_SERVICE; una transición inválida responde 409. |
+| **TS09** | Inicio de sesión de rociado | `POST /api/v1/spray-sessions` inicia la sesión sobre un sistema HVOF y una orden de recuperación con la receta activa, cuyas bandas quedan congeladas en la sesión; el operador es el usuario autenticado. La sesión queda vinculada a la orden. |
+| **TS10** | Ingesta de lecturas de telemetría | `POST /api/v1/spray-sessions/{id}/readings` almacena un lote de lecturas y clasifica cada una en nominal, fuera de nominal, advertencia o parada frente a las bandas congeladas. La Web Application envía las lecturas a la plataforma durante la sesión. |
+| **TS11** | Consulta de lecturas de una sesión | `GET /api/v1/spray-sessions/{id}/readings` devuelve las lecturas en orden temporal con filtro por banda y `GET /deviations` cuenta las de advertencia y parada. En la Web Application, la pestaña **Trends** del detalle muestra la tendencia por parámetro con las bandas de la receta, y la vista **Analysis** (`/process-monitoring/spray-sessions/:id/analysis`) presenta estadísticas, desviaciones normalizadas y exportación CSV. |
+| **US25** | Apertura automática de caso de falla | Cuando una lectura cae en advertencia o parada, Process Monitoring emite `OutOfBandReadingDetectedEvent` y Fault Diagnosis abre un caso de falla para la sesión, respetando el periodo de enfriamiento de la regla. |
+| **US26** | Diagnóstico asistido por reglas causa-efecto | El caso de falla se abre con la causa probable y la acción recomendada de la regla que coincide con el parámetro y la banda; las reglas por defecto se siembran por organización la primera vez. |
+| **US28** | Gestión del catálogo de reglas | En **Fault Rules** (`/fault-diagnosis/fault-rules`), los administradores crean y editan reglas con parámetro, banda, causa probable, acción recomendada y periodo de enfriamiento (`POST` y `PUT /api/v1/fault-rules`); otros roles reciben 403. |
+| **US27 / TS13** | Confirmación de causa raíz | En **Fault Cases** (`/fault-diagnosis/fault-cases`) se atiende o resuelve un caso con notas de resolución (`PATCH /api/v1/fault-cases/{id}`); la plataforma registra al usuario y la fecha de cada acción. |
+| **US30 / TS12** | Consulta de casos de falla | `GET /api/v1/fault-cases` lista los casos de la organización con filtros por sesión y estado (abierto, atendido, resuelto). La Web Application los muestra en el listado de casos y enlaza los de cada sesión desde su detalle. |
+| **US36** | Reporte de sesión | Desde el detalle o el análisis de la sesión se genera el reporte PDF con jsPDF a partir de una plantilla, y se registra en `POST /api/v1/generated-reports`. En **Report Templates** (`/reporting/templates`) se personalizan las plantillas con vista previa en vivo. |
+| **US35** | Emisión de certificado de calidad | Con la plantilla de certificado de calidad se genera el PDF de la orden de recuperación a partir de sus sesiones, y queda registrado en **Generated Reports** (`/reporting/generated`) con el sujeto RECUPERATION. |
+
+Además, la Web Application incorpora el **dashboard de operaciones** en la vista de inicio (KPIs, sesiones por día y casos de falla por parámetro), el **Quick Start** (`/quick-start`), que aprovisiona una planta demo e inicia la primera sesión, y la barra lateral con el tema de la marca. En el Landing Page, el botón **Sign in** de la navegación dirige al inicio de sesión de la Web Application.
+
+#### 5.2.3.6. Services Documentation Evidence for Sprint Review.
+
+Durante el Sprint 3 se documentaron los endpoints de la REST API con OpenAPI, generado en `/openapi/v1.json` y presentado con Scalar en `/scalar`, con el esquema de seguridad Bearer. Cada acción del controlador declara sus códigos de respuesta con `ProducesResponseType`, de modo que la documentación incluye los esquemas de petición, respuesta y error. Todas las rutas se exponen bajo `/api/v1` en kebab-case y, salvo `POST /users`, `POST /tokens` y `GET /roles`, requieren el header `Authorization: Bearer <token>`.
+
+| Bounded Context | Endpoint | Método | Acción | Respuestas | User Stories |
+|---|---|:---:|---|---|---|
+| IAM | `/api/v1/users` | POST | Registrar una organización y su administrador | 201, 400, 409 | TS01 |
+| IAM | `/api/v1/tokens` | POST | Iniciar sesión y obtener el token JWT | 200, 400, 401 | TS02 |
+| IAM | `/api/v1/users/me` | GET | Obtener el usuario autenticado | 200, 401 | TS02 |
+| IAM | `/api/v1/users` | GET | Listar los usuarios de la organización | 200, 403 | US03 |
+| IAM | `/api/v1/users/{id}` | GET | Obtener un usuario | 200, 404 | US03 |
+| IAM | `/api/v1/users/{id}/roles` | PUT | Reemplazar los roles de un usuario | 200, 400, 403, 404 | US03, US04 |
+| IAM | `/api/v1/roles` | GET | Listar el catálogo de roles | 200 | US03 |
+| IAM | `/api/v1/organizations/{id}` | GET | Obtener una organización | 200, 404 | TS01 |
+| Equipment | `/api/v1/hvof-systems` | POST | Registrar un sistema HVOF | 201, 400, 409 | TS03 |
+| Equipment | `/api/v1/hvof-systems` | GET | Listar los sistemas HVOF de una organización | 200, 400 | TS03 |
+| Equipment | `/api/v1/hvof-systems/{id}` | GET | Obtener un sistema HVOF | 200, 404 | TS03 |
+| Equipment | `/api/v1/hvof-systems/{id}` | PUT | Actualizar un sistema HVOF | 200, 400, 404 | TS03 |
+| Equipment | `/api/v1/hvof-systems/{id}/subsystems` | GET | Listar los subsistemas con sus parámetros y partes | 200, 404 | TS03 |
+| Equipment | `/api/v1/hvof-systems/{id}/subsystems` | POST | Agregar un subsistema | 201, 400, 404, 409 | TS03 |
+| Equipment | `/api/v1/hvof-systems/{id}/subsystems/{subsystemId}` | PUT | Actualizar un subsistema | 200, 400, 404, 409 | TS03 |
+| Equipment | `/api/v1/hvof-systems/{id}/subsystems/{subsystemId}/parts` | POST | Agregar una parte a un subsistema | 201, 400, 404, 409 | TS03 |
+| Equipment | `/api/v1/hvof-systems/{id}/subsystems/{subsystemId}/parts/{partId}` | DELETE | Retirar una parte de un subsistema | 204, 404 | TS03 |
+| Equipment | `/api/v1/hvof-systems/{id}/controllers` | GET | Listar los controladores del sistema | 200, 404 | TS03 |
+| Equipment | `/api/v1/hvof-systems/{id}/controllers` | POST | Agregar un controlador | 201, 400, 404, 409 | TS03 |
+| Equipment | `/api/v1/hvof-systems/{id}/controllers/{controllerId}` | PUT | Actualizar un controlador | 200, 400, 404 | TS03 |
+| Equipment | `/api/v1/recipes` | POST | Crear una receta en estado DRAFT | 201, 400, 404, 409, 422 | TS04 |
+| Equipment | `/api/v1/recipes` | GET | Listar las recetas de un sistema HVOF | 200, 400 | TS04 |
+| Equipment | `/api/v1/recipes/{id}` | GET | Obtener una receta con sus parámetros | 200, 404 | TS04 |
+| Equipment | `/api/v1/recipes/{id}` | PUT | Reemplazar los datos de una receta DRAFT | 200, 400, 404, 422 | TS04 |
+| Equipment | `/api/v1/recipes/{id}/status` | PATCH | Publicar (ACTIVE) o retirar (RETIRED) una receta | 200, 400, 404, 422 | TS04 |
+| Traceability | `/api/v1/customers` | POST | Registrar un cliente | 201, 400, 409 | US13 |
+| Traceability | `/api/v1/customers` | GET | Listar clientes | 200, 400 | US13 |
+| Traceability | `/api/v1/customers/{id}` | GET | Obtener un cliente | 200, 404 | US13 |
+| Traceability | `/api/v1/customers/{id}` | PUT | Actualizar un cliente (el RUC no es editable) | 200, 400, 404 | US13 |
+| Traceability | `/api/v1/components` | POST | Registrar un componente recibido | 201, 400, 404, 409 | TS07 |
+| Traceability | `/api/v1/components` | GET | Listar componentes, con filtro por cliente | 200, 400 | TS07 |
+| Traceability | `/api/v1/components/{id}` | GET | Obtener un componente | 200, 404 | TS07 |
+| Traceability | `/api/v1/components/{id}` | PUT | Actualizar los datos y el estado de un componente | 200, 400, 404 | TS07 |
+| Traceability | `/api/v1/recuperations` | POST | Abrir una orden de recuperación | 201, 400, 404, 409, 422 | TS08 |
+| Traceability | `/api/v1/recuperations` | GET | Listar órdenes, con filtros por organización y cliente | 200, 400 | TS08 |
+| Traceability | `/api/v1/recuperations/{id}` | GET | Obtener una orden con sus sesiones vinculadas | 200, 404 | TS08 |
+| Traceability | `/api/v1/recuperations/{id}` | PUT | Actualizar los datos editables de una orden | 200, 400, 404 | TS08 |
+| Traceability | `/api/v1/recuperations/{id}` | PATCH | Cambiar el estado de una orden | 200, 400, 404, 409 | US18 |
+| Process Monitoring | `/api/v1/spray-sessions` | POST | Iniciar una sesión de rociado | 201, 400, 404, 422 | TS09 |
+| Process Monitoring | `/api/v1/spray-sessions` | GET | Listar las sesiones, con filtro por orden de recuperación | 200 | TS09 |
+| Process Monitoring | `/api/v1/spray-sessions/{id}` | GET | Obtener una sesión | 200, 404 | TS09 |
+| Process Monitoring | `/api/v1/spray-sessions/{id}` | PATCH | Completar o abortar una sesión | 200, 400, 404, 422 | TS09 |
+| Process Monitoring | `/api/v1/spray-sessions/{id}/readings` | POST | Registrar un lote de lecturas clasificadas por banda | 201, 400, 404, 422 | TS10 |
+| Process Monitoring | `/api/v1/spray-sessions/{id}/readings` | GET | Listar las lecturas, con filtro por banda | 200, 404 | TS11 |
+| Process Monitoring | `/api/v1/spray-sessions/{id}/deviations` | GET | Contar las lecturas de advertencia y parada | 200, 404 | TS11 |
+| Fault Diagnosis | `/api/v1/fault-rules` | GET | Listar las reglas de la organización | 200 | US26, US28 |
+| Fault Diagnosis | `/api/v1/fault-rules` | POST | Crear una regla (administradores) | 201, 400, 403, 409 | US28 |
+| Fault Diagnosis | `/api/v1/fault-rules/{id}` | PUT | Actualizar causa, acción y enfriamiento (administradores) | 200, 400, 403, 404 | US28 |
+| Fault Diagnosis | `/api/v1/fault-cases` | GET | Listar casos, con filtros por sesión y estado | 200 | US30, TS12 |
+| Fault Diagnosis | `/api/v1/fault-cases/{id}` | GET | Obtener un caso de falla | 200, 404 | US30 |
+| Fault Diagnosis | `/api/v1/fault-cases/{id}` | PATCH | Atender o resolver un caso | 200, 400, 404, 422 | US27, TS13 |
+| Reporting | `/api/v1/report-templates` | GET | Listar las plantillas, con filtro por tipo | 200 | US35, US36 |
+| Reporting | `/api/v1/report-templates/{id}` | GET | Obtener una plantilla con sus secciones | 200, 404 | US35, US36 |
+| Reporting | `/api/v1/report-templates` | POST | Crear una plantilla | 201, 400, 403, 409 | US35, US36 |
+| Reporting | `/api/v1/report-templates/{id}` | PUT | Reemplazar el diseño de una plantilla | 200, 400, 403, 404, 422 | US35, US36 |
+| Reporting | `/api/v1/report-templates/{id}/status` | PATCH | Archivar o reactivar una plantilla | 200, 400, 403, 404, 422 | US35, US36 |
+| Reporting | `/api/v1/generated-reports` | GET | Listar reportes generados, con filtro por sujeto | 200 | US35, US36 |
+| Reporting | `/api/v1/generated-reports/{id}` | GET | Obtener un reporte generado | 200, 404 | US35, US36 |
+| Reporting | `/api/v1/generated-reports` | POST | Registrar un reporte generado para una sesión u orden | 201, 400, 404, 422 | US35, US36 |
+
+<!-- TODO: agregar capturas de la documentación en Scalar (assets/img/chapter-v/sprint-3-openapi.png) -->
+
+#### 5.2.3.7. Software Deployment Evidence for Sprint Review.
+
+Durante el Sprint 3 se publicó la versión v1.1.0 del Landing Page en GitHub Pages, con el enlace de inicio de sesión hacia la Web Application desplegada en Firebase Hosting. La REST API y la versión v2.0.x de la Web Application se ejecutaron en local contra MySQL; para su despliegue en Azure App Service, descrito en 5.1.4, se dejaron preparados el Dockerfile de la API, la configuración de producción con variables de entorno (`DB_HOST`, `DB_USER`, `DB_PASSWORD`, `DB_NAME` y `CORS_ALLOWED_ORIGIN`) y el archivo `.env.production` de la Web Application, que apunta a `https://edgewatch-platform.azurewebsites.net/api/v1`. Al cierre del Sprint esa URL todavía no responde, por lo que la versión pública de la Web Application sigue siendo la v1.0.0 sobre la Fake API.
+
+| Producto | Repositorio | Versión | Estado | URL |
+|---|---|:---:|---|---|
+| Landing Page | edgewatch-website | v1.1.0 | Desplegado en GitHub Pages (rama `gh-pages`) | <https://upc-pre-202620-1asi0730-16712-wrunners.github.io/edgewatch-website/> |
+| Web Application | edgewatch-webapp | v1.0.0 | Desplegado en Firebase Hosting con la Fake API en Vercel | <https://edgewatch-webapp-10050010.web.app/> |
+| Web Application | edgewatch-webapp | v2.0.1 | Ejecución local conectada a la REST API; despliegue pendiente | `http://localhost:5173` |
+| REST API | edgewatch-platform | v1.0.1 | Ejecución local con MySQL; despliegue en Azure App Service pendiente | `http://localhost:5262/scalar` |
+
+- **Ejecución local de la REST API**: `dotnet run` en `EdgeWatchPlatform.API` (las migraciones se aplican al iniciar)
+- **Imagen Docker de la REST API**: `docker build -t edgewatch-platform .`
+- **Ejecución local de la Web Application**: `npm run dev`, y `npm run api` para la Fake API de Billing
+- **URL de producción de la REST API**: <!-- TODO: completar cuando https://edgewatch-platform.azurewebsites.net responda -->
+
+#### 5.2.3.8. Team Collaboration Insights during Sprint.
+
+La siguiente tabla resume la actividad registrada en la rama develop de los tres repositorios durante el Sprint 3, según los commits listados en 5.2.3.4:
+
+| Integrante | Repositorio | Ramas trabajadas | Commits | Merges |
+|---|---|---|:---:|:---:|
+| Navarro Aldoradin, Carolina Celeste | edgewatch-platform | feature/register-subsystems-and-controllers, feature/diagnose-faults, feature/normalize-line-endings, release/1.0.0, release/1.0.1 | 28 | 6 |
+| Navarro Aldoradin, Carolina Celeste | edgewatch-webapp | feature/connect-to-platform, feature/apply-edgewatch-brand-theme, feature/generate-pdf-reports, feature/add-primeui-license-key, release/2.0.0, release/2.0.1 | 16 | 7 |
+| Alvarez Falen, Esteban Valentino | edgewatch-platform | feature/add-shared-kernel, feature/register-hvof-system, feature/retrieve-hvof-systems, chore/untrack-build-files, feature/upgrade-shared-kernel, feature/manage-recipes, fix/recuperation-date-columns | 38 | 8 |
+| Alvarez Falen, Esteban Valentino | edgewatch-webapp | feature/analyze-spray-session, feature/document-webapp, fix/sidebar-navigation-and-quick-start-errors, fix/upgrade-vulnerable-dependencies | 9 | 4 |
+| Catacora Tupa, Jhon Deyner | edgewatch-platform | refactor/shared-enum-helpers, feature/manage-customers, feature/manage-components, feature/manage-recuperations, feature/add-iam-bounded-context, feature/monitor-spray-sessions, feature/document-platform | 51 | 6 |
+| Catacora Tupa, Jhon Deyner | edgewatch-webapp | feature/browse-fault-cases, feature/add-quick-start, feature/generate-pdf-reports | 12 | 3 |
+| Catacora Tupa, Jhon Deyner | edgewatch-website | feature/intranet-sign-in, main | 2 | 1 |
+| Vasquez Laos, Sebastian Andrews | edgewatch-platform | feature/update-equipment, feature/add-reporting-bounded-context | 10 | 3 |
+| Vasquez Laos, Sebastian Andrews | edgewatch-webapp | feature/add-parameter-trend-charts, feature/add-operations-dashboard, fix/quick-start-recuperation-reuse, fix/quick-start-work-order-conflicts | 13 | 4 |
+
+<!-- TODO: agregar capturas de GitHub Insights de los repositorios (assets/img/chapter-v/sprint-3-collaboration-insights.png) -->
 
 ## 5.3. Validation Interviews.
+
+Esta sección presenta las entrevistas de validación realizadas con representantes de los segmentos Recuperation Supplier y Asset Owner sobre los productos implementados hasta el Sprint 3: el Landing Page y la Web Application. A diferencia de las entrevistas de Needfinding (2.2), estas entrevistas muestran la solución al entrevistado y le piden completar tareas concretas, con el fin de validar la usabilidad de los flujos implementados y contrastar los hypothesis statements del Lean UX Process (1.2.2) con su reacción ante el producto.
+
 ### 5.3.1. Diseño de Entrevistas.
+
+#### Objetivos
+
+- Verificar que el entrevistado comprende la propuesta de valor del Landing Page y encuentra la información de su segmento.
+- Medir si el entrevistado completa sin asistencia las tareas principales de la Web Application de su segmento.
+- Identificar problemas de usabilidad, términos poco claros y pasos innecesarios en los flujos implementados.
+- Recoger la percepción del entrevistado sobre la utilidad de la trazabilidad y el monitoreo de sesiones para su trabajo diario.
+
+#### Buenas prácticas aplicadas
+
+| Práctica | Aplicación en el diseño |
+|---|---|
+| Tareas basadas en escenarios | Cada tarea se plantea como una situación de trabajo real ("acaba de llegar un vástago hidráulico de un cliente…") y no como una instrucción de interfaz ("haga clic en…"). |
+| Protocolo think-aloud | Se pide al entrevistado que exprese en voz alta lo que piensa y busca mientras completa cada tarea. |
+| No intervención | El entrevistador no guía ni corrige al entrevistado durante la tarea; solo interviene si este se bloquea por más de dos minutos, y se registra la tarea como completada con ayuda. |
+| Mismas tareas por segmento | Todos los entrevistados de un segmento reciben las mismas tareas en el mismo orden, para comparar resultados. |
+| Consentimiento informado | Al inicio de cada sesión se informa sobre la grabación de la pantalla y del audio y su uso académico, y se solicita consentimiento explícito. |
+| Duración | Entre 20 y 30 minutos por entrevista, vía Google Meet con pantalla compartida. |
+
+#### Perfiles a entrevistar
+
+| Segmento | Perfiles | Productos evaluados |
+|---|---|---|
+| Recuperation Supplier | Operador HVOF, supervisor de operación, supervisor de mantenimiento de máquina, ingeniero de calidad | Landing Page y Web Application (Equipment, Traceability, Process Monitoring, IAM y Billing) |
+| Asset Owner | Ingeniero de confiabilidad, planner de mantenimiento, analista de contratos y compras | Landing Page y Web Application (registro, selección de plan y consulta de órdenes de recuperación) |
+
+#### Estructura de la entrevista
+
+**Bloque A — Introducción y perfil (3 minutos)**
+
+| ID | Pregunta |
+|---|---|
+| A1 | ¿Cuál es su nombre, edad y cargo actual? |
+| A2 | ¿Hace cuánto tiempo trabaja con procesos de recubrimiento HVOF o con componentes recuperados? |
+| A3 | ¿Qué herramientas utiliza actualmente para registrar o consultar esta información? |
+
+**Bloque B — Landing Page (5 minutos)**
+
+| ID | Tarea / Pregunta | Qué se busca validar | User Stories |
+|---|---|---|---|
+| B1 | Observe la página durante 30 segundos. ¿Qué cree que ofrece EdgeWatch y para quién es? | Comprensión de la propuesta de valor | US44 |
+| B2 | Busque la información que corresponde a una empresa como la suya. | Navegación hacia la sección de su segmento | US45, US46 |
+| B3 | Suponga que quiere probar la plataforma. ¿Cómo lo haría? | Hallazgo del call-to-action segmentado | US47 |
+| B4 | Cambie el idioma de la página. | Hallazgo del Language Switcher | US48 |
+
+**Bloque C — Web Application, segmento Recuperation Supplier (15 minutos)**
+
+| ID | Tarea | Qué se busca validar | User Stories |
+|---|---|---|---|
+| C1 | Registre su organización e inicie sesión con su usuario administrador. | Flujo de registro e inicio de sesión | US01, US02 |
+| C2 | Elija el plan que corresponde a su empresa y consulte la vigencia de su suscripción. | Selección de plan y suscripción | US05, US06 |
+| C3 | Registre la celda HVOF con la que trabaja, sus partes principales y una receta con sus rangos nominales. | Configuración de equipos y rangos | US07, US08, US09 |
+| C4 | Acaba de llegar un componente de un cliente: registre al cliente, el componente y abra la orden de recuperación. | Flujo de trazabilidad | US13, US14, US15 |
+| C5 | Inicie una sesión de rociado para esa orden e identifique qué parámetro está fuera de rango. | Monitoreo en vivo y detección de desviaciones | US19, US21, US22 |
+| C6 | Finalice la sesión, busque la sesión en el historial y marque la orden como entregada. | Cierre de sesión, historial y entrega | US23, US24, US18 |
+| C7 | Asigne el rol de operador HVOF a un nuevo usuario de su equipo. | Gestión de roles | US03, US04 |
+| C8 | La sesión registró una lectura fuera de rango: revise el caso de falla abierto, resuélvalo indicando la causa y genere el reporte PDF de la sesión. | Diagnóstico de fallas y reportes | US25, US26, US27, US30, US36 |
+
+**Bloque C' — Web Application, segmento Asset Owner (10 minutos)**
+
+| ID | Tarea | Qué se busca validar | User Stories |
+|---|---|---|---|
+| C'1 | Registre su organización como Asset Owner e inicie sesión. | Flujo de registro e inicio de sesión | US01, US02 |
+| C'2 | Elija el plan que corresponde a su empresa y consulte la vigencia de su suscripción. | Selección de plan y suscripción | US05, US06 |
+| C'3 | Ubique un componente enviado a recuperación y consulte el estado de su orden. | Visibilidad de componentes recuperados | US15, US18 |
+
+**Bloque D — Cierre (5 minutos)**
+
+| ID | Pregunta |
+|---|---|
+| D1 | ¿Qué fue lo más fácil y lo más difícil de lo que acaba de hacer? |
+| D2 | ¿Hubo algún término o pantalla que no le quedó claro? |
+| D3 | ¿En qué parte de su trabajo diario usaría esta plataforma y qué reemplazaría de lo que usa hoy? |
+| D4 | Del 1 al 5, ¿qué tan probable es que recomiende EdgeWatch a un colega de su área? ¿Por qué? |
+
+#### Métricas registradas por tarea
+
+| Métrica | Descripción |
+|---|---|
+| Tasa de éxito | Completada sin ayuda / completada con ayuda / no completada. |
+| Tiempo en tarea | Tiempo desde que se lee la tarea hasta que el entrevistado indica que la terminó. |
+| Errores | Número de acciones que no conducen al objetivo (clics en opciones equivocadas, regresos). |
+| Satisfacción | Calificación del 1 al 5 que el entrevistado asigna a la tarea al terminarla. |
+
 ### 5.3.2. Registro de Entrevistas.
+
+<!-- TODO: completar una ficha por entrevistado con los datos reales de las entrevistas de validación. -->
+
+**Segmento Recuperation Supplier**
+
+Entrevistado #1
+
+| Campo | Información |
+|-------|--------------|
+| **Nombre del entrevistado** | <!-- TODO --> |
+| **Edad** | <!-- TODO --> |
+| **Cargo** | <!-- TODO --> |
+| **Screenshot de la entrevista** | <!-- TODO: assets/img/chapter-v/validation-interviews/... --> |
+| **Link de la entrevista** | <!-- TODO --> |
+| **Tiempo de inicio y duración** | <!-- TODO --> |
+
+| Tarea | Resultado (sin ayuda / con ayuda / no completada) | Tiempo | Errores | Satisfacción (1-5) | Observaciones |
+|---|---|:---:|:---:|:---:|---|
+| B1 – B4 | | | | | |
+| C1 | | | | | |
+| C2 | | | | | |
+| C3 | | | | | |
+| C4 | | | | | |
+| C5 | | | | | |
+| C6 | | | | | |
+| C7 | | | | | |
+| C8 | | | | | |
+
+| Campo | Información |
+|-------|--------------|
+| **Resumen** | <!-- TODO --> |
+| **Aspectos positivos** | <!-- TODO --> |
+| **Problemas de usabilidad identificados** | <!-- TODO --> |
+| **Sugerencias del entrevistado** | <!-- TODO --> |
+
+**Segmento Asset Owner**
+
+Entrevistado #N
+
+| Campo | Información |
+|-------|--------------|
+| **Nombre del entrevistado** | <!-- TODO --> |
+| **Edad** | <!-- TODO --> |
+| **Cargo** | <!-- TODO --> |
+| **Screenshot de la entrevista** | <!-- TODO --> |
+| **Link de la entrevista** | <!-- TODO --> |
+| **Tiempo de inicio y duración** | <!-- TODO --> |
+
+| Tarea | Resultado (sin ayuda / con ayuda / no completada) | Tiempo | Errores | Satisfacción (1-5) | Observaciones |
+|---|---|:---:|:---:|:---:|---|
+| B1 – B4 | | | | | |
+| C'1 | | | | | |
+| C'2 | | | | | |
+| C'3 | | | | | |
+
+| Campo | Información |
+|-------|--------------|
+| **Resumen** | <!-- TODO --> |
+| **Aspectos positivos** | <!-- TODO --> |
+| **Problemas de usabilidad identificados** | <!-- TODO --> |
+| **Sugerencias del entrevistado** | <!-- TODO --> |
+
 ### 5.3.3. Evaluaciones según heurísticas.
+
+La evaluación heurística se realiza sobre el Landing Page y la Web Application aplicando los diez principios de usabilidad de Nielsen. Cada problema encontrado se registra con la heurística que incumple, su severidad y una recomendación de mejora.
+
+**Datos de la evaluación**
+
+| Campo | Información |
+|---|---|
+| **Carrera** | Ingeniería de Software |
+| **Curso** | Desarrollo de Aplicaciones Open Source |
+| **Sección** | 16712 |
+| **Profesor** | Sanchez Seña, Alberto Wilmer |
+| **Auditor** | <!-- TODO: integrante o equipo que realiza la evaluación --> |
+| **Cliente(s)** | WebRunners |
+| **Sitio o App evaluada** | EdgeWatch — Landing Page y Web Application |
+
+**Tareas evaluadas**
+
+| # | Tarea | Producto |
+|:---:|---|---|
+| 1 | Conocer la propuesta de valor e ingresar a la sección del segmento | Landing Page |
+| 2 | Solicitar una demo desde el call-to-action y cambiar el idioma | Landing Page |
+| 3 | Registrar la organización, iniciar sesión y elegir un plan | Web Application |
+| 4 | Registrar un sistema HVOF con sus subsistemas, partes y recetas | Web Application |
+| 5 | Registrar un cliente, un componente y su orden de recuperación | Web Application |
+| 6 | Iniciar, monitorear y finalizar una sesión de rociado | Web Application |
+| 7 | Consultar el historial de sesiones | Web Application |
+| 8 | Asignar roles a los usuarios de la organización | Web Application |
+
+**Escala de severidad**
+
+| Nivel | Descripción |
+|:---:|---|
+| 1 | Problema superficial: puede corregirse fácilmente o el usuario lo resuelve sin dificultad. Su corrección tiene baja prioridad. |
+| 2 | Problema menor: ocurre con poca frecuencia o el usuario lo supera fácilmente. Su corrección tiene prioridad baja para el siguiente release. |
+| 3 | Problema mayor: ocurre con frecuencia o el usuario no sabe cómo resolverlo. Su corrección tiene prioridad alta. |
+| 4 | Problema muy grave: impide que el usuario continúe con la tarea. Debe corregirse antes del lanzamiento. |
+
+**Tabla resumen**
+
+| # | Problema | Escala de severidad | Heurística / Principio violado |
+|:---:|---|:---:|---|
+| 1 | <!-- TODO --> | | |
+
+**Descripción de problemas**
+
+Problema #1: <!-- TODO -->
+
+- **Severidad**: <!-- TODO -->
+- **Heurística violada**: <!-- TODO -->
+- **Problema**: <!-- TODO -->
+- **Evidencia**: <!-- TODO: captura en assets/img/chapter-v/heuristics/... -->
+- **Recomendación**: <!-- TODO -->
+
 ## 5.4. Video About-the-Product.
+
+El video About-the-Product presenta EdgeWatch a los segmentos Recuperation Supplier y Asset Owner: el problema de trazabilidad de los procesos de recubrimiento HVOF, la propuesta de valor del Landing Page y un recorrido por la Web Application con los flujos implementados (configuración de sistemas HVOF y recetas, registro de clientes, componentes y órdenes de recuperación, y monitoreo de sesiones de rociado).
+
+| Campo | Información |
+|---|---|
+| **Link del video** | <!-- TODO --> |
+| **Duración** | <!-- TODO --> |
+| **Plataforma** | Microsoft Stream |
+
 # Conclusiones
 
 ## Conclusiones y recomendaciones.
