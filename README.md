@@ -23,7 +23,7 @@ Docente: Sanchez Seña, Alberto Wilmer
 | U20221B734 | Vasquez Laos      | Sebastian Andrews |
 
 
-*Setiembre, 2026*
+*Noviembre, 2026*
 
 </div>
 
@@ -44,6 +44,8 @@ Docente: Sanchez Seña, Alberto Wilmer
 | 1.0.0 | 2026-09-18 | Navarro Aldoradin, Carolina Celeste / Vasquez Laos, Sebastian Andrews | Diagramas de clases y de base de datos, registro de entrevistas y actualización del Student Outcome. Versión entregada en AV1 (release 1.0.0). |
 | 1.1.0 | 2026-10-05 | Catacora Tupa, Jhon Deyner | Corrección de formato Markdown, Sprint 2 (Web Application) y perfil de integrante. |
 | 1.2.0 | 2026-10-05 | Catacora Tupa, Jhon Deyner | Revisión de cumplimiento con el enunciado para TB1: registro de versiones, Student Outcome con la estructura del Anexo A, técnica 5W2H, Lean UX Canvas, análisis SWOT, análisis de entrevistas, introducciones y explicaciones de los artefactos de los Capítulos II y IV, Component Diagram de la Web Application, corrección de la configuración real de los productos en el Capítulo V, Leadership-and-Collaboration Matrix por Sprint, recomendaciones y anexo de videos. |
+| 1.3.0 | 2026-11-11 | Catacora Tupa, Jhon Deyner | Sprint 3 (REST API, conexión de la Web Application y Reporting), diseño de entrevistas de validación y estructura de la evaluación heurística. |
+| 1.4.0 | 2026-11-13 | Navarro Aldoradin, Carolina Celeste | Revisión para AV2: fecha e integrantes, Collaboration Insights con gráfico de aportes, Student Outcome, Hypothesis Statements 10 y 11, imagen del Lean UX Canvas, imágenes del Big Picture EventStorming, Web Applications Prototyping, evidencia de despliegue en Azure, videos About-the-Product y About-the-Team, conclusiones y anexos de videos y enlaces. Versión entregada en AV2 (release 1.4.0). |
 
 <div style="page-break-after: always"></div>
 
@@ -58,14 +60,27 @@ El informe se elabora de forma colaborativa en Markdown, aplicando GitFlow: cada
 
 **TB1.** Se corrigió el formato del informe, se agregó el Sprint 2 dedicado a la Web Application y se revisó el cumplimiento de cada sección con el enunciado del trabajo final, integrando los cambios en `develop` mediante los Pull Requests #13, #14 y #15.
 
+**AV2.** El Sprint 3 concentró el trabajo en los repositorios de software: la REST API (`edgewatch-platform`) y la conexión de la Web Application (`edgewatch-webapp`) se desarrollaron en ramas `feature/*` por bounded context integradas mediante Pull Requests, y el informe recibió la sección 5.2.3, las entrevistas de validación y la revisión de cumplimiento para la entrega (PR #17 y rama `feature/av2-review`). La imagen siguiente muestra los aportes por integrante en la rama `develop` de los cuatro repositorios de la organización al corte de la entrega.
+
+<img src="assets/img/collaboration-insights/contributions-av2.png" alt="Aportes por integrante en los repositorios de EdgeWatch" width="100%">
+
 Aportes registrados en la rama `develop` del repositorio del informe (commits y merges):
 
 | Integrante | Usuario de GitHub | Commits | Merges | Total |
 |---|---|:---:|:---:|:---:|
 | Navarro Aldoradin, Carolina Celeste | genixmvp | 57 | 13 | 70 |
-| Catacora Tupa, Jhon Deyner | JhonDCT | 12 | 10 | 22 |
+| Catacora Tupa, Jhon Deyner | JhonDCT | 14 | 12 | 26 |
 | Alvarez Falen, Esteban Valentino | Valentino10113 | 6 | 3 | 9 |
 | Vasquez Laos, Sebastian Andrews | unity20012006-cell | 6 | 1 | 7 |
+
+Aportes en los repositorios de software (rama `develop`, commits sin merges / merges):
+
+| Integrante | edgewatch-website | edgewatch-webapp | edgewatch-platform |
+|---|:---:|:---:|:---:|
+| Navarro Aldoradin, Carolina Celeste | 4 / 4 | 75 / 19 | 29 / 9 |
+| Catacora Tupa, Jhon Deyner | 56 / 7 | 86 / 16 | 95 / 15 |
+| Alvarez Falen, Esteban Valentino | — | 9 / 4 | 44 / 12 |
+| Vasquez Laos, Sebastian Andrews | — | 13 / 4 | 10 / 3 |
 
 <div style="page-break-after: always"></div>
 
@@ -192,6 +207,7 @@ Aportes registrados en la rama `develop` del repositorio del informe (commits y 
 - [Bibliografía](#bibliografía)
 - [Anexos](#anexos)
   - [Anexo A. Videos de Exposiciones](#anexo-a-videos-de-exposiciones)
+  - [Anexo B. Enlaces importantes](#anexo-b-enlaces-importantes)
 
 <div style="page-break-after: always"></div>
 
@@ -207,8 +223,8 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
 
 | Criterio específico | Acciones realizadas | Conclusiones |
 |---|---|---|
-| Trabaja en equipo para proporcionar liderazgo en forma conjunta | **Navarro Aldoradin, Carolina Celeste**<br>*AV1*<br>- Lideró los aspectos de Product Owner y Scrum Master del Sprint 1: priorización del Product Backlog y conducción de las ceremonias Scrum.<br>- Facilitó la sesión de Big Picture EventStorming y la definición del Ubiquitous Language.<br>*TB1*<br>- Configuró la base de la Web Application (proyecto Vue, Fake API, navegación e internacionalización) sobre la que trabajó el resto del Sprint 2.<br><br>**Catacora Tupa, Jhon Deyner**<br>*AV1*<br>- Lideró los aspectos de Desarrollo Frontend y DevOps del Sprint 1: implementación y despliegue del Landing Page en GitHub Pages.<br>*TB1*<br>- Lideró la implementación de la Web Application en el Sprint 2 (IAM, Billing, Equipment y Process Monitoring) y la revisión e integración de los Pull Requests en `develop`.<br><br>**Alvarez Falen, Esteban Valentino**<br>*AV1*<br>- Lideró los aspectos de Aseguramiento de Calidad y Documentación Técnica del Sprint 1, coordinando la consolidación del informe.<br><br>**Vasquez Laos, Sebastian Andrews**<br>*AV1*<br>- Lideró el aspecto de Desarrollo Backend y Servicios API, definiendo la arquitectura de la REST API en ASP.NET Core.<br>- Lideró el aspecto de Gestión de Base de Datos y Persistencia, a cargo del modelo relacional en MySQL. | - El equipo distribuyó el liderazgo por aspectos (Leadership-and-Collaboration Matrix), de modo que cada integrante condujo al menos un frente del proyecto en cada Sprint.<br>- El liderazgo compartido permitió avanzar en paralelo sobre el informe, el Landing Page y la Web Application sin depender de una sola persona.<br>- La rotación de colaboradores entre aspectos facilitó que todos los integrantes conocieran el dominio HVOF y el ubiquitous language del producto. |
-| Crea un entorno colaborativo e inclusivo, establece metas, planifica tareas y cumple objetivos. | **Navarro Aldoradin, Carolina Celeste**<br>*AV1*<br>- Startup Profile, Solution Profile, antecedentes y problemática.<br>- Diseño de entrevistas, User Stories, Impact Mapping y Product Backlog en Trello.<br>- Diagramas de clases y de base de datos.<br>*TB1*<br>- Configuración inicial, navegación e internacionalización de la Web Application.<br><br>**Catacora Tupa, Jhon Deyner**<br>*AV1*<br>- Lean UX Assumptions, segmentos objetivo, registro de entrevistas y User Personas.<br>- Organization, Labeling, Searching y Navigation Systems; wireframes y mock-ups.<br>- Software Configuration Management.<br>*TB1*<br>- Sprint 2 de la Web Application (US01–US09, US19, US21–US24) y su documentación en el informe.<br>- Corrección de formato del informe y revisión de cumplimiento con el enunciado.<br><br>**Alvarez Falen, Esteban Valentino**<br>*AV1*<br>- Descripción de la startup, perfiles, Lean UX Problem Statements y análisis competitivo.<br>- Style Guidelines y SEO Tags and Meta Tags.<br>- Sprint Planning 1.<br><br>**Vasquez Laos, Sebastian Andrews**<br>*AV1*<br>- Lean UX Hypothesis Statements, diseño, registro y análisis de entrevistas.<br>- Design-Level EventStorming y diagramas C4.<br>- Estrategias y tácticas frente a competidores, User Task Matrix, User Journey Mapping y Empathy Mapping.<br>- Landing Page UI Design, Web Applications UX/UI Design y Sprint Backlog 1. | - El equipo estableció metas por Sprint mediante Sprint Goals y las descompuso en tareas con responsables y estimaciones en el Sprint Backlog.<br>- El uso de GitFlow, Pull Requests y Conventional Commits creó un entorno de trabajo transparente, donde cada aporte queda registrado y revisado.<br>- La meta de AV1 (Landing Page implementado y desplegado) se cumplió dentro del plazo, y para TB1 se completó la primera versión de la Web Application definida en el Sprint Goal 2. |
+| Trabaja en equipo para proporcionar liderazgo en forma conjunta | **Navarro Aldoradin, Carolina Celeste**<br>*AV1*<br>- Lideró los aspectos de Product Owner y Scrum Master del Sprint 1: priorización del Product Backlog y conducción de las ceremonias Scrum.<br>- Facilitó la sesión de Big Picture EventStorming y la definición del Ubiquitous Language.<br>*TB1*<br>- Configuró la base de la Web Application (proyecto Vue, Fake API, navegación e internacionalización) sobre la que trabajó el resto del Sprint 2.<br>*AV2*<br>- Lideró la arquitectura de la REST API (Shared Kernel, eventos de dominio, Fault Diagnosis y Reporting), la conexión de la Web Application con la plataforma y el despliegue de ambos productos en Azure.<br><br>**Catacora Tupa, Jhon Deyner**<br>*AV1*<br>- Lideró los aspectos de Desarrollo Frontend y DevOps del Sprint 1: implementación y despliegue del Landing Page en GitHub Pages.<br>*TB1*<br>- Lideró la implementación de la Web Application en el Sprint 2 (IAM, Billing, Equipment y Process Monitoring) y la revisión e integración de los Pull Requests en `develop`.<br>*AV2*<br>- Lideró los bounded contexts Traceability, IAM y Process Monitoring de la REST API y documentó el Sprint 3 y las entrevistas de validación en el informe.<br><br>**Alvarez Falen, Esteban Valentino**<br>*AV1*<br>- Lideró los aspectos de Aseguramiento de Calidad y Documentación Técnica del Sprint 1, coordinando la consolidación del informe.<br>*AV2*<br>- Lideró el bounded context Equipment de la REST API y el análisis de sesión de la Web Application, y coordinó la auditoría de dependencias.<br><br>**Vasquez Laos, Sebastian Andrews**<br>*AV1*<br>- Lideró el aspecto de Desarrollo Backend y Servicios API, definiendo la arquitectura de la REST API en ASP.NET Core.<br>*AV2*<br>- Lideró los gráficos de tendencia, el dashboard de operaciones y las migraciones de Reporting en la REST API.<br><br>**Yopla Romero, Jonathan Alberto** (integrante hasta AV1)<br>*AV1*<br>- Lideró el aspecto de Gestión de Base de Datos y Persistencia, a cargo del modelo relacional en MySQL. | - El equipo distribuyó el liderazgo por aspectos (Leadership-and-Collaboration Matrix), de modo que cada integrante condujo al menos un frente del proyecto en cada Sprint.<br>- El liderazgo compartido permitió avanzar en paralelo sobre el informe, el Landing Page y la Web Application sin depender de una sola persona.<br>- La rotación de colaboradores entre aspectos facilitó que todos los integrantes conocieran el dominio HVOF y el ubiquitous language del producto. |
+| Crea un entorno colaborativo e inclusivo, establece metas, planifica tareas y cumple objetivos. | **Navarro Aldoradin, Carolina Celeste**<br>*AV1*<br>- Startup Profile, Solution Profile, antecedentes y problemática.<br>- Diseño de entrevistas, User Stories, Impact Mapping y Product Backlog en Trello.<br>- Diagramas de clases y de base de datos.<br>*TB1*<br>- Configuración inicial, navegación e internacionalización de la Web Application.<br>*AV2*<br>- Shared Kernel, Fault Diagnosis y Reporting de la REST API; tema de marca, Quick Start, reportes PDF y releases de la Web Application; despliegue en Azure; secciones About del Landing Page; revisión del informe para AV2.<br><br>**Catacora Tupa, Jhon Deyner**<br>*AV1*<br>- Lean UX Assumptions, segmentos objetivo, registro de entrevistas y User Personas.<br>- Organization, Labeling, Searching y Navigation Systems; wireframes y mock-ups.<br>- Software Configuration Management.<br>*TB1*<br>- Sprint 2 de la Web Application (US01–US09, US19, US21–US24) y su documentación en el informe.<br>- Corrección de formato del informe y revisión de cumplimiento con el enunciado.<br>*AV2*<br>- IAM (JWT), Traceability y Process Monitoring de la REST API; casos de falla y Quick Start en la Web Application; Sprint 3 y diseño de entrevistas de validación en el informe.<br><br>**Alvarez Falen, Esteban Valentino**<br>*AV1*<br>- Descripción de la startup, perfiles, Lean UX Problem Statements y análisis competitivo.<br>- Style Guidelines y SEO Tags and Meta Tags.<br>- Sprint Planning 1.<br>*AV2*<br>- Equipment (sistemas HVOF y recetas) de la REST API; análisis de sesión y actualización de dependencias de la Web Application.<br><br>**Vasquez Laos, Sebastian Andrews**<br>*AV1*<br>- Lean UX Hypothesis Statements, diseño, registro y análisis de entrevistas.<br>- Design-Level EventStorming y diagramas C4.<br>*AV2*<br>- Edición de equipos y migraciones de Reporting en la REST API; gráficos de tendencia y dashboard de operaciones en la Web Application.<br><br>**Yopla Romero, Jonathan Alberto** (integrante hasta AV1)<br>*AV1*<br>- Estrategias y tácticas frente a competidores, User Task Matrix, User Journey Mapping y Empathy Mapping.<br>- Landing Page UI Design, Web Applications UX/UI Design y Sprint Backlog 1. | - El equipo estableció metas por Sprint mediante Sprint Goals y las descompuso en tareas con responsables y estimaciones en el Sprint Backlog.<br>- El uso de GitFlow, Pull Requests y Conventional Commits creó un entorno de trabajo transparente, donde cada aporte queda registrado y revisado.<br>- La meta de AV1 (Landing Page implementado y desplegado) se cumplió dentro del plazo, y para TB1 se completó la primera versión de la Web Application definida en el Sprint Goal 2.<br>- En AV2 el equipo cumplió el Sprint Goal 3: REST API con seis bounded contexts desplegada en Azure App Service, Web Application conectada a ella y desplegada, y Landing Page alineado visualmente con la aplicación, además de los videos About-the-Product y About-the-Team. |
 
 # Capítulo I: Introducción
 ## 1.1. Startup Profile
@@ -425,6 +441,8 @@ A continuación se enumeran las creencias resultantes de la sesión de discusió
 7. Creemos que la generación exportable de certificados de calidad por orden de trabajo permitirá entregar evidencia documentada al cliente.
 8. Creemos que el registro de vida útil en campo contrastado contra el PCR comprometido permitirá evaluar el desempeño real del recubrimiento a lo largo del tiempo.
 9. Creemos que reportes de tasa de falla agrupados por cliente y por modelo de componente revelarán patrones que hoy no son visibles para la organización.
+10. Creemos que plantillas de reporte personalizables por la organización (marca, página y secciones de widgets) permitirán que el certificado de calidad y el reporte de sesión se adapten al formato que exige cada cliente minero sin desarrollo adicional.
+11. Creemos que una puesta en marcha guiada, que cree en un paso el sistema HVOF, su receta, el cliente y la primera orden, permitirá que una organización nueva registre su primera sesión de rociado el mismo día en que se suscribe.
 
 #### 1.2.2.3. Lean UX Hypothesis Statements.
 
@@ -504,6 +522,22 @@ Se formula un hypothesis statement por cada feature assumption enunciado en la s
 **Con** reportes de tasa de fallas agrupados por cliente y por modelo de componente.
 
 ---
+**Hypothesis Statement 10. Plantillas de reporte personalizables**
+
+**Creemos que lograremos** un incremento en la proporción de certificados y reportes de sesión aceptados por el cliente sin reprocesos de formato
+**Si** los Ingenieros de Calidad
+**Obtienen** documentos PDF con la marca, la página y las secciones que cada cliente exige
+**Con** un constructor de plantillas de reporte con vista previa y plantillas estándar por tipo de documento.
+
+---
+**Hypothesis Statement 11. Puesta en marcha guiada**
+
+**Creemos que lograremos** una reducción del tiempo entre la suscripción de una organización y su primera sesión de rociado registrada
+**Si** los Administradores y Supervisores de Operaciones
+**Obtienen** una lista de verificación de lo que la planta necesita y un aprovisionamiento de ejemplo en un solo paso
+**Con** la vista Quick Start, que crea el sistema HVOF, sus subsistemas, la receta activa, el cliente, el componente y la orden, e inicia la sesión.
+
+---
 
 #### 1.2.2.4. Lean UX Canvas.
 
@@ -516,9 +550,11 @@ A continuación se presenta el Lean UX Canvas (versión 2, Jeff Gothelf) elabora
 | 3 | **Users** | Ingeniero de Calidad / Jefe de Procesos (Segmento 1), Jefe o Supervisor de Mantenimiento (Segmento 2), Operador de cabina de rociado e Ingeniero de Confiabilidad de la empresa minera. |
 | 4 | **User Outcomes & Benefits** | Respaldar ante el cliente que un lote fue recubierto dentro de tolerancias sin reconstruir información; saber qué parte de la celda revisar ante una parada; anticipar fallas recurrentes; conservar el conocimiento sobre fallas en el sistema. |
 | 5 | **Solutions** | Ingesta de telemetría vía API REST, vinculación de cada sesión con OF/WO/cliente/modelo, rangos nominales con detección de desviaciones, alertas en tiempo real, diagnóstico por reglas causa-efecto, detección de patrones recurrentes, certificados de calidad, registro de vida útil contra PCR y reportes de tasa de falla. |
-| 6 | **Hypotheses** | Los nueve Hypothesis Statements de la sección 1.2.2.3, uno por cada feature assumption. |
+| 6 | **Hypotheses** | Los once Hypothesis Statements de la sección 1.2.2.3, uno por cada feature assumption. |
 | 7 | **What's the most important thing we need to learn first?** | Si el cliente minero acepta un certificado generado por la plataforma como evidencia formal de calidad (Hypothesis Statement 07) y si el diagnóstico por reglas reduce de forma visible el tiempo de diagnóstico (Hypothesis Statement 05). |
 | 8 | **What's the least amount of work we need to do to learn the next most important thing?** | Mostrar a Ingenieros de Calidad y Supervisores de Mantenimiento entrevistados un prototipo navegable con una sesión de rociado registrada, su certificado y un caso de falla diagnosticado, y recoger su reacción en las entrevistas de validación (5.3). |
+
+<img src="assets/img/chapter-i/lean-ux/lean-ux-canvas.png" alt="Lean UX Canvas de EdgeWatch" width="100%">
 
 
 
@@ -1058,6 +1094,12 @@ Para elaborar los Empathy Maps, el equipo colocó al centro a cada User Persona 
 ## 2.4. Big Picture Event Storming.
 
 En esta sección se introduce y resume el proceso realizado por nuestro equipo, presentando las evidencias y explicaciones de las etapas del Big Picture Event Storming. En una sesión colaborativa, nuestro equipo se enfocó en entender el dominio del negocio en general, plasmando los eventos significativos y sus relaciones. Es una primera aproximación visual de alto nivel que explora el landscape del negocio, identificando procesos clave, exponiendo potenciales problemas u oportunidades del procesos de recuperación de componentes mediante recubrimiento HVOF, desde la recepción de la pieza del cliente hasta la evaluación de su desempeño en campo. La sesión siguió la guía paso a paso del Event Storming Journal (Bourgau, 2022) y fue documentada con diagramas Mermaid, alternativa permitida por el enunciado del proyecto para Diagram-as-Code. Se conservó la convención de colores del método: naranja para Domain Events, amarillo para Actors, azul para External Systems y rosado para Problems (hotspots).
+
+La siguiente imagen consolida el tablero resultante de la sesión: la línea de tiempo de Domain Events agrupada por fases (0. Configuración → 5. Reportes) con el carril concurrente de desviaciones y fallas, y, debajo, los actores y sistemas externos que participan en cada fase. Los pasos siguientes describen cómo se construyó.
+
+<img src="assets/img/chapter-ii/event-storming/big-picture-timeline.png" alt="Big Picture Event Storming de EdgeWatch: línea de tiempo de Domain Events" width="100%">
+
+<img src="assets/img/chapter-ii/event-storming/big-picture-actors-systems.png" alt="Big Picture Event Storming de EdgeWatch: actores y sistemas externos" width="100%">
 
 ### Paso 1. Preparación del tablero
 
@@ -2448,6 +2490,16 @@ Reporte --> Fin(["Decisión de renovación\no cambio de contrato"])
 
 ## 4.5. Web Applications Prototyping.
 
+El prototipo de la Web Application se construyó directamente sobre la implementación en Vue 3 conectada a la REST API, de modo que cada flujo mostrado corresponde a una vista funcional y no a una maqueta estática. El recorrido parte de los mock-ups de 4.4.3 y sigue los User Flow Diagrams de 4.4.4: registro e inicio de sesión de la organización, dashboard de operaciones, puesta en marcha (Quick Start) que aprovisiona la planta demo e inicia una sesión de rociado, monitoreo en vivo con lecturas clasificadas por banda y gráficos de tendencia, análisis de sesión, casos de falla con causa probable y acción recomendada, y constructor de plantillas con generación del certificado de calidad en PDF.
+
+El recorrido narrado del prototipo, para ambos segmentos objetivo, se encuentra en el video About-the-Product (5.4):
+
+| Campo | Información |
+|---|---|
+| **Video del prototipo** | <https://youtu.be/Axl4rCu7W7E> |
+| **Aplicación desplegada** | <https://edgewatch-webapp-gmbcexdpe0e8a2gv.eastus-01.azurewebsites.net> |
+| **Flujos cubiertos** | Sign up / Sign in · Dashboard · Quick Start · Equipos y recetas · Clientes, componentes y órdenes · Sesión en vivo y análisis · Casos y reglas de falla · Plantillas y reportes PDF · Usuarios y roles |
+
 ## 4.6. Domain-Driven Software Architecture.
 
 En esta sección el equipo parte de los resultados del Big Picture EventStorming (2.4) y los profundiza desde la perspectiva de Domain-Driven Design para identificar bounded contexts, aggregates, events, commands y policies. A continuación se representa la arquitectura de la solución con C4 Model en sus niveles de Context, Container y Component.
@@ -3606,6 +3658,10 @@ El Sprint Backlog 3 desglosa las User Stories y Technical Stories priorizadas en
 | US35 / US36 | Certificado y reporte de sesión | TSK-WA-46 | Reportes PDF | API y store de Reporting, constructor de plantillas con vista previa, generación de PDF con jsPDF desde la sesión y registro de reportes generados. | 6h | Carolina Celeste Navarro Aldoradin / Jhon Deyner Catacora Tupa | Done |
 | — | Seguridad y release | TSK-WA-47 | Dependencias, documentación y releases | Actualización de jsPDF y dependencias auditadas, README, licencia de PrimeUI y versiones v2.0.0 y v2.0.1. | 3h | Esteban Valentino Alvarez Falen / Carolina Celeste Navarro Aldoradin | Done |
 | — | Landing Page | TSK-LP-13 | Enlace de inicio de sesión | Botón de inicio de sesión en la navegación de escritorio y móvil que dirige a la Web Application, y versión v1.1.0. | 1h | Jhon Deyner Catacora Tupa | Done |
+| — | Despliegue | TSK-API-23 | Despliegue de la REST API en Azure | App Service (.NET 10) y Azure Database for MySQL, variables de entorno de producción, workflow de GitHub Actions desde `main` y CORS hacia la Web Application. | 4h | Carolina Celeste Navarro Aldoradin | Done |
+| — | Despliegue | TSK-WA-48 | Despliegue de la Web Application en Azure | `.env.production` hacia la REST API en Azure, App Service (Node 22 + pm2), workflow de GitHub Actions y versiones v2.0.2 y v2.0.3. | 3h | Carolina Celeste Navarro Aldoradin | Done |
+| — | Landing Page | TSK-LP-14 | Identidad visual compartida con la Web Application | Paleta navy/naranja, tipografía y mockup del dashboard en el hero. | 2h | Carolina Celeste Navarro Aldoradin | Done |
+| — | Landing Page | TSK-LP-15 | Secciones About, contacto y CTAs por segmento | Secciones About the Product y About the Team con los videos, contacto y redes en el footer, CTAs hacia el registro del segmento en la Web Application, y versión v1.2.0. | 3h | Carolina Celeste Navarro Aldoradin | Done |
 
 #### 5.2.3.4. Development Evidence for Sprint Review.
 
@@ -3767,6 +3823,9 @@ A continuación, se presenta el registro de la evidencia de desarrollo del Sprin
 | upc-pre-202620-1asi0730-16712-wrunners/edgewatch-platform | develop | 274e2fd | Merge branch 'release/1.0.1' into develop | Fusión de la release 1.0.1 en develop. | 2026-11-11 |
 
 
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-platform | main | 5f51b93 | Add or update the Azure App Service build and deployment workflow config | Workflow de GitHub Actions generado por Azure para compilar y desplegar la REST API en App Service. | 2026-11-11 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-platform | develop | 07a9609 | Merge branch 'hotfix/trim-deploy-workflow' into develop | Ajuste del workflow de despliegue integrado en develop. | 2026-11-11 |
+
 **Web Application (`edgewatch-webapp`)**
 
 | Repository | Branch | CommitId | Commit Message | Commit MessageBody (resumen) | Committed on |
@@ -3841,6 +3900,13 @@ A continuación, se presenta el registro de la evidencia de desarrollo del Sprin
 | upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | develop | 6e9ad36 | Merge branch 'release/2.0.1' into develop | Fusión de la release 2.0.1 en develop. | 2026-11-11 |
 
 
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | develop | 45ba133 | chore: point the production API URL to the Azure App Service domain. | `.env.production` apunta a la REST API desplegada en Azure. | 2026-11-11 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | release/2.0.2 | 59071ce | chore(release): bump version to 2.0.2 and update the changelog. | Versión 2.0.2 con la configuración de producción. | 2026-11-11 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | main | c5e2d90 | Add or update the Azure App Service build and deployment workflow config | Workflow de GitHub Actions para desplegar la Web Application en App Service. | 2026-11-11 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | hotfix/trim-deploy-workflow | 48888b9 | ci: build with npm ci and deploy only the dist folder to App Service. | El workflow compila con `npm ci` y publica solo `dist`, servido con `pm2 serve --spa`. | 2026-11-11 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | feature/sign-up-segment-preselect | 852d6ef | feat(iam): preselect the organization type requested by the landing page on sign-up | El registro preselecciona el segmento indicado por los CTAs del Landing Page. | 2026-11-13 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp | release/2.0.3 | 98fbea3 | chore(release): 2.0.3 | Versión 2.0.3 y CHANGELOG. | 2026-11-13 |
+
 **Landing Page (`edgewatch-website`)**
 
 | Repository | Branch | CommitId | Commit Message | Commit MessageBody (resumen) | Committed on |
@@ -3848,6 +3914,11 @@ A continuación, se presenta el registro de la evidencia de desarrollo del Sprin
 | upc-pre-202620-1asi0730-16712-wrunners/edgewatch-website | feature/intranet-sign-in | c6ad7c0 | feat: add sign-in link to EdgeWatch intranet | Enlace de inicio de sesión hacia la Web Application en el Landing Page. | 2026-10-06 |
 | upc-pre-202620-1asi0730-16712-wrunners/edgewatch-website | develop | d45ae15 | Merge branch 'feature/intranet-sign-in' into develop | Fusión del enlace de inicio de sesión en develop. | 2026-10-06 |
 | upc-pre-202620-1asi0730-16712-wrunners/edgewatch-website | main | a4e0128 | Release v1.1.0 | Publicación de la versión v1.1.0 del Landing Page. | 2026-10-06 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-website | feature/brand-alignment | 833b638 | style: align landing palette and typography with the EdgeWatch web application | Paleta navy/naranja y tipografía compartidas con la Web Application. | 2026-11-13 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-website | feature/about-sections | 3ec9db6 | feat: add About the Product and About the Team sections with the published videos | Secciones About con los videos embebidos y mockup del dashboard en el hero. | 2026-11-13 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-website | feature/about-sections | d080407 | feat: add contact details, social links and segment call-to-actions pointing to the web application | Contacto, redes sociales y CTAs por segmento hacia el registro de la Web Application. | 2026-11-13 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-website | feature/about-sections | a7f63db | docs: describe the landing page, its sections and deployment | README del Landing Page. | 2026-11-13 |
+| upc-pre-202620-1asi0730-16712-wrunners/edgewatch-website | main | ded902c | Release v1.2.0 | Publicación de la versión v1.2.0 del Landing Page en GitHub Pages. | 2026-11-13 |
 
 
 #### 5.2.3.5. Execution Evidence for Sprint Review.
@@ -3942,23 +4013,35 @@ Durante el Sprint 3 se documentaron los endpoints de la REST API con OpenAPI, ge
 | Reporting | `/api/v1/generated-reports/{id}` | GET | Obtener un reporte generado | 200, 404 | US35, US36 |
 | Reporting | `/api/v1/generated-reports` | POST | Registrar un reporte generado para una sesión u orden | 201, 400, 404, 422 | US35, US36 |
 
-<!-- TODO: agregar capturas de la documentación en Scalar (assets/img/chapter-v/sprint-3-openapi.png) -->
+La documentación publicada puede consultarse en <https://edgewatch-platform-hdebf3fhabbze2ep.eastus-01.azurewebsites.net/scalar> (OpenAPI en `https://edgewatch-platform-hdebf3fhabbze2ep.eastus-01.azurewebsites.net/openapi/v1.json`).
+
+<!-- Captura sugerida: assets/img/chapter-v/sprint-3/scalar-azure.png -->
 
 #### 5.2.3.7. Software Deployment Evidence for Sprint Review.
 
-Durante el Sprint 3 se publicó la versión v1.1.0 del Landing Page en GitHub Pages, con el enlace de inicio de sesión hacia la Web Application desplegada en Firebase Hosting. La REST API y la versión v2.0.x de la Web Application se ejecutaron en local contra MySQL; para su despliegue en Azure App Service, descrito en 5.1.4, se dejaron preparados el Dockerfile de la API, la configuración de producción con variables de entorno (`DB_HOST`, `DB_USER`, `DB_PASSWORD`, `DB_NAME` y `CORS_ALLOWED_ORIGIN`) y el archivo `.env.production` de la Web Application, que apunta a `https://edgewatch-platform.azurewebsites.net/api/v1`. Al cierre del Sprint esa URL todavía no responde, por lo que la versión pública de la Web Application sigue siendo la v1.0.0 sobre la Fake API.
+Durante el Sprint 3 se desplegaron los tres productos. La REST API corre en **Azure App Service** (Linux, .NET 10) con una base de datos **Azure Database for MySQL Flexible Server**; las migraciones de EF Core se aplican al iniciar y la configuración de producción se lee de variables de entorno (`DB_HOST`, `DB_USER`, `DB_PASSWORD`, `DB_NAME`, `EDGEWATCH_JWT_SECRET`, `CORS_ALLOWED_ORIGIN`, `WEBSITES_PORT`). La Web Application se compila con Vite (`.env.production` apunta a la REST API en Azure) y se sirve desde un segundo App Service (Node 22) con `pm2 serve --spa`. Ambos despliegues se ejecutan automáticamente con **GitHub Actions** en cada push a `main` (workflows `main_edgewatch-platform.yml` y `main_edgewatch-webapp.yml`). El Landing Page se publica en **GitHub Pages** desde la rama `gh-pages`, que refleja cada release de `main`.
 
-| Producto | Repositorio | Versión | Estado | URL |
+| Producto | Repositorio | Versión | Plataforma | URL |
 |---|---|:---:|---|---|
-| Landing Page | edgewatch-website | v1.1.0 | Desplegado en GitHub Pages (rama `gh-pages`) | <https://upc-pre-202620-1asi0730-16712-wrunners.github.io/edgewatch-website/> |
-| Web Application | edgewatch-webapp | v1.0.0 | Desplegado en Firebase Hosting con la Fake API en Vercel | <https://edgewatch-webapp-10050010.web.app/> |
-| Web Application | edgewatch-webapp | v2.0.1 | Ejecución local conectada a la REST API; despliegue pendiente | `http://localhost:5173` |
-| REST API | edgewatch-platform | v1.0.1 | Ejecución local con MySQL; despliegue en Azure App Service pendiente | `http://localhost:5262/scalar` |
+| Landing Page | edgewatch-website | v1.2.0 | GitHub Pages (rama `gh-pages`) | <https://upc-pre-202620-1asi0730-16712-wrunners.github.io/edgewatch-website/> |
+| Web Application | edgewatch-webapp | v2.0.3 | Azure App Service (Node 22 + pm2), GitHub Actions desde `main` | <https://edgewatch-webapp-gmbcexdpe0e8a2gv.eastus-01.azurewebsites.net> |
+| REST API | edgewatch-platform | v1.0.1 | Azure App Service (.NET 10) + Azure Database for MySQL, GitHub Actions desde `main` | <https://edgewatch-platform-hdebf3fhabbze2ep.eastus-01.azurewebsites.net> (documentación en `/scalar`) |
 
-- **Ejecución local de la REST API**: `dotnet run` en `EdgeWatchPlatform.API` (las migraciones se aplican al iniciar)
-- **Imagen Docker de la REST API**: `docker build -t edgewatch-platform .`
-- **Ejecución local de la Web Application**: `npm run dev`, y `npm run api` para la Fake API de Billing
-- **URL de producción de la REST API**: <!-- TODO: completar cuando https://edgewatch-platform.azurewebsites.net responda -->
+**Evidencias de despliegue**
+
+| Evidencia | Descripción |
+|---|---|
+| Workflow de la REST API | `.github/workflows/main_edgewatch-platform.yml`: `dotnet publish` en Ubuntu con .NET 10 y despliegue con identidad administrada de Azure. |
+| Workflow de la Web Application | `.github/workflows/main_edgewatch-webapp.yml`: `npm ci && npm run build` y despliegue de la carpeta `dist` con el comando de inicio `pm2 serve /home/site/wwwroot/dist --no-daemon --spa`. |
+| Base de datos | Servidor `edgewatch-mysql` (MySQL 8.0, Burstable B1ms) con la base `edgewatch-wa`; acceso desde Azure habilitado y TLS obligatorio (`SslMode=Required`). |
+| CORS | `CORS_ALLOWED_ORIGIN` de la REST API fijado al origen de la Web Application en Azure. |
+| Releases | Platform v1.0.0 → v1.0.1, Webapp v2.0.0 → v2.0.3 y Website v1.0.0 → v1.2.0 etiquetados en GitHub con su CHANGELOG. |
+
+<!-- Capturas sugeridas: assets/img/chapter-v/sprint-3/azure-app-services.png, github-actions-platform.png, github-actions-webapp.png, scalar-azure.png -->
+
+- **Ejecución local de la REST API**: `dotnet run` en `EdgeWatchPlatform.API` (las migraciones se aplican al iniciar); documentación local en `http://localhost:5262/scalar`.
+- **Ejecución local de la Web Application**: `npm run dev` (`.env.development` apunta a la REST API local).
+- **Ejecución local del Landing Page**: abrir `index.html` o `npx serve .`.
 
 #### 5.2.3.8. Team Collaboration Insights during Sprint.
 
@@ -3976,7 +4059,9 @@ La siguiente tabla resume la actividad registrada en la rama develop de los tres
 | Vasquez Laos, Sebastian Andrews | edgewatch-platform | feature/update-equipment, feature/add-reporting-bounded-context | 10 | 3 |
 | Vasquez Laos, Sebastian Andrews | edgewatch-webapp | feature/add-parameter-trend-charts, feature/add-operations-dashboard, fix/quick-start-recuperation-reuse, fix/quick-start-work-order-conflicts | 13 | 4 |
 
-<!-- TODO: agregar capturas de GitHub Insights de los repositorios (assets/img/chapter-v/sprint-3-collaboration-insights.png) -->
+El gráfico de aportes por integrante y repositorio al cierre del Sprint se presenta en la sección Project Report Collaboration Insights.
+
+<img src="assets/img/collaboration-insights/contributions-av2.png" alt="Aportes por integrante durante el Sprint 3" width="100%">
 
 ## 5.3. Validation Interviews.
 
@@ -4186,13 +4271,14 @@ Problema #1: <!-- TODO -->
 
 ## 5.4. Video About-the-Product.
 
-El video About-the-Product presenta EdgeWatch a los segmentos Recuperation Supplier y Asset Owner: el problema de trazabilidad de los procesos de recubrimiento HVOF, la propuesta de valor del Landing Page y un recorrido por la Web Application con los flujos implementados (configuración de sistemas HVOF y recetas, registro de clientes, componentes y órdenes de recuperación, y monitoreo de sesiones de rociado).
+El video About-the-Product presenta EdgeWatch a los segmentos Recuperation Supplier y Asset Owner: el problema de trazabilidad de los procesos de recubrimiento HVOF, la propuesta de valor del Landing Page y un recorrido por la Web Application conectada a la REST API desplegada en Azure: registro e inicio de sesión, dashboard, puesta en marcha de la planta demo, sesión de rociado en vivo con lecturas clasificadas por banda, análisis de sesión, casos de falla con diagnóstico y generación del certificado de calidad en PDF.
 
 | Campo | Información |
 |---|---|
-| **Link del video** | <!-- TODO --> |
-| **Duración** | <!-- TODO --> |
-| **Plataforma** | Microsoft Stream |
+| **Título** | upc-pre-202620-1asi0730-16712-WebRunners-about-the-product |
+| **Link del video** | <https://youtu.be/Axl4rCu7W7E> |
+| **Plataforma** | YouTube (enlace privado); el archivo .mp4 se incluye en el .zip de la entrega |
+| **Contenido** | Problema y segmentos · Landing Page · Dashboard y Quick Start · Sesión en vivo, análisis y casos de falla · Plantillas y certificado PDF |
 
 # Conclusiones
 
@@ -4214,9 +4300,13 @@ El video About-the-Product presenta EdgeWatch a los segmentos Recuperation Suppl
 
 8. EdgeWatch tiene el potencial de reducir los tiempos de diagnóstico, mejorar la toma de decisiones y fortalecer la relación entre los proveedores de recubrimiento y sus clientes mediante información confiable y consultable.
 
-9. Para validar completamente la propuesta, será necesario implementar un prototipo funcional y realizar pruebas con datos reales y usuarios del sector industrial.
+9. La REST API construida en el Sprint 3 con DDD, CQRS y eventos de dominio demostró que las reglas del negocio (bandas de receta congeladas por sesión, apertura automática de casos de falla, plantillas por organización) pueden expresarse en el modelo sin acoplar los bounded contexts, y que la Web Application puede consumirla sin cambios en su presentación gracias a la separación por capas.
 
-10. En conclusión, el proyecto establece una base sólida para una plataforma especializada en la trazabilidad y monitoreo de procesos HVOF, alineando las necesidades del negocio, los usuarios y la solución tecnológica propuesta.
+10. El despliegue de la REST API y la Web Application en Azure App Service con integración continua desde `main`, junto con el Landing Page en GitHub Pages, convierte a EdgeWatch en un producto accesible públicamente sobre el que ya pueden ejecutarse las entrevistas de validación con usuarios reales de ambos segmentos.
+
+11. Las entrevistas de validación y la evaluación heurística permitirán contrastar los Hypothesis Statements 01 a 11 con el comportamiento observado y priorizar el roadmap hacia la entrega final.
+
+12. En conclusión, el proyecto establece una base sólida para una plataforma especializada en la trazabilidad y monitoreo de procesos HVOF, alineando las necesidades del negocio, los usuarios y la solución tecnológica desplegada.
 
 **Resultados frente al Lean UX Process**
 
@@ -4229,13 +4319,22 @@ El video About-the-Product presenta EdgeWatch a los segmentos Recuperation Suppl
 
 **Recomendaciones (roadmap)**
 
-1. Implementar y desplegar la REST API en ASP.NET Core con su documentación en OpenAPI, reemplazando la Fake API que hoy consume la Web Application.
-2. Desplegar la Web Application en Firebase Hosting y conectarla con la REST API.
-3. Implementar los bounded contexts pendientes: Traceability (órdenes de recuperación y certificados), Fault Diagnosis, Notifications y Reporting, priorizando el certificado de calidad y el diagnóstico asistido, que sustentan las hipótesis de mayor riesgo.
-4. Realizar las entrevistas de validación con usuarios de ambos segmentos sobre el Landing Page y la Web Application, aplicando la evaluación heurística del proyecto.
-5. Incorporar la ingesta automática de telemetría desde el gateway del PLC y la integración futura con el ERP o CMMS del cliente.
+1. Completar las entrevistas de validación con usuarios de ambos segmentos sobre la Web Application desplegada y registrar los hallazgos de la evaluación heurística (5.3).
+2. Implementar el bounded context Notifications (alertas por correo y en la aplicación) y conectar Billing a la REST API, retirando la Fake API restante.
+3. Incorporar la ingesta automática de telemetría desde el gateway del PLC (Modbus TCP / EtherNet/IP) en reemplazo de la simulación de lecturas.
+4. Desarrollar las vistas del segmento Asset Owner (componentes retornados, certificados recibidos y cumplimiento del PCR) y los reportes de tasa de falla por cliente y modelo.
+5. Agregar pruebas automatizadas (unitarias en la REST API y end-to-end en la Web Application) al flujo de GitHub Actions antes de la entrega final.
 
 ## Video About-the-Team.
+
+En el video About-the-Team cada integrante de WebRunners se presenta, describe su rol en el proyecto y comparte su testimonio sobre el trabajo en equipo durante el ciclo: cómo se distribuyó el liderazgo por aspectos, cómo se integraron los aportes con GitFlow y Pull Requests, y qué aprendió del dominio HVOF y de la construcción de la plataforma.
+
+| Campo | Información |
+|---|---|
+| **Título** | upc-pre-202620-1asi0730-16712-WebRunners-about-the-team |
+| **Link del video** | <https://youtu.be/4XBkfPlF6Lo> |
+| **Plataforma** | YouTube (enlace privado); el archivo .mp4 se incluye en el .zip de la entrega |
+| **Participantes** | Navarro Aldoradin, Carolina Celeste · Alvarez Falen, Esteban Valentino · Catacora Tupa, Jhon Deyner · Vasquez Laos, Sebastian Andrews |
 
 # Bibliografía
 
@@ -4299,3 +4398,19 @@ Relación de los videos de exposición de cada entrega del proyecto, publicados 
 |---|---|---|
 | AV1 | upc-pre-202620-1asi0730-16712-WebRunners-expo-av1 | *(Agregar enlace de Microsoft Stream)* |
 | TB1 | upc-pre-202620-1asi0730-16712-WebRunners-expo-tb1 | *(Agregar enlace de Microsoft Stream)* |
+| AV2 | upc-pre-202620-1asi0730-16712-WebRunners-expo-av2 | *(Agregar enlace de Microsoft Stream)* |
+
+## Anexo B. Enlaces importantes
+
+| Recurso | Enlace |
+|---|---|
+| Organización en GitHub | <https://github.com/upc-pre-202620-1asi0730-16712-wrunners> |
+| Repositorio del informe | <https://github.com/upc-pre-202620-1asi0730-16712-wrunners/edgewatch-report> |
+| Repositorio del Landing Page | <https://github.com/upc-pre-202620-1asi0730-16712-wrunners/edgewatch-website> |
+| Repositorio de la Web Application | <https://github.com/upc-pre-202620-1asi0730-16712-wrunners/edgewatch-webapp> |
+| Repositorio de la REST API | <https://github.com/upc-pre-202620-1asi0730-16712-wrunners/edgewatch-platform> |
+| Landing Page desplegado | <https://upc-pre-202620-1asi0730-16712-wrunners.github.io/edgewatch-website/> |
+| Web Application desplegada | <https://edgewatch-webapp-gmbcexdpe0e8a2gv.eastus-01.azurewebsites.net> |
+| REST API desplegada (documentación) | <https://edgewatch-platform-hdebf3fhabbze2ep.eastus-01.azurewebsites.net/scalar> |
+| Video About-the-Product | <https://youtu.be/Axl4rCu7W7E> |
+| Video About-the-Team | <https://youtu.be/4XBkfPlF6Lo> |
