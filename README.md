@@ -3878,7 +3878,7 @@ Además, la Web Application incorpora el **dashboard de operaciones** en la vist
 
 #### 5.2.3.6. Services Documentation Evidence for Sprint Review.
 
-Durante el Sprint 3 se documentaron los endpoints de la REST API con OpenAPI, generado en `/openapi/v1.json` y presentado con Scalar en `/scalar`, con el esquema de seguridad Bearer. Cada acción del controlador declara sus códigos de respuesta con `ProducesResponseType`, de modo que la documentación incluye los esquemas de petición, respuesta y error. Todas las rutas se exponen bajo `/api/v1` en kebab-case y, salvo `POST /users`, `POST /tokens` y `GET /roles`, requieren el header `Authorization: Bearer <token>`.
+Durante el Sprint 3 se documentaron los endpoints de la REST API con OpenAPI, generado en `/openapi/v1.json` y presentado con Scalar en `/scalar` (<https://edgewatch-platform-hdebf3fhabbze2ep.eastus-01.azurewebsites.net/scalar>), con el esquema de seguridad Bearer. Cada acción del controlador declara sus códigos de respuesta con `ProducesResponseType`, de modo que la documentación incluye los esquemas de petición, respuesta y error. Todas las rutas se exponen bajo `/api/v1` en kebab-case y, salvo `POST /users`, `POST /tokens` y `GET /roles`, requieren el header `Authorization: Bearer <token>`.
 
 | Bounded Context | Endpoint | Método | Acción | Respuestas | User Stories |
 |---|---|:---:|---|---|---|
@@ -3946,19 +3946,22 @@ Durante el Sprint 3 se documentaron los endpoints de la REST API con OpenAPI, ge
 
 #### 5.2.3.7. Software Deployment Evidence for Sprint Review.
 
-Durante el Sprint 3 se publicó la versión v1.1.0 del Landing Page en GitHub Pages, con el enlace de inicio de sesión hacia la Web Application desplegada en Firebase Hosting. La REST API y la versión v2.0.x de la Web Application se ejecutaron en local contra MySQL; para su despliegue en Azure App Service, descrito en 5.1.4, se dejaron preparados el Dockerfile de la API, la configuración de producción con variables de entorno (`DB_HOST`, `DB_USER`, `DB_PASSWORD`, `DB_NAME` y `CORS_ALLOWED_ORIGIN`) y el archivo `.env.production` de la Web Application, que apunta a `https://edgewatch-platform.azurewebsites.net/api/v1`. Al cierre del Sprint esa URL todavía no responde, por lo que la versión pública de la Web Application sigue siendo la v1.0.0 sobre la Fake API.
+Durante el Sprint 3 se publicó la versión v1.1.0 del Landing Page en GitHub Pages, con el enlace de inicio de sesión hacia la Web Application. La REST API (platform/backend) y la Web Application v2.0.x se desplegaron en Azure App Service (región East US), y la documentación OpenAPI del backend queda publicada con Scalar junto a la API.
 
 | Producto | Repositorio | Versión | Estado | URL |
 |---|---|:---:|---|---|
 | Landing Page | edgewatch-website | v1.1.0 | Desplegado en GitHub Pages (rama `gh-pages`) | <https://upc-pre-202620-1asi0730-16712-wrunners.github.io/edgewatch-website/> |
 | Web Application | edgewatch-webapp | v1.0.0 | Desplegado en Firebase Hosting con la Fake API en Vercel | <https://edgewatch-webapp-10050010.web.app/> |
-| Web Application | edgewatch-webapp | v2.0.1 | Ejecución local conectada a la REST API; despliegue pendiente | `http://localhost:5173` |
-| REST API | edgewatch-platform | v1.0.1 | Ejecución local con MySQL; despliegue en Azure App Service pendiente | `http://localhost:5262/scalar` |
+| Web Application | edgewatch-webapp | v2.0.1 | Desplegado en Azure App Service, conectado a la REST API | <https://edgewatch-webapp-gmbcexdpe0e8a2gv.eastus-01.azurewebsites.net> |
+| REST API (Platform / Backend) | edgewatch-platform | v1.0.1 | Desplegado en Azure App Service | <https://edgewatch-platform-hdebf3fhabbze2ep.eastus-01.azurewebsites.net/> |
+| Documentación de la REST API (Scalar) | edgewatch-platform | v1.0.1 | Publicada junto a la REST API | <https://edgewatch-platform-hdebf3fhabbze2ep.eastus-01.azurewebsites.net/scalar> |
 
 - **Ejecución local de la REST API**: `dotnet run` en `EdgeWatchPlatform.API` (las migraciones se aplican al iniciar)
 - **Imagen Docker de la REST API**: `docker build -t edgewatch-platform .`
 - **Ejecución local de la Web Application**: `npm run dev`, y `npm run api` para la Fake API de Billing
-- **URL de producción de la REST API**: <!-- TODO: completar cuando https://edgewatch-platform.azurewebsites.net responda -->
+- **URL de producción de la Web Application**: <https://edgewatch-webapp-gmbcexdpe0e8a2gv.eastus-01.azurewebsites.net>
+- **URL de producción de la REST API (platform/backend)**: <https://edgewatch-platform-hdebf3fhabbze2ep.eastus-01.azurewebsites.net/>
+- **Documentación del backend (Scalar)**: <https://edgewatch-platform-hdebf3fhabbze2ep.eastus-01.azurewebsites.net/scalar>
 
 #### 5.2.3.8. Team Collaboration Insights during Sprint.
 
